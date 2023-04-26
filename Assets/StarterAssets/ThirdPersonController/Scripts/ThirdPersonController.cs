@@ -112,6 +112,8 @@ namespace StarterAssets
 
         private bool _hasAnimator;
 
+        private float targetSpeed;
+
         private bool IsCurrentDeviceMouse
         {
             get
@@ -216,20 +218,17 @@ namespace StarterAssets
         private void Move()
         {
             // set target speed based on move speed, sprint speed and if sprint is pressed
-            float targetSpeed;
-
             if (_input.sprint)
             {
-                targetSpeed = SprintSpeed * 4;
+                targetSpeed = SprintSpeed * 5;
 
                 if (_input.spin && !_input.pileDriver && !_input.lariat)
                 {
-                    targetSpeed = 0;
-                    StartCoroutine(resetSpin());
+                    targetSpeed = SprintSpeed / 2;
                 }
                 else if (_input.lariat && !_input.spin && !_input.pileDriver )
                 { 
-                    targetSpeed = SprintSpeed * 6;
+                    targetSpeed = SprintSpeed * 10;
                     StartCoroutine(resetLariat());
                 }
                 else if (_input.pileDriver && !_input.spin && !_input.lariat)
@@ -243,13 +242,15 @@ namespace StarterAssets
             else
             {
                 targetSpeed = SprintSpeed;
+
+                if (_input.move == Vector2.zero) targetSpeed = 0.0f;
             }
 
             // a simplistic acceleration and deceleration designed to be easy to remove, replace, or iterate upon
 
             // note: Vector2's == operator uses approximation so is not floating point error prone, and is cheaper than magnitude
             // if there is no input, set the target speed to 0
-            if (_input.move == Vector2.zero) targetSpeed = 0.0f;
+            
 
             // a reference to the players current horizontal velocity
             float currentHorizontalSpeed = new Vector3(_controller.velocity.x, 0.0f, _controller.velocity.z).magnitude;
@@ -290,10 +291,12 @@ namespace StarterAssets
                     RotationSmoothTime);
 
                 // rotate to face input direction relative to camera position
+
+
                 transform.rotation = Quaternion.Euler(0.0f, rotation, 0.0f);
             }
 
-            if (!_input.lariat)
+            if (!_input.sprint)
             {
                 targetDirection = Quaternion.Euler(0.0f, _targetRotation, 0.0f) * Vector3.forward;
             }
@@ -312,39 +315,36 @@ namespace StarterAssets
 
         private IEnumerator resetLariat()
         {
-            _input.pileDriver = false;
-            _input.spin = false;
             yield return new WaitForSeconds(0.5f);
+            _input.sprint = false;
             _input.lariat = false;
+            _speed = 0;
         }
 
         private IEnumerator resetSpin()
         {
-            _input.lariat = false;
-            _input.pileDriver = false;
             yield return new WaitForSeconds(5f);
-            _input.spin = false;
             _input.sprint = false;
+            _input.spin = false;
+            _speed = 0;
         }
 
         private IEnumerator resetPileDriver()
         {
-            _input.lariat = false;
-            _input.spin = false;
             yield return new WaitForSeconds(0.5f);
+            _input.sprint = false;
             _input.pileDriver = false;
+            _speed = 0;
         }
 
         private IEnumerator resetSprint()
         {
             yield return new WaitForSeconds(0.5f);
-            _input.lariat = false;
-            _input.pileDriver = false;
 
-            if (!_input.spin)
+            if (!_input.spin && !_input.pileDriver && !_input.lariat)
             {
                 _input.sprint = false;
-                _input.spin = false;
+                _speed = 0;
             }
         }
 

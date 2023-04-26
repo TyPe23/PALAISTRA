@@ -38,7 +38,7 @@ namespace StarterAssets
 
 		public void OnPileDriver(InputValue value)
 		{
-			if (sprint && !pileDriver && (!spin || !pileDriver))
+			if (!lariat && !spin)
 			{
 				PileDriverInput(value.isPressed);
 			}
@@ -46,12 +46,15 @@ namespace StarterAssets
 
 		public void OnSprint(InputValue value)
 		{
-			SprintInput(value.isPressed);
+			if (value.isPressed)
+			{
+				SprintInput(true);
+			}
 		}
 
         public void OnSpin(InputValue value)
         {
-			if (sprint && !spin && (!spin || !pileDriver))
+			if (!lariat && !pileDriver)
 			{
 				SpinInput(value.isPressed);
 			}
@@ -59,7 +62,7 @@ namespace StarterAssets
 
         public void OnLariat(InputValue value)
         {
-			if (sprint && !lariat && (!spin || !pileDriver))
+			if (!spin && !pileDriver)
 			{
 				LariatInput(value.isPressed);
 			}
