@@ -10,17 +10,15 @@ using UnityEngine.InputSystem;
 namespace StarterAssets
 {
     [RequireComponent(typeof(CharacterController))]
+    [RequireComponent(typeof(PlayerStats))]
 #if ENABLE_INPUT_SYSTEM 
     [RequireComponent(typeof(PlayerInput))]
 #endif
     public class ThirdPersonController : MonoBehaviour
     {
-        [Header("Player")]
-        [Tooltip("Move speed of the character in m/s")]
-        public float MoveSpeed = 2.0f;
-
-        [Tooltip("Sprint speed of the character in m/s")]
-        public float SprintSpeed = 5.335f;
+        #region FIELDS AND PROPERTIES
+        #region PLAYER
+        [Header("Player")] 
 
         [Tooltip("How fast the character turns to face movement direction")]
         [Range(0.0f, 0.3f)]
@@ -47,6 +45,9 @@ namespace StarterAssets
         [Tooltip("Time required to pass before entering the fall state. Useful for walking down stairs")]
         public float FallTimeout = 0.15f;
 
+        #endregion
+        #region GROUNDED
+
         [Header("Player Grounded")]
         [Tooltip("If the character is grounded or not. Not part of the CharacterController built in grounded check")]
         public bool Grounded = true;
@@ -59,6 +60,9 @@ namespace StarterAssets
 
         [Tooltip("What layers the character uses as ground")]
         public LayerMask GroundLayers;
+
+        #endregion
+        #region CINEMACHINE
 
         [Header("Cinemachine")]
         [Tooltip("The follow target set in the Cinemachine Virtual Camera that the camera will follow")]
@@ -79,6 +83,7 @@ namespace StarterAssets
         // cinemachine
         private float _cinemachineTargetYaw;
         private float _cinemachineTargetPitch;
+        #endregion
 
         // player
         public float _speed;
@@ -88,6 +93,9 @@ namespace StarterAssets
         private float _verticalVelocity;
         private float _terminalVelocity = 53.0f;
         private Vector3 targetDirection;
+        private PlayerStats _playerStats;
+        private bool timeout = false;
+        public BoxCollider hitbox;
 
         // timeout deltatime
         private float _jumpTimeoutDelta;
@@ -125,7 +133,7 @@ namespace StarterAssets
 #endif
             }
         }
-
+#endregion 
 
         private void Awake()
         {
@@ -134,6 +142,8 @@ namespace StarterAssets
             {
                 _mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
             }
+
+            _playerStats = GetComponent<PlayerStats>(); 
         }
 
         private void Start()
@@ -218,22 +228,28 @@ namespace StarterAssets
         private void Move()
         {
             // set target speed based on move speed, sprint speed and if sprint is pressed
-            if (_input.sprint)
+            if (_input.sprint && !timeout)
             {
-                targetSpeed = SprintSpeed * 5;
+                targetSpeed = _playerStats.DashSpeed;
 
                 if (_input.spin && !_input.pileDriver && !_input.lariat)
                 {
-                    targetSpeed = SprintSpeed / 2;
+                    targetSpeed = _playerStats.SpinMoveSpeed;
+                    hitbox.enabled = true;
+                    StartCoroutine(HBTimeout());
                 }
                 else if (_input.lariat && !_input.spin && !_input.pileDriver )
                 { 
-                    targetSpeed = SprintSpeed * 10;
+                    targetSpeed = _playerStats.LariatSpeed;
+                    hitbox.enabled = true;
+                    StartCoroutine(HBTimeout());
                     StartCoroutine(resetLariat());
                 }
                 else if (_input.pileDriver && !_input.spin && !_input.lariat)
                 {
-                    targetSpeed = SprintSpeed;
+                    targetSpeed = _playerStats.PileDriverSpeed;
+                    hitbox.enabled = true;
+                    StartCoroutine(HBTimeout());
                     StartCoroutine(resetPileDriver());
                 }
 
@@ -241,7 +257,7 @@ namespace StarterAssets
             }
             else
             {
-                targetSpeed = SprintSpeed;
+                targetSpeed = _playerStats.MoveSpeed;
 
                 if (_input.move == Vector2.zero) targetSpeed = 0.0f;
             }
@@ -296,7 +312,7 @@ namespace StarterAssets
                 transform.rotation = Quaternion.Euler(0.0f, rotation, 0.0f);
             }
 
-            if (!_input.sprint)
+            if (!_input.sprint || timeout)
             {
                 targetDirection = Quaternion.Euler(0.0f, _targetRotation, 0.0f) * Vector3.forward;
             }
@@ -313,39 +329,55 @@ namespace StarterAssets
             }
         }
 
+        private IEnumerator HBTimeout()
+        {
+            yield return new WaitForSeconds(0.1f);
+            hitbox.enabled = false;
+        }
+
         private IEnumerator resetLariat()
         {
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(_playerStats.LariatDuration);
             _input.sprint = false;
             _input.lariat = false;
             _speed = 0;
+            StartCoroutine(resetTimeout());
         }
 
         private IEnumerator resetSpin()
         {
-            yield return new WaitForSeconds(5f);
+            yield return new WaitForSeconds(_playerStats.SpinMoveDuration);
             _input.sprint = false;
             _input.spin = false;
             _speed = 0;
+            StartCoroutine(resetTimeout());
         }
 
         private IEnumerator resetPileDriver()
         {
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(_playerStats.PileDriverDuration);
             _input.sprint = false;
             _input.pileDriver = false;
             _speed = 0;
+            StartCoroutine(resetTimeout());
         }
 
         private IEnumerator resetSprint()
         {
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(_playerStats.DashDuration);
 
             if (!_input.spin && !_input.pileDriver && !_input.lariat)
             {
                 _input.sprint = false;
                 _speed = 0;
+                StartCoroutine(resetTimeout());
             }
+        }
+
+        private IEnumerator resetTimeout()
+        {
+            yield return new WaitForSeconds(_playerStats.inputTimeout);
+            timeout = false;
         }
 
         private void JumpAndGravity()
@@ -369,7 +401,7 @@ namespace StarterAssets
                 }
 
                 // Jump
-                if (_input.lariat && _jumpTimeoutDelta <= 0.0f)
+                if (_input.sprint && _input.lariat && _jumpTimeoutDelta <= 0.0f)
                 {
                     // the square root of H * -2 * G = how much velocity needed to reach desired height
                     _verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
@@ -405,9 +437,6 @@ namespace StarterAssets
                         _animator.SetBool(_animIDFreeFall, true);
                     }
                 }
-
-                // if we are not grounded, do not jump
-                _input.lariat = false;
             }
 
             // apply gravity over time if under terminal (multiply by delta time twice to linearly speed up over time)
