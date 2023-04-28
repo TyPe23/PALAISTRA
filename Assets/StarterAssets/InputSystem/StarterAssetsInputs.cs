@@ -40,7 +40,7 @@ namespace StarterAssets
 
 		public void OnPileDriver(InputValue value)
 		{
-			if (!lariat && !spin)
+			if (!lariat && !spin && charCon.canAction)
 			{
 				PileDriverInput(value.isPressed);
 			}
@@ -61,7 +61,6 @@ namespace StarterAssets
 				SpinInput(value.isPressed);
 				if (!value.isPressed)
 				{
-					SprintInput(false);
 					charCon.letGo = true;
 					StartCoroutine(charCon.resetTimeout());
 				}
@@ -70,7 +69,7 @@ namespace StarterAssets
 
         public void OnLariat(InputValue value)
         {
-			if (!spin && !pileDriver)
+			if (!spin && !pileDriver && charCon.canAction)
 			{
 				LariatInput(value.isPressed);
 			}

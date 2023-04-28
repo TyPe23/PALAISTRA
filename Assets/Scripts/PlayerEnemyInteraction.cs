@@ -24,6 +24,7 @@ public class PlayerEnemyInteraction : MonoBehaviour
         if (charCon.letGo && attached)
         {
             detach();
+            rb.AddForce(new Vector3(0, 100f, -500f));
         }
     }
 
@@ -50,11 +51,21 @@ public class PlayerEnemyInteraction : MonoBehaviour
     {
         print(parent.name);
         attached = false;
+        charCon.letGo = false;
         rb.isKinematic = false;
         transform.parent = parent;
         transform.rotation = Quaternion.Euler(0, 0, 0);
         rb.useGravity = true;
         charCon.grab = false;
-        rb.velocity.Normalize();
+        rb.velocity = new Vector3(0, 0, 0);
+        rb.angularVelocity = new Vector3(0, 0, 0);
+        StartCoroutine(pauseCollision());
+    }
+
+    private IEnumerator pauseCollision()
+    {
+        GetComponent<CapsuleCollider>().enabled = false;
+        yield return new WaitForSeconds(0.1f);
+        GetComponent<CapsuleCollider>().enabled = true;
     }
 }

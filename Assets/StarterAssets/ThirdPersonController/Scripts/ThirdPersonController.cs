@@ -98,6 +98,7 @@ namespace StarterAssets
         public BoxCollider hitbox;
         public bool grab = false;
         public bool letGo = false;
+        public bool jumped = false;
 
         // timeout deltatime
         private float _jumpTimeoutDelta;
@@ -123,6 +124,7 @@ namespace StarterAssets
         private bool _hasAnimator;
 
         private float targetSpeed;
+        public bool canAction;
 
         private bool IsCurrentDeviceMouse
         {
@@ -174,7 +176,50 @@ namespace StarterAssets
 
             JumpAndGravity();
             GroundedCheck();
-            Move();
+
+            if (_input.sprint && !timeout && !grab)
+            {
+                canAction = true;
+                Dash();
+                StartCoroutine(resetSprint());
+            }
+            else if (!grab)
+            {
+                Move();
+            }
+
+            if (canAction)
+            {
+                if (_input.spin)
+                {
+                    hitbox.enabled = true;
+                    if (grab)
+                    {
+                        Spin();
+                    }
+                    StartCoroutine(HBTimeout());
+                }
+                else if (_input.lariat)
+                {
+                    hitbox.enabled = true;
+                    if (grab)
+                    {
+                        Lariat();
+                        StartCoroutine(resetLariat());
+                    }
+                    StartCoroutine(HBTimeout());
+                }
+                else if (_input.pileDriver)
+                {
+                    hitbox.enabled = true;
+                    if (grab)
+                    {
+                        PileDriver();
+                        StartCoroutine(resetPileDriver());
+                    }
+                    StartCoroutine(HBTimeout());
+                }
+            }
         }
 
         private void LateUpdate()
@@ -229,51 +274,11 @@ namespace StarterAssets
 
         private void Move()
         {
-            // set target speed based on move speed, sprint speed and if sprint is pressed
-            if (_input.sprint && !timeout)
-            {
-                targetSpeed = _playerStats.DashSpeed;
+            grab = false;
 
-                if (_input.spin && !_input.pileDriver && !_input.lariat)
-                {
-                    hitbox.enabled = true;
-                    if (grab)
-                    {
-                        targetSpeed = _playerStats.SpinMoveSpeed;
-                    }
-                    StartCoroutine(HBTimeout());
-                }
-                else if (_input.lariat && !_input.spin && !_input.pileDriver )
-                { 
-                    hitbox.enabled = true;
-                    if (grab)
-                    {
-                        targetSpeed = _playerStats.LariatSpeed;
-                        StartCoroutine(resetLariat());
-                    }
-                    StartCoroutine(HBTimeout());
-                }
-                else if (_input.pileDriver && !_input.spin && !_input.lariat)
-                {
-                    hitbox.enabled = true;
-                    if (grab)
-                    {
-                        targetSpeed = _playerStats.PileDriverSpeed;
-                        StartCoroutine(resetPileDriver());
-                    }
-                    StartCoroutine(HBTimeout());
-                }
+            targetSpeed = _playerStats.MoveSpeed;
 
-                StartCoroutine(resetSprint());
-            }
-            else
-            {
-                grab = false;
-
-                targetSpeed = _playerStats.MoveSpeed;
-
-                if (_input.move == Vector2.zero) targetSpeed = 0.0f;
-            }
+            if (_input.move == Vector2.zero) targetSpeed = 0.0f;
 
             // a simplistic acceleration and deceleration designed to be easy to remove, replace, or iterate upon
 
@@ -325,10 +330,31 @@ namespace StarterAssets
                 transform.rotation = Quaternion.Euler(0.0f, rotation, 0.0f);
             }
 
-            if (!_input.sprint || timeout)
+            targetDirection = Quaternion.Euler(0.0f, _targetRotation, 0.0f) * Vector3.forward;
+
+            // move the player
+            _controller.Move(targetDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
+            
+
+            // update animator if using character
+            if (_hasAnimator)
             {
-                targetDirection = Quaternion.Euler(0.0f, _targetRotation, 0.0f) * Vector3.forward;
+                _animator.SetFloat(_animIDSpeed, _animationBlend);
+                _animator.SetFloat(_animIDMotionSpeed, inputMagnitude);
             }
+        }
+        
+        private void Dash()
+        {
+            targetSpeed = _playerStats.DashSpeed;
+
+            _speed = targetSpeed;
+
+            float inputMagnitude = _input.analogMovement ? _input.move.magnitude : 1f;
+
+            _animationBlend = Mathf.Lerp(_animationBlend, targetSpeed, Time.deltaTime * SpeedChangeRate);
+
+            if (_animationBlend < 0.01f) _animationBlend = 0f;
 
             // move the player
             _controller.Move(targetDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
@@ -342,6 +368,80 @@ namespace StarterAssets
             }
         }
 
+        private void Lariat()
+        {
+            targetSpeed = _playerStats.LariatSpeed;
+
+            _speed = targetSpeed;
+
+            float inputMagnitude = _input.analogMovement ? _input.move.magnitude : 1f;
+
+            _animationBlend = Mathf.Lerp(_animationBlend, targetSpeed, Time.deltaTime * SpeedChangeRate);
+
+            if (_animationBlend < 0.01f) _animationBlend = 0f;
+
+            // move the player
+            _controller.Move(targetDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
+
+
+            // update animator if using character
+            if (_hasAnimator)
+            {
+                _animator.SetFloat(_animIDSpeed, _animationBlend);
+                _animator.SetFloat(_animIDMotionSpeed, inputMagnitude);
+            }
+        }
+
+        private void Spin()
+        {
+            targetSpeed = _playerStats.SpinMoveSpeed;
+
+            _speed = targetSpeed;
+
+            float inputMagnitude = _input.analogMovement ? _input.move.magnitude : 1f;
+
+            _animationBlend = Mathf.Lerp(_animationBlend, targetSpeed, Time.deltaTime * SpeedChangeRate);
+
+            if (_animationBlend < 0.01f) _animationBlend = 0f;
+
+            // move the player
+            _controller.Move(targetDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
+
+
+            // update animator if using character
+            if (_hasAnimator)
+            {
+                _animator.SetFloat(_animIDSpeed, _animationBlend);
+                _animator.SetFloat(_animIDMotionSpeed, inputMagnitude);
+            }
+        }
+
+        private void PileDriver()
+        {
+            targetSpeed = _playerStats.PileDriverSpeed;
+
+            _speed = targetSpeed;
+
+            float inputMagnitude = _input.analogMovement ? _input.move.magnitude : 1f;
+
+            _animationBlend = Mathf.Lerp(_animationBlend, targetSpeed, Time.deltaTime * SpeedChangeRate);
+
+            if (_animationBlend < 0.01f) _animationBlend = 0f;
+
+            // move the player
+            _controller.Move(targetDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
+
+
+            // update animator if using character
+            if (_hasAnimator)
+            {
+                _animator.SetFloat(_animIDSpeed, _animationBlend);
+                _animator.SetFloat(_animIDMotionSpeed, inputMagnitude);
+            }
+        }
+
+        #region COROUTINES
+
         private IEnumerator HBTimeout()
         {
             yield return new WaitForSeconds(0.1f);
@@ -351,21 +451,7 @@ namespace StarterAssets
         private IEnumerator resetLariat()
         {
             yield return new WaitForSeconds(_playerStats.LariatDuration);
-            _input.sprint = false;
-            _input.lariat = false;
-            _speed = 0;
-            letGo = true;
-            StartCoroutine(resetTimeout());
-        }
-
-        private IEnumerator resetSpin()
-        {
-            yield return new WaitForSeconds(_playerStats.SpinMoveDuration);
-            _input.sprint = false;
-            _input.spin = false;
-            _speed = 0;
-            letGo = true;
-            StartCoroutine(resetTimeout());
+            jumped = true;
         }
 
         private IEnumerator resetPileDriver()
@@ -382,23 +468,21 @@ namespace StarterAssets
         {
             yield return new WaitForSeconds(_playerStats.DashDuration);
 
-            if (!grab)
-            {
-                _input.lariat = false;
-                _input.spin = false;
-                _input.pileDriver = false;
-                _input.sprint = false;
-                _speed = 0;
-                StartCoroutine(resetTimeout());
-            }
+            _input.sprint = false;
+            _speed = 0;
+            StartCoroutine(resetTimeout());
         }
 
         public IEnumerator resetTimeout()
         {
             yield return new WaitForSeconds(_playerStats.inputTimeout);
+            canAction = false;
             timeout = false;
             letGo = false;
+            _input.lariat = false;
+            _input.pileDriver = false;
         }
+        #endregion
 
         private void JumpAndGravity()
         {
@@ -421,7 +505,7 @@ namespace StarterAssets
                 }
 
                 // Jump
-                if (_input.sprint && _input.lariat && grab && _jumpTimeoutDelta <= 0.0f)
+                if (_input.lariat && grab && _jumpTimeoutDelta <= 0.0f)
                 {
                     // the square root of H * -2 * G = how much velocity needed to reach desired height
                     _verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
@@ -438,6 +522,15 @@ namespace StarterAssets
                 {
                     _jumpTimeoutDelta -= Time.deltaTime;
                 }
+
+                if (jumped)
+                {
+                    _input.lariat = false;
+                    letGo = true;
+                    jumped = false;
+                    StartCoroutine(resetTimeout());
+                }
+
             }
             else
             {

@@ -20,12 +20,12 @@ public class PlayerStats : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (!PlayerPrefs.HasKey("MoveSpeed"))
+        if (PlayerPrefs.HasKey("MoveSpeed"))
         {
             PlayerPrefs.SetFloat("MoveSpeed", 5.25f);
             PlayerPrefs.SetFloat("SpinMoveSpeed", 0f);
-            PlayerPrefs.SetFloat("DashSpeed", PlayerPrefs.GetFloat("MoveSpeed") * 5);
-            PlayerPrefs.SetFloat("LariatSpeed", PlayerPrefs.GetFloat("MoveSpeed") * 10);
+            PlayerPrefs.SetFloat("DashSpeed", PlayerPrefs.GetFloat("MoveSpeed") * 3);
+            PlayerPrefs.SetFloat("LariatSpeed", PlayerPrefs.GetFloat("MoveSpeed") * 2);
             PlayerPrefs.SetFloat("PileDriverSpeed", PlayerPrefs.GetFloat("MoveSpeed"));
             PlayerPrefs.SetFloat("SpinMoveDuration", 5f);
             PlayerPrefs.SetFloat("DashDuration", 0.25f);
