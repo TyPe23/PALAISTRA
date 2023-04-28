@@ -15,6 +15,7 @@ public class PlayerStats : MonoBehaviour
     public float LariatDuration;
     public float PileDriverDuration;
     public float inputTimeout;
+    public int currency;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +32,7 @@ public class PlayerStats : MonoBehaviour
             PlayerPrefs.SetFloat("LariatDuration", 0.25f);
             PlayerPrefs.SetFloat("PileDriverDuration", 0.5f);
             PlayerPrefs.SetFloat("inputTimeout", 0.5f);
+            PlayerPrefs.SetInt("currency", 10);
         }
 
         SpinMoveSpeed = PlayerPrefs.GetFloat("SpinMoveSpeed");
@@ -43,6 +45,7 @@ public class PlayerStats : MonoBehaviour
         LariatDuration = PlayerPrefs.GetFloat("LariatDuration");
         PileDriverDuration = PlayerPrefs.GetFloat("PileDriverDuration");
         inputTimeout = PlayerPrefs.GetFloat("inputTimeout");
+        currency = PlayerPrefs.GetInt("currency");
     }   
 
     // Update is called once per frame

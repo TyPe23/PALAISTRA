@@ -29,6 +29,7 @@ public class CoinSpawn : MonoBehaviour
         if (other.transform.CompareTag("Player"))
         {
             print("You earned " + worth);
+            GameObject.Find("PlayerArmature").GetComponent<PlayerStats>().currency += worth;
             //TODO add money to character inventory
             Destroy(gameObject);
         }

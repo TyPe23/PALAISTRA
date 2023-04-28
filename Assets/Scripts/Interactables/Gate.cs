@@ -25,9 +25,12 @@ public class Gate : MonoBehaviour
         { gameObject.transform.position = Vector3.MoveTowards(transform.position, origin, 0.05f); }
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         isIn = true;
+    }
+    private void OnTriggerStay(Collider other)
+    {
         if (other.transform.CompareTag("Player"))
         {
             if (transform.position.y < height.y)
