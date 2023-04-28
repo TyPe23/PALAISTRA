@@ -96,6 +96,8 @@ namespace StarterAssets
         private PlayerStats _playerStats;
         private bool timeout = false;
         public BoxCollider hitbox;
+        public bool grab = false;
+        public bool letGo = false;
 
         // timeout deltatime
         private float _jumpTimeoutDelta;
@@ -234,29 +236,40 @@ namespace StarterAssets
 
                 if (_input.spin && !_input.pileDriver && !_input.lariat)
                 {
-                    targetSpeed = _playerStats.SpinMoveSpeed;
                     hitbox.enabled = true;
+                    if (grab)
+                    {
+                        targetSpeed = _playerStats.SpinMoveSpeed;
+                    }
                     StartCoroutine(HBTimeout());
                 }
                 else if (_input.lariat && !_input.spin && !_input.pileDriver )
                 { 
-                    targetSpeed = _playerStats.LariatSpeed;
                     hitbox.enabled = true;
+                    if (grab)
+                    {
+                        targetSpeed = _playerStats.LariatSpeed;
+                        StartCoroutine(resetLariat());
+                    }
                     StartCoroutine(HBTimeout());
-                    StartCoroutine(resetLariat());
                 }
                 else if (_input.pileDriver && !_input.spin && !_input.lariat)
                 {
-                    targetSpeed = _playerStats.PileDriverSpeed;
                     hitbox.enabled = true;
+                    if (grab)
+                    {
+                        targetSpeed = _playerStats.PileDriverSpeed;
+                        StartCoroutine(resetPileDriver());
+                    }
                     StartCoroutine(HBTimeout());
-                    StartCoroutine(resetPileDriver());
                 }
 
                 StartCoroutine(resetSprint());
             }
             else
             {
+                grab = false;
+
                 targetSpeed = _playerStats.MoveSpeed;
 
                 if (_input.move == Vector2.zero) targetSpeed = 0.0f;
@@ -341,6 +354,7 @@ namespace StarterAssets
             _input.sprint = false;
             _input.lariat = false;
             _speed = 0;
+            letGo = true;
             StartCoroutine(resetTimeout());
         }
 
@@ -350,6 +364,7 @@ namespace StarterAssets
             _input.sprint = false;
             _input.spin = false;
             _speed = 0;
+            letGo = true;
             StartCoroutine(resetTimeout());
         }
 
@@ -359,6 +374,7 @@ namespace StarterAssets
             _input.sprint = false;
             _input.pileDriver = false;
             _speed = 0;
+            letGo = true;
             StartCoroutine(resetTimeout());
         }
 
@@ -366,18 +382,22 @@ namespace StarterAssets
         {
             yield return new WaitForSeconds(_playerStats.DashDuration);
 
-            if (!_input.spin && !_input.pileDriver && !_input.lariat)
+            if (!grab)
             {
+                _input.lariat = false;
+                _input.spin = false;
+                _input.pileDriver = false;
                 _input.sprint = false;
                 _speed = 0;
                 StartCoroutine(resetTimeout());
             }
         }
 
-        private IEnumerator resetTimeout()
+        public IEnumerator resetTimeout()
         {
             yield return new WaitForSeconds(_playerStats.inputTimeout);
             timeout = false;
+            letGo = false;
         }
 
         private void JumpAndGravity()
@@ -401,7 +421,7 @@ namespace StarterAssets
                 }
 
                 // Jump
-                if (_input.sprint && _input.lariat && _jumpTimeoutDelta <= 0.0f)
+                if (_input.sprint && _input.lariat && grab && _jumpTimeoutDelta <= 0.0f)
                 {
                     // the square root of H * -2 * G = how much velocity needed to reach desired height
                     _verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);

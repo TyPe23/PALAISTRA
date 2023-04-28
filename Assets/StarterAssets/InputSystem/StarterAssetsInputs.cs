@@ -7,6 +7,8 @@ namespace StarterAssets
 {
 	public class StarterAssetsInputs : MonoBehaviour
 	{
+		public ThirdPersonController charCon;
+
 		[Header("Character Input Values")]
 		public Vector2 move;
 		public Vector2 look;
@@ -57,6 +59,12 @@ namespace StarterAssets
 			if (!lariat && !pileDriver)
 			{
 				SpinInput(value.isPressed);
+				if (!value.isPressed)
+				{
+					SprintInput(false);
+					charCon.letGo = true;
+					StartCoroutine(charCon.resetTimeout());
+				}
 			}
         }
 
@@ -109,5 +117,4 @@ namespace StarterAssets
 			Cursor.lockState = newState ? CursorLockMode.Locked : CursorLockMode.None;
 		}
 	}
-	
 }
