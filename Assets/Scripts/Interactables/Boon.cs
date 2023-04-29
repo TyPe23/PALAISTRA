@@ -12,8 +12,10 @@ enum Boons
 public class Boon : MonoBehaviour
 {
     private GameObject player;
-    [SerializeField] Boons boonType;
-    [SerializeField] float increase;
+    [SerializeField] Boons boonAdvantage;
+    [SerializeField] float increase =1;
+    [SerializeField] Boons boonDisadvantage;
+    [SerializeField] float decrease =1;
 
     private void Awake()
     {
@@ -26,7 +28,7 @@ public class Boon : MonoBehaviour
         if (other.transform.CompareTag("Player"))
         {
             var stats = player.GetComponent<PlayerStats>();
-            switch(boonType)
+            switch(boonAdvantage)
             {
                 case Boons.speed:
                     stats.MoveSpeed *= increase;
@@ -37,6 +39,24 @@ public class Boon : MonoBehaviour
                 case Boons.power:
                     stats.LariatDuration *= increase;
                     break;
+                default:
+                    break;
+            }
+            switch (boonDisadvantage)
+            {
+                case Boons.speed:
+                    stats.MoveSpeed *= decrease;
+                    break;
+                case Boons.spin:
+                    stats.SpinMoveSpeed += decrease;
+                    break;
+                case Boons.power:
+                    stats.LariatDuration *= decrease;
+                    break;
+                default:
+                    break;
+
+
             }
             var destroythis = GameObject.Find("Boons");
             Destroy(destroythis);
