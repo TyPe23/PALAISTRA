@@ -11,6 +11,7 @@ namespace StarterAssets
 {
     [RequireComponent(typeof(CharacterController))]
     [RequireComponent(typeof(PlayerStats))]
+    [RequireComponent(typeof(StaminaManager))]
 #if ENABLE_INPUT_SYSTEM 
     [RequireComponent(typeof(PlayerInput))]
 #endif
@@ -117,6 +118,7 @@ namespace StarterAssets
         private Animator _animator;
         private CharacterController _controller;
         private StarterAssetsInputs _input;
+        private StaminaManager _stamina;
         private GameObject _mainCamera;
 
         private const float _threshold = 0.01f;
@@ -125,6 +127,7 @@ namespace StarterAssets
 
         private float targetSpeed;
         public bool canAction;
+        private bool performedAction = false;
 
         private bool IsCurrentDeviceMouse
         {
@@ -157,6 +160,7 @@ namespace StarterAssets
             _hasAnimator = TryGetComponent(out _animator);
             _controller = GetComponent<CharacterController>();
             _input = GetComponent<StarterAssetsInputs>();
+            _stamina = GetComponent<StaminaManager>();
 #if ENABLE_INPUT_SYSTEM 
             _playerInput = GetComponent<PlayerInput>();
 #else
@@ -180,40 +184,63 @@ namespace StarterAssets
             if (_input.sprint && !timeout && !grab)
             {
                 canAction = true;
+                if (!performedAction)
+                {
+                    _stamina.spendStamina(_playerStats.DashCost);
+                    performedAction = true;
+                }
                 Dash();
                 StartCoroutine(resetSprint());
             }
             else if (!grab)
             {
+                performedAction = false;
                 Move();
             }
 
             if (canAction)
             {
-                if (_input.spin)
+                if (_input.spin && _stamina.stamina >= _playerStats.SpinCost)
                 {
+
                     hitbox.enabled = true;
                     if (grab)
                     {
+                        if (!performedAction)
+                        {
+                            _stamina.spendStamina(_playerStats.SpinCost);
+                            performedAction = true;
+                        }
+                        _stamina.spendStamina(_playerStats.SpinHoldCost);
                         Spin();
                     }
                     StartCoroutine(HBTimeout());
                 }
-                else if (_input.lariat)
+                else if (_input.lariat && _stamina.stamina >= _playerStats.LariatCost)
                 {
                     hitbox.enabled = true;
                     if (grab)
                     {
+                        if (!performedAction)
+                        {
+                            _stamina.spendStamina(_playerStats.LariatCost);
+                            performedAction = true;
+                        }
                         Lariat();
                         StartCoroutine(resetLariat());
                     }
                     StartCoroutine(HBTimeout());
                 }
-                else if (_input.pileDriver)
+                else if (_input.pileDriver && _stamina.stamina >= _playerStats.PileDriverCost)
                 {
                     hitbox.enabled = true;
                     if (grab)
                     {
+                        if (!performedAction)
+                        {
+                            _stamina.spendStamina(_playerStats.PileDriverCost);
+                            performedAction = true;
+                        }
                         PileDriver();
                         StartCoroutine(resetPileDriver());
                     }

@@ -14,11 +14,18 @@ public class PlayerStats : MonoBehaviour
     public float SpinMoveDuration;
     public float LariatDuration;
     public float PileDriverDuration;
+    public int DashCost;
+    public int SpinCost;
+    public int LariatCost;
+    public int PileDriverCost;
     public float inputTimeout;
     public int currency;
+    public float maxStamina;
+    public float staminaRecovery;
+    public float SpinHoldCost;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         if (PlayerPrefs.HasKey("MoveSpeed"))
         {
@@ -31,8 +38,15 @@ public class PlayerStats : MonoBehaviour
             PlayerPrefs.SetFloat("DashDuration", 0.25f);
             PlayerPrefs.SetFloat("LariatDuration", 0.25f);
             PlayerPrefs.SetFloat("PileDriverDuration", 0.5f);
+            PlayerPrefs.SetInt("SpinCost", 15);
+            PlayerPrefs.SetInt("DashCost", 5);
+            PlayerPrefs.SetInt("LariatCost", 15);
+            PlayerPrefs.SetInt("PileDriverCost", 20);
             PlayerPrefs.SetFloat("inputTimeout", 0.5f);
             PlayerPrefs.SetInt("currency", 10);
+            PlayerPrefs.SetFloat("maxStamina", 100);
+            PlayerPrefs.SetFloat("staminaRecovery", Time.deltaTime * 2);
+            PlayerPrefs.SetFloat("SpinHoldCost", PlayerPrefs.GetFloat("staminaRecovery") * 2);
         }
 
         SpinMoveSpeed = PlayerPrefs.GetFloat("SpinMoveSpeed");
@@ -44,8 +58,15 @@ public class PlayerStats : MonoBehaviour
         SpinMoveDuration = PlayerPrefs.GetFloat("SpinMoveDuration");
         LariatDuration = PlayerPrefs.GetFloat("LariatDuration");
         PileDriverDuration = PlayerPrefs.GetFloat("PileDriverDuration");
+        SpinCost = PlayerPrefs.GetInt("SpinCost", 15);
+        DashCost = PlayerPrefs.GetInt("DashCost", 5);
+        LariatCost = PlayerPrefs.GetInt("LariatCost", 15);
+        PileDriverCost = PlayerPrefs.GetInt("PileDriverCost", 20);
         inputTimeout = PlayerPrefs.GetFloat("inputTimeout");
         currency = PlayerPrefs.GetInt("currency");
+        maxStamina = PlayerPrefs.GetFloat("maxStamina");
+        staminaRecovery = PlayerPrefs.GetFloat("staminaRecovery");
+        SpinHoldCost = PlayerPrefs.GetFloat("SpinHoldCost");
     }   
 
     // Update is called once per frame
