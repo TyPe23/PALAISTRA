@@ -10,7 +10,7 @@ public class PlayerStats : MonoBehaviour
     public float SpinMoveSpeed;
     public float LariatSpeed;
     public float PileDriverSpeed;
-    public float DashDuration;
+    public float DashDist;
     public float SpinMoveDuration;
     public float LariatDuration;
     public float PileDriverDuration;
@@ -35,7 +35,7 @@ public class PlayerStats : MonoBehaviour
             PlayerPrefs.SetFloat("LariatSpeed", PlayerPrefs.GetFloat("MoveSpeed") * 2);
             PlayerPrefs.SetFloat("PileDriverSpeed", PlayerPrefs.GetFloat("MoveSpeed"));
             PlayerPrefs.SetFloat("SpinMoveDuration", 5f);
-            PlayerPrefs.SetFloat("DashDuration", 0.25f);
+            PlayerPrefs.SetFloat("DashDist", 3);
             PlayerPrefs.SetFloat("LariatDuration", 0.25f);
             PlayerPrefs.SetFloat("PileDriverDuration", 0.5f);
             PlayerPrefs.SetInt("SpinCost", 15);
@@ -54,7 +54,7 @@ public class PlayerStats : MonoBehaviour
         DashSpeed = PlayerPrefs.GetFloat("DashSpeed");
         LariatSpeed = PlayerPrefs.GetFloat("LariatSpeed");
         PileDriverSpeed = PlayerPrefs.GetFloat("PileDriverSpeed");
-        DashDuration = PlayerPrefs.GetFloat("DashDuration"); ;
+        DashDist = PlayerPrefs.GetFloat("DashDist"); ;
         SpinMoveDuration = PlayerPrefs.GetFloat("SpinMoveDuration");
         LariatDuration = PlayerPrefs.GetFloat("LariatDuration");
         PileDriverDuration = PlayerPrefs.GetFloat("PileDriverDuration");

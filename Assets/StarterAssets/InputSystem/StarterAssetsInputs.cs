@@ -7,7 +7,7 @@ namespace StarterAssets
 {
 	public class StarterAssetsInputs : MonoBehaviour
 	{
-		public ThirdPersonController charCon;
+		public PlayerStates states;
 
 		[Header("Character Input Values")]
 		public Vector2 move;
@@ -40,39 +40,22 @@ namespace StarterAssets
 
 		public void OnPileDriver(InputValue value)
 		{
-			if (!lariat && !spin && charCon.canAction)
-			{
-				PileDriverInput(value.isPressed);
-			}
+			PileDriverInput(value.isPressed);
 		}
 
 		public void OnSprint(InputValue value)
 		{
-			if (value.isPressed)
-			{
-				SprintInput(true);
-			}
+			SprintInput(value.isPressed);
 		}
 
         public void OnSpin(InputValue value)
         {
-			if (!lariat && !pileDriver)
-			{
-				SpinInput(value.isPressed);
-				if (!value.isPressed)
-				{
-					charCon.letGo = true;
-					StartCoroutine(charCon.resetTimeout());
-				}
-			}
+			SpinInput(value.isPressed);
         }
 
         public void OnLariat(InputValue value)
         {
-			if (!spin && !pileDriver && charCon.canAction)
-			{
-				LariatInput(value.isPressed);
-			}
+			LariatInput(value.isPressed);
         }
 #endif
 

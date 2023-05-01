@@ -7,24 +7,33 @@ using UnityEngine;
 public class PlayerEnemyInteraction : MonoBehaviour
 {
     public Transform parent;
-    private Rigidbody rb;
+    public GameObject player;
+    private PlayerStates states;
+    private ThirdPersonController charCon;
     public Transform attachPoint;
-    public ThirdPersonController charCon;
+
     private bool attached = false;
+    private Rigidbody rb;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        charCon = player.GetComponent<ThirdPersonController>();
+        states = player.GetComponent<PlayerStates>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (charCon.letGo && attached)
+        if (states.letGo && attached)
         {
             detach();
-            rb.AddForce(new Vector3(0, 100f, -500f));
+
+            Vector3 launch = transform.position;
+            launch.y = 0;
+
+            rb.AddExplosionForce(1000, launch, 1);
         }
     }
 
@@ -51,12 +60,11 @@ public class PlayerEnemyInteraction : MonoBehaviour
     {
         print(parent.name);
         attached = false;
-        charCon.letGo = false;
+        states.letGo = false;
         rb.isKinematic = false;
         transform.parent = parent;
         transform.rotation = Quaternion.Euler(0, 0, 0);
         rb.useGravity = true;
-        charCon.grab = false;
         rb.velocity = new Vector3(0, 0, 0);
         rb.angularVelocity = new Vector3(0, 0, 0);
         StartCoroutine(pauseCollision());

@@ -95,11 +95,7 @@ namespace StarterAssets
         private float _terminalVelocity = 53.0f;
         private Vector3 targetDirection;
         private PlayerStats _playerStats;
-        private bool timeout = false;
-        public BoxCollider hitbox;
         public bool grab = false;
-        public bool letGo = false;
-        public bool jumped = false;
 
         // timeout deltatime
         private float _jumpTimeoutDelta;
@@ -180,73 +176,6 @@ namespace StarterAssets
 
             JumpAndGravity();
             GroundedCheck();
-
-            if (_input.sprint && !timeout && !grab)
-            {
-                canAction = true;
-                if (!performedAction)
-                {
-                    _stamina.spendStamina(_playerStats.DashCost);
-                    performedAction = true;
-                }
-                Dash();
-                StartCoroutine(resetSprint());
-            }
-            else if (!grab)
-            {
-                performedAction = false;
-                Move();
-            }
-
-            if (canAction)
-            {
-                if (_input.spin && _stamina.stamina >= _playerStats.SpinCost)
-                {
-
-                    hitbox.enabled = true;
-                    if (grab)
-                    {
-                        if (!performedAction)
-                        {
-                            _stamina.spendStamina(_playerStats.SpinCost);
-                            performedAction = true;
-                        }
-                        _stamina.spendStamina(_playerStats.SpinHoldCost);
-                        Spin();
-                    }
-                    StartCoroutine(HBTimeout());
-                }
-                else if (_input.lariat && _stamina.stamina >= _playerStats.LariatCost)
-                {
-                    hitbox.enabled = true;
-                    if (grab)
-                    {
-                        if (!performedAction)
-                        {
-                            _stamina.spendStamina(_playerStats.LariatCost);
-                            performedAction = true;
-                        }
-                        Lariat();
-                        StartCoroutine(resetLariat());
-                    }
-                    StartCoroutine(HBTimeout());
-                }
-                else if (_input.pileDriver && _stamina.stamina >= _playerStats.PileDriverCost)
-                {
-                    hitbox.enabled = true;
-                    if (grab)
-                    {
-                        if (!performedAction)
-                        {
-                            _stamina.spendStamina(_playerStats.PileDriverCost);
-                            performedAction = true;
-                        }
-                        PileDriver();
-                        StartCoroutine(resetPileDriver());
-                    }
-                    StartCoroutine(HBTimeout());
-                }
-            }
         }
 
         private void LateUpdate()
@@ -299,10 +228,8 @@ namespace StarterAssets
                 _cinemachineTargetYaw, 0.0f);
         }
 
-        private void Move()
+        public void Move()
         {
-            grab = false;
-
             targetSpeed = _playerStats.MoveSpeed;
 
             if (_input.move == Vector2.zero) targetSpeed = 0.0f;
@@ -371,7 +298,7 @@ namespace StarterAssets
             }
         }
         
-        private void Dash()
+        public void Dash()
         {
             targetSpeed = _playerStats.DashSpeed;
 
@@ -395,7 +322,7 @@ namespace StarterAssets
             }
         }
 
-        private void Lariat()
+        public void Lariat()
         {
             targetSpeed = _playerStats.LariatSpeed;
 
@@ -419,7 +346,7 @@ namespace StarterAssets
             }
         }
 
-        private void Spin()
+        public void Spin()
         {
             targetSpeed = _playerStats.SpinMoveSpeed;
 
@@ -443,7 +370,7 @@ namespace StarterAssets
             }
         }
 
-        private void PileDriver()
+        public void PileDriver()
         {
             targetSpeed = _playerStats.PileDriverSpeed;
 
@@ -467,51 +394,7 @@ namespace StarterAssets
             }
         }
 
-        #region COROUTINES
-
-        private IEnumerator HBTimeout()
-        {
-            yield return new WaitForSeconds(0.1f);
-            hitbox.enabled = false;
-        }
-
-        private IEnumerator resetLariat()
-        {
-            yield return new WaitForSeconds(_playerStats.LariatDuration);
-            jumped = true;
-        }
-
-        private IEnumerator resetPileDriver()
-        {
-            yield return new WaitForSeconds(_playerStats.PileDriverDuration);
-            _input.sprint = false;
-            _input.pileDriver = false;
-            _speed = 0;
-            letGo = true;
-            StartCoroutine(resetTimeout());
-        }
-
-        private IEnumerator resetSprint()
-        {
-            yield return new WaitForSeconds(_playerStats.DashDuration);
-
-            _input.sprint = false;
-            _speed = 0;
-            StartCoroutine(resetTimeout());
-        }
-
-        public IEnumerator resetTimeout()
-        {
-            yield return new WaitForSeconds(_playerStats.inputTimeout);
-            canAction = false;
-            timeout = false;
-            letGo = false;
-            _input.lariat = false;
-            _input.pileDriver = false;
-        }
-        #endregion
-
-        private void JumpAndGravity()
+        public void JumpAndGravity()
         {
             if (Grounded)
             {
@@ -549,15 +432,6 @@ namespace StarterAssets
                 {
                     _jumpTimeoutDelta -= Time.deltaTime;
                 }
-
-                if (jumped)
-                {
-                    _input.lariat = false;
-                    letGo = true;
-                    jumped = false;
-                    StartCoroutine(resetTimeout());
-                }
-
             }
             else
             {
