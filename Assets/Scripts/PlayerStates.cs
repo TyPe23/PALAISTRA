@@ -1,3 +1,4 @@
+using Cinemachine;
 using StarterAssets;
 using System;
 using System.Collections;
@@ -34,6 +35,7 @@ public class PlayerStates : MonoBehaviour
     private PlayerStats playerStats;
     private StarterAssetsInputs inputs;
     private StaminaManager stamina;
+    private CinemachineImpulseSource shake;
 
     private bool canAction;
     private Vector3 startPos;
@@ -47,6 +49,7 @@ public class PlayerStates : MonoBehaviour
         playerStats = GetComponent<PlayerStats>();
         inputs = GetComponent<StarterAssetsInputs>();
         stamina = GetComponent<StaminaManager>();
+        shake = GetComponent<CinemachineImpulseSource>();
 
         statesStayMeths = new Dictionary<playerStates, Action>()
         {
@@ -122,6 +125,7 @@ public class PlayerStates : MonoBehaviour
         canCheck = false;
         letGo = false;
         StartCoroutine(waitToCheckGround());
+        shake.GenerateImpulseWithForce(0.1f);
     }
 
     private void StateEnterSpin()
@@ -129,6 +133,7 @@ public class PlayerStates : MonoBehaviour
         stamina.spendStamina(playerStats.SpinCost);
         canAction = false;
         letGo = false;
+        shake.GenerateImpulseWithForce(0.1f);
     }
 
     private void StateEnterLariat()
@@ -138,6 +143,7 @@ public class PlayerStates : MonoBehaviour
         canCheck = false;
         letGo = false;
         StartCoroutine(waitToCheckGround());
+        shake.GenerateImpulseWithForce(0.1f);
     }
 
     private void StateEnterDash()
@@ -147,6 +153,7 @@ public class PlayerStates : MonoBehaviour
         canAction = true;
         inputs.sprint = false;
         inputs.pileDriver = false;
+        shake.GenerateImpulseWithForce(0.1f);
     }
 
     private void StateEnterLose()
@@ -313,16 +320,19 @@ public class PlayerStates : MonoBehaviour
     private void StateExitPileDriver()
     {
         letGo = true;
+        shake.GenerateImpulseWithForce(0.5f);
     }
 
     private void StateExitSpin()
     {
         letGo = true;
+        shake.GenerateImpulseWithForce(0.25f);
     }
 
     private void StateExitLariat()
     {
         letGo = true;
+        shake.GenerateImpulseWithForce(0.5f);
     }
 
     private void StateExitDash()

@@ -39,9 +39,9 @@ public class PlayerStats : MonoBehaviour
             PlayerPrefs.SetFloat("LariatDuration", 0.25f);
             PlayerPrefs.SetFloat("PileDriverDuration", 0.5f);
             PlayerPrefs.SetInt("SpinCost", 15);
-            PlayerPrefs.SetInt("DashCost", 5);
-            PlayerPrefs.SetInt("LariatCost", 15);
-            PlayerPrefs.SetInt("PileDriverCost", 20);
+            PlayerPrefs.SetInt("DashCost", 10);
+            PlayerPrefs.SetInt("LariatCost", 20);
+            PlayerPrefs.SetInt("PileDriverCost", 30);
             PlayerPrefs.SetFloat("inputTimeout", 0.5f);
             PlayerPrefs.SetInt("currency", 10);
             PlayerPrefs.SetFloat("maxStamina", 100);
