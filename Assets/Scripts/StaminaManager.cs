@@ -9,10 +9,12 @@ public class StaminaManager : MonoBehaviour
     public float stamina { get; private set; }
 
     private PlayerStats stats;
+    private MomentumManager momentum;
 
     // Start is called before the first frame update
     void Start()
     {
+        momentum = GetComponent<MomentumManager>();
         stats = GetComponent<PlayerStats>();
         stamina = stats.maxStamina;
     }
@@ -22,7 +24,7 @@ public class StaminaManager : MonoBehaviour
     {
         if (stamina < 100)
         {
-            stamina += stats.staminaRecovery;
+            stamina += momentum.recovery;
         }
 
         slider.value = stamina;

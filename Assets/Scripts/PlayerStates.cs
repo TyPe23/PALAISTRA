@@ -36,6 +36,7 @@ public class PlayerStates : MonoBehaviour
     private StarterAssetsInputs inputs;
     private StaminaManager stamina;
     private CinemachineImpulseSource shake;
+    private MomentumManager momentum;
 
     private bool canAction;
     private Vector3 startPos;
@@ -50,6 +51,7 @@ public class PlayerStates : MonoBehaviour
         inputs = GetComponent<StarterAssetsInputs>();
         stamina = GetComponent<StaminaManager>();
         shake = GetComponent<CinemachineImpulseSource>();
+        momentum = GetComponent<MomentumManager>();
 
         statesStayMeths = new Dictionary<playerStates, Action>()
         {
@@ -126,6 +128,7 @@ public class PlayerStates : MonoBehaviour
         letGo = false;
         StartCoroutine(waitToCheckGround());
         shake.GenerateImpulseWithForce(0.1f);
+        momentum.addMomentum(50);
     }
 
     private void StateEnterSpin()
@@ -134,6 +137,7 @@ public class PlayerStates : MonoBehaviour
         canAction = false;
         letGo = false;
         shake.GenerateImpulseWithForce(0.1f);
+        momentum.addMomentum(30);
     }
 
     private void StateEnterLariat()
@@ -144,6 +148,7 @@ public class PlayerStates : MonoBehaviour
         letGo = false;
         StartCoroutine(waitToCheckGround());
         shake.GenerateImpulseWithForce(0.1f);
+        momentum.addMomentum(30);
     }
 
     private void StateEnterDash()
@@ -154,6 +159,7 @@ public class PlayerStates : MonoBehaviour
         inputs.sprint = false;
         inputs.pileDriver = false;
         shake.GenerateImpulseWithForce(0.1f);
+        momentum.addMomentum(10);
     }
 
     private void StateEnterLose()
@@ -196,6 +202,9 @@ public class PlayerStates : MonoBehaviour
         {
             ChangeState(state.MOVE);
         }
+
+
+        momentum.addMomentum(0.25f);
     }
 
     private void StateStayLariat()

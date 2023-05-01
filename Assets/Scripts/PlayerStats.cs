@@ -45,7 +45,7 @@ public class PlayerStats : MonoBehaviour
             PlayerPrefs.SetFloat("inputTimeout", 0.5f);
             PlayerPrefs.SetInt("currency", 10);
             PlayerPrefs.SetFloat("maxStamina", 100);
-            PlayerPrefs.SetFloat("staminaRecovery", Time.deltaTime * 2);
+            PlayerPrefs.SetFloat("staminaRecovery", Time.deltaTime * 3);
             PlayerPrefs.SetFloat("SpinHoldCost", PlayerPrefs.GetFloat("staminaRecovery") * 2);
         }
 
