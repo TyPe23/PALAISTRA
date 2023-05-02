@@ -11,17 +11,19 @@ public class VasePhysics : MonoBehaviour
     [SerializeField] private List<GameObject> spawns;
     [Tooltip("Int - chance that an item will spawn from a vase - 1/(max-1)")]
     [SerializeField] private int max;
-    private bool playerInput;
+    public bool playerInput;
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.TryGetComponent<StarterAssetsInputs>(out StarterAssetsInputs com))
+        print(other.transform.tag);
+
+        if(other.TryGetComponent<PlayerStates>(out PlayerStates com))
         {
-            playerInput = com.sprint|| com.lariat || com.spin || com.pileDriver;
+            playerInput = (com.state == playerStates.DASH || com.hitbox.enabled)  ? true : false;
         }
         foreach(string possible in collidables)
         {
-            if (other.transform.CompareTag(possible)&&playerInput)
+            if (other.transform.CompareTag(possible) && playerInput)
             {
                 int chance = Random.Range(1, max);
                 if(chance == max-1) {
