@@ -88,7 +88,7 @@ public class Boon : MonoBehaviour
                     stats.SpinMoveSpeed += increase;
                     break;
                 case Boons.power:
-                    stats.LariatDuration *= increase;
+                    //stats.LariatDuration *= increase;
                     break;
                 default:
                     break;
@@ -102,7 +102,7 @@ public class Boon : MonoBehaviour
                     stats.SpinMoveSpeed += decrease;
                     break;
                 case Boons.power:
-                    stats.LariatDuration *= decrease;
+                    //stats.LariatDuration *= decrease;
                     break;
                 default:
                     break;

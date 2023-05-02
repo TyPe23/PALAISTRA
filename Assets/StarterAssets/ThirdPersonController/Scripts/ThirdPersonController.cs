@@ -415,7 +415,7 @@ namespace StarterAssets
                 }
 
                 // Jump
-                if (_input.lariat && grab && _jumpTimeoutDelta <= 0.0f)
+                if (_input.lariat && !_input.pileDriver && grab && _jumpTimeoutDelta <= 0.0f)
                 {
                     // the square root of H * -2 * G = how much velocity needed to reach desired height
                     _verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);

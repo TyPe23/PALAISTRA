@@ -20,7 +20,7 @@ public class StaminaManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (stamina < 100)
         {

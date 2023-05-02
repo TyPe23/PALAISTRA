@@ -107,7 +107,6 @@ public class PlayerStates : MonoBehaviour
         {
             statesExitMeths[state].Invoke();
             state = newState;
-            print(state);
             statesEnterMeths[state].Invoke();
         }
     }

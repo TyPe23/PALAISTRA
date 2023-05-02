@@ -59,7 +59,6 @@ public class PlayerEnemyInteraction : MonoBehaviour
     
     private void detach()
     {
-        print(parent.name);
         attached = false;
         states.letGo = false;
         rb.isKinematic = false;

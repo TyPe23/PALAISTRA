@@ -13,8 +13,8 @@ public class MomentumManager : MonoBehaviour
     public TMP_Text grade;
     public Slider slider;
     public float recovery;
-    public float momentum;
-    public float momentumDecay;
+    private float momentum;
+    private float momentumDecay;
 
     // Start is called before the first frame update
     void Start()
