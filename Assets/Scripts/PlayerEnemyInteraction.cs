@@ -39,7 +39,8 @@ public class PlayerEnemyInteraction : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        if (collision.gameObject.CompareTag("hitbox") && !charCon.grab)
+        print(states.state);
+        if (collision.gameObject.CompareTag("hitbox"))// && states.state == playerStates.PILEDRIVER)
         {
             collision.gameObject.GetComponent<BoxCollider>().enabled = false;
             attach();

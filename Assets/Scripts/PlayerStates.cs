@@ -110,8 +110,17 @@ public class PlayerStates : MonoBehaviour
             print(state);
             statesEnterMeths[state].Invoke();
         }
-
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        print(collision.transform.tag);
+        if ((collision.transform.CompareTag("enemy") && !charCon.grab) || collision.transform.CompareTag("terrain"))
+        {
+            ChangeState(state.MOVE);
+        }
+    }
+
     #endregion
 
     #region Enter
