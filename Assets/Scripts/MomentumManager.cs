@@ -67,10 +67,8 @@ public class MomentumManager : MonoBehaviour
             }
             else if (grade.text == "")
             {
-                grade.enabled = false;
                 momentumDecay = Time.fixedDeltaTime * 5;
                 recovery = stats.staminaRecovery * 1f;
-                shake.GenerateImpulseWithForce(0.1f);
             }
         }
         else
@@ -124,7 +122,6 @@ public class MomentumManager : MonoBehaviour
                 momentum = 50;
                 momentumDecay = Time.fixedDeltaTime * 10;
                 recovery = stats.staminaRecovery * 1.1f;
-                grade.enabled = true;
                 shake.GenerateImpulseWithForce(0.1f);
             }
         }

@@ -23,6 +23,7 @@ public class PlayerStates : MonoBehaviour
 {
     #region FILEDS & PROPERTIES
     public state state;
+    public state prevState;
     public BoxCollider hitbox;
     public bool canCheck;
     public bool letGo = false;
@@ -40,6 +41,7 @@ public class PlayerStates : MonoBehaviour
 
     private bool canAction;
     private Vector3 startPos;
+    private bool exitDash;
     #endregion
 
     #region LifeCycle
@@ -106,15 +108,15 @@ public class PlayerStates : MonoBehaviour
         if (state != newState)
         {
             statesExitMeths[state].Invoke();
+            prevState = state;
             state = newState;
             statesEnterMeths[state].Invoke();
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
-        print(collision.transform.tag);
-        if ((collision.transform.CompareTag("enemy") && !charCon.grab) || collision.transform.CompareTag("terrain"))
+        if ((collision.transform.CompareTag("enemy") && !charCon.grab))
         {
             ChangeState(state.MOVE);
         }
@@ -168,6 +170,7 @@ public class PlayerStates : MonoBehaviour
         inputs.pileDriver = false;
         shake.GenerateImpulseWithForce(0.1f);
         momentum.addMomentum(10);
+        StartCoroutine(DashTimeout());
     }
 
     private void StateEnterLose()
@@ -268,6 +271,11 @@ public class PlayerStates : MonoBehaviour
             }
 
             StartCoroutine(HBTimeout());
+        }
+
+        if (exitDash)
+        {
+            ChangeState(state.MOVE);
         }
     }
     private void StateStayLose()
@@ -389,6 +397,13 @@ public class PlayerStates : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
         hitbox.enabled = false;
+    }
+    
+    private IEnumerator DashTimeout()
+    {
+        exitDash = false;
+        yield return new WaitForSeconds(0.5f);
+        exitDash = true;
     }
     #endregion
 }

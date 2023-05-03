@@ -11,6 +11,7 @@ namespace StarterAssets
 
 		[Header("Character Input Values")]
 		public Vector2 move;
+		public Vector2 moveDir;
 		public Vector2 look;
 		public bool pileDriver;
 		public bool sprint;
@@ -63,6 +64,11 @@ namespace StarterAssets
         public void MoveInput(Vector2 newMoveDirection)
 		{
 			move = newMoveDirection;
+
+			if (newMoveDirection != Vector2.zero)
+			{
+				moveDir = newMoveDirection;
+			}
 		} 
 
 		public void LookInput(Vector2 newLookDirection)

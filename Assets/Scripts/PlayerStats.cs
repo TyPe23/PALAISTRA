@@ -26,7 +26,7 @@ public class PlayerStats : MonoBehaviour
         if (PlayerPrefs.HasKey("MoveSpeed"))
         {
             PlayerPrefs.SetFloat("MoveSpeed", 5.25f);
-            PlayerPrefs.SetFloat("SpinMoveSpeed", 0f);
+            PlayerPrefs.SetFloat("SpinMoveSpeed", 0.1f);
             PlayerPrefs.SetFloat("DashSpeed", PlayerPrefs.GetFloat("MoveSpeed") * 3);
             PlayerPrefs.SetFloat("LariatSpeed", PlayerPrefs.GetFloat("MoveSpeed") * 2);
             PlayerPrefs.SetFloat("PileDriverSpeed", PlayerPrefs.GetFloat("MoveSpeed"));
