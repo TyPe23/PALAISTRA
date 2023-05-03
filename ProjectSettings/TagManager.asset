@@ -9,6 +9,10 @@ TagManager:
   - hitbox
   - terrain
   - floor
+  - throwRef
+  - lariatAttach
+  - spinAttach
+  - PDAttach
   layers:
   - Default
   - TransparentFX

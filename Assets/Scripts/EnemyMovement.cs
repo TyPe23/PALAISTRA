@@ -47,5 +47,4 @@ public class EnemyMovement : MonoBehaviour
             playerDetected = false;
         }
     }
-
 }

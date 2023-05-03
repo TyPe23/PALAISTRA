@@ -4,6 +4,7 @@ using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.UI;
 
 public class PlayerEnemyInteraction : MonoBehaviour
@@ -14,7 +15,7 @@ public class PlayerEnemyInteraction : MonoBehaviour
     private PlayerStates states;
     private ThirdPersonController charCon;
     public Transform attachPoint;
-    public Slider slider;
+    private Slider slider;
     private CapsuleCollider capCollider;
 
     private bool attached = false;
@@ -22,17 +23,27 @@ public class PlayerEnemyInteraction : MonoBehaviour
     private bool grounded;
     private CinemachineImpulseSource shake;
 
+    private EnemyMovement movement;
+    private NavMeshAgent agent;
+
     [SerializeField]
     private int health = 10;
 
     // Start is called before the first frame update
     void Start()
     {
+        parent = transform.parent;
+        player = GameObject.FindWithTag("Player");
+        throwRef = GameObject.FindWithTag("throwRef").transform;
+        attachPoint = GameObject.FindWithTag("lariatAttach").transform;
+        slider = gameObject.GetComponentInChildren<Slider>();
         rb = GetComponent<Rigidbody>();
         charCon = player.GetComponent<ThirdPersonController>();
         states = player.GetComponent<PlayerStates>();
         shake = player.GetComponent<CinemachineImpulseSource>();
         capCollider = player.GetComponent<CapsuleCollider>();
+        movement = GetComponent<EnemyMovement>();
+        agent = GetComponent<NavMeshAgent>();
     }
 
     // Update is called once per frame
@@ -67,6 +78,8 @@ public class PlayerEnemyInteraction : MonoBehaviour
             //trigger death anim
             gameObject.tag = "Untagged";
             slider.gameObject.SetActive(false);
+            movement.enabled = false;
+            agent.enabled = false;
         }
 
         slider.value = health;
@@ -78,6 +91,8 @@ public class PlayerEnemyInteraction : MonoBehaviour
         {
             collision.gameObject.GetComponent<BoxCollider>().enabled = false;
             attach();
+            movement.enabled = false;
+            agent.enabled = false;
         }
     }
 
@@ -85,8 +100,11 @@ public class PlayerEnemyInteraction : MonoBehaviour
     {
         if (collision.transform.CompareTag("floor") && !grounded)
         {
+            print(collision.transform.tag);
             grounded = true;
             shake.GenerateImpulseWithForce(0.1f);
+            agent.enabled = true;
+            movement.enabled = true;
 
             if (health <= 0)
             {
@@ -108,6 +126,8 @@ public class PlayerEnemyInteraction : MonoBehaviour
     
     private void detach()
     {
+        StartCoroutine(pauseCollision());
+        grounded = false;
         attached = false;
         states.letGo = false;
         rb.isKinematic = false;
@@ -116,13 +136,12 @@ public class PlayerEnemyInteraction : MonoBehaviour
         rb.useGravity = true;
         rb.velocity = new Vector3(0, 0, 0);
         rb.angularVelocity = new Vector3(0, 0, 0);
-        StartCoroutine(pauseCollision());
     }
 
     private IEnumerator pauseCollision()
     {
         capCollider.enabled = false;
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.25f);
         capCollider.enabled = true;
     }
 }
