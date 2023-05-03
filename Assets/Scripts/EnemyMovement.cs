@@ -7,7 +7,7 @@ public class EnemyMovement : MonoBehaviour
 {
     public bool playerDetected;
     public Transform player;
-    public int speed;
+    public Vector3 origin;
 
     public NavMeshAgent agent;
 
@@ -15,6 +15,7 @@ public class EnemyMovement : MonoBehaviour
     {
         player = GameObject.FindWithTag("Player").transform;
         agent = GetComponent<NavMeshAgent>();
+        origin= transform.position;
 
     }
     // Update is called once per frame
@@ -22,13 +23,13 @@ public class EnemyMovement : MonoBehaviour
     {
         if (playerDetected)
         {
-            print("go to player");
+            GetComponent<MeshRenderer>().material.color = new Color(255, 0, 0);
             agent.SetDestination(player.position);
         }
         else
         {
-            agent.SetDestination(transform.position);
-            print("No player");
+            GetComponent<MeshRenderer>().material.color = new Color(0, 255, 0);
+            agent.SetDestination(origin);
         }
     }
     private void OnTriggerStay(Collider other)

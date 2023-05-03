@@ -5,8 +5,11 @@ using UnityEngine;
 enum Boons
 {
     speed,
-    power,
+    lariatcost,
     spin,
+    piledrivercost,
+    dashcost,
+    spincost,
 }
 
 enum TypeofBoon
@@ -31,9 +34,9 @@ public class Boon : MonoBehaviour
         {
             cost = 0;
         }
-        player = GameObject.Find("PlayerArmature");
+        player = GameObject.Find("Player");
     }
-
+    //TODO convert PlayerStats.cs costs to floats to be able to manipulate them for boons
     private void OnTriggerEnter(Collider other)
     {
         if (other.transform.CompareTag("Player")&&type==TypeofBoon.purchase)
@@ -50,10 +53,8 @@ public class Boon : MonoBehaviour
                     case Boons.spin:
                         stats.SpinMoveSpeed += increase;
                         break;
-                    case Boons.power:
-                        //stats.LariatDuration *= increase;
-
-                        //lariat duration no longer exists
+                    case Boons.dashcost:
+                        //TODO convert 
                         break;
                     default:
                         break;
@@ -66,7 +67,7 @@ public class Boon : MonoBehaviour
                     case Boons.spin:
                         stats.SpinMoveSpeed += decrease;
                         break;
-                    case Boons.power:
+                    case Boons.dashcost:
                         //stats.LariatDuration *= decrease;
                         break;
                     default:
@@ -89,7 +90,7 @@ public class Boon : MonoBehaviour
                 case Boons.spin:
                     stats.SpinMoveSpeed += increase;
                     break;
-                case Boons.power:
+                case Boons.dashcost:
                     //stats.LariatDuration *= increase;
                     break;
                 default:
@@ -103,7 +104,7 @@ public class Boon : MonoBehaviour
                 case Boons.spin:
                     stats.SpinMoveSpeed += decrease;
                     break;
-                case Boons.power:
+                case Boons.dashcost:
                     //stats.LariatDuration *= decrease;
                     break;
                 default:

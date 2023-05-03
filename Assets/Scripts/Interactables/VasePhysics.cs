@@ -23,7 +23,7 @@ public class VasePhysics : MonoBehaviour
         }
         foreach(string possible in collidables)
         {
-            if (other.transform.CompareTag(possible) && playerInput)
+            if (other.transform.CompareTag(possible))
             {
                 int chance = Random.Range(1, max);
                 if(chance == max-1) {
