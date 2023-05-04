@@ -55,6 +55,7 @@ public class PlayerStates : MonoBehaviour
     private bool exitDash;
     public bool invul;
     private bool canMove;
+    private bool canDash = true;
     #endregion
 
     #region LifeCycle
@@ -130,7 +131,7 @@ public class PlayerStates : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider collision)
+    private void OnTriggerStay(Collider collision)
     {
         if (collision.transform.CompareTag("enemy") && !invul && state == state.MOVE)
         {
@@ -200,7 +201,7 @@ public class PlayerStates : MonoBehaviour
         momentum.addMomentum(10);
         Game.globalInstance.sndPlayer.PlaySound(SoundType.DASH, soundSrc);
 
-        StartCoroutine(DashTimeout());
+        StartCoroutine(DashExit());
     }
 
     private void StateEnterLose()
@@ -371,7 +372,7 @@ public class PlayerStates : MonoBehaviour
         letGo = true;
         charCon.Move();
 
-        if (inputs.sprint && stamina.stamina >= playerStats.DashCost)
+        if (inputs.sprint && stamina.stamina >= playerStats.DashCost && canDash)
         {
             canAction = true;
             ChangeState(state.DASH);
@@ -452,6 +453,7 @@ public class PlayerStates : MonoBehaviour
     private void StateExitDash()
     {
         StartCoroutine(canActionWait());
+        StartCoroutine(DashTimeout());
     }
 
     private void StateExitLose()
@@ -496,13 +498,20 @@ public class PlayerStates : MonoBehaviour
         hitbox.enabled = false;
     }
     
-    private IEnumerator DashTimeout()
+    private IEnumerator DashExit()
     {
         exitDash = false;
         yield return new WaitForSeconds(0.25f);
         exitDash = true;
     }
-    
+
+    private IEnumerator DashTimeout()
+    {
+        canDash = false;
+        yield return new WaitForSeconds(0.25f);
+        canDash = true;
+    }
+
     private IEnumerator IFrames()
     {
         invul = true;
