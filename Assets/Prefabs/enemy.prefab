@@ -650,7 +650,6 @@ GameObject:
   - component: {fileID: 6078139314132224806}
   - component: {fileID: 6078139314132224801}
   - component: {fileID: 6078139314132224800}
-  - component: {fileID: 2672586622580289665}
   - component: {fileID: 2672586622580289694}
   - component: {fileID: 2672586622580289695}
   m_Layer: 0
@@ -758,7 +757,6 @@ MonoBehaviour:
   player: {fileID: 0}
   throwRef: {fileID: 0}
   attachPoint: {fileID: 0}
-  slider: {fileID: 2672586623046233484}
   health: 10
 --- !u!136 &6078139314132224801
 CapsuleCollider:
@@ -827,19 +825,6 @@ MonoBehaviour:
     m_DissipationDistance: 100
     m_PropagationSpeed: 343
   m_DefaultVelocity: {x: 0, y: -1, z: 0}
---- !u!135 &2672586622580289665
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6078139314132224808}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 10
-  m_Center: {x: 0.0000019073486, y: 0, z: -0.0000009536743}
 --- !u!114 &2672586622580289694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -855,6 +840,7 @@ MonoBehaviour:
   playerDetected: 0
   player: {fileID: 0}
   origin: {x: 0, y: 0, z: 0}
+  radius: 10
   agent: {fileID: 0}
 --- !u!195 &2672586622580289695
 NavMeshAgent:

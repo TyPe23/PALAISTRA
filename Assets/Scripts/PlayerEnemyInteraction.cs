@@ -54,7 +54,7 @@ public class PlayerEnemyInteraction : MonoBehaviour
             detach();
 
             Vector3 launch = throwRef.position - player.transform.position;
-            launch.y = 0.2f;
+            launch.y = 0.1f;
 
             if (states.prevState == playerStates.SPIN)
             {
@@ -105,6 +105,8 @@ public class PlayerEnemyInteraction : MonoBehaviour
             shake.GenerateImpulseWithForce(0.1f);
             agent.enabled = true;
             movement.enabled = true;
+            rb.velocity = new Vector3(0, 0, 0);
+            rb.angularVelocity = new Vector3(0, 0, 0);
 
             if (health <= 0)
             {

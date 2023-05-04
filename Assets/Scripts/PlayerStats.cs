@@ -37,7 +37,7 @@ public class PlayerStats : MonoBehaviour
             PlayerPrefs.SetInt("PileDriverCost", 10);
             PlayerPrefs.SetInt("currency", 10);
             PlayerPrefs.SetFloat("maxStamina", 100);
-            PlayerPrefs.SetFloat("staminaRecovery", Time.fixedDeltaTime * 3);
+            PlayerPrefs.SetFloat("staminaRecovery", Time.fixedDeltaTime * 4);
             PlayerPrefs.SetFloat("SpinHoldCost", PlayerPrefs.GetFloat("staminaRecovery") * 2);
         }
 

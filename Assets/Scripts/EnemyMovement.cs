@@ -8,6 +8,7 @@ public class EnemyMovement : MonoBehaviour
     public bool playerDetected;
     public Transform player;
     public Vector3 origin;
+    public float radius = 10;
 
     public NavMeshAgent agent;
 
@@ -21,7 +22,7 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playerDetected)
+        if ((transform.position - player.position).magnitude < radius)
         {
             GetComponent<MeshRenderer>().material.color = new Color(255, 0, 0);
             agent.SetDestination(player.position);

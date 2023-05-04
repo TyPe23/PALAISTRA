@@ -17,8 +17,17 @@ public enum playerStates
     HIT,
     LOSE,
     IDLE,
+    STOP,
 }
 
+[RequireComponent(typeof(ThirdPersonController))]
+[RequireComponent(typeof(PlayerStats))]
+[RequireComponent(typeof(StarterAssetsInputs))]
+[RequireComponent(typeof(StaminaManager))]
+[RequireComponent(typeof(CinemachineImpulseSource))]
+[RequireComponent(typeof(MomentumManager))]
+[RequireComponent(typeof(AudioSource))]
+[RequireComponent(typeof(Animator))]
 public class PlayerStates : MonoBehaviour
 {
     #region FILEDS & PROPERTIES
@@ -38,10 +47,14 @@ public class PlayerStates : MonoBehaviour
     private StaminaManager stamina;
     private CinemachineImpulseSource shake;
     private MomentumManager momentum;
+    private AudioSource soundSrc;
+    private Animator animator;
 
     private bool canAction;
     private Vector3 startPos;
     private bool exitDash;
+    public bool invul;
+    private bool canMove;
     #endregion
 
     #region LifeCycle
@@ -54,6 +67,8 @@ public class PlayerStates : MonoBehaviour
         stamina = GetComponent<StaminaManager>();
         shake = GetComponent<CinemachineImpulseSource>();
         momentum = GetComponent<MomentumManager>();
+        soundSrc = GetComponent<AudioSource>();
+        animator = GetComponent<Animator>();
 
         statesStayMeths = new Dictionary<playerStates, Action>()
         {
@@ -65,6 +80,7 @@ public class PlayerStates : MonoBehaviour
             {state.HIT, StateStayHit},
             {state.LOSE, StateStayLose},
             {state.IDLE, StateStayIdle},
+            {state.STOP, StateStayStop},
         };
 
         statesEnterMeths = new Dictionary<playerStates, Action>()
@@ -77,6 +93,7 @@ public class PlayerStates : MonoBehaviour
             {state.HIT, StateEnterHit},
             {state.LOSE, StateEnterLose},
             {state.IDLE, StateEnterIdle},
+            {state.STOP, StateEnterStop},
         };
 
         statesExitMeths = new Dictionary<playerStates, Action>()
@@ -89,13 +106,12 @@ public class PlayerStates : MonoBehaviour
             {state.HIT, StateExitHit},
             {state.LOSE, StateExitLose},
             {state.IDLE, StateExitIdle},
+            {state.STOP, StateExitStop},
         };
 
         state = state.MOVE;
         StateEnterMove();
     }
-
-
 
     // Update is called once per frame
     void FixedUpdate()
@@ -116,15 +132,24 @@ public class PlayerStates : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        if ((collision.transform.CompareTag("enemy") && !charCon.grab))
+        if (collision.transform.CompareTag("enemy") && !invul && state == state.MOVE)
         {
-            ChangeState(state.MOVE);
+            ChangeState(state.HIT);
+        }
+        else if (collision.transform.CompareTag("enemy") && state == state.DASH)
+        {
+            ChangeState(state.STOP);
         }
     }
 
     #endregion
 
     #region Enter
+    private void StateEnterStop()
+    {
+        
+    }
+    
     private void StateEnterIdle()
     {
         throw new NotImplementedException();
@@ -139,6 +164,7 @@ public class PlayerStates : MonoBehaviour
         StartCoroutine(waitToCheckGround());
         shake.GenerateImpulseWithForce(0.1f);
         momentum.addMomentum(50);
+        Game.globalInstance.sndPlayer.PlaySound(SoundType.GRAB, soundSrc);
     }
 
     private void StateEnterSpin()
@@ -148,6 +174,7 @@ public class PlayerStates : MonoBehaviour
         letGo = false;
         shake.GenerateImpulseWithForce(0.1f);
         momentum.addMomentum(30);
+        Game.globalInstance.sndPlayer.PlaySound(SoundType.GRAB, soundSrc);
     }
 
     private void StateEnterLariat()
@@ -159,6 +186,7 @@ public class PlayerStates : MonoBehaviour
         StartCoroutine(waitToCheckGround());
         shake.GenerateImpulseWithForce(0.1f);
         momentum.addMomentum(30);
+        Game.globalInstance.sndPlayer.PlaySound(SoundType.GRAB, soundSrc);
     }
 
     private void StateEnterDash()
@@ -170,6 +198,8 @@ public class PlayerStates : MonoBehaviour
         inputs.pileDriver = false;
         shake.GenerateImpulseWithForce(0.1f);
         momentum.addMomentum(10);
+        Game.globalInstance.sndPlayer.PlaySound(SoundType.DASH, soundSrc);
+
         StartCoroutine(DashTimeout());
     }
 
@@ -180,7 +210,9 @@ public class PlayerStates : MonoBehaviour
 
     private void StateEnterHit()
     {
-        throw new NotImplementedException();
+        //start animation
+        animator.SetBool("Hit", true);
+        StartCoroutine(waitToMove());
     }
 
     private void StateEnterMove()
@@ -190,6 +222,48 @@ public class PlayerStates : MonoBehaviour
     #endregion
 
     #region Stay
+    private void StateStayStop()
+    {
+        if (inputs.lariat && stamina.stamina >= playerStats.LariatCost)
+        {
+            hitbox.enabled = true;
+
+            if (charCon.grab)
+            {
+                ChangeState(state.LARIAT);
+            }
+
+            StartCoroutine(HBTimeout());
+        }
+        else if (inputs.spin && stamina.stamina >= playerStats.SpinCost)
+        {
+            hitbox.enabled = true;
+
+            if (charCon.grab)
+            {
+                ChangeState(state.SPIN);
+            }
+
+            StartCoroutine(HBTimeout());
+        }
+        else if (inputs.pileDriver && stamina.stamina >= playerStats.PileDriverCost)
+        {
+            hitbox.enabled = true;
+
+            if (charCon.grab)
+            {
+                ChangeState(state.PILEDRIVER);
+            }
+
+            StartCoroutine(HBTimeout());
+        }
+
+        if (exitDash)
+        {
+            ChangeState(state.MOVE);
+        }
+    }
+
     private void StateStayIdle()
     {
         throw new NotImplementedException();
@@ -285,14 +359,19 @@ public class PlayerStates : MonoBehaviour
 
     private void StateStayHit()
     {
-        throw new NotImplementedException();
+        //wait til animation done
+        if (canMove)
+        {
+            ChangeState(state.MOVE);
+        }
     }
 
     private void StateStayMove()
     {
+        letGo = true;
         charCon.Move();
 
-        if (inputs.sprint)
+        if (inputs.sprint && stamina.stamina >= playerStats.DashCost)
         {
             canAction = true;
             ChangeState(state.DASH);
@@ -337,6 +416,10 @@ public class PlayerStates : MonoBehaviour
     #endregion
 
     #region Exit
+    private void StateExitStop()
+    {
+    }
+
     private void StateExitIdle()
     {
         throw new NotImplementedException();
@@ -346,18 +429,24 @@ public class PlayerStates : MonoBehaviour
     {
         letGo = true;
         shake.GenerateImpulseWithForce(0.5f);
+        Game.globalInstance.sndPlayer.PlaySound(SoundType.IMPACT, soundSrc);
+        StartCoroutine(IFrames());
     }
 
     private void StateExitSpin()
     {
         letGo = true;
         shake.GenerateImpulseWithForce(0.25f);
+        Game.globalInstance.sndPlayer.PlaySound(SoundType.IMPACT, soundSrc);
+        StartCoroutine(IFrames());
     }
 
     private void StateExitLariat()
     {
         letGo = true;
         shake.GenerateImpulseWithForce(0.5f);
+        Game.globalInstance.sndPlayer.PlaySound(SoundType.IMPACT, soundSrc);
+        StartCoroutine(IFrames());
     }
 
     private void StateExitDash()
@@ -372,7 +461,6 @@ public class PlayerStates : MonoBehaviour
 
     private void StateExitHit()
     {
-        throw new NotImplementedException();
     }
 
     private void StateExitMove()
@@ -393,6 +481,15 @@ public class PlayerStates : MonoBehaviour
         canCheck = true;
     }
 
+    private IEnumerator waitToMove()
+    {
+        canMove = false;
+        yield return new WaitForSeconds(0.5f);
+        animator.SetBool("Hit", false);
+        canMove = true;
+        StartCoroutine(IFrames());
+    }
+
     private IEnumerator HBTimeout()
     {
         yield return new WaitForSeconds(0.1f);
@@ -402,8 +499,15 @@ public class PlayerStates : MonoBehaviour
     private IEnumerator DashTimeout()
     {
         exitDash = false;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.25f);
         exitDash = true;
+    }
+    
+    private IEnumerator IFrames()
+    {
+        invul = true;
+        yield return new WaitForSeconds(0.5f);
+        invul = false;
     }
     #endregion
 }
