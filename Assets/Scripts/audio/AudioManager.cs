@@ -5,13 +5,13 @@ using UnityEngine;
 
 public enum SoundType
 {
-    DROP,
+    COIN,
     GRAB,
     UI,
     UNLOCK,
-    ACCESS_DENIED,
-    KEY_PRESS,
-    APPEAR,
+    THROW,
+    IMPACT,
+    DASH,
     DOOR,
 }
 
@@ -82,14 +82,14 @@ public class AudioManager : MonoBehaviour
     {
         audioSrc = GetComponent<AudioSource>();
         sounds = new Dictionary<SoundType, SoundCollection>() {
-            {SoundType.DROP, new SoundCollection("impact") },
-            {SoundType.GRAB, new SoundCollection("grab") },
-            {SoundType.UI, new SoundCollection("tick") },
-            {SoundType.UNLOCK, new SoundCollection("unlockTech") },
-            {SoundType.ACCESS_DENIED, new SoundCollection("lockedTech") },
-            {SoundType.KEY_PRESS, new SoundCollection("keypress") },
-            {SoundType.APPEAR, new SoundCollection("appear") },
-            {SoundType.DOOR, new SoundCollection("grab") },
+            {SoundType.IMPACT, new SoundCollection("dash") },
+            {SoundType.GRAB, new SoundCollection("dash") },
+            {SoundType.UI, new SoundCollection("dash") },
+            {SoundType.UNLOCK, new SoundCollection("dash") },
+            {SoundType.COIN, new SoundCollection("dash") },
+            {SoundType.THROW, new SoundCollection("dash") },
+            {SoundType.DASH, new SoundCollection("dash") },
+            {SoundType.DOOR, new SoundCollection("dash") },
         };
     }
 

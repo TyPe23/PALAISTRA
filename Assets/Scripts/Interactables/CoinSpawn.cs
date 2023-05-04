@@ -31,6 +31,7 @@ public class CoinSpawn : MonoBehaviour
             print("You earned " + worth);
             GameObject.Find("Player").GetComponent<PlayerStats>().currency += worth;
             //TODO add money to character inventory
+            Game.globalInstance.sndPlayer.PlaySound(SoundType.COIN);
             Destroy(gameObject);
         }
     }
