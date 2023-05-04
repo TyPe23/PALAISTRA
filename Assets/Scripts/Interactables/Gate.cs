@@ -7,6 +7,7 @@ public class Gate : MonoBehaviour
     private Vector3 origin;
     private Vector3 height;
     private bool isIn;
+    private GameObject roomMan;
 
     [Tooltip("Determines the hightest point on the gate.")]
     [SerializeField] private int peak;
@@ -14,6 +15,7 @@ public class Gate : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        roomMan = GameObject.Find("RoomManager");
         origin = transform.position;
         height = new Vector3(origin.x, origin.y + peak, origin.z);
     }
@@ -31,10 +33,12 @@ public class Gate : MonoBehaviour
     }
     private void OnTriggerStay(Collider other)
     {
-        if (other.transform.CompareTag("Player"))
+        
+        if (other.transform.CompareTag("Player")&& roomMan.GetComponent<RoomManager>().levelComplete)
         {
             if (transform.position.y < height.y)
             {
+                StartCoroutine(BeforeSceneChange());
                 gameObject.transform.position = Vector3.MoveTowards(transform.position,height, 0.05f);
             }
         }
@@ -43,5 +47,10 @@ public class Gate : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         isIn = false;
+    }
+    private IEnumerator BeforeSceneChange()
+    {
+        yield return new WaitForSeconds(2);
+        roomMan.GetComponent<RoomManager>().changeRoom();
     }
 }

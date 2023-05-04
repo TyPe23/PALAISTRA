@@ -19,6 +19,7 @@ public class PlayerStats : MonoBehaviour
     public float maxStamina;
     public float staminaRecovery;
     public float SpinHoldCost;
+    public int roomCount;
 
     // Start is called before the first frame update
     void Awake()
@@ -39,6 +40,7 @@ public class PlayerStats : MonoBehaviour
             PlayerPrefs.SetFloat("maxStamina", 100);
             PlayerPrefs.SetFloat("staminaRecovery", Time.fixedDeltaTime * 4);
             PlayerPrefs.SetFloat("SpinHoldCost", PlayerPrefs.GetFloat("staminaRecovery") * 2);
+            PlayerPrefs.SetInt("roomCount", 0);
         }
 
         SpinMoveSpeed = PlayerPrefs.GetFloat("SpinMoveSpeed");
@@ -55,5 +57,6 @@ public class PlayerStats : MonoBehaviour
         maxStamina = PlayerPrefs.GetFloat("maxStamina");
         staminaRecovery = PlayerPrefs.GetFloat("staminaRecovery");
         SpinHoldCost = PlayerPrefs.GetFloat("SpinHoldCost");
+        roomCount = PlayerPrefs.GetInt("roomCount");
     }   
 }

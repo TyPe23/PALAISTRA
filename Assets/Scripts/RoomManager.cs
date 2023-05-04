@@ -8,10 +8,14 @@ public class RoomManager : MonoBehaviour
     public float timeStart;
     public float timeEnd;
     public bool levelComplete;
+    [SerializeField] private int bottomIndex;
+    [SerializeField] private int topIndex;
+    private int roomCount;
+    [SerializeField] private int finalIndex;
     // Start is called before the first frame update
     void Start()
     {
-       
+        roomCount = GameObject.FindWithTag("Player").GetComponent<PlayerStats>().roomCount;
     }
 
     // Update is called once per frame
@@ -33,6 +37,16 @@ public class RoomManager : MonoBehaviour
 
     public void changeRoom()
     {
-        
+        if (roomCount < 5)
+        {
+            //randomly choose next room
+            var chance = Random.Range(bottomIndex, topIndex + 1);
+            SceneManager.LoadScene(chance);
+        }
+        else
+        {
+            //go to final room
+            SceneManager.LoadScene(finalIndex);
+        }
     }
 }
