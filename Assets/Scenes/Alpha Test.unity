@@ -3393,6 +3393,7 @@ MonoBehaviour:
   playerDetected: 0
   player: {fileID: 0}
   origin: {x: 0, y: 0, z: 0}
+  radius: 10
   agent: {fileID: 0}
 --- !u!195 &805976272
 NavMeshAgent:
@@ -3901,6 +3902,53 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &1000650614
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1000650616}
+  - component: {fileID: 1000650615}
+  m_Layer: 0
+  m_Name: RoomManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1000650615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000650614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77f6dc080ac06e9449e635e5274afbc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeStart: 0
+  timeEnd: 0
+  levelComplete: 0
+--- !u!4 &1000650616
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000650614}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.2386508, y: 7.592593, z: 3.2051992}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1019507416
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4346,6 +4394,7 @@ MonoBehaviour:
   playerDetected: 0
   player: {fileID: 0}
   origin: {x: 0, y: 0, z: 0}
+  radius: 10
   agent: {fileID: 0}
 --- !u!195 &1210534227
 NavMeshAgent:
@@ -5145,6 +5194,7 @@ MonoBehaviour:
   playerDetected: 0
   player: {fileID: 0}
   origin: {x: 0, y: 0, z: 0}
+  radius: 10
   agent: {fileID: 0}
 --- !u!195 &1323732099
 NavMeshAgent:
