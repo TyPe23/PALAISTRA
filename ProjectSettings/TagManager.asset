@@ -14,6 +14,7 @@ TagManager:
   - spinAttach
   - PDAttach
   - projectile
+  - spawner
   layers:
   - Default
   - TransparentFX

@@ -8,12 +8,12 @@ public class projectileSpawn : MonoBehaviour
     public bool continuous;
     public float spawnTime = 1;
     private bool canSpawn = true;
-    private Transform normalRef;
+    private Transform spawnPos;
 
     // Start is called before the first frame update
     void Start()
     {
-        normalRef = GetComponentInChildren<Transform>();
+        spawnPos = GetComponentInChildren<Transform>();
     }
 
     // Update is called once per frame
@@ -21,15 +21,14 @@ public class projectileSpawn : MonoBehaviour
     {
         if (canSpawn && continuous)
         {
-            print("spawned");
-            Instantiate(projectile, transform.position + Vector3.left, transform.rotation);
+            Instantiate(projectile, spawnPos.position, transform.rotation);
             StartCoroutine(spawnInterval());
         }
     }
 
     public void tiggered()
     {
-        Instantiate(projectile, transform.position + (Vector3.forward * 0.25f), transform.rotation);
+        Instantiate(projectile, spawnPos.position, transform.rotation);
     }
 
     private IEnumerator spawnInterval()

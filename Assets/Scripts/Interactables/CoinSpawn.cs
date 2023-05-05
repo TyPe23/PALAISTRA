@@ -24,7 +24,7 @@ public class CoinSpawn : MonoBehaviour
         collision.enabled = true;
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.transform.CompareTag("Player"))
         {

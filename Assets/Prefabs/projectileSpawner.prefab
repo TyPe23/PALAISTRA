@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 235066025616259177}
   - component: {fileID: 235066025616259176}
   - component: {fileID: 235066025616259183}
-  - component: {fileID: 235066025616259182}
-  - component: {fileID: 235066025616259181}
   m_Layer: 0
   m_Name: projectileSpawner
   m_TagString: enemy
@@ -27,11 +25,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 235066025616259180}
-  m_LocalRotation: {x: -0, y: -0.70710677, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 1.83, y: 1.7, z: 6.02}
   m_LocalScale: {x: 1, y: 1, z: 0.18}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 7538813759435052175}
   - {fileID: 235066025955810870}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -86,35 +85,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &235066025616259182
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 235066025616259180}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &235066025616259181
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 235066025616259180}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ba5f8011f2ada042bf185424b5e3766, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectile: {fileID: 4686500010104617959, guid: 1337aaafb695e4b4fa6eaa8d0cc03dde,
-    type: 3}
-  continuous: 1
-  spawnTime: 1
 --- !u!1 &235066025955810869
 GameObject:
   m_ObjectHideFlags: 0
@@ -126,7 +96,6 @@ GameObject:
   - component: {fileID: 235066025955810870}
   - component: {fileID: 235066025955810865}
   - component: {fileID: 235066025955810864}
-  - component: {fileID: 235066025955810871}
   m_Layer: 0
   m_Name: Cube
   m_TagString: enemy
@@ -147,7 +116,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 235066025616259177}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &235066025955810865
 MeshFilter:
@@ -199,16 +168,51 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &235066025955810871
-BoxCollider:
+--- !u!1 &5590733704623294089
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 235066025955810869}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7538813759435052175}
+  - component: {fileID: 798480144}
+  m_Layer: 0
+  m_Name: spawnPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7538813759435052175
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5590733704623294089}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 2.46}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 235066025616259177}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &798480144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5590733704623294089}
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ba5f8011f2ada042bf185424b5e3766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 4686500010104617959, guid: 1337aaafb695e4b4fa6eaa8d0cc03dde,
+    type: 3}
+  continuous: 1
+  spawnTime: 1

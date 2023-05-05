@@ -37,11 +37,12 @@ public class RoomManager : MonoBehaviour
 
     public void changeRoom()
     {
-        if (roomCount < 5)
+        if (roomCount < 2)
         {
             //randomly choose next room
             var chance = Random.Range(bottomIndex, topIndex + 1);
             SceneManager.LoadScene(chance);
+            PlayerPrefs.SetInt("roomCount", roomCount + 1);
         }
         else
         {
