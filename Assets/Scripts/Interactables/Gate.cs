@@ -8,6 +8,8 @@ public enum direction
 {
     left,
     right,
+    downright,
+    downleft,
 }
 public class Gate : MonoBehaviour
 {
@@ -37,6 +39,15 @@ public class Gate : MonoBehaviour
             {
                 player.GetComponent<StarterAssetsInputs>().move = new Vector2(-0.7f, 0.7f);
                 player.GetComponent<StarterAssetsInputs>().moveDir = new Vector2(-0.7f, 0.7f);
+            }
+            else if(goDir == direction.downleft){
+                player.GetComponent<StarterAssetsInputs>().move = new Vector2(-0.7f, -0.7f);
+                player.GetComponent<StarterAssetsInputs>().moveDir = new Vector2(-0.7f, -0.7f);
+            }
+            else if(goDir == direction.downright)
+            {
+                player.GetComponent<StarterAssetsInputs>().move = new Vector2(0.7f, -0.7f);
+                player.GetComponent<StarterAssetsInputs>().moveDir = new Vector2(0.7f, -0.7f);
             }
             else
             {

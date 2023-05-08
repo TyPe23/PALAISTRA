@@ -116,7 +116,7 @@ MonoBehaviour:
   - Player
   spawns:
   - {fileID: 4884112143039147224, guid: f8323482fe241d1489c114e6c076cc81, type: 3}
-  max: 3
+  max: 11
   playerInput: 0
 --- !u!65 &-3808224243469073448
 BoxCollider:
