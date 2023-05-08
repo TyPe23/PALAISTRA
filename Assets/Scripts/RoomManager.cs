@@ -15,7 +15,8 @@ public class RoomManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        roomCount = GameObject.FindWithTag("Player").GetComponent<PlayerStats>().roomCount;
+        roomCount = PlayerPrefs.GetInt("roomCount");
+        print("Room Count: " + roomCount);
     }
 
     // Update is called once per frame
@@ -41,8 +42,9 @@ public class RoomManager : MonoBehaviour
         {
             //randomly choose next room
             var chance = Random.Range(bottomIndex, topIndex + 1);
-            SceneManager.LoadScene(chance);
             PlayerPrefs.SetInt("roomCount", roomCount + 1);
+            SceneManager.LoadScene(chance);
+            print(PlayerPrefs.GetInt("roomCount"));
         }
         else
         {
