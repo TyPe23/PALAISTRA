@@ -50,3 +50,5 @@ MonoBehaviour:
   bottomIndex: 3
   topIndex: 6
   finalIndex: 1
+  resetCounter: 0
+  roomtoShop: 5

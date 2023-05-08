@@ -5138,5 +5138,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoomManager
       objectReference: {fileID: 0}
+    - target: {fileID: 4616065035986149453, guid: 50edf722675feb84aa69b9b58992a4e7,
+        type: 3}
+      propertyPath: roomtoShop
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50edf722675feb84aa69b9b58992a4e7, type: 3}

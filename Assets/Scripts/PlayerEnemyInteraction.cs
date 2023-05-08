@@ -80,6 +80,8 @@ public class PlayerEnemyInteraction : MonoBehaviour
             slider.gameObject.SetActive(false);
             movement.enabled = false;
             agent.enabled = false;
+            //capCollider.enabled = false;
+            rb.detectCollisions = false;
         }
 
         slider.value = health;
