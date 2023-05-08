@@ -1,3 +1,4 @@
+using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,6 +13,11 @@ public class RoomManager : MonoBehaviour
     [SerializeField] private int topIndex;
     private int roomCount;
     [SerializeField] private int finalIndex;
+    [SerializeField] private bool resetCounter;
+    private bool entering;
+    private direction goDir;
+    public int roomtoShop;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,17 +40,39 @@ public class RoomManager : MonoBehaviour
         {
             levelComplete = true;
         }
+        if (entering)
+        {
+            print("Entering");
+            var player = GameObject.FindWithTag("Player");
+            if (goDir == direction.left)
+            {
+                player.GetComponent<StarterAssetsInputs>().move = new Vector2(-0.7f, 0.7f);
+                player.GetComponent<StarterAssetsInputs>().moveDir = new Vector2(-0.7f, 0.7f);
+            }
+            else
+            {
+                player.GetComponent<StarterAssetsInputs>().move = new Vector2(0.7f, 0.7f);
+                player.GetComponent<StarterAssetsInputs>().moveDir = new Vector2(0.7f, 0.7f);
+            }
+        }
     }
 
-    public void changeRoom()
+    public void changeRoom(direction dir)
     {
-        if (roomCount < 2)
+        if (resetCounter)
+        {
+            resetRoomCounter();
+        }
+
+        if (roomCount < roomtoShop)
         {
             //randomly choose next room
             var chance = Random.Range(bottomIndex, topIndex + 1);
             PlayerPrefs.SetInt("roomCount", roomCount + 1);
             SceneManager.LoadScene(chance);
             print(PlayerPrefs.GetInt("roomCount"));
+            goDir = dir;
+            StartCoroutine(movementClock(chance));
         }
         else
         {
@@ -52,4 +80,55 @@ public class RoomManager : MonoBehaviour
             SceneManager.LoadScene(finalIndex);
         }
     }
+
+    public void changeRoomSpecific(int nextRoom,direction dir)
+    {
+        if (resetCounter)
+        {
+            resetRoomCounter();
+        }
+
+        if (roomCount < roomtoShop)
+        {
+            //randomly choose next room
+            PlayerPrefs.SetInt("roomCount", roomCount + 1);
+            SceneManager.LoadScene(nextRoom);
+            print(PlayerPrefs.GetInt("roomCount"));
+            goDir = dir;
+
+            
+
+
+            //TODO player moving into room
+            //do coroutine for moving into room duration, then when out stop forced movement.
+        }
+        else
+        {
+            //go to final room
+            SceneManager.LoadScene(finalIndex);
+        }
+    }
+
+    private void resetRoomCounter() {
+        roomCount = 0;
+    }
+
+    private IEnumerator movementClock(int nextRoom)
+    {
+        while(SceneManager.GetActiveScene().buildIndex != nextRoom)
+        {
+            yield return null;
+        }
+        if(SceneManager.GetActiveScene().buildIndex == nextRoom)
+        {
+            var rm = GameObject.Find("RoomManager");
+            rm.GetComponent<RoomManager>().entering = true;
+            entering = true;
+            yield return new WaitForSeconds(1.5f);
+            entering = false;
+            rm.GetComponent<RoomManager>().entering = false;
+        }
+        
+    }
+
 }

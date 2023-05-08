@@ -1,56 +1,85 @@
+using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+public enum direction
+{
+    left,
+    right,
+}
 public class Gate : MonoBehaviour
 {
-    private Vector3 origin;
-    private Vector3 height;
-    private bool isIn;
     private GameObject roomMan;
+
+    [Tooltip("Put at -1 to randomly choose room, otherwise, input buildIndex of next room")]
+    [SerializeField] int nextRoom;
 
     [Tooltip("Determines the hightest point on the gate.")]
     [SerializeField] private int peak;
+
+    [SerializeField] private direction goDir;
+    private bool leaving;
     
     // Start is called before the first frame update
     void Start()
     {
         roomMan = GameObject.Find("RoomManager");
-        origin = transform.position;
-        height = new Vector3(origin.x, origin.y + peak, origin.z);
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    private void Update()
     {
-        if (transform.position.y > origin.y && !isIn)
-        { gameObject.transform.position = Vector3.MoveTowards(transform.position, origin, 0.05f); }
+        if (leaving) {
+            var player = GameObject.FindWithTag("Player");
+            if (goDir == direction.left)
+            {
+                player.GetComponent<StarterAssetsInputs>().move = new Vector2(-0.7f, 0.7f);
+                player.GetComponent<StarterAssetsInputs>().moveDir = new Vector2(-0.7f, 0.7f);
+            }
+            else
+            {
+                player.GetComponent<StarterAssetsInputs>().move = new Vector2(0.7f, 0.7f);
+                player.GetComponent<StarterAssetsInputs>().moveDir = new Vector2(0.7f, 0.7f);
+            }
+        }
+        
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        isIn = true;
-    }
     private void OnTriggerStay(Collider other)
     {
         
         if (other.transform.CompareTag("Player")&& roomMan.GetComponent<RoomManager>().levelComplete)
         {
-            if (transform.position.y < height.y)
-            {
-                StartCoroutine(BeforeSceneChange());
-                gameObject.transform.position = Vector3.MoveTowards(transform.position,height, 0.05f);
-            }
+            
+            StartCoroutine(BeforeSceneChange());
+            
         }
     }
 
-    private void OnTriggerExit(Collider other)
-    {
-        isIn = false;
-    }
+    
     private IEnumerator BeforeSceneChange()
     {
+
+        //TODO fake player movement
+        //var player = GameObject.FindWithTag("Player");
+        //player.GetComponent<CharacterController>().enabled = false;
+        leaving = true;
+        
+        
         yield return new WaitForSeconds(2);
-        roomMan.GetComponent<RoomManager>().changeRoom();
+        if (nextRoom <=-1)
+        {
+            print("random room");
+            roomMan.GetComponent<RoomManager>().changeRoom(goDir);
+
+        }
+        else
+        {
+            print("going to room" + nextRoom);
+            roomMan.GetComponent<RoomManager>().changeRoomSpecific(nextRoom,goDir);
+
+        }
     }
 }
