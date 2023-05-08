@@ -15,6 +15,7 @@ TagManager:
   - PDAttach
   - projectile
   - spawner
+  - trap
   layers:
   - Default
   - TransparentFX

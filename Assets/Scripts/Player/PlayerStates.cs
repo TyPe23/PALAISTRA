@@ -45,10 +45,10 @@ public class PlayerStates : MonoBehaviour
     private PlayerStats playerStats;
     private StarterAssetsInputs inputs;
     private StaminaManager stamina;
-    private CinemachineImpulseSource shake;
     private MomentumManager momentum;
     private AudioSource soundSrc;
     private Animator animator;
+    private CinemachineImpulseSource shake;
 
     private bool canAction;
     private Vector3 startPos;
@@ -133,9 +133,18 @@ public class PlayerStates : MonoBehaviour
 
     private void OnTriggerStay(Collider collision)
     {
-        if (collision.transform.CompareTag("enemy") && !invul && state == state.MOVE)
+        if ((collision.transform.CompareTag("enemy") || collision.transform.CompareTag("trap") || collision.transform.CompareTag("projectile")) && !invul && state == state.MOVE)
         {
             ChangeState(state.HIT);
+
+            if (collision.transform.CompareTag("enemy") || collision.transform.CompareTag("projectile"))
+            {
+                playerStats.takeDamage(2);
+            }
+            else if (collision.transform.CompareTag("trap"))
+            {
+                playerStats.takeDamage(5);
+            }
         }
         else if (collision.transform.CompareTag("enemy") && state == state.DASH)
         {
@@ -206,7 +215,6 @@ public class PlayerStates : MonoBehaviour
 
     private void StateEnterLose()
     {
-        throw new NotImplementedException();
     }
 
     private void StateEnterHit()
@@ -355,12 +363,16 @@ public class PlayerStates : MonoBehaviour
     }
     private void StateStayLose()
     {
-        throw new NotImplementedException();
     }
 
     private void StateStayHit()
     {
         //wait til animation done
+        if (playerStats.currentHealth <= 0)
+        {
+            ChangeState(state.LOSE);
+        }
+
         if (canMove)
         {
             ChangeState(state.MOVE);
@@ -458,7 +470,6 @@ public class PlayerStates : MonoBehaviour
 
     private void StateExitLose()
     {
-        throw new NotImplementedException();
     }
 
     private void StateExitHit()

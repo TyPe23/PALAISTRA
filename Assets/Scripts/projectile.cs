@@ -6,6 +6,7 @@ public class projectile : MonoBehaviour
 {
     private Transform player;
     private MeshRenderer mesh;
+    private CapsuleCollider hitbox;
     private bool broken = false;
 
     public bool tracking;
@@ -16,6 +17,7 @@ public class projectile : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         mesh = GetComponentInChildren<MeshRenderer>();
+        hitbox = GetComponent<CapsuleCollider>();
         StartCoroutine(destroyAfterTime());
     }
 
@@ -47,13 +49,14 @@ public class projectile : MonoBehaviour
             //sound
             broken = true;
             mesh.enabled = false;
+            hitbox.enabled = false;
             StartCoroutine(waitThenDestroy());
         }
     }
 
     private IEnumerator waitThenDestroy()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         Destroy(gameObject);
     }
     

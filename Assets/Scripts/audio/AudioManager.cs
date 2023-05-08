@@ -13,6 +13,11 @@ public enum SoundType
     IMPACT,
     DASH,
     DOOR,
+    SPIKE_PRIME,
+    SPIKE,
+    PROJECTILE,
+    PROJ_BREAK,
+
 }
 
 public struct Range
@@ -90,6 +95,10 @@ public class AudioManager : MonoBehaviour
             {SoundType.THROW, new SoundCollection("dash") },
             {SoundType.DASH, new SoundCollection("dash") },
             {SoundType.DOOR, new SoundCollection("dash") },
+            {SoundType.SPIKE, new SoundCollection("spike") },
+            {SoundType.SPIKE_PRIME, new SoundCollection("spike_prime") },
+            {SoundType.PROJECTILE, new SoundCollection("dash") },
+            {SoundType.PROJ_BREAK, new SoundCollection("dash") },
         };
     }
 
@@ -118,7 +127,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    private void PlaySound(SoundType type, AudioSource audioSrc, bool allowPitchShift = true, bool allowVolShift = true)
+    public void PlaySound(SoundType type, AudioSource audioSrc, bool allowPitchShift = true, bool allowVolShift = true)
     {
         if (audioSrc == null)
         {

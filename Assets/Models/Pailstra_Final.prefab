@@ -2986,7 +2986,7 @@ GameObject:
   - component: {fileID: 2403261868432845833}
   m_Layer: 0
   m_Name: RightForeArm_joint
-  m_TagString: Untagged
+  m_TagString: lariatAttach
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
