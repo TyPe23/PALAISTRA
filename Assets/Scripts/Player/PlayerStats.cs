@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerStats : MonoBehaviour
 {
@@ -10,15 +12,26 @@ public class PlayerStats : MonoBehaviour
     public float SpinMoveSpeed;
     public float LariatSpeed;
     public float PileDriverSpeed;
+
     public float DashDist;
+
     public int DashCost;
     public int SpinCost;
+    public float SpinHoldCost;
     public int LariatCost;
     public int PileDriverCost;
+
     public int currency;
+
     public float maxStamina;
     public float staminaRecovery;
-    public float SpinHoldCost;
+
+    public float maxHealth;
+    public float currentHealth;
+
+    public int roomCount;
+
+    public Slider healthSlider;
 
     // Start is called before the first frame update
     void Awake()
@@ -37,6 +50,8 @@ public class PlayerStats : MonoBehaviour
             PlayerPrefs.SetInt("PileDriverCost", 10);
             PlayerPrefs.SetInt("currency", 10);
             PlayerPrefs.SetFloat("maxStamina", 100);
+            PlayerPrefs.SetFloat("maxHealth", 20);
+            PlayerPrefs.SetFloat("currentHealth", 20);
             PlayerPrefs.SetFloat("staminaRecovery", Time.fixedDeltaTime * 4);
             PlayerPrefs.SetFloat("SpinHoldCost", PlayerPrefs.GetFloat("staminaRecovery") * 2);
         }
@@ -53,7 +68,27 @@ public class PlayerStats : MonoBehaviour
         PileDriverCost = PlayerPrefs.GetInt("PileDriverCost");
         currency = PlayerPrefs.GetInt("currency");
         maxStamina = PlayerPrefs.GetFloat("maxStamina");
+        maxHealth = PlayerPrefs.GetFloat("maxHealth");
+        currentHealth = PlayerPrefs.GetFloat("currentHealth");
         staminaRecovery = PlayerPrefs.GetFloat("staminaRecovery");
         SpinHoldCost = PlayerPrefs.GetFloat("SpinHoldCost");
-    }   
+        roomCount = PlayerPrefs.GetInt("roomCount");
+    }
+
+    void FixedUpdate()
+    {
+        healthSlider.value = currentHealth;
+    }
+
+    public void takeDamage(float damage)
+    {
+        currentHealth -= damage;
+
+        if (currentHealth < 0)
+        {
+            currentHealth = 0;
+        }
+
+        PlayerPrefs.SetFloat("currentHealth", currentHealth);
+    }
 }
