@@ -17,6 +17,7 @@ namespace StarterAssets
 		public bool sprint;
 		public bool spin;
 		public bool lariat;
+		public bool interact;
 
 		[Header("Movement Settings")]
 		public bool analogMovement;
@@ -24,9 +25,10 @@ namespace StarterAssets
 		[Header("Mouse Cursor Settings")]
 		public bool cursorLocked = true;
 		public bool cursorInputForLook = true;
+        
 
 #if ENABLE_INPUT_SYSTEM
-		public void OnMove(InputValue value)
+        public void OnMove(InputValue value)
 		{
 			MoveInput(value.Get<Vector2>());
 		}
@@ -57,6 +59,11 @@ namespace StarterAssets
         public void OnLariat(InputValue value)
         {
 			LariatInput(value.isPressed);
+        }
+
+        public void OnInteract(InputValue value)
+        {
+			InteractInput(value.isPressed);
         }
 #endif
 
@@ -93,6 +100,11 @@ namespace StarterAssets
         public void LariatInput(bool newLariatState)
         {
             lariat = newLariatState;
+        }
+
+		public void InteractInput(bool newInteractState)
+        {
+			interact = newInteractState;
         }
 
         private void OnApplicationFocus(bool hasFocus)
