@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.32190126, g: 0.34904456, b: 0.34406418, a: 1}
+  m_IndirectSpecularColor: {r: 0.32189995, g: 0.34904334, b: 0.34406257, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1850,8 +1850,9 @@ GameObject:
   - component: {fileID: 971783599}
   - component: {fileID: 971783603}
   - component: {fileID: 971783604}
+  - component: {fileID: 971783605}
   m_Layer: 0
-  m_Name: Hermes?
+  m_Name: Hermes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1950,6 +1951,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 2021661764}
   repeat: 0
+  trigger: {fileID: 971783605}
 --- !u!136 &971783604
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1964,6 +1966,27 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &971783605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971783598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3027ecf2b0fe1644ad0eb3ca9f8f4a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    dialogueName: Hermes
+    sentences:
+    - Hey there daughter, good to see you here, I need a bit of help.
+    - Deep in the middle of this minotaur labyrinth is one of Hephaestus' forges.
+    - Guarding the forge are many minotaurs though, and I'm not much of a fighter
+      like Athena or Ares.
+    - So I was hoping that you could help me out. All I need you to do it keep this
+      weapon safe as you make it to the center.
 --- !u!1001 &988132458
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4541,6 +4564,50 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50edf722675feb84aa69b9b58992a4e7, type: 3}
+--- !u!1 &1260202635
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1260202636}
+  - component: {fileID: 1260202637}
+  m_Layer: 0
+  m_Name: DialogueManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1260202636
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1260202635}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.081656, y: 1.1169553, z: 3.7101073}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1260202637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1260202635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63597cf8e65cac74c968cc91d2c89cd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1299854784
 PrefabInstance:
   m_ObjectHideFlags: 0
