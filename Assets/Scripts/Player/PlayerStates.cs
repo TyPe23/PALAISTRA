@@ -157,7 +157,7 @@ public class PlayerStates : MonoBehaviour
 
     private void OnTriggerStay(Collider collision)
     {
-        if ((collision.transform.CompareTag("enemy") || collision.transform.CompareTag("trap") || collision.transform.CompareTag("projectile")) && !invul && state == state.MOVE)
+        if ((collision.transform.CompareTag("enemy") || collision.transform.CompareTag("trap") || collision.transform.CompareTag("projectile")) && !invul && (state == state.MOVE || state == state.EXHAUSTED))
         {
             ChangeState(state.HIT);
 
@@ -414,7 +414,14 @@ public class PlayerStates : MonoBehaviour
 
         if (canMove)
         {
-            ChangeState(state.MOVE);
+            if (prevState == state.EXHAUSTED)
+            {
+                ChangeState(state.EXHAUSTED);
+            }
+            else
+            {
+                ChangeState(state.MOVE);
+            }
         }
     }
 
