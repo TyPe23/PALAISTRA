@@ -186,7 +186,7 @@ RectTransform:
   - {fileID: 1996306297}
   - {fileID: 719869433}
   m_Father: {fileID: 799121950}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3720,6 +3720,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpeed: 0
+  ExhaustedSpeed: 0
   DashSpeed: 0
   SpinMoveSpeed: 0
   LariatSpeed: 0
@@ -3733,6 +3734,7 @@ MonoBehaviour:
   currency: 0
   maxStamina: 0
   staminaRecovery: 0
+  exhaustedRecovery: 0
   maxHealth: 0
   currentHealth: 0
   roomCount: 0
@@ -3751,6 +3753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 658972890}
+  fill: {fileID: 242863109}
 --- !u!114 &8394732593264406109
 MonoBehaviour:
   m_ObjectHideFlags: 0

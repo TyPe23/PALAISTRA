@@ -7,7 +7,7 @@ using HighScore;
 
 public class Keyboard : MonoBehaviour
 {
-
+    private GameObject roomMan;
     public string word = "";
     public TMP_Text output = null;
     bool shift = false;
@@ -62,5 +62,7 @@ public class Keyboard : MonoBehaviour
     public void enterFunct()
     {
         HS.SubmitHighScore(this, word, PlayerPrefs.GetInt("Score"));
+        roomMan = GameObject.Find("RoomManager");
+        roomMan.GetComponent<RoomManager>().changeRoomSpecific(1, direction.right);
     }
 }

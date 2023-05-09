@@ -6,10 +6,12 @@ using UnityEngine.UI;
 public class StaminaManager : MonoBehaviour
 {
     public Slider slider;
+    public Image fill;
     public float stamina { get; private set; }
 
     private PlayerStats stats;
     private MomentumManager momentum;
+    private Color color;
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +19,7 @@ public class StaminaManager : MonoBehaviour
         momentum = GetComponent<MomentumManager>();
         stats = GetComponent<PlayerStats>();
         stamina = stats.maxStamina;
+        color = fill.color;
     }
 
     // Update is called once per frame
@@ -25,6 +28,16 @@ public class StaminaManager : MonoBehaviour
         if (stamina < 100)
         {
             stamina += momentum.recovery;
+
+            if (momentum.recovery == stats.exhaustedRecovery)
+            {
+                print("here");
+                fill.color = new Color(color.r, color.g, color.b, Mathf.Sin(Time.time * 20));
+            }
+            else
+            {
+                fill.color = color;
+            }
         }
 
         slider.value = stamina;

@@ -9,6 +9,7 @@ public class PlayerStats : MonoBehaviour
 {
     // temp stats (reset at start of run)
     public float MoveSpeed;
+    public float ExhaustedSpeed;
     public float DashSpeed;
     public float SpinMoveSpeed;
     public float LariatSpeed;
@@ -26,7 +27,7 @@ public class PlayerStats : MonoBehaviour
 
     public float maxStamina;
     public float staminaRecovery;
-
+    public float exhaustedRecovery;
     public float maxHealth;
     public float currentHealth;
 
@@ -39,7 +40,8 @@ public class PlayerStats : MonoBehaviour
     {
         //if (PlayerPrefs.HasKey("MoveSpeed"))
         //{
-        PlayerPrefs.SetFloat("MoveSpeed", 5.25f);
+            PlayerPrefs.SetFloat("MoveSpeed", 5.25f);
+            PlayerPrefs.SetFloat("ExhaustedSpeed", PlayerPrefs.GetFloat("MoveSpeed") / 2);
             PlayerPrefs.SetFloat("SpinMoveSpeed", 0.1f);
             PlayerPrefs.SetFloat("DashSpeed", PlayerPrefs.GetFloat("MoveSpeed") * 3);
             PlayerPrefs.SetFloat("LariatSpeed", PlayerPrefs.GetFloat("MoveSpeed") * 2);
@@ -54,12 +56,14 @@ public class PlayerStats : MonoBehaviour
             PlayerPrefs.SetFloat("maxHealth", 20);
             PlayerPrefs.SetFloat("currentHealth", 20);
             PlayerPrefs.SetFloat("staminaRecovery", Time.fixedDeltaTime * 4);
+            PlayerPrefs.SetFloat("exhaustedRecovery", PlayerPrefs.GetFloat("staminaRecovery") * 4);
             PlayerPrefs.SetFloat("SpinHoldCost", PlayerPrefs.GetFloat("staminaRecovery") * 2);
             PlayerPrefs.SetInt("Score", 999);
         //}
 
         SpinMoveSpeed = PlayerPrefs.GetFloat("SpinMoveSpeed");
         MoveSpeed = PlayerPrefs.GetFloat("MoveSpeed");
+        ExhaustedSpeed = PlayerPrefs.GetFloat("ExhaustedSpeed");
         DashSpeed = PlayerPrefs.GetFloat("DashSpeed");
         LariatSpeed = PlayerPrefs.GetFloat("LariatSpeed");
         PileDriverSpeed = PlayerPrefs.GetFloat("PileDriverSpeed");
@@ -73,6 +77,7 @@ public class PlayerStats : MonoBehaviour
         maxHealth = PlayerPrefs.GetFloat("maxHealth");
         currentHealth = PlayerPrefs.GetFloat("currentHealth");
         staminaRecovery = PlayerPrefs.GetFloat("staminaRecovery");
+        exhaustedRecovery = PlayerPrefs.GetFloat("exhaustedRecovery");
         SpinHoldCost = PlayerPrefs.GetFloat("SpinHoldCost");
         roomCount = PlayerPrefs.GetInt("roomCount");
     }

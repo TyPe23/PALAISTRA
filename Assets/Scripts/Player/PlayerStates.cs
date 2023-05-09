@@ -21,6 +21,7 @@ public enum playerStates
     LOSE,
     IDLE,
     STOP,
+    EXHAUSTED,
 }
 
 [RequireComponent(typeof(ThirdPersonController))]
@@ -90,6 +91,7 @@ public class PlayerStates : MonoBehaviour
             {state.LOSE, StateStayLose},
             {state.IDLE, StateStayIdle},
             {state.STOP, StateStayStop},
+            {state.EXHAUSTED, StateStayExhausted},
         };
 
         statesEnterMeths = new Dictionary<playerStates, Action>()
@@ -103,6 +105,7 @@ public class PlayerStates : MonoBehaviour
             {state.LOSE, StateEnterLose},
             {state.IDLE, StateEnterIdle},
             {state.STOP, StateEnterStop},
+            {state.EXHAUSTED, StateEnterExhausted},
         };
 
         statesExitMeths = new Dictionary<playerStates, Action>()
@@ -116,11 +119,13 @@ public class PlayerStates : MonoBehaviour
             {state.LOSE, StateExitLose},
             {state.IDLE, StateExitIdle},
             {state.STOP, StateExitStop},
+            {state.EXHAUSTED, StateExitExhausted},
         };
 
         state = state.MOVE;
         StateEnterMove();
     }
+
 
     // Update is called once per frame
     void FixedUpdate()
@@ -131,6 +136,11 @@ public class PlayerStates : MonoBehaviour
         {
             scoreUI.text = $"{playerStats.score - (int)Time.time} \n" +
                            $"+ {momentum.momentumScore}";
+        }
+
+        if (stamina.stamina <= 5)
+        {
+            ChangeState(state.EXHAUSTED);
         }
     }
 
@@ -169,6 +179,11 @@ public class PlayerStates : MonoBehaviour
     #endregion
 
     #region Enter
+    private void StateEnterExhausted()
+    {
+        
+    }
+
     private void StateEnterStop()
     {
         
@@ -244,6 +259,18 @@ public class PlayerStates : MonoBehaviour
     #endregion
 
     #region Stay
+    private void StateStayExhausted()
+    {
+        momentum.recovery = playerStats.exhaustedRecovery;
+
+        charCon.Exhausted();
+
+        if (stamina.stamina >= 50)
+        {
+            ChangeState(state.MOVE);
+        }
+    }
+
     private void StateStayStop()
     {
         if (inputs.lariat && stamina.stamina >= playerStats.LariatCost)
@@ -441,6 +468,11 @@ public class PlayerStates : MonoBehaviour
     #endregion
 
     #region Exit
+    private void StateExitExhausted()
+    {
+        momentum.recovery = playerStats.staminaRecovery;
+    }
+
     private void StateExitStop()
     {
     }

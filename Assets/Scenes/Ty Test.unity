@@ -1104,6 +1104,20 @@ Camera:
     type: 3}
   m_PrefabInstance: {fileID: 1386800555}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1684788074 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2049879901, guid: bf0a8faaa5ae4674db9869ce1fdfbb6a,
+    type: 3}
+  m_PrefabInstance: {fileID: 8394732592891494986}
+  m_PrefabAsset: {fileID: 0}
+--- !u!222 &1684788077
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684788074}
+  m_CullTransparentMesh: 1
 --- !u!82 &1735681115 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 3151004512716221781, guid: ecada373097b91743994d88f5db13ee3,
