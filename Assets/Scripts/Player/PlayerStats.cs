@@ -1,3 +1,4 @@
+using HighScore;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting.Antlr3.Runtime.Misc;
@@ -30,15 +31,15 @@ public class PlayerStats : MonoBehaviour
     public float currentHealth;
 
     public int roomCount;
-
+    public int score;
     public Slider healthSlider;
 
     // Start is called before the first frame update
     void Awake()
     {
-        if (PlayerPrefs.HasKey("MoveSpeed"))
-        {
-            PlayerPrefs.SetFloat("MoveSpeed", 5.25f);
+        //if (PlayerPrefs.HasKey("MoveSpeed"))
+        //{
+        PlayerPrefs.SetFloat("MoveSpeed", 5.25f);
             PlayerPrefs.SetFloat("SpinMoveSpeed", 0.1f);
             PlayerPrefs.SetFloat("DashSpeed", PlayerPrefs.GetFloat("MoveSpeed") * 3);
             PlayerPrefs.SetFloat("LariatSpeed", PlayerPrefs.GetFloat("MoveSpeed") * 2);
@@ -54,7 +55,8 @@ public class PlayerStats : MonoBehaviour
             PlayerPrefs.SetFloat("currentHealth", 20);
             PlayerPrefs.SetFloat("staminaRecovery", Time.fixedDeltaTime * 4);
             PlayerPrefs.SetFloat("SpinHoldCost", PlayerPrefs.GetFloat("staminaRecovery") * 2);
-        }
+            PlayerPrefs.SetInt("Score", 999);
+        //}
 
         SpinMoveSpeed = PlayerPrefs.GetFloat("SpinMoveSpeed");
         MoveSpeed = PlayerPrefs.GetFloat("MoveSpeed");
@@ -77,7 +79,15 @@ public class PlayerStats : MonoBehaviour
 
     void FixedUpdate()
     {
-        healthSlider.value = currentHealth;
+        healthSlider.value = currentHealth; 
+        score = PlayerPrefs.GetInt("Score");
+    }
+
+    public void adjustScore(int scoreChange)
+    {
+        print(scoreChange);
+        score += scoreChange;
+        PlayerPrefs.SetInt("score", score);
     }
 
     public void takeDamage(float damage)

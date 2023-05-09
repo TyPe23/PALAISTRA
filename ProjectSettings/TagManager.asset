@@ -16,6 +16,7 @@ TagManager:
   - projectile
   - spawner
   - trap
+  - UI
   layers:
   - Default
   - TransparentFX

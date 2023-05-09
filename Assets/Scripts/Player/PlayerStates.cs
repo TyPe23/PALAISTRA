@@ -3,7 +3,10 @@ using StarterAssets;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 using static UnityEngine.Rendering.DebugUI;
 using state = playerStates;
 
@@ -48,12 +51,16 @@ public class PlayerStates : MonoBehaviour
     private MomentumManager momentum;
     private AudioSource soundSrc;
     private Animator animator;
+    private TMP_Text scoreUI;
     private CinemachineImpulseSource shake;
+
+
 
     private bool canAction;
     private Vector3 startPos;
     private bool exitDash;
     public bool invul;
+    public bool showScore = true;
     private bool canMove;
     private bool canDash = true;
     #endregion
@@ -70,6 +77,7 @@ public class PlayerStates : MonoBehaviour
         momentum = GetComponent<MomentumManager>();
         soundSrc = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
+        scoreUI = GetComponentInChildren<TMP_Text>();
 
         statesStayMeths = new Dictionary<playerStates, Action>()
         {
@@ -118,6 +126,12 @@ public class PlayerStates : MonoBehaviour
     void FixedUpdate()
     {
         statesStayMeths[state].Invoke();
+
+        if (showScore)
+        {
+            scoreUI.text = $"{playerStats.score - (int)Time.time} \n" +
+                           $"+ {momentum.momentumScore}";
+        }
     }
 
     public void ChangeState(state newState)
@@ -162,7 +176,6 @@ public class PlayerStates : MonoBehaviour
     
     private void StateEnterIdle()
     {
-        throw new NotImplementedException();
     }
 
     private void StateEnterPileDriver()
@@ -275,7 +288,6 @@ public class PlayerStates : MonoBehaviour
 
     private void StateStayIdle()
     {
-        throw new NotImplementedException();
     }
 
     private void StateStayPileDriver()
@@ -435,7 +447,6 @@ public class PlayerStates : MonoBehaviour
 
     private void StateExitIdle()
     {
-        throw new NotImplementedException();
     }
 
     private void StateExitPileDriver()

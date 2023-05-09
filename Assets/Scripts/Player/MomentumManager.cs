@@ -16,6 +16,8 @@ public class MomentumManager : MonoBehaviour
     private float momentum;
     private float momentumDecay;
 
+    public int momentumScore { get; private set; }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +28,7 @@ public class MomentumManager : MonoBehaviour
         recovery = stats.staminaRecovery;
         momentum = 0;
         momentumDecay = Time.fixedDeltaTime * 5;
+        momentumScore = 0;
     }
 
     // Update is called once per frame
@@ -99,6 +102,11 @@ public class MomentumManager : MonoBehaviour
                 momentumDecay = Time.fixedDeltaTime * 25;
                 recovery = stats.staminaRecovery * 1.75f;
                 shake.GenerateImpulseWithForce(0.1f);
+
+                if (momentumScore == 75)
+                {
+                    momentumScore = 100;
+                }
             }
             else if (grade.text == "B")
             {
@@ -107,6 +115,11 @@ public class MomentumManager : MonoBehaviour
                 momentumDecay = Time.fixedDeltaTime * 20;
                 recovery = stats.staminaRecovery * 1.5f;
                 shake.GenerateImpulseWithForce(0.1f);
+
+                if (momentumScore == 50)
+                {
+                    momentumScore = 75;
+                }
             }
             else if (grade.text == "C")
             {
@@ -115,6 +128,11 @@ public class MomentumManager : MonoBehaviour
                 momentumDecay = Time.fixedDeltaTime * 15;
                 recovery = stats.staminaRecovery * 1.25f;
                 shake.GenerateImpulseWithForce(0.1f);
+
+                if (momentumScore == 25)
+                {
+                    momentumScore = 50;
+                }
             }
             else if (grade.text == "")
             {
@@ -123,6 +141,11 @@ public class MomentumManager : MonoBehaviour
                 momentumDecay = Time.fixedDeltaTime * 10;
                 recovery = stats.staminaRecovery * 1.1f;
                 shake.GenerateImpulseWithForce(0.1f);
+
+                if (momentumScore == 0)
+                {
+                    momentumScore = 25;
+                }
             }
         }
     }

@@ -49,6 +49,6 @@ MonoBehaviour:
   levelComplete: 0
   bottomIndex: 3
   topIndex: 6
-  finalIndex: 1
+  finalIndex: 7
   resetCounter: 0
   roomtoShop: 5

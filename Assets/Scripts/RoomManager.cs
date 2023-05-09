@@ -1,6 +1,7 @@
 using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -18,9 +19,14 @@ public class RoomManager : MonoBehaviour
     private direction goDir;
     public int roomtoShop;
 
+    private PlayerStats stats;
+    private MomentumManager momentum;
+
     // Start is called before the first frame update
     void Start()
     {
+        stats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
+        momentum = GameObject.FindGameObjectWithTag("Player").GetComponent<MomentumManager>();
         roomCount = PlayerPrefs.GetInt("roomCount");
         print("Room Count: " + roomCount);
     }
@@ -59,6 +65,10 @@ public class RoomManager : MonoBehaviour
 
     public void changeRoom(direction dir)
     {
+        stats.adjustScore(momentum.momentumScore);
+
+        stats.adjustScore(-(int)Time.time);
+
         if (resetCounter)
         {
             resetRoomCounter();
@@ -97,8 +107,6 @@ public class RoomManager : MonoBehaviour
             goDir = dir;
 
             
-
-
             //TODO player moving into room
             //do coroutine for moving into room duration, then when out stop forced movement.
         }
@@ -128,7 +136,5 @@ public class RoomManager : MonoBehaviour
             entering = false;
             rm.GetComponent<RoomManager>().entering = false;
         }
-        
     }
-
 }

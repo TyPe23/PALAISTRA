@@ -78,19 +78,16 @@ public class Gate : MonoBehaviour
         //player.GetComponent<CharacterController>().enabled = false;
         leaving = true;
         
-        
         yield return new WaitForSeconds(2);
-        if (nextRoom <=-1)
+        if (nextRoom <= -1)
         {
             print("random room");
             roomMan.GetComponent<RoomManager>().changeRoom(goDir);
-
         }
         else
         {
             print("going to room" + nextRoom);
             roomMan.GetComponent<RoomManager>().changeRoomSpecific(nextRoom,goDir);
-
         }
     }
 }
