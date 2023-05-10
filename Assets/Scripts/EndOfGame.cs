@@ -1,3 +1,4 @@
+using HighScore;
 using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;

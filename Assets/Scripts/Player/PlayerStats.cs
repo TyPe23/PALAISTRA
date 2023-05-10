@@ -58,7 +58,7 @@ public class PlayerStats : MonoBehaviour
             PlayerPrefs.SetFloat("staminaRecovery", Time.fixedDeltaTime * 4);
             PlayerPrefs.SetFloat("exhaustedRecovery", PlayerPrefs.GetFloat("staminaRecovery") * 4);
             PlayerPrefs.SetFloat("SpinHoldCost", PlayerPrefs.GetFloat("staminaRecovery") * 2);
-            PlayerPrefs.SetInt("Score", 999);
+            PlayerPrefs.SetInt("Score", 1000);
         //}
 
         SpinMoveSpeed = PlayerPrefs.GetFloat("SpinMoveSpeed");
