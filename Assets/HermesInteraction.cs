@@ -10,9 +10,11 @@ public class HermesInteraction : MonoBehaviour
     public bool repeat;
     public DialogueTrigger trigger;
     public DialogueManager man;
+    [SerializeField]private GameObject text;
     // Start is called before the first frame update
     void Start()
     {
+        text.SetActive(false);
     }
 
     // Update is called once per frame
@@ -24,6 +26,7 @@ public class HermesInteraction : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         //TODO enable ui above head
+        text.SetActive(true);
     }
 
     private void OnTriggerStay(Collider other)
@@ -39,6 +42,7 @@ public class HermesInteraction : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         //TODO disable ui
+        text.SetActive(false);
     }
 
     IEnumerator startDialogue()
