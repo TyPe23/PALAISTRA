@@ -4,10 +4,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
-using UnityEngine.SocialPlatforms.Impl;
-using static UnityEngine.Rendering.DebugUI;
 using state = playerStates;
 
 public enum playerStates

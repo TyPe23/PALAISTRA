@@ -38,6 +38,7 @@ public class PlayerStats : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        HS.Init(this, "PALAISTRA");
         //if (PlayerPrefs.HasKey("MoveSpeed"))
         //{
             PlayerPrefs.SetFloat("MoveSpeed", 5.25f);
@@ -58,7 +59,7 @@ public class PlayerStats : MonoBehaviour
             PlayerPrefs.SetFloat("staminaRecovery", Time.fixedDeltaTime * 4);
             PlayerPrefs.SetFloat("exhaustedRecovery", PlayerPrefs.GetFloat("staminaRecovery") * 4);
             PlayerPrefs.SetFloat("SpinHoldCost", PlayerPrefs.GetFloat("staminaRecovery") * 2);
-            PlayerPrefs.SetInt("Score", 1000);
+            PlayerPrefs.SetInt("Score", 999);
         //}
 
         SpinMoveSpeed = PlayerPrefs.GetFloat("SpinMoveSpeed");

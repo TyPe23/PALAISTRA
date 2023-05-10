@@ -43,7 +43,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7764974110650673741}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2
@@ -77,6 +77,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce33db87d8496734c879c19e0afd215f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CollisionParticles: {fileID: 4957042589272577886, guid: 8d12a26b62e0f68478570bd5fd995632,
+    type: 3}
   tracking: 1
   speed: 2
 --- !u!1 &7764974111809755069
@@ -90,7 +92,6 @@ GameObject:
   - component: {fileID: 7764974111809755058}
   - component: {fileID: 7764974111809755057}
   - component: {fileID: 7764974111809755056}
-  - component: {fileID: 7764974111809755059}
   m_Layer: 0
   m_Name: mesh
   m_TagString: Untagged
@@ -163,17 +164,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &7764974111809755059
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7764974111809755069}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}

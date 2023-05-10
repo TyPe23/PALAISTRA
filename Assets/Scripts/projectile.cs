@@ -7,6 +7,7 @@ public class projectile : MonoBehaviour
     private Transform player;
     private MeshRenderer mesh;
     private CapsuleCollider hitbox;
+    public GameObject CollisionParticles;
     private bool broken = false;
 
     public bool tracking;
@@ -43,7 +44,7 @@ public class projectile : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         print(collision.transform.name);
-        if (!collision.transform.CompareTag("enemy") || !collision.transform.CompareTag("spawner") || !collision.transform.CompareTag("projectile"))
+        if (!collision.transform.CompareTag("enemy") || !collision.transform.CompareTag("spawner"))
         {
             //particle effect
             //sound
@@ -56,7 +57,9 @@ public class projectile : MonoBehaviour
 
     private IEnumerator waitThenDestroy()
     {
+        GameObject particles = Instantiate(CollisionParticles, transform.position, transform.rotation);
         yield return new WaitForSeconds(1);
+        Destroy(particles);
         Destroy(gameObject);
     }
     

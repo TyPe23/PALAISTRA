@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -533,17 +533,17 @@ PrefabInstance:
     - target: {fileID: 2672586622340083045, guid: 997992fddcdc3b540b573dd8fec365ae,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2672586622340083045, guid: 997992fddcdc3b540b573dd8fec365ae,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2672586622340083045, guid: 997992fddcdc3b540b573dd8fec365ae,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2672586622580289694, guid: 997992fddcdc3b540b573dd8fec365ae,
         type: 3}
@@ -558,12 +558,17 @@ PrefabInstance:
     - target: {fileID: 2672586623117968646, guid: 997992fddcdc3b540b573dd8fec365ae,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2672586623117968646, guid: 997992fddcdc3b540b573dd8fec365ae,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6078139314132224806, guid: 997992fddcdc3b540b573dd8fec365ae,
+        type: 3}
+      propertyPath: health
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 6078139314132224807, guid: 997992fddcdc3b540b573dd8fec365ae,
         type: 3}
@@ -634,6 +639,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2580745128062349797, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2580745128062349797, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2580745128436136998, guid: ecada373097b91743994d88f5db13ee3,
         type: 3}
       propertyPath: m_RootOrder
@@ -694,6 +709,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spike Trap
       objectReference: {fileID: 0}
+    - target: {fileID: 2580745128436137016, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2580745128436137016, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2580745128436137017, guid: ecada373097b91743994d88f5db13ee3,
         type: 3}
       propertyPath: soundSrc
@@ -703,6 +728,76 @@ PrefabInstance:
         type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289423013836824726, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289423013836824726, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3888694907231228860, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3888694907231228860, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3929536125827602267, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3929536125827602267, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5924156551644683408, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5924156551644683408, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6357518343332841087, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6357518343332841087, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7132871800598992045, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7132871800598992045, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7431836044618094583, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7431836044618094583, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ecada373097b91743994d88f5db13ee3, type: 3}
@@ -1303,7 +1398,7 @@ PrefabInstance:
     - target: {fileID: 8164758802789928527, guid: b81d3c6a38afe774faa768517e0bf780,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8164758803486362632, guid: b81d3c6a38afe774faa768517e0bf780,
         type: 3}
