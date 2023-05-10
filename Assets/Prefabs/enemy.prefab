@@ -650,8 +650,8 @@ GameObject:
   - component: {fileID: 6078139314132224806}
   - component: {fileID: 6078139314132224801}
   - component: {fileID: 6078139314132224800}
-  - component: {fileID: 2672586622580289694}
   - component: {fileID: 2672586622580289695}
+  - component: {fileID: 1780564628262180484}
   m_Layer: 0
   m_Name: enemy
   m_TagString: enemy
@@ -753,11 +753,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8feeef45037611f47bd7d8e5ab405ebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  radius: 10
+  health: 10
+  speed: 2
+  attackSpeed: 20
+  attackDist: 5
+  playerDetected: 0
+  state: 0
+  prevState: 0
   parent: {fileID: 0}
   player: {fileID: 0}
   throwRef: {fileID: 0}
   attachPoint: {fileID: 0}
-  health: 10
 --- !u!136 &6078139314132224801
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -766,10 +773,10 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6078139314132224808}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
-  m_Height: 2
+  m_Height: 2.25
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6078139314132224800
@@ -825,23 +832,6 @@ MonoBehaviour:
     m_DissipationDistance: 100
     m_PropagationSpeed: 343
   m_DefaultVelocity: {x: 0, y: -1, z: 0}
---- !u!114 &2672586622580289694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6078139314132224808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42976d75ac18996408b458d07c167366, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerDetected: 0
-  player: {fileID: 0}
-  origin: {x: 0, y: 0, z: 0}
-  radius: 10
-  agent: {fileID: 0}
 --- !u!195 &2672586622580289695
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -864,3 +854,17 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!136 &1780564628262180484
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6078139314132224808}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -591,16 +591,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1593949662}
-    - target: {fileID: 6078139314132224801, guid: 997992fddcdc3b540b573dd8fec365ae,
-        type: 3}
-      propertyPath: m_Height
-      value: 2.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 6078139314132224801, guid: 997992fddcdc3b540b573dd8fec365ae,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6078139314132224806, guid: 997992fddcdc3b540b573dd8fec365ae,
         type: 3}
       propertyPath: health
@@ -624,7 +614,7 @@ PrefabInstance:
     - target: {fileID: 6078139314132224807, guid: 997992fddcdc3b540b573dd8fec365ae,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 2.1800003
       objectReference: {fileID: 0}
     - target: {fileID: 6078139314132224807, guid: 997992fddcdc3b540b573dd8fec365ae,
         type: 3}
@@ -634,17 +624,17 @@ PrefabInstance:
     - target: {fileID: 6078139314132224807, guid: 997992fddcdc3b540b573dd8fec365ae,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6078139314132224807, guid: 997992fddcdc3b540b573dd8fec365ae,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6078139314132224807, guid: 997992fddcdc3b540b573dd8fec365ae,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6078139314132224807, guid: 997992fddcdc3b540b573dd8fec365ae,
         type: 3}
@@ -1236,26 +1226,6 @@ Camera:
     type: 3}
   m_PrefabInstance: {fileID: 1386800555}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1631464302 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6078139314132224808, guid: 997992fddcdc3b540b573dd8fec365ae,
-    type: 3}
-  m_PrefabInstance: {fileID: 723351898}
-  m_PrefabAsset: {fileID: 0}
---- !u!136 &1631464312
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1631464302}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!82 &1735681115 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 3151004512716221781, guid: ecada373097b91743994d88f5db13ee3,

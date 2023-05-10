@@ -72,7 +72,6 @@ public class Gate : MonoBehaviour
             bottomCollider.enabled = false;
             StartCoroutine(BeforeSceneChange());
             topCollider.enabled = false;
-            
         }
     }
 

@@ -219,6 +219,7 @@ public class Enemy : MonoBehaviour
 
     private void StateEnterGrabbed()
     {
+        agent.SetDestination(transform.position);
         agent.speed = 0;
         agent.enabled = false;
         charCon.grab = true;
@@ -290,7 +291,7 @@ public class Enemy : MonoBehaviour
     
     private void StateStayGrabbed()
     {
-        agent.SetDestination(transform.position);
+        
     }
     private void StateStayIdle()
     {

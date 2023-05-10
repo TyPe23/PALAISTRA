@@ -36,7 +36,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 288}
-  m_SizeDelta: {x: 522, y: 50}
+  m_SizeDelta: {x: 756.5, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1538300059
 CanvasRenderer:
@@ -68,8 +68,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: GAME OVER
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: aca2718519dfba24786fd1c0a96df49f, type: 2}
+  m_sharedMaterial: {fileID: 3512617494083927834, guid: aca2718519dfba24786fd1c0a96df49f,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1727,8 +1728,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 83}
-  m_SizeDelta: {x: 522, y: 50}
+  m_AnchoredPosition: {x: 0, y: 124.1}
+  m_SizeDelta: {x: 701.2, y: 64.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7425772924574897494
 CanvasRenderer:
@@ -1760,8 +1761,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Enter a name for the high score: '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: aca2718519dfba24786fd1c0a96df49f, type: 2}
+  m_sharedMaterial: {fileID: 3512617494083927834, guid: aca2718519dfba24786fd1c0a96df49f,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1785,8 +1787,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72.7
-  m_fontSizeBase: 72.7
+  m_fontSize: 55.8
+  m_fontSizeBase: 55.8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4621,8 +4623,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: aca2718519dfba24786fd1c0a96df49f, type: 2}
+  m_sharedMaterial: {fileID: 3512617494083927834, guid: aca2718519dfba24786fd1c0a96df49f,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
