@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
-    private Queue<string> sentences;
+    public Queue<string> sentences;
 
     public Animator animator;
     public TextMeshProUGUI nameText;
@@ -36,7 +36,6 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
-        print(sentences.Count);
         if(sentences.Count == 0)
         {
             EndDialogue();
@@ -62,6 +61,7 @@ public class DialogueManager : MonoBehaviour
     {
         animator.SetBool("IsOpen", false);
         GameObject.FindWithTag("Player").GetComponent<PlayerStats>().MoveSpeed = PlayerPrefs.GetFloat("MoveSpeed");   
+        
     }
 
     

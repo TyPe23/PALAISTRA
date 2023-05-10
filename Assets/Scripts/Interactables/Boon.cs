@@ -1,3 +1,4 @@
+using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -27,6 +28,7 @@ public class Boon : MonoBehaviour
     [SerializeField] float decrease =1;
     [SerializeField] TypeofBoon type;
     [SerializeField] int cost;
+    [SerializeField] TextMesh description;
 
     private void Awake()
     {
@@ -36,15 +38,64 @@ public class Boon : MonoBehaviour
         }
         player = GameObject.Find("Player");
     }
+
+    private void Start()
+    {
+        if(type == TypeofBoon.purchase)
+        {
+            string s = ("'{0}' increased by '{1}'\n'{2}' decreased by '{3}'\nCost: '{4}'");
+            string des = string.Format(s, boonAdvantage.ToString(),increase,boonDisadvantage.ToString(),decrease,cost);
+            description.text = des;
+        }
+    }
     //TODO convert PlayerStats.cs costs to floats to be able to manipulate them for boons
     private void OnTriggerEnter(Collider other)
     {
-        if (other.transform.CompareTag("Player")&&type==TypeofBoon.purchase)
+        if (player.GetComponent<StarterAssetsInputs>().interact && other.transform.CompareTag("Player"))
         {
-            var stats = player.GetComponent<PlayerStats>();
-            if (stats.currency >= cost)
+            if (type == TypeofBoon.purchase)
             {
+                var stats = player.GetComponent<PlayerStats>();
+                if (stats.currency >= cost)
+                {
 
+                    switch (boonAdvantage)
+                    {
+                        case Boons.speed:
+                            stats.MoveSpeed *= increase;
+                            break;
+                        case Boons.spin:
+                            stats.SpinMoveSpeed += increase;
+                            break;
+                        case Boons.dashcost:
+                            //TODO convert 
+                            break;
+                        default:
+                            break;
+                    }
+                    switch (boonDisadvantage)
+                    {
+                        case Boons.speed:
+                            stats.MoveSpeed *= decrease;
+                            break;
+                        case Boons.spin:
+                            stats.SpinMoveSpeed += decrease;
+                            break;
+                        case Boons.dashcost:
+                            //stats.LariatDuration *= decrease;
+                            break;
+                        default:
+                            break;
+
+
+                    }
+                    stats.currency -= cost;
+                    Destroy(gameObject);
+                }
+            }
+            else if (type == TypeofBoon.ending)
+            {
+                var stats = player.GetComponent<PlayerStats>();
                 switch (boonAdvantage)
                 {
                     case Boons.speed:
@@ -54,7 +105,7 @@ public class Boon : MonoBehaviour
                         stats.SpinMoveSpeed += increase;
                         break;
                     case Boons.dashcost:
-                        //TODO convert 
+                        //stats.LariatDuration *= increase;
                         break;
                     default:
                         break;
@@ -75,48 +126,11 @@ public class Boon : MonoBehaviour
 
 
                 }
-                stats.currency -= cost;
                 Destroy(gameObject);
-            }   
-        }
-        else if(other.transform.CompareTag("Player") && type == TypeofBoon.ending)
-        {
-            var stats = player.GetComponent<PlayerStats>();
-            switch (boonAdvantage)
-            {
-                case Boons.speed:
-                    stats.MoveSpeed *= increase;
-                    break;
-                case Boons.spin:
-                    stats.SpinMoveSpeed += increase;
-                    break;
-                case Boons.dashcost:
-                    //stats.LariatDuration *= increase;
-                    break;
-                default:
-                    break;
-            }
-            switch (boonDisadvantage)
-            {
-                case Boons.speed:
-                    stats.MoveSpeed *= decrease;
-                    break;
-                case Boons.spin:
-                    stats.SpinMoveSpeed += decrease;
-                    break;
-                case Boons.dashcost:
-                    //stats.LariatDuration *= decrease;
-                    break;
-                default:
-                    break;
-
+                endofLevelBoons();
 
             }
-            Destroy(gameObject);
-            endofLevelBoons();
-
         }
-
         
     }
     public void endofLevelBoons()

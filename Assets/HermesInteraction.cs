@@ -33,7 +33,7 @@ public class HermesInteraction : MonoBehaviour
     {
         if (player.interact&&other.transform.CompareTag("Player"))
         {
-            gameObject.GetComponent<CapsuleCollider>().enabled = false;
+            gameObject.GetComponent<Collider>().enabled = false;
             StartCoroutine(startDialogue()); 
             
         }
@@ -51,9 +51,10 @@ public class HermesInteraction : MonoBehaviour
         {
             GameObject.FindWithTag("Player").GetComponent<PlayerStats>().MoveSpeed = 0;
             yield return new WaitForSeconds(0.3f);
-            gameObject.GetComponent<CapsuleCollider>().enabled = true;
+            gameObject.GetComponent<Collider>().enabled = true;
 
             man.DisplayNextSentence();
+            
             
         }
         else
@@ -61,10 +62,21 @@ public class HermesInteraction : MonoBehaviour
             GameObject.FindWithTag("Player").GetComponent<PlayerStats>().MoveSpeed = 0;
             yield return new WaitForSeconds(0.3f);
             repeat = true;
-            gameObject.GetComponent<CapsuleCollider>().enabled = true;
+            gameObject.GetComponent<Collider>().enabled = true;
 
             trigger.TriggerDialogue();
         }
+        if (man.sentences.Count == 0)
+        {
+            StartCoroutine(ResetTrigger());
+
+        }
+    }
+
+    IEnumerator ResetTrigger()
+    {
+        yield return new WaitForSeconds(10);
+        repeat = false;
     }
 
 }
