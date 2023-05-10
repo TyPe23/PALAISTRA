@@ -31,7 +31,6 @@ public class StaminaManager : MonoBehaviour
 
             if (momentum.recovery == stats.exhaustedRecovery)
             {
-                print("here");
                 fill.color = new Color(color.r, color.g, color.b, Mathf.Sin(Time.time * 20));
             }
             else

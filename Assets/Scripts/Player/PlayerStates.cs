@@ -573,7 +573,7 @@ public class PlayerStates : MonoBehaviour
     private IEnumerator IFrames()
     {
         invul = true;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         invul = false;
     }
     #endregion

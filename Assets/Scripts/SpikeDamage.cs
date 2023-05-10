@@ -15,7 +15,7 @@ public class SpikeDamage : MonoBehaviour
         if (other.transform.CompareTag("enemy"))
         {
             print("Should hurt enemy");
-            other.gameObject.GetComponent<PlayerEnemyInteraction>().health -= damage;
+            other.gameObject.GetComponent<Enemy>().health -= damage;
         }
     }
 }

@@ -37,7 +37,7 @@ public class RoomManager : MonoBehaviour
         int enemiesLeft = 0;
         var enemies = GameObject.FindGameObjectsWithTag("enemy");
         foreach(var enemy in enemies){
-            if(enemy.GetComponent<PlayerEnemyInteraction>().health > 0)
+            if(enemy.GetComponent<Enemy>().health > 0)
             {
                 enemiesLeft++;
             }
