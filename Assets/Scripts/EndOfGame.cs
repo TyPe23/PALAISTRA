@@ -17,6 +17,9 @@ public class EndOfGame : MonoBehaviour
     private PlayerInput UIinput;
     private PlayerStates state;
     private StarterAssetsInputs inputs;
+    private GameObject roomMan;
+
+    private bool canEnter = true;
 
     // Start is called before the first frame update
     void Start()
@@ -35,15 +38,41 @@ public class EndOfGame : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            state.ChangeState(playerStates.IDLE);
-
-            keyboardUI.SetActive(true);
-            playerUI.SetActive(false);
-            inputs.cursorLocked = false;
-            playerInput.enabled = false;
-            UIinput.enabled = true;
-
-            EventSystem.current.SetSelectedGameObject(keyboardFirstButton);
+            endGame();
         }
+    }
+
+    public void endGame()
+    {
+        state.ChangeState(playerStates.IDLE);
+
+        keyboardUI.SetActive(true);
+        playerUI.SetActive(false);
+        inputs.cursorLocked = false;
+        playerInput.enabled = false;
+        UIinput.enabled = true;
+
+        EventSystem.current.SetSelectedGameObject(keyboardFirstButton);
+    }
+
+    public void enterFunct(string word)
+    {
+        if (canEnter)
+        {
+            canEnter = false;
+            //HS.SubmitHighScore(this, word, PlayerPrefs.GetInt("Score"));
+            StartCoroutine(waitThenChange());
+
+            keyboardUI.SetActive(false);
+        }
+    }
+
+    private IEnumerator waitThenChange()
+    {
+
+        yield return new WaitForSeconds(2);
+
+        roomMan = GameObject.Find("RoomManager");
+        roomMan.GetComponent<RoomManager>().changeRoomSpecific(1, direction.right);
     }
 }

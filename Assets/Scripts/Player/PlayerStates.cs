@@ -51,7 +51,7 @@ public class PlayerStates : MonoBehaviour
     private Animator animator;
     private TMP_Text scoreUI;
     private CinemachineImpulseSource shake;
-
+    private EndOfGame EOG;
 
 
     private bool canAction;
@@ -76,6 +76,7 @@ public class PlayerStates : MonoBehaviour
         soundSrc = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
         scoreUI = GetComponentInChildren<TMP_Text>();
+        EOG = GetComponentInChildren<EndOfGame>();
 
         statesStayMeths = new Dictionary<playerStates, Action>()
         {
@@ -240,6 +241,7 @@ public class PlayerStates : MonoBehaviour
 
     private void StateEnterLose()
     {
+        StartCoroutine(gameOverDelay());
     }
 
     private void StateEnterHit()
@@ -548,6 +550,12 @@ public class PlayerStates : MonoBehaviour
         animator.SetBool("Hit", false);
         canMove = true;
         StartCoroutine(IFrames());
+    }
+
+    private IEnumerator gameOverDelay()
+    {
+        yield return new WaitForSeconds(3);
+        EOG.endGame();
     }
 
     private IEnumerator HBTimeout()

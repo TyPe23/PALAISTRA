@@ -7,15 +7,16 @@ using HighScore;
 
 public class Keyboard : MonoBehaviour
 {
-    private GameObject roomMan;
+    
     public string word = "";
     public TMP_Text output = null;
-    bool shift = false;
+    private bool shift = false;
+    private EndOfGame EOG;
 
     public IDictionary<string, string> shiftDictionary = new Dictionary<string, string>() {
-        {"a", "A"}, {"b", "B"}, {"c", "C" }, {"d", "D"},
+        {"a", "A"}, {"b", "B"}, {"c", "C"}, {"d", "D"},
         {"e", "E"}, {"f", "F"}, {"g", "G"}, {"h", "H"},
-        {"i", "I"}, {"j", "J" }, {"k", "K"}, {"l", "L"},
+        {"i", "I"}, {"j", "J"}, {"k", "K"}, {"l", "L"},
         {"m", "M"}, {"n", "N"}, {"o", "O"}, {"p", "P"},
         {"q", "Q"}, {"r", "R"}, {"s", "S"}, {"t", "T"},
         {"u", "U"}, {"v", "V"}, {"w", "W"}, {"x", "X"},
@@ -61,8 +62,7 @@ public class Keyboard : MonoBehaviour
 
     public void enterFunct()
     {
-        HS.SubmitHighScore(this, word, PlayerPrefs.GetInt("Score"));
-        roomMan = GameObject.Find("RoomManager");
-        roomMan.GetComponent<RoomManager>().changeRoomSpecific(1, direction.right);
+        EOG = GameObject.FindGameObjectWithTag("EOG").GetComponent<EndOfGame>();
+        EOG.enterFunct(word);
     }
 }
