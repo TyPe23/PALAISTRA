@@ -16,7 +16,7 @@ public class RoomManager : MonoBehaviour
     [SerializeField] private int finalIndex;
     [SerializeField] private bool resetCounter;
     private bool entering;
-    private direction goDir;
+    [SerializeField]private direction goDir;
     public int roomtoShop;
 
     private PlayerStats stats;
@@ -29,6 +29,7 @@ public class RoomManager : MonoBehaviour
         momentum = GameObject.FindGameObjectWithTag("Player").GetComponent<MomentumManager>();
         roomCount = PlayerPrefs.GetInt("roomCount");
         print("Room Count: " + roomCount);
+        StartCoroutine(enter());
     }
 
     // Update is called once per frame
@@ -136,5 +137,11 @@ public class RoomManager : MonoBehaviour
             entering = false;
             rm.GetComponent<RoomManager>().entering = false;
         }
+    }
+    private IEnumerator enter()
+    {
+        entering = true;
+        yield return new WaitForSeconds(2);
+        entering = false;
     }
 }
