@@ -454,7 +454,27 @@ PrefabInstance:
       propertyPath: m_TagString
       value: floor
       objectReference: {fileID: 0}
+    - target: {fileID: 410641926977250205, guid: ecc6aff331fb53b408f69c16b3885e00,
+        type: 3}
+      propertyPath: m_TagString
+      value: floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3853178349645163424, guid: ecc6aff331fb53b408f69c16b3885e00,
+        type: 3}
+      propertyPath: m_TagString
+      value: floor
+      objectReference: {fileID: 0}
     - target: {fileID: 4572728722370900303, guid: ecc6aff331fb53b408f69c16b3885e00,
+        type: 3}
+      propertyPath: m_TagString
+      value: floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5892799571708485739, guid: ecc6aff331fb53b408f69c16b3885e00,
+        type: 3}
+      propertyPath: m_TagString
+      value: floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5960657998918821004, guid: ecc6aff331fb53b408f69c16b3885e00,
         type: 3}
       propertyPath: m_TagString
       value: floor
