@@ -222,7 +222,7 @@ public class Enemy : MonoBehaviour
         shake.GenerateImpulseWithForce(0.1f);
 
         Vector3 launch = throwRef.position - player.transform.position;
-        launch.y = 0.2f;
+        launch.y = 0.1f;
 
         if (states.prevState == playerStates.SPIN)
         {
