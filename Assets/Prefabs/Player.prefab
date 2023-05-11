@@ -3783,6 +3783,7 @@ MonoBehaviour:
   hitbox: {fileID: 8394732592489485727}
   canCheck: 0
   letGo: 0
+  launchAmount: 0
   invul: 0
   showScore: 1
 --- !u!114 &7879785133890839069
