@@ -386,7 +386,14 @@ public class Enemy : MonoBehaviour
     private IEnumerator hitStun()
     {
         yield return new WaitForSeconds(0.5f);
-        ChangeState(state.MOVE);
+        if (health <= 0)
+        {
+            ChangeState(state.MOVE);
+        }
+        else
+        {
+            ChangeState(state.DEATH);
+        }
     }
     
     private IEnumerator attackRecoil()
