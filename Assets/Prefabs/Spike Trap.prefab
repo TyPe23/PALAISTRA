@@ -353,7 +353,7 @@ GameObject:
   - component: {fileID: 153936873316141868}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -448,6 +448,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Murder_Holes
+      objectReference: {fileID: 0}
+    - target: {fileID: 30617230704189639, guid: ecc6aff331fb53b408f69c16b3885e00,
+        type: 3}
+      propertyPath: m_TagString
+      value: floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4572728722370900303, guid: ecc6aff331fb53b408f69c16b3885e00,
+        type: 3}
+      propertyPath: m_TagString
+      value: floor
       objectReference: {fileID: 0}
     - target: {fileID: 7126350023434717915, guid: ecc6aff331fb53b408f69c16b3885e00,
         type: 3}

@@ -34,9 +34,9 @@ public class EndOfGame : MonoBehaviour
 
 
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && inputs.interact)
         {
             endGame();
         }

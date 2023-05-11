@@ -9281,6 +9281,11 @@ PrefabInstance:
       propertyPath: nextRoom
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 7338467272534967169, guid: 4d71e076bf167ae4d865cc5107caaafb,
+        type: 3}
+      propertyPath: enemiesOption
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7699398880307526927, guid: 4d71e076bf167ae4d865cc5107caaafb,
         type: 3}
       propertyPath: m_Enabled
