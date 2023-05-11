@@ -51,7 +51,7 @@ public class Boon : MonoBehaviour
     //TODO convert PlayerStats.cs costs to floats to be able to manipulate them for boons
     private void OnTriggerEnter(Collider other)
     {
-        if (player.GetComponent<inputs>().interact && other.transform.CompareTag("Player"))
+        if (player.GetComponent<StarterAssetsInputs>().interact && other.transform.CompareTag("Player"))
         {
             if (type == TypeofBoon.purchase)
             {
