@@ -24,8 +24,6 @@ public class SpikeTrap : MonoBehaviour
         hitbox = GetComponentInChildren<SphereCollider>();
         soundSrc = GetComponent<AudioSource>();
 
-        print(soundSrc);
-
         hitbox.enabled = false;
 
         endPos = spikes.transform.position;

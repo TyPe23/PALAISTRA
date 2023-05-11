@@ -192,7 +192,10 @@ public class Enemy : MonoBehaviour
         mesh.material.color = new Color(255, 0, 0);
         agent.speed = attackSpeed;
         agent.acceleration *= 10;
-        agent.SetDestination(player.transform.position);
+        if (agent.enabled)
+        {
+            agent.SetDestination(player.transform.position);
+        }
     }
 
     private void StateEnterThrown()
@@ -233,7 +236,10 @@ public class Enemy : MonoBehaviour
 
     private void StateEnterGrabbed()
     {
-        agent.SetDestination(transform.position);
+        if (agent.enabled)
+        {
+            agent.SetDestination(transform.position);
+        }
         agent.speed = 0;
         agent.enabled = false;
         charCon.grab = true;
@@ -263,7 +269,10 @@ public class Enemy : MonoBehaviour
     private void StateEnterHit()
     {
         mesh.material.color = new Color(255, 255, 255);
-        agent.SetDestination(transform.position);
+        if (agent.enabled)
+        {
+            agent.SetDestination(transform.position);
+        }
         StartCoroutine(hitStun());
     }
 
@@ -288,7 +297,10 @@ public class Enemy : MonoBehaviour
     private void StateStayPrime()
     {
         mesh.material.color = new Color(255, 255, 0);
-        agent.SetDestination(player.transform.position);
+        if (agent.enabled)
+        {
+            agent.SetDestination(player.transform.position);
+        }
     }
 
     private void StateStayThrown()
@@ -322,7 +334,10 @@ public class Enemy : MonoBehaviour
 
     private void StateStayMove()
     {
-        agent.SetDestination(player.transform.position);
+        if (agent.enabled)
+        {
+            agent.SetDestination(player.transform.position);
+        }
 
         if ((transform.position - player.transform.position).magnitude <= attackDist && !checkingDist)
         {
@@ -371,7 +386,10 @@ public class Enemy : MonoBehaviour
 
     private void StateExitMove()
     {
-        agent.SetDestination(transform.position);
+        if (agent.enabled)
+        {
+            agent.SetDestination(transform.position);
+        }
     }
     #endregion
 
@@ -382,17 +400,17 @@ public class Enemy : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         capCollider.enabled = true;
     }
-
+    
     private IEnumerator hitStun()
     {
         yield return new WaitForSeconds(0.5f);
         if (health <= 0)
         {
-            ChangeState(state.MOVE);
+            ChangeState(state.DEATH);
         }
         else
         {
-            ChangeState(state.DEATH);
+            ChangeState(state.MOVE);
         }
     }
     

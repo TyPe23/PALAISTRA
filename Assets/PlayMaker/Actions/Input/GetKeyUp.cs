@@ -56,6 +56,7 @@ namespace HutongGames.PlayMaker.Actions
 		{
 #if NEW_INPUT_SYSTEM_ONLY
             var keyUp = Keyboard.current[key].wasReleasedThisFrame;
+            //var keyUp = Keyboard.current[key].wasReleasedThisFrame;
 #else
             var keyUp = Input.GetKeyUp(key);
 #endif

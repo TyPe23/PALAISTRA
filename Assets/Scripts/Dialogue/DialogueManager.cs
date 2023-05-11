@@ -12,15 +12,18 @@ public class DialogueManager : MonoBehaviour
     public Animator animator;
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
+    public GameObject dialogueBox;
 
     // Start is called before the first frame update
     void Start()
     {
         sentences = new Queue<string>();
+        dialogueBox.SetActive(false);
     }
 
     public void StartDialogue(Dialogue dialogue)
     {
+        dialogueBox.SetActive(true);
         animator.SetBool("IsOpen", true);
         nameText.text = dialogue.dialogueName;
 
@@ -60,9 +63,7 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         animator.SetBool("IsOpen", false);
+        dialogueBox.SetActive(false);
         GameObject.FindWithTag("Player").GetComponent<PlayerStats>().MoveSpeed = PlayerPrefs.GetFloat("MoveSpeed");   
-        
     }
-
-    
 }

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using HighScore;
 
-public class Keyboard : MonoBehaviour
+public class Keyboard1 : MonoBehaviour
 {
     
     public string word = "";
