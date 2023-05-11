@@ -435,7 +435,7 @@ public class PlayerStates : MonoBehaviour
 
     private void StateStayMove()
     {
-        letGo = true;
+        //letGo = true;
         charCon.Move();
 
         if (inputs.sprint && stamina.stamina >= playerStats.DashCost && canDash)

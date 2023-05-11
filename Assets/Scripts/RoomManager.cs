@@ -28,7 +28,7 @@ public class RoomManager : MonoBehaviour
         stats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
         momentum = GameObject.FindGameObjectWithTag("Player").GetComponent<MomentumManager>();
         roomCount = PlayerPrefs.GetInt("roomCount");
-        print("Room Count: " + roomCount);
+        //print("Room Count: " + roomCount);
         StartCoroutine(enter());
     }
 

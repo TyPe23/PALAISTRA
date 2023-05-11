@@ -39,8 +39,8 @@ public class PlayerStats : MonoBehaviour
     void Awake()
     {
         HS.Init(this, "PALAISTRA");
-        //if (PlayerPrefs.HasKey("MoveSpeed"))
-        //{
+        if (!PlayerPrefs.HasKey("MoveSpeed"))
+        {
             PlayerPrefs.SetFloat("MoveSpeed", 5.25f);
             PlayerPrefs.SetFloat("ExhaustedSpeed", PlayerPrefs.GetFloat("MoveSpeed") / 2);
             PlayerPrefs.SetFloat("SpinMoveSpeed", 0.1f);
@@ -60,7 +60,7 @@ public class PlayerStats : MonoBehaviour
             PlayerPrefs.SetFloat("exhaustedRecovery", PlayerPrefs.GetFloat("staminaRecovery") * 4);
             PlayerPrefs.SetFloat("SpinHoldCost", PlayerPrefs.GetFloat("staminaRecovery") * 2);
             PlayerPrefs.SetInt("Score", 999);
-        //}
+        }
 
         SpinMoveSpeed = PlayerPrefs.GetFloat("SpinMoveSpeed");
         MoveSpeed = PlayerPrefs.GetFloat("MoveSpeed");

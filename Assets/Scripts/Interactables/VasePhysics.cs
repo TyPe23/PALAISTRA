@@ -15,8 +15,6 @@ public class VasePhysics : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        print(other.transform.tag);
-
         if(other.TryGetComponent<PlayerStates>(out PlayerStates com))
         {
             playerInput = (com.state == playerStates.DASH || com.hitbox.enabled)  ? true : false;
