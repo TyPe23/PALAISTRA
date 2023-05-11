@@ -15,7 +15,7 @@ public class RoomManager : MonoBehaviour
     private int roomCount;
     [SerializeField] private int finalIndex;
     [SerializeField] private bool resetCounter;
-    private bool entering;
+    public bool entering;
     [SerializeField]private direction goDir;
     public int roomtoShop;
 
@@ -49,7 +49,6 @@ public class RoomManager : MonoBehaviour
         }
         if (entering)
         {
-            print("Entering");
             var player = GameObject.FindWithTag("Player");
             if (goDir == direction.left)
             {

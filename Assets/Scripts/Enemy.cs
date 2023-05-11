@@ -399,8 +399,13 @@ public class Enemy : MonoBehaviour
     private IEnumerator attackRecoil()
     {
         mesh.material.color = new Color(255, 0, 255);
+        canGrab = true;
         yield return new WaitForSeconds(1f);
-        ChangeState(state.MOVE);
+
+        if (state == state.ATTACK)
+        {
+            ChangeState(state.MOVE);
+        }
     }
 
     private IEnumerator charge()

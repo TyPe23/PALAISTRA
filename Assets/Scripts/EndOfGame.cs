@@ -20,6 +20,7 @@ public class EndOfGame : MonoBehaviour
     private GameObject roomMan;
 
     private bool canEnter = true;
+    private bool gameEnded = false;
 
     // Start is called before the first frame update
     void Start()
@@ -34,9 +35,9 @@ public class EndOfGame : MonoBehaviour
 
 
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && inputs.interact && !gameEnded)
         {
             endGame();
         }
@@ -44,6 +45,8 @@ public class EndOfGame : MonoBehaviour
 
     public void endGame()
     {
+        gameEnded = true;
+
         state.ChangeState(playerStates.IDLE);
 
         keyboardUI.SetActive(true);
