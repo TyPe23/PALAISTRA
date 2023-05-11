@@ -2795,7 +2795,7 @@ PrefabInstance:
     - target: {fileID: 7338467272534967169, guid: 4d71e076bf167ae4d865cc5107caaafb,
         type: 3}
       propertyPath: nextRoom
-      value: 3
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8764635723989279704, guid: 4d71e076bf167ae4d865cc5107caaafb,
         type: 3}
@@ -14893,6 +14893,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoomManager
       objectReference: {fileID: 0}
+    - target: {fileID: 4616065035986149453, guid: 50edf722675feb84aa69b9b58992a4e7,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 919756692}
     - target: {fileID: 4616065035986149453, guid: 50edf722675feb84aa69b9b58992a4e7,
         type: 3}
       propertyPath: roomtoShop

@@ -18,6 +18,7 @@ public class RoomManager : MonoBehaviour
     public bool entering;
     [SerializeField]private direction goDir;
     public int roomtoShop;
+    [SerializeField] private GameObject player;
 
     private PlayerStats stats;
     private MomentumManager momentum;
@@ -49,7 +50,7 @@ public class RoomManager : MonoBehaviour
         }
         if (entering)
         {
-            var player = GameObject.FindWithTag("Player");
+            
             if (goDir == direction.left)
             {
                 player.GetComponent<StarterAssetsInputs>().move = new Vector2(-0.7f, 0.7f);

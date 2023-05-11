@@ -226,6 +226,17 @@
                 },
                 {
                     "name": "",
+                    "id": "056aaf94-2c33-4c49-b884-0583bf74faa3",
+                    "path": "<XInputController>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Xbox Controller",
+                    "action": "PileDriver",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "dc65b89f-9bd3-43fb-92af-d0d87ba5faa4",
                     "path": "<Keyboard>/leftShift",
                     "interactions": "",
@@ -242,6 +253,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
+                    "action": "Sprint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1a797ce3-c2f5-4045-9086-80643ed494e0",
+                    "path": "<XInputController>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Xbox Controller",
                     "action": "Sprint",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -270,6 +292,17 @@
                 },
                 {
                     "name": "",
+                    "id": "cf49ada6-e9c8-4124-abf6-803827588cd2",
+                    "path": "<XInputController>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Xbox Controller",
+                    "action": "Spin",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "f7ef16ad-113d-494f-b097-a84bc16552a9",
                     "path": "<Mouse>/rightButton",
                     "interactions": "",
@@ -292,6 +325,17 @@
                 },
                 {
                     "name": "",
+                    "id": "e5f3ccc0-843d-47d4-9f51-cde5330123e5",
+                    "path": "<XInputController>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Xbox Controller",
+                    "action": "Lariat",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "921ed075-7bad-4625-bbad-9e8b46529aa9",
                     "path": "<Keyboard>/e",
                     "interactions": "",
@@ -308,6 +352,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c06d0bba-81b0-48f8-8516-320b19251a2e",
+                    "path": "<XInputController>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Xbox Controller",
                     "action": "Interact",
                     "isComposite": false,
                     "isPartOfComposite": false
