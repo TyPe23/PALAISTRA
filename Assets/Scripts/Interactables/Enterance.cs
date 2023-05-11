@@ -26,7 +26,7 @@ public class Enterance : MonoBehaviour
         {
             animator.SetBool("trigger", true);
             stop.enabled = true;
-            var pay = other.GetComponent<inputs>();
+            var pay = other.GetComponent<StarterAssetsInputs>();
             var rm = GameObject.Find("RoomManager").GetComponent<RoomManager>().entering = false;
             pay.move = new Vector2(0, 0);
             pay.moveDir = new Vector2(0, 0);

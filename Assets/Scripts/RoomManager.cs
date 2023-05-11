@@ -22,7 +22,6 @@ public class RoomManager : MonoBehaviour
 
     private PlayerStats stats;
     private MomentumManager momentum;
-    private inputs input;
 
     // Start is called before the first frame update
     void Start()
@@ -32,7 +31,6 @@ public class RoomManager : MonoBehaviour
         roomCount = PlayerPrefs.GetInt("roomCount");
         //print("Room Count: " + roomCount);
         StartCoroutine(enter());
-        input = player.GetComponent<inputs>();
     }
 
     // Update is called once per frame
@@ -55,13 +53,13 @@ public class RoomManager : MonoBehaviour
             
             if (goDir == direction.left)
             {
-                input.move = new Vector2(-0.7f, 0.7f);
-                input.moveDir = new Vector2(-0.7f, 0.7f);
+                player.GetComponent<StarterAssetsInputs>().move = new Vector2(-0.7f, 0.7f);
+                player.GetComponent<StarterAssetsInputs>().moveDir = new Vector2(-0.7f, 0.7f);
             }
             else
             {
-                input.move = new Vector2(0.7f, 0.7f);
-                input.moveDir = new Vector2(0.7f, 0.7f);
+                player.GetComponent<StarterAssetsInputs>().move = new Vector2(0.7f, 0.7f);
+                player.GetComponent<StarterAssetsInputs>().moveDir = new Vector2(0.7f, 0.7f);
             }
         }
     }

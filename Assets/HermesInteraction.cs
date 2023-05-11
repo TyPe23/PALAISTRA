@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 
 public class HermesInteraction : MonoBehaviour
 {
-    [SerializeField] private inputs player;
+    [SerializeField] private StarterAssetsInputs player;
     public bool repeat;
     public DialogueTrigger trigger;
     public DialogueManager man;
