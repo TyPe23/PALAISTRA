@@ -25,12 +25,14 @@ public class Gate : MonoBehaviour
     [SerializeField] private MeshRenderer text;
     private bool leaving;
     [SerializeField] private bool enemiesOption;
+    private inputs inputs;
     
     // Start is called before the first frame update
     void Start()
     {
         roomMan = GameObject.Find("RoomManager");
         player = GameObject.FindWithTag("Player");
+        inputs = player.GetComponent<inputs>();
         text.enabled = false;
     }
 
@@ -40,22 +42,22 @@ public class Gate : MonoBehaviour
         if (leaving) {
             if (goDir == direction.left)
             {
-                player.GetComponent<StarterAssetsInputs>().move = new Vector2(-0.7f, 0.7f);
-                player.GetComponent<StarterAssetsInputs>().moveDir = new Vector2(-0.7f, 0.7f);
+                inputs.move = new Vector2(-0.7f, 0.7f);
+                inputs.moveDir = new Vector2(-0.7f, 0.7f);
             }
             else if(goDir == direction.downleft){
-                player.GetComponent<StarterAssetsInputs>().move = new Vector2(-0.7f, -0.7f);
-                player.GetComponent<StarterAssetsInputs>().moveDir = new Vector2(-0.7f, -0.7f);
+                inputs.move = new Vector2(-0.7f, -0.7f);
+                inputs.moveDir = new Vector2(-0.7f, -0.7f);
             }
             else if(goDir == direction.downright)
             {
-                player.GetComponent<StarterAssetsInputs>().move = new Vector2(0.7f, -0.7f);
-                player.GetComponent<StarterAssetsInputs>().moveDir = new Vector2(0.7f, -0.7f);
+                inputs.move = new Vector2(0.7f, -0.7f);
+                inputs.moveDir = new Vector2(0.7f, -0.7f);
             }
             else
             {
-                player.GetComponent<StarterAssetsInputs>().move = new Vector2(0.7f, 0.7f);
-                player.GetComponent<StarterAssetsInputs>().moveDir = new Vector2(0.7f, 0.7f);
+                inputs.move = new Vector2(0.7f, 0.7f);
+                inputs.moveDir = new Vector2(0.7f, 0.7f);
             }
         }
         
@@ -68,13 +70,13 @@ public class Gate : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         
-        if (other.transform.CompareTag("Player")&& roomMan.GetComponent<RoomManager>().levelComplete && player.GetComponent<StarterAssetsInputs>().interact)
+        if (other.transform.CompareTag("Player")&& roomMan.GetComponent<RoomManager>().levelComplete && inputs.interact)
         {
             bottomCollider.enabled = false;
             StartCoroutine(BeforeSceneChange());
             topCollider.enabled = false;
         }
-        else if(other.transform.CompareTag("Player") && enemiesOption && player.GetComponent<StarterAssetsInputs>().interact)
+        else if(other.transform.CompareTag("Player") && enemiesOption && inputs.interact)
         {
             bottomCollider.enabled = false;
             StartCoroutine(BeforeSceneChange());

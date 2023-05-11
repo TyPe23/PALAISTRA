@@ -24,7 +24,7 @@ public enum playerStates
 
 [RequireComponent(typeof(ThirdPersonController))]
 [RequireComponent(typeof(PlayerStats))]
-[RequireComponent(typeof(StarterAssetsInputs))]
+[RequireComponent(typeof(inputs))]
 [RequireComponent(typeof(StaminaManager))]
 [RequireComponent(typeof(CinemachineImpulseSource))]
 [RequireComponent(typeof(MomentumManager))]
@@ -46,7 +46,7 @@ public class PlayerStates : MonoBehaviour
 
     private ThirdPersonController charCon;
     private PlayerStats playerStats;
-    private StarterAssetsInputs inputs;
+    private inputs inputs;
     private StaminaManager stamina;
     private MomentumManager momentum;
     private AudioSource soundSrc;
@@ -71,7 +71,7 @@ public class PlayerStates : MonoBehaviour
     {
         charCon = GetComponent<ThirdPersonController>();
         playerStats = GetComponent<PlayerStats>();
-        inputs = GetComponent<StarterAssetsInputs>();
+        inputs = GetComponent<inputs>();
         stamina = GetComponent<StaminaManager>();
         shake = GetComponent<CinemachineImpulseSource>();
         momentum = GetComponent<MomentumManager>();

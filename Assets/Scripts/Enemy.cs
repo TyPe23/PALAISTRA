@@ -32,8 +32,8 @@ public class Enemy : MonoBehaviour
     public float attackDist = 5;
     public float distToPlayer;
     public float prevDist;
+    public bool DEBUG;
 
-    public bool playerDetected;
     public state state;
     public state prevState;
     public Transform parent;
@@ -78,7 +78,7 @@ public class Enemy : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         charCon = player.GetComponent<ThirdPersonController>();
         capCollider = player.GetComponent<CapsuleCollider>();
-        mesh = GetComponent<MeshRenderer>();
+        mesh = GetComponentInChildren<MeshRenderer>();
 
         states = player.GetComponent<PlayerStates>();
         shake = player.GetComponent<CinemachineImpulseSource>();
@@ -189,7 +189,10 @@ public class Enemy : MonoBehaviour
     private void StateEnterAttack()
     {
         canGrab = false;
-        mesh.material.color = new Color(255, 0, 0);
+        if (DEBUG)
+        {
+            mesh.material.color = new Color(255, 0, 0);
+        }
         agent.speed = attackSpeed;
         agent.acceleration *= 10;
         if (agent.enabled)
@@ -212,7 +215,10 @@ public class Enemy : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, 0, 0);
         rb.useGravity = true;
 
-        mesh.material.color = new Color(0, 0, 255);
+        if (DEBUG)
+        {
+            mesh.material.color = new Color(0, 0, 255);
+        }
         shake.GenerateImpulseWithForce(0.1f);
 
         Vector3 launch = throwRef.position - player.transform.position;
@@ -247,7 +253,10 @@ public class Enemy : MonoBehaviour
         transform.position = attachPoint.position;
         rb.useGravity = false;
         rb.isKinematic = true;
-        mesh.material.color = new Color(255, 255, 255);
+        if (DEBUG)
+        {
+            mesh.material.color = new Color(255, 255, 255);
+        }
     }
 
     private void StateEnterSpawn()
@@ -258,7 +267,10 @@ public class Enemy : MonoBehaviour
     private void StateEnterDeath()
     {
         //trigger death anim
-        mesh.material.color = new Color(0, 0, 0);
+        if (DEBUG)
+        {
+            mesh.material.color = new Color(0, 0, 0);
+        }
         gameObject.tag = "Untagged";
         slider.gameObject.SetActive(false);
         rb.isKinematic = true;
@@ -268,7 +280,10 @@ public class Enemy : MonoBehaviour
 
     private void StateEnterHit()
     {
-        mesh.material.color = new Color(255, 255, 255);
+        if (DEBUG)
+        {
+            mesh.material.color = new Color(255, 255, 255);
+        }
         if (agent.enabled)
         {
             agent.SetDestination(transform.position);
@@ -278,7 +293,10 @@ public class Enemy : MonoBehaviour
 
     private void StateEnterMove()
     {
-        mesh.material.color = new Color(255, 0, 255);
+        if (DEBUG)
+        {
+            mesh.material.color = new Color(255, 0, 255);
+        }
         agent.speed = speed;
     }
     #endregion
@@ -296,7 +314,10 @@ public class Enemy : MonoBehaviour
 
     private void StateStayPrime()
     {
-        mesh.material.color = new Color(255, 255, 0);
+        if (DEBUG)
+        {
+            mesh.material.color = new Color(255, 255, 0);
+        }
         if (agent.enabled)
         {
             agent.SetDestination(player.transform.position);
@@ -416,7 +437,10 @@ public class Enemy : MonoBehaviour
     
     private IEnumerator attackRecoil()
     {
-        mesh.material.color = new Color(255, 0, 255);
+        if (DEBUG)
+        {
+            mesh.material.color = new Color(255, 0, 255);
+        }
         canGrab = true;
         yield return new WaitForSeconds(1f);
 

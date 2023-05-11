@@ -17,7 +17,7 @@ public class EndOfGame : MonoBehaviour
     private PlayerInput playerInput;
     private PlayerInput UIinput;
     private PlayerStates state;
-    private StarterAssetsInputs inputs;
+    private inputs inputs;
     private PlayerStats stats;
     private MomentumManager momentum;
     private GameObject roomMan;
@@ -33,7 +33,7 @@ public class EndOfGame : MonoBehaviour
         momentum = player.GetComponent<MomentumManager>();
         playerInput = player.GetComponent<PlayerInput>();
         UIinput = GetComponent<PlayerInput>();
-        inputs = player.GetComponent<StarterAssetsInputs>();
+        inputs = player.GetComponent<inputs>();
         state = player.GetComponent<PlayerStates>();
         playerUI = GameObject.FindGameObjectWithTag("UI");
     }
