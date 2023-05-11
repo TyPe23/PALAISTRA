@@ -1,0 +1,1502 @@
+fileFormatVersion: 2
+guid: c8c9eb6c3942fcf4582b27b7300b75d2
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 1
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Palaistra_Final_LeftShoulder_joint' has
+      translation animation that will be discarded.\n\t'Palaistra_Final_LeftHandThumb1_joint'
+      has translation animation that will be discarded.\n\t'Palaistra_Final_LeftHandIndex1_joint'
+      has translation animation that will be discarded.\n\t'Palaistra_Final_LeftHandMiddle1_joint'
+      has translation animation that will be discarded.\n\t'Palaistra_Final_LeftHandRing1_joint'
+      has translation animation that will be discarded.\n\t'Palaistra_Final_LeftHandPinky1_joint'
+      has translation animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths:
+    - Palaistra_Final_Hips_joint/Attach_Joint
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Grapple
+      takeName: Take 001
+      internalID: 1827226128182048838
+      firstFrame: 1
+      lastFrame: 12
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Slam
+      takeName: Take 001
+      internalID: -998496362607748373
+      firstFrame: 13
+      lastFrame: 48
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: Palaistra_Final_Hips_joint
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_LeftUpLeg_joint
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_RightUpLeg_joint
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_LeftLeg_joint
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_RightLeg_joint
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_LeftFoot_joint
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_RightFoot_joint
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_Spine_joint
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_Spine1_joint
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_Neck_joint
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_Head_joint
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_LeftShoulder_joint
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_RightShoulder_joint
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_LeftArm_joint
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_RightArm_joint
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_LeftForeArm_joint
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_RightForeArm_joint
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_LeftHand_joint
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_RightHand_joint
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_LeftToeBase_joint
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_RightToeBase_joint
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_LeftHandThumb1_joint
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_LeftHandThumb2_joint
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_LeftHandThumb3_joint
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_LeftHandIndex1_joint
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_LeftHandIndex2_joint
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_LeftHandIndex3_joint
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_LeftHandMiddle1_joint
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_LeftHandMiddle2_joint
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_LeftHandMiddle3_joint
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_LeftHandRing1_joint
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_LeftHandRing2_joint
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_LeftHandRing3_joint
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_LeftHandPinky1_joint
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_LeftHandPinky2_joint
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_LeftHandPinky3_joint
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_RightHandThumb1_joint
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_RightHandThumb2_joint
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_RightHandThumb3_joint
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_RightHandIndex1_joint
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_RightHandIndex2_joint
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_RightHandIndex3_joint
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_RightHandMiddle1_joint
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_RightHandMiddle2_joint
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_RightHandMiddle3_joint
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_RightHandRing1_joint
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_RightHandRing2_joint
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_RightHandRing3_joint
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_RightHandPinky1_joint
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_RightHandPinky2_joint
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_RightHandPinky3_joint
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Palaistra_Final_Spine2_joint
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Grapple_ SLAM(Clone)
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_Main_ctrl
+      parentName: Grapple_ SLAM(Clone)
+      position: {x: -0, y: -2.4651903e-34, z: -0.00027503}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_Hips_GRP
+      parentName: Palaistra_Final_Main_ctrl
+      position: {x: -0, y: 1.1222817, z: -0.058793884}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_Hips_CTRL
+      parentName: Palaistra_Final_Hips_GRP
+      position: {x: -0, y: -0.35419184, z: 0.088352926}
+      rotation: {x: 0.18793564, y: -0.072897725, z: 0.06177426, w: 0.97752243}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_Spine_GRP
+      parentName: Palaistra_Final_Hips_CTRL
+      position: {x: -0, y: 0.09824242, z: -0.00611783}
+      rotation: {x: -0.031091237, y: 0, z: -0, w: 0.99951655}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_Spine_CTRL
+      parentName: Palaistra_Final_Spine_GRP
+      position: {x: -0, y: 0, z: -2.220446e-18}
+      rotation: {x: -0.071091644, y: -0.14949194, z: 0.05575962, w: 0.98462635}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_Spine1_GRP
+      parentName: Palaistra_Final_Spine_CTRL
+      position: {x: -0, y: 0.11483811, z: -4.8615287e-12}
+      rotation: {x: 0.000000014865595, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_Spine1_CTRL
+      parentName: Palaistra_Final_Spine1_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.10308137, y: 0.0147492075, z: 0.013468989, w: 0.9944724}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_Spine2_GRP
+      parentName: Palaistra_Final_Spine1_CTRL
+      position: {x: -0, y: 0.13124357, z: 1.6674735e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_Spine2_CTRL
+      parentName: Palaistra_Final_Spine2_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_Neck_GRP
+      parentName: Palaistra_Final_Spine2_CTRL
+      position: {x: -0, y: 0.14764903, z: -0.000000001006523}
+      rotation: {x: 0.031091223, y: -0, z: -0, w: 0.99951655}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_Neck_CTRL
+      parentName: Palaistra_Final_Neck_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.1714063, y: -0.025869938, z: -0.020828968, w: 0.9846404}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_Head_GRP
+      parentName: Palaistra_Final_Neck_CTRL
+      position: {x: -0, y: 0.058982085, z: 0.024666233}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_Head_CTRL
+      parentName: Palaistra_Final_Head_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.024749495, y: 0.049492963, z: -0.02431643, w: 0.9981716}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftShoulder_GRP
+      parentName: Palaistra_Final_Spine2_CTRL
+      position: {x: -0.060130566, y: 0.12661868, z: -0.0014188358}
+      rotation: {x: 0.5694934, y: -0.41448265, z: 0.58304816, w: 0.40489045}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftShoulder_CTRL
+      parentName: Palaistra_Final_LeftShoulder_GRP
+      position: {x: 2.8865798e-17, y: 0, z: -2.842171e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightShoulder_GRP
+      parentName: Palaistra_Final_Spine2_CTRL
+      position: {x: 0.060130566, y: 0.12660514, z: -0.0012012568}
+      rotation: {x: -0.570588, y: -0.41369203, z: 0.58206767, w: -0.4055681}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightShoulder_CTRL
+      parentName: Palaistra_Final_RightShoulder_GRP
+      position: {x: 8.881784e-18, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftForeArm_GRP
+      parentName: Palaistra_Final_Main_ctrl
+      position: {x: -0.36465347, y: 1.3788682, z: -0.087266244}
+      rotation: {x: 0.6450752, y: -0.22664115, z: 0.59569395, w: 0.42149794}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftForeArm_CTRL
+      parentName: Palaistra_Final_LeftForeArm_GRP
+      position: {x: -0.44302234, y: 0.078453764, z: 0.25664273}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightForeArm_GRP
+      parentName: Palaistra_Final_Main_ctrl
+      position: {x: 0.36465347, y: 1.3788682, z: -0.08780339}
+      rotation: {x: 0.65069544, y: 0.23013856, z: -0.5894746, w: 0.41970384}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightForeArm_CTRL
+      parentName: Palaistra_Final_RightForeArm_GRP
+      position: {x: 0.0147898095, y: 0.21115577, z: 0.018128166}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftLeg_GRP
+      parentName: Palaistra_Final_Main_ctrl
+      position: {x: -0.12926687, y: 0.5541162, z: -0.08366756}
+      rotation: {x: 0.003421067, y: -0.010176205, z: 0.9992614, w: 0.03689789}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftLeg_CTRL
+      parentName: Palaistra_Final_LeftLeg_GRP
+      position: {x: 0.18323772, y: 0.004176838, z: 0.4533705}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightLeg_GRP
+      parentName: Palaistra_Final_Main_ctrl
+      position: {x: 0.12926687, y: 0.5541162, z: -0.0848077}
+      rotation: {x: -0.0033374864, y: -0.011346954, z: 0.9992492, w: -0.036893446}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightLeg_CTRL
+      parentName: Palaistra_Final_RightLeg_GRP
+      position: {x: 0.037823997, y: -0.013248271, z: 0.4546865}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_R_Foot_grp
+      parentName: Palaistra_Final_Main_ctrl
+      position: {x: -0, y: 2.4651903e-34, z: 0.00027503}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_R_Foot_ctrl
+      parentName: Palaistra_Final_R_Foot_grp
+      position: {x: 0.16384652, y: 0.086999334, z: 0.22638679}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_R_Foot_ik
+      parentName: Palaistra_Final_R_Foot_ctrl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_L_Foot_grp
+      parentName: Palaistra_Final_Main_ctrl
+      position: {x: -0, y: 2.4651903e-34, z: 0.00027503}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: -1, y: 1, z: 1}
+    - name: Palaistra_Final_L_Foot_ctrl
+      parentName: Palaistra_Final_L_Foot_grp
+      position: {x: 0.16384651, y: 0.08699936, z: -0.624163}
+      rotation: {x: 0, y: 0.20681728, z: -0, w: 0.9783796}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_L_Foot_ik
+      parentName: Palaistra_Final_L_Foot_ctrl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 6.123234e-17, y: 1, z: -6.123234e-17, w: -6.123234e-17}
+      scale: {x: 1, y: 1, z: -1}
+    - name: Palaistra_Final_L_Foot_ctrl1
+      parentName: Palaistra_Final_L_Foot_grp
+      position: {x: 0.16384651, y: 0.08699936, z: 0.4441781}
+      rotation: {x: 0, y: 0.20681728, z: -0, w: 0.9783796}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_L_Foot_ik
+      parentName: Palaistra_Final_L_Foot_ctrl1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 6.123234e-17, y: 1, z: -6.123234e-17, w: -6.123234e-17}
+      scale: {x: 1, y: 1, z: -1}
+    - name: Palaistra_Final_LeftHand_GRP
+      parentName: Palaistra_Final_Main_ctrl
+      position: {x: -0.6123965, y: 1.2098917, z: -0.0019033895}
+      rotation: {x: 0.6336406, y: -0.180756, z: 0.6336277, w: 0.40539217}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftHand_CTRL
+      parentName: Palaistra_Final_LeftHand_GRP
+      position: {x: 0.124289736, y: 0.07962216, z: 0.34617323}
+      rotation: {x: -0.17201729, y: -0.014134563, z: -0.44097444, w: 0.88076776}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_L_Hand_ik
+      parentName: Palaistra_Final_LeftHand_CTRL
+      position: {x: -0, y: 7.105427e-17, z: -2.842171e-16}
+      rotation: {x: 0.6336406, y: -0.180756, z: 0.6336277, w: -0.40539217}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftHandThumb1_GRP
+      parentName: Palaistra_Final_LeftHand_CTRL
+      position: {x: 0.020519948, y: 0.036362194, z: 0.017456261}
+      rotation: {x: 0.19714408, y: -0.0324818, z: -0.15929198, w: 0.9668015}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftHandThumb1_CTRL
+      parentName: Palaistra_Final_LeftHandThumb1_GRP
+      position: {x: -0, y: -7.105427e-17, z: 1.4210854e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftHandThumb2_GRP
+      parentName: Palaistra_Final_LeftHandThumb1_CTRL
+      position: {x: 0.0062158033, y: 0.035666298, z: -1.7143847e-10}
+      rotation: {x: 0.048572443, y: -0, z: -0, w: 0.9988197}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftHandThumb2_CTRL
+      parentName: Palaistra_Final_LeftHandThumb2_GRP
+      position: {x: -7.105427e-17, y: -1.4210854e-16, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftHandThumb3_GRP
+      parentName: Palaistra_Final_LeftHandThumb2_CTRL
+      position: {x: 0.00008511488, y: 0.034789827, z: 5.4202046e-11}
+      rotation: {x: -0.10970843, y: 0, z: -0, w: 0.99396384}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftHandThumb3_CTRL
+      parentName: Palaistra_Final_LeftHandThumb3_GRP
+      position: {x: -7.105427e-17, y: -7.105427e-17, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftHandIndex1_GRP
+      parentName: Palaistra_Final_LeftHand_CTRL
+      position: {x: 0.032480985, y: 0.116793744, z: 0.0013871512}
+      rotation: {x: 0.07953985, y: 0.008303127, z: 0.10349297, w: 0.99140996}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftHandIndex1_CTRL
+      parentName: Palaistra_Final_LeftHandIndex1_GRP
+      position: {x: 3.5527136e-17, y: -7.105427e-17, z: -1.4210854e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftHandIndex2_GRP
+      parentName: Palaistra_Final_LeftHandIndex1_CTRL
+      position: {x: -0.0006562514, y: 0.030659236, z: 1.1352682e-10}
+      rotation: {x: 0.12108569, y: -0, z: -0, w: 0.9926421}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftHandIndex2_CTRL
+      parentName: Palaistra_Final_LeftHandIndex2_GRP
+      position: {x: 3.5527136e-17, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftHandIndex3_GRP
+      parentName: Palaistra_Final_LeftHandIndex2_CTRL
+      position: {x: 0.00039135985, y: 0.029599713, z: -9.119712e-10}
+      rotation: {x: -0.008945774, y: 0, z: -0, w: 0.99996}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftHandIndex3_CTRL
+      parentName: Palaistra_Final_LeftHandIndex3_GRP
+      position: {x: -0, y: -1.4210854e-16, z: -1.4210854e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftHandMiddle1_GRP
+      parentName: Palaistra_Final_LeftHand_CTRL
+      position: {x: 0.010552841, y: 0.11728704, z: -0.0069131413}
+      rotation: {x: 0.107823096, y: 0.015564781, z: 0.1420235, w: 0.98385024}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftHandMiddle1_CTRL
+      parentName: Palaistra_Final_LeftHandMiddle1_GRP
+      position: {x: -3.5527136e-17, y: -7.105427e-17, z: 1.4210854e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftHandMiddle2_GRP
+      parentName: Palaistra_Final_LeftHandMiddle1_CTRL
+      position: {x: -0.001245563, y: 0.03328954, z: 0.0000000012263239}
+      rotation: {x: 0.21967775, y: -0, z: -0, w: 0.9755725}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftHandMiddle2_CTRL
+      parentName: Palaistra_Final_LeftHandMiddle2_GRP
+      position: {x: 3.5527136e-17, y: 1.4210854e-16, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftHandMiddle3_GRP
+      parentName: Palaistra_Final_LeftHandMiddle2_CTRL
+      position: {x: 0.00053618546, y: 0.030053932, z: -3.6858225e-10}
+      rotation: {x: 0.029576126, y: -0, z: -0, w: 0.99956256}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftHandMiddle3_CTRL
+      parentName: Palaistra_Final_LeftHandMiddle3_GRP
+      position: {x: -0, y: -1.4210854e-16, z: 1.4210854e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftHandRing1_GRP
+      parentName: Palaistra_Final_LeftHand_CTRL
+      position: {x: -0.010949668, y: 0.10822805, z: -0.0029141596}
+      rotation: {x: 0.08680008, y: 0.016266847, z: 0.18347967, w: 0.9790487}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftHandRing1_CTRL
+      parentName: Palaistra_Final_LeftHandRing1_GRP
+      position: {x: -0, y: 0, z: -1.4210854e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftHandRing2_GRP
+      parentName: Palaistra_Final_LeftHandRing1_CTRL
+      position: {x: -0.0010184046, y: 0.031677525, z: 8.745442e-10}
+      rotation: {x: 0.29146603, y: -0, z: -0, w: 0.95658123}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftHandRing2_CTRL
+      parentName: Palaistra_Final_LeftHandRing2_GRP
+      position: {x: 3.5527136e-17, y: -2.842171e-16, z: 1.4210854e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftHandRing3_GRP
+      parentName: Palaistra_Final_LeftHandRing2_CTRL
+      position: {x: 0.00035373378, y: 0.028484644, z: -8.0770515e-11}
+      rotation: {x: 0.07853506, y: -0, z: -0, w: 0.99691135}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftHandRing3_CTRL
+      parentName: Palaistra_Final_LeftHandRing3_GRP
+      position: {x: 3.5527136e-17, y: -1.4210854e-16, z: -7.105427e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftHandPinky1_GRP
+      parentName: Palaistra_Final_LeftHand_CTRL
+      position: {x: -0.032084152, y: 0.09682901, z: -0.0013977664}
+      rotation: {x: 0.19291984, y: 0.030946573, z: 0.1553341, w: 0.96834683}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftHandPinky1_CTRL
+      parentName: Palaistra_Final_LeftHandPinky1_GRP
+      position: {x: -3.5527136e-17, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftHandPinky2_GRP
+      parentName: Palaistra_Final_LeftHandPinky1_CTRL
+      position: {x: -0.0008880274, y: 0.02349008, z: 5.784483e-10}
+      rotation: {x: 0.20085146, y: -0, z: -0, w: 0.9796217}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftHandPinky2_CTRL
+      parentName: Palaistra_Final_LeftHandPinky2_GRP
+      position: {x: -0, y: -1.4210854e-16, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftHandPinky3_GRP
+      parentName: Palaistra_Final_LeftHandPinky2_CTRL
+      position: {x: 0.0003195187, y: 0.018856974, z: -1.2220668e-10}
+      rotation: {x: 0.08091249, y: -0, z: -0, w: 0.9967212}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftHandPinky3_CTRL
+      parentName: Palaistra_Final_LeftHandPinky3_GRP
+      position: {x: 3.5527136e-17, y: -1.4210854e-16, z: 7.105427e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightHand_GRP
+      parentName: Palaistra_Final_Main_ctrl
+      position: {x: 0.61239654, y: 1.2098917, z: -0.0020699734}
+      rotation: {x: 0.63558793, y: 0.18184398, z: -0.6325254, w: 0.4035746}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightHand_CTRL
+      parentName: Palaistra_Final_RightHand_GRP
+      position: {x: -0.5773672, y: -0.06079869, z: 0.17831212}
+      rotation: {x: -0.33634463, y: -0.34715998, z: 0.6707919, w: 0.56248605}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_R_Hand_ik
+      parentName: Palaistra_Final_RightHand_CTRL
+      position: {x: -8.6243224e-10, y: 1.9013842e-10, z: 0.0000000022700666}
+      rotation: {x: 0.63558793, y: 0.18184398, z: -0.6325254, w: -0.4035746}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightHandThumb1_GRP
+      parentName: Palaistra_Final_RightHand_CTRL
+      position: {x: -0.02154375, y: 0.03684529, z: 0.018668706}
+      rotation: {x: 0.20607144, y: 0.03316382, z: 0.15538967, w: 0.965551}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightHandThumb1_CTRL
+      parentName: Palaistra_Final_RightHandThumb1_GRP
+      position: {x: 7.105427e-17, y: 1.4210854e-16, z: 1.4210854e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightHandThumb2_GRP
+      parentName: Palaistra_Final_RightHandThumb1_CTRL
+      position: {x: -0.00711687, y: 0.036582734, z: 3.871098e-10}
+      rotation: {x: 0.011179057, y: -0, z: -0, w: 0.99993753}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightHandThumb2_CTRL
+      parentName: Palaistra_Final_RightHandThumb2_GRP
+      position: {x: -7.105427e-17, y: -2.842171e-16, z: 2.842171e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightHandThumb3_GRP
+      parentName: Palaistra_Final_RightHandThumb2_CTRL
+      position: {x: 0.0008234132, y: 0.033398535, z: -0.0000000015642926}
+      rotation: {x: -0.033999104, y: 0, z: -0, w: 0.9994219}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightHandThumb3_CTRL
+      parentName: Palaistra_Final_RightHandThumb3_GRP
+      position: {x: -0, y: 1.4210854e-16, z: -1.4210854e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightHandIndex1_GRP
+      parentName: Palaistra_Final_RightHand_CTRL
+      position: {x: -0.032879893, y: 0.12130183, z: -0.0000022112622}
+      rotation: {x: 0.11352472, y: -0.012532728, z: -0.10901176, w: 0.98745716}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightHandIndex1_CTRL
+      parentName: Palaistra_Final_RightHandIndex1_GRP
+      position: {x: 7.105427e-17, y: 0, z: 2.842171e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightHandIndex2_GRP
+      parentName: Palaistra_Final_RightHandIndex1_CTRL
+      position: {x: 0.0006397114, y: 0.030254759, z: 5.150639e-11}
+      rotation: {x: 0.09661507, y: -0, z: -0, w: 0.99532187}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightHandIndex2_CTRL
+      parentName: Palaistra_Final_RightHandIndex2_GRP
+      position: {x: 3.5527136e-17, y: 0, z: 1.4210854e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightHandIndex3_GRP
+      parentName: Palaistra_Final_RightHandIndex2_CTRL
+      position: {x: -0.00035889848, y: 0.02750637, z: -0.0000000012322067}
+      rotation: {x: -0.003515285, y: 0, z: -0, w: 0.99999386}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightHandIndex3_CTRL
+      parentName: Palaistra_Final_RightHandIndex3_GRP
+      position: {x: -3.5527136e-17, y: -2.842171e-16, z: -2.842171e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightHandMiddle1_GRP
+      parentName: Palaistra_Final_RightHand_CTRL
+      position: {x: -0.011510727, y: 0.113059804, z: -0.005661925}
+      rotation: {x: 0.0732113, y: -0.00996858, z: -0.13454805, w: 0.98814857}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightHandMiddle1_CTRL
+      parentName: Palaistra_Final_RightHandMiddle1_GRP
+      position: {x: 3.5527136e-17, y: -7.105427e-17, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightHandMiddle2_GRP
+      parentName: Palaistra_Final_RightHandMiddle1_CTRL
+      position: {x: 0.0018328648, y: 0.03411884, z: 1.9587332e-10}
+      rotation: {x: 0.23265289, y: -0, z: -0, w: 0.9725598}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightHandMiddle2_CTRL
+      parentName: Palaistra_Final_RightHandMiddle2_GRP
+      position: {x: -3.5527136e-17, y: 0, z: -1.4210854e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightHandMiddle3_GRP
+      parentName: Palaistra_Final_RightHandMiddle2_CTRL
+      position: {x: -0.00071530347, y: 0.031531624, z: 1.5155734e-11}
+      rotation: {x: 0.04739718, y: -0, z: -0, w: 0.99887615}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightHandMiddle3_CTRL
+      parentName: Palaistra_Final_RightHandMiddle3_GRP
+      position: {x: -3.5527136e-17, y: 0, z: 1.4210854e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightHandRing1_GRP
+      parentName: Palaistra_Final_RightHand_CTRL
+      position: {x: 0.01123582, y: 0.11053889, z: -0.004717386}
+      rotation: {x: 0.12420451, y: -0.023149537, z: -0.1817588, w: 0.97519284}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightHandRing1_CTRL
+      parentName: Palaistra_Final_RightHandRing1_GRP
+      position: {x: -0, y: -2.842171e-16, z: -1.4210854e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightHandRing2_GRP
+      parentName: Palaistra_Final_RightHandRing1_CTRL
+      position: {x: 0.0012127722, y: 0.031407192, z: -7.697821e-11}
+      rotation: {x: 0.26768348, y: -0, z: -0, w: 0.96350694}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightHandRing2_CTRL
+      parentName: Palaistra_Final_RightHandRing2_GRP
+      position: {x: -0, y: 1.4210854e-16, z: -1.4210854e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightHandRing3_GRP
+      parentName: Palaistra_Final_RightHandRing2_CTRL
+      position: {x: -0.0003970735, y: 0.027344711, z: -1.554838e-11}
+      rotation: {x: 0.08531589, y: -0, z: -0, w: 0.996354}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightHandRing3_CTRL
+      parentName: Palaistra_Final_RightHandRing3_GRP
+      position: {x: -0, y: 1.4210854e-16, z: -7.105427e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightHandPinky1_GRP
+      parentName: Palaistra_Final_RightHand_CTRL
+      position: {x: 0.033154808, y: 0.097807586, z: -0.0015372677}
+      rotation: {x: 0.19628026, y: -0.027995694, z: -0.13839905, w: 0.9703278}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightHandPinky1_CTRL
+      parentName: Palaistra_Final_RightHandPinky1_GRP
+      position: {x: -0, y: 0, z: 1.4210854e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightHandPinky2_GRP
+      parentName: Palaistra_Final_RightHandPinky1_CTRL
+      position: {x: 0.0010802669, y: 0.022721803, z: 5.010514e-10}
+      rotation: {x: 0.21058941, y: -0, z: -0, w: 0.97757465}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightHandPinky2_CTRL
+      parentName: Palaistra_Final_RightHandPinky2_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightHandPinky3_GRP
+      parentName: Palaistra_Final_RightHandPinky2_CTRL
+      position: {x: -0.0004461622, y: 0.018251855, z: 2.8098128e-11}
+      rotation: {x: 0.051427163, y: -0, z: -0, w: 0.9986768}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightHandPinky3_CTRL
+      parentName: Palaistra_Final_RightHandPinky3_GRP
+      position: {x: -1.7763568e-17, y: 1.4210854e-16, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Attach_grp
+      parentName: Palaistra_Final_Main_ctrl
+      position: {x: 0.1592434, y: -0.28858414, z: -0.31841636}
+      rotation: {x: 0.18793564, y: -0.072897725, z: 0.06177426, w: 0.97752243}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Atttach_ctrl
+      parentName: Attach_grp
+      position: {x: -0.004805085, y: 0.7073131, z: 0.96410656}
+      rotation: {x: 4.1633363e-17, y: 2.34223e-40, z: -1.2490008e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_Palaistra_Mesh
+      parentName: Grapple_ SLAM(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_Palaistra_Clothing
+      parentName: Palaistra_Final_Palaistra_Mesh
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_Bra_thing
+      parentName: Palaistra_Final_Palaistra_Clothing
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_Arms_and_Legs
+      parentName: Palaistra_Final_Palaistra_Clothing
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_Olive_Branch3
+      parentName: Palaistra_Final_Arms_and_Legs
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_Olive_Branch2
+      parentName: Palaistra_Final_Arms_and_Legs
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_Olive_Branch1
+      parentName: Palaistra_Final_Arms_and_Legs
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_Hair_low
+      parentName: Palaistra_Final_Palaistra_Clothing
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_Olive_crown
+      parentName: Palaistra_Final_Palaistra_Clothing
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_Top_Skirt
+      parentName: Palaistra_Final_Palaistra_Clothing
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_Bottom_Skirt
+      parentName: Palaistra_Final_Palaistra_Clothing
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_Mesh
+      parentName: Palaistra_Final_Palaistra_Mesh
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_Eyes
+      parentName: Palaistra_Final_Palaistra_Mesh
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_Lashes
+      parentName: Palaistra_Final_Palaistra_Mesh
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_Hips_joint
+      parentName: Grapple_ SLAM(Clone)
+      position: {x: 0, y: 1.1513855, z: 0.029284013}
+      rotation: {x: 0.000000023283068, y: -0.000000005820765, z: -0.000000008731148,
+        w: 1}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: Attach_Joint
+      parentName: Palaistra_Final_Hips_joint
+      position: {x: -0.0051462525, y: -0.41439986, z: 1.0231755}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_Spine_joint
+      parentName: Palaistra_Final_Hips_joint
+      position: {x: -0, y: 0.09824242, z: -0.00611783}
+      rotation: {x: -0.031091273, y: -0.000000017363366, z: -0.0000000034518988, w: 0.99951655}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_Spine1_joint
+      parentName: Palaistra_Final_Spine_joint
+      position: {x: 3.5527136e-17, y: 0.11483811, z: -4.8615157e-12}
+      rotation: {x: 0.000000031664968, y: 0.000000045803425, z: 0.000000013696257,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: Palaistra_Final_Spine2_joint
+      parentName: Palaistra_Final_Spine1_joint
+      position: {x: -3.5527136e-17, y: 0.13124357, z: 1.6674741e-10}
+      rotation: {x: -0, y: -0, z: 3.259929e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_Neck_joint
+      parentName: Palaistra_Final_Spine2_joint
+      position: {x: 1.7763568e-17, y: 0.14764903, z: -0.000000001006523}
+      rotation: {x: 0.031091219, y: -0.000000046026138, z: -0.000000018083501, w: 0.99951655}
+      scale: {x: 1.0000001, y: 1, z: 0.9999999}
+    - name: Palaistra_Final_Head_joint
+      parentName: Palaistra_Final_Neck_joint
+      position: {x: -1.7763568e-17, y: 0.058982085, z: 0.024666233}
+      rotation: {x: -0.000000013038516, y: 0.00000003492459, z: 0.000000011641529,
+        w: 1}
+      scale: {x: 0.99999994, y: 1, z: 1.0000001}
+    - name: Palaistra_Final_HeadTop_End_joint
+      parentName: Palaistra_Final_Head_joint
+      position: {x: -0, y: 0.26714233, z: 0.111718535}
+      rotation: {x: -0, y: -0, z: -4.328136e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftShoulder_joint
+      parentName: Palaistra_Final_Spine2_joint
+      position: {x: -0.060130566, y: 0.12661868, z: -0.0014188358}
+      rotation: {x: 0.56949335, y: -0.4144827, z: 0.5830482, w: 0.40489045}
+      scale: {x: 1.0000008, y: 1.000001, z: 0.9999998}
+    - name: Palaistra_Final_LeftArm_joint
+      parentName: Palaistra_Final_LeftShoulder_joint
+      position: {x: -1.292447e-10, y: 0.12825423, z: 0.0000000018256716}
+      rotation: {x: -0.14214024, y: -0.017652359, z: -0.009492008, w: 0.98964363}
+      scale: {x: 1.0000005, y: 1.0000011, z: 1.000001}
+    - name: Palaistra_Final_LeftForeArm_joint
+      parentName: Palaistra_Final_LeftArm_joint
+      position: {x: 1.8359905e-10, y: 0.25099513, z: -0.00000000761311}
+      rotation: {x: -0.036190607, y: 0.012165329, z: -0.03540535, w: 0.99864346}
+      scale: {x: 1.0000007, y: 1.0000008, z: 1.0000006}
+    - name: Palaistra_Final_LeftHand_joint
+      parentName: Palaistra_Final_LeftForeArm_joint
+      position: {x: -6.0754324e-10, y: 0.31179562, z: -0.000000002851042}
+      rotation: {x: 0.04150064, y: 0.046972103, z: -0.0014246925, w: 0.9980328}
+      scale: {x: 1.0000005, y: 1.0000011, z: 1.0000006}
+    - name: Palaistra_Final_LeftHandIndex1_joint
+      parentName: Palaistra_Final_LeftHand_joint
+      position: {x: 0.03248149, y: 0.11679306, z: 0.0013866824}
+      rotation: {x: 0.014635549, y: 0.007847777, z: 0.008303441, w: 0.9998277}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000001}
+    - name: Palaistra_Final_LeftHandIndex2_joint
+      parentName: Palaistra_Final_LeftHandIndex1_joint
+      position: {x: -0.0006562514, y: 0.030659236, z: 1.1352668e-10}
+      rotation: {x: 0.037100688, y: -0.00034726618, z: 0.012034821, w: 0.999239}
+      scale: {x: 1, y: 1.0000006, z: 1.0000004}
+    - name: Palaistra_Final_LeftHandIndex3_joint
+      parentName: Palaistra_Final_LeftHandIndex2_joint
+      position: {x: 0.00039135985, y: 0.029599713, z: -9.119712e-10}
+      rotation: {x: -0.00894761, y: 0.00000013969837, z: -0.00000042468304, w: 0.99995995}
+      scale: {x: 1, y: 0.9999996, z: 0.99999994}
+    - name: Palaistra_Final_LeftHandIndex4_joint
+      parentName: Palaistra_Final_LeftHandIndex3_joint
+      position: {x: 0.0002648905, y: 0.028080724, z: 2.011582e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftHandMiddle1_joint
+      parentName: Palaistra_Final_LeftHand_joint
+      position: {x: 0.010553348, y: 0.117286354, z: -0.00691361}
+      rotation: {x: 0.012366212, y: 0.014238409, z: -0.0017839735, w: 0.9998206}
+      scale: {x: 1.0000001, y: 1.0000001, z: 0.99999994}
+    - name: Palaistra_Final_LeftHandMiddle2_joint
+      parentName: Palaistra_Final_LeftHandMiddle1_joint
+      position: {x: -0.001245563, y: 0.03328954, z: 0.0000000012263239}
+      rotation: {x: 0.032083962, y: -0.0018881976, z: 0.02366973, w: 0.99920315}
+      scale: {x: 0.99999994, y: 1, z: 1.0000001}
+    - name: Palaistra_Final_LeftHandMiddle3_joint
+      parentName: Palaistra_Final_LeftHandMiddle2_joint
+      position: {x: 0.00053618546, y: 0.030053932, z: -3.685821e-10}
+      rotation: {x: 0.029576354, y: 0.000000056546007, z: -0.000000007893227, w: 0.9995625}
+      scale: {x: 0.99999994, y: 1.0000002, z: 1.0000001}
+    - name: Palaistra_Final_LeftHandMiddle4_joint
+      parentName: Palaistra_Final_LeftHandMiddle3_joint
+      position: {x: 0.0007093768, y: 0.028399436, z: -1.3054162e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftHandRing1_joint
+      parentName: Palaistra_Final_LeftHand_joint
+      position: {x: -0.010949161, y: 0.108227365, z: -0.0029146282}
+      rotation: {x: 0.0023870762, y: 0.0139221735, z: 0.0050312257, w: 0.99988765}
+      scale: {x: 0.99999994, y: 1.0000002, z: 1.0000002}
+    - name: Palaistra_Final_LeftHandRing2_joint
+      parentName: Palaistra_Final_LeftHandRing1_joint
+      position: {x: -0.0010184046, y: 0.031677525, z: 8.745442e-10}
+      rotation: {x: 0.028446462, y: -0.0027237239, z: 0.020190716, w: 0.99938774}
+      scale: {x: 0.99999994, y: 1, z: 1.0000001}
+    - name: Palaistra_Final_LeftHandRing3_joint
+      parentName: Palaistra_Final_LeftHandRing2_joint
+      position: {x: 0.00035373378, y: 0.028484644, z: -8.077066e-11}
+      rotation: {x: 0.03958652, y: 0.00072336075, z: 0.0030121421, w: 0.9992114}
+      scale: {x: 1, y: 1.0000002, z: 1}
+    - name: Palaistra_Final_LeftHandRing4_joint
+      parentName: Palaistra_Final_LeftHandRing3_joint
+      position: {x: 0.00066467066, y: 0.027076943, z: 5.493959e-11}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftHandPinky1_joint
+      parentName: Palaistra_Final_LeftHand_joint
+      position: {x: -0.032083645, y: 0.09682833, z: -0.0013982352}
+      rotation: {x: 0.022039562, y: 0.031914752, z: -0.014706064, w: 0.99913937}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Palaistra_Final_LeftHandPinky2_joint
+      parentName: Palaistra_Final_LeftHandPinky1_joint
+      position: {x: -0.0008880274, y: 0.02349008, z: 5.784481e-10}
+      rotation: {x: 0.033019252, y: -0.0017923333, z: 0.022942832, w: 0.99918973}
+      scale: {x: 0.99999994, y: 1.0000002, z: 0.99999994}
+    - name: Palaistra_Final_LeftHandPinky3_joint
+      parentName: Palaistra_Final_LeftHandPinky2_joint
+      position: {x: 0.0003195187, y: 0.018856974, z: -1.2220695e-10}
+      rotation: {x: 0.03943264, y: 0.0010128883, z: 0.003776432, w: 0.9992146}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1.0000004}
+    - name: Palaistra_Final_LeftHandPinky4_joint
+      parentName: Palaistra_Final_LeftHandPinky3_joint
+      position: {x: 0.00056850904, y: 0.017959926, z: 6.140204e-11}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftHandThumb1_joint
+      parentName: Palaistra_Final_LeftHand_joint
+      position: {x: 0.020520452, y: 0.036361508, z: 0.017455792}
+      rotation: {x: 0.11003583, y: 0.024201391, z: -0.28108948, w: 0.95304525}
+      scale: {x: 1, y: 1.0000011, z: 1.0000004}
+    - name: Palaistra_Final_LeftHandThumb2_joint
+      parentName: Palaistra_Final_LeftHandThumb1_joint
+      position: {x: 0.0062158033, y: 0.035666298, z: -1.7143861e-10}
+      rotation: {x: 0.019481039, y: 0.002569177, z: -0.051364012, w: 0.9984867}
+      scale: {x: 1, y: 1.0000006, z: 1.0000005}
+    - name: Palaistra_Final_LeftHandThumb3_joint
+      parentName: Palaistra_Final_LeftHandThumb2_joint
+      position: {x: 0.00008511488, y: 0.034789827, z: 5.4202046e-11}
+      rotation: {x: -0.026686158, y: 0.008933804, z: -0.08278628, w: 0.9961699}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftHandThumb4_joint
+      parentName: Palaistra_Final_LeftHandThumb3_joint
+      position: {x: -0.0063009225, y: 0.029031927, z: -6.4481726e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightShoulder_joint
+      parentName: Palaistra_Final_Spine2_joint
+      position: {x: 0.060130566, y: 0.12660514, z: -0.0012012568}
+      rotation: {x: -0.57058805, y: -0.413692, z: 0.58206767, w: -0.4055681}
+      scale: {x: 1.0000006, y: 1.0000007, z: 1.0000007}
+    - name: Palaistra_Final_RightArm_joint
+      parentName: Palaistra_Final_RightShoulder_joint
+      position: {x: 1.1582038e-10, y: 0.12825423, z: 0.0000000018265598}
+      rotation: {x: -0.14241302, y: 0.028283771, z: 0.0032066996, w: 0.989398}
+      scale: {x: 1.0000005, y: 1.0000007, z: 1.0000007}
+    - name: Palaistra_Final_RightForeArm_joint
+      parentName: Palaistra_Final_RightArm_joint
+      position: {x: -7.1021286e-11, y: 0.25098634, z: -9.290474e-11}
+      rotation: {x: 0.03655876, y: 0.012717729, z: -0.03458629, w: -0.9986519}
+      scale: {x: 1, y: 1.0000008, z: 1.0000004}
+    - name: Palaistra_Final_RightHand_joint
+      parentName: Palaistra_Final_RightForeArm_joint
+      position: {x: 5.5710986e-10, y: 0.31189728, z: 0.0000000038096184}
+      rotation: {x: 0.04253051, y: -0.05347597, z: 0.000371911, w: 0.99766296}
+      scale: {x: 1.0000007, y: 1.0000014, z: 1.0000004}
+    - name: Palaistra_Final_RightHandIndex1_joint
+      parentName: Palaistra_Final_RightHand_joint
+      position: {x: -0.03287989, y: 0.12130183, z: -0.0000022134793}
+      rotation: {x: -0.023582077, y: 0.013673436, z: -0.0024490173, w: -0.99962544}
+      scale: {x: 0.9999998, y: 0.9999997, z: 0.99999994}
+    - name: Palaistra_Final_RightHandIndex2_joint
+      parentName: Palaistra_Final_RightHandIndex1_joint
+      position: {x: 0.0006397114, y: 0.030254759, z: 5.150646e-11}
+      rotation: {x: 0.03811809, y: 0.000238574, z: -0.010369667, w: 0.9992194}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000004}
+    - name: Palaistra_Final_RightHandIndex3_joint
+      parentName: Palaistra_Final_RightHandIndex2_joint
+      position: {x: -0.00035889848, y: 0.02750637, z: -0.0000000012322069}
+      rotation: {x: -0.0035155187, y: 0.00000009166213, z: 0.00000006531236, w: 0.9999938}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: Palaistra_Final_RightHandIndex4_joint
+      parentName: Palaistra_Final_RightHandIndex3_joint
+      position: {x: -0.0002808125, y: 0.02634287, z: -1.7425521e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightHandMiddle1_joint
+      parentName: Palaistra_Final_RightHand_joint
+      position: {x: -0.011510725, y: 0.113059804, z: -0.005661927}
+      rotation: {x: -0.006883682, y: 0.008167856, z: -0.009295196, w: -0.99989974}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: Palaistra_Final_RightHandMiddle2_joint
+      parentName: Palaistra_Final_RightHandMiddle1_joint
+      position: {x: 0.0018328648, y: 0.03411884, z: 1.9587339e-10}
+      rotation: {x: 0.03120879, y: 0.0032237282, z: -0.03317877, w: 0.99895686}
+      scale: {x: 0.99999994, y: 1.0000001, z: 1}
+    - name: Palaistra_Final_RightHandMiddle3_joint
+      parentName: Palaistra_Final_RightHandMiddle2_joint
+      position: {x: -0.00071530347, y: 0.031531624, z: 1.5155734e-11}
+      rotation: {x: 0.04072139, y: -0.00020326616, z: -0.0010830336, w: 0.9991699}
+      scale: {x: 1, y: 1.0000001, z: 0.99999994}
+    - name: Palaistra_Final_RightHandMiddle4_joint
+      parentName: Palaistra_Final_RightHandMiddle3_joint
+      position: {x: -0.0011175616, y: 0.02937301, z: 2.7802016e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightHandRing1_joint
+      parentName: Palaistra_Final_RightHand_joint
+      position: {x: 0.011235822, y: 0.11053889, z: -0.0047173877}
+      rotation: {x: -0.012464507, y: 0.022861186, z: -0.0084143095, w: -0.99962556}
+      scale: {x: 0.99999994, y: 0.9999998, z: 0.99999994}
+    - name: Palaistra_Final_RightHandRing2_joint
+      parentName: Palaistra_Final_RightHandRing1_joint
+      position: {x: 0.0012127722, y: 0.031407192, z: -7.697846e-11}
+      rotation: {x: 0.029664254, y: 0.0029872612, z: -0.023711406, w: 0.99927425}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: Palaistra_Final_RightHandRing3_joint
+      parentName: Palaistra_Final_RightHandRing2_joint
+      position: {x: -0.0003970735, y: 0.027344711, z: -1.5547954e-11}
+      rotation: {x: 0.039179914, y: -0.0010586518, z: -0.0044941623, w: 0.9992215}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1.0000004}
+    - name: Palaistra_Final_RightHandRing4_joint
+      parentName: Palaistra_Final_RightHandRing3_joint
+      position: {x: -0.00081569864, y: 0.026213579, z: 4.453753e-12}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightHandPinky1_joint
+      parentName: Palaistra_Final_RightHand_joint
+      position: {x: 0.03315481, y: 0.097807586, z: -0.0015372699}
+      rotation: {x: -0.027340038, y: 0.029852599, z: -0.025721796, w: -0.9988493}
+      scale: {x: 0.99999994, y: 0.9999997, z: 0.99999994}
+    - name: Palaistra_Final_RightHandPinky2_joint
+      parentName: Palaistra_Final_RightHandPinky1_joint
+      position: {x: 0.0010802669, y: 0.022721803, z: 5.0105176e-10}
+      rotation: {x: 0.032297842, y: 0.0021127025, z: -0.030560724, w: 0.9990087}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1}
+    - name: Palaistra_Final_RightHandPinky3_joint
+      parentName: Palaistra_Final_RightHandPinky2_joint
+      position: {x: -0.0004461622, y: 0.018251855, z: 2.809827e-11}
+      rotation: {x: 0.040768042, y: -0.00032774592, z: -0.00129495, w: 0.99916774}
+      scale: {x: 1.0000001, y: 1, z: 1.0000002}
+    - name: Palaistra_Final_RightHandPinky4_joint
+      parentName: Palaistra_Final_RightHandPinky3_joint
+      position: {x: -0.00063410454, y: 0.017172044, z: 1.5745051e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightHandThumb1_joint
+      parentName: Palaistra_Final_RightHand_joint
+      position: {x: -0.021543749, y: 0.03684529, z: 0.018668702}
+      rotation: {x: 0.11502159, y: -0.02819266, z: 0.2787824, w: 0.9530244}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000004}
+    - name: Palaistra_Final_RightHandThumb2_joint
+      parentName: Palaistra_Final_RightHandThumb1_joint
+      position: {x: -0.00711687, y: 0.036582734, z: 3.8710993e-10}
+      rotation: {x: 0.003976016, y: -0.00060933805, z: 0.07036748, w: 0.99751306}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Palaistra_Final_RightHandThumb3_joint
+      parentName: Palaistra_Final_RightHandThumb2_joint
+      position: {x: 0.0008234132, y: 0.033398535, z: -0.0000000015642925}
+      rotation: {x: -0.012910816, y: -0.0026271816, z: 0.06197876, w: 0.99799055}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: Palaistra_Final_RightHandThumb4_joint
+      parentName: Palaistra_Final_RightHandThumb3_joint
+      position: {x: 0.006293454, y: 0.027962752, z: -9.461398e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftUpLeg_joint
+      parentName: Palaistra_Final_Hips_joint
+      position: {x: -0.111305594, y: -0.05461899, z: -0.02507673}
+      rotation: {x: 0.0008918714, y: -0.05128783, z: 0.99853253, w: 0.01736468}
+      scale: {x: 1, y: 0.99999976, z: 1.0000001}
+    - name: Palaistra_Final_LeftLeg_joint
+      parentName: Palaistra_Final_LeftUpLeg_joint
+      position: {x: 0.00018915371, y: 0.5111388, z: 0.052817944}
+      rotation: {x: 0.041115187, y: -0.0008091637, z: -0.019658238, w: 0.99896073}
+      scale: {x: 1.0000018, y: 1.0000008, z: 1.0000008}
+    - name: Palaistra_Final_LeftFoot_joint
+      parentName: Palaistra_Final_LeftLeg_joint
+      position: {x: -0.00023750478, y: 0.46911815, z: -0.031292725}
+      rotation: {x: 0.49162018, y: 0.04187827, z: -0.023678808, w: 0.8694799}
+      scale: {x: 1.0000024, y: 1.0000014, z: 1.0000013}
+    - name: Palaistra_Final_LeftToeBase_joint
+      parentName: Palaistra_Final_LeftFoot_joint
+      position: {x: 5.643507e-11, y: 0.16015424, z: 0.0000000029024487}
+      rotation: {x: 0.26007307, y: -0.018894985, z: 0.005090285, w: 0.9653907}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1.0000001}
+    - name: Palaistra_Final_LeftToe_End_joint
+      parentName: Palaistra_Final_LeftToeBase_joint
+      position: {x: -1.1727162e-10, y: 0.062207203, z: 5.6863845e-13}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Palaistra_Final_RightUpLeg_joint
+      parentName: Palaistra_Final_Hips_joint
+      position: {x: 0.111305594, y: -0.05461899, z: -0.026768977}
+      rotation: {x: -0.00088275794, y: -0.05075655, z: 0.99855965, w: -0.017367065}
+      scale: {x: 1.0000011, y: 1.000001, z: 0.99999994}
+    - name: Palaistra_Final_RightLeg_joint
+      parentName: Palaistra_Final_RightUpLeg_joint
+      position: {x: -0.00018722058, y: 0.51113874, z: 0.0528237}
+      rotation: {x: 0.03941325, y: 0.00077511824, z: 0.0196457, w: 0.9990296}
+      scale: {x: 0.9999989, y: 0.99999994, z: 1.0000005}
+    - name: Palaistra_Final_RightFoot_joint
+      parentName: Palaistra_Final_RightLeg_joint
+      position: {x: 0.00023497385, y: 0.46921498, z: -0.031291183}
+      rotation: {x: 0.49360952, y: -0.041547805, z: 0.023617098, w: 0.8683696}
+      scale: {x: 1.0000006, y: 1.0000005, z: 0.9999997}
+    - name: Palaistra_Final_RightToeBase_joint
+      parentName: Palaistra_Final_RightFoot_joint
+      position: {x: 4.680057e-10, y: 0.1607231, z: 0.000000006155457}
+      rotation: {x: 0.25880706, y: 0.017759297, z: -0.00475921, w: 0.9657541}
+      scale: {x: 1.0000015, y: 1.0000001, z: 1.0000011}
+    - name: Palaistra_Final_RightToe_End_joint
+      parentName: Palaistra_Final_RightToeBase_joint
+      position: {x: -1.7788988e-10, y: 0.06156741, z: -6.287803e-11}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000002}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
