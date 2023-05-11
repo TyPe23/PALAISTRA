@@ -24,6 +24,7 @@ public class Gate : MonoBehaviour
     [SerializeField] private direction goDir;
     [SerializeField] private MeshRenderer text;
     private bool leaving;
+    [SerializeField] private bool enemiesOption;
     
     // Start is called before the first frame update
     void Start()
@@ -68,6 +69,12 @@ public class Gate : MonoBehaviour
     {
         
         if (other.transform.CompareTag("Player")&& roomMan.GetComponent<RoomManager>().levelComplete && player.GetComponent<StarterAssetsInputs>().interact)
+        {
+            bottomCollider.enabled = false;
+            StartCoroutine(BeforeSceneChange());
+            topCollider.enabled = false;
+        }
+        else if(other.transform.CompareTag("Player") && enemiesOption && player.GetComponent<StarterAssetsInputs>().interact)
         {
             bottomCollider.enabled = false;
             StartCoroutine(BeforeSceneChange());
