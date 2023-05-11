@@ -35,7 +35,6 @@ public class HermesInteraction : MonoBehaviour
         {
             gameObject.GetComponent<Collider>().enabled = false;
             StartCoroutine(startDialogue()); 
-            
         }
     }
 
@@ -54,8 +53,6 @@ public class HermesInteraction : MonoBehaviour
             gameObject.GetComponent<Collider>().enabled = true;
 
             man.DisplayNextSentence();
-            
-            
         }
         else
         {
@@ -69,7 +66,6 @@ public class HermesInteraction : MonoBehaviour
         if (man.sentences.Count == 0)
         {
             StartCoroutine(ResetTrigger());
-
         }
     }
 
@@ -78,5 +74,4 @@ public class HermesInteraction : MonoBehaviour
         yield return new WaitForSeconds(10);
         repeat = false;
     }
-
 }

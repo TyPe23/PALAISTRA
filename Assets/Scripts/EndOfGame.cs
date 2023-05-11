@@ -2,6 +2,7 @@ using HighScore;
 using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -17,6 +18,8 @@ public class EndOfGame : MonoBehaviour
     private PlayerInput UIinput;
     private PlayerStates state;
     private StarterAssetsInputs inputs;
+    private PlayerStats stats;
+    private MomentumManager momentum;
     private GameObject roomMan;
 
     private bool canEnter = true;
@@ -26,6 +29,8 @@ public class EndOfGame : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        stats = player.GetComponent<PlayerStats>();
+        momentum = player.GetComponent<MomentumManager>();
         playerInput = player.GetComponent<PlayerInput>();
         UIinput = GetComponent<PlayerInput>();
         inputs = player.GetComponent<StarterAssetsInputs>();
@@ -60,10 +65,14 @@ public class EndOfGame : MonoBehaviour
 
     public void enterFunct(string word)
     {
+        stats.adjustScore(momentum.momentumScore);
+
+        stats.adjustScore(-(int)Time.time);
+
         if (canEnter)
         {
             canEnter = false;
-            HS.SubmitHighScore(this, word, PlayerPrefs.GetInt("Score"));
+            HS.SubmitHighScore(this, word, stats.score);
             StartCoroutine(waitThenChange());
 
             keyboardUI.SetActive(false);

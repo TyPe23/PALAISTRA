@@ -25,12 +25,12 @@
                 },
                 {
                     "name": "PileDriver",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "8c4abdf8-4099-493a-aa1a-129acec7c3df",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Sprint",
@@ -43,30 +43,30 @@
                 },
                 {
                     "name": "Spin",
-                    "type": "PassThrough",
+                    "type": "Value",
                     "id": "26cd003d-10a6-47a8-96e7-4945bb7c3fa6",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Lariat",
-                    "type": "PassThrough",
+                    "type": "Value",
                     "id": "6bd4418f-0433-4a1b-95d8-31ceabac3384",
-                    "expectedControlType": "",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Interact",
-                    "type": "PassThrough",
+                    "type": "Value",
                     "id": "1d819946-30ed-4c89-9c92-d95631fc2c79",
-                    "expectedControlType": "",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
