@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Beginning.unity
     guid: bc712a3297ac7c44a88b244683f29d33
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Shop Demo.unity
     guid: 5ec60e08f60a56541a1e214a73af22a5
   - enabled: 1
@@ -23,7 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Room3.unity
     guid: 66e2388eafe8c4941b58dd0fe43b683a
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Room4.unity
     guid: 88b8e05a3896b044bb388e394695a4bf
   - enabled: 1
