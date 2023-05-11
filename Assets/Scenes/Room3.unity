@@ -1731,6 +1731,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: projectileSpawner (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 235066025616259180, guid: 215259da7c8abfe49b84e65f8b128787,
+        type: 3}
+      propertyPath: m_TagString
+      value: trap
+      objectReference: {fileID: 0}
+    - target: {fileID: 235066025955810869, guid: 215259da7c8abfe49b84e65f8b128787,
+        type: 3}
+      propertyPath: m_TagString
+      value: trap
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 215259da7c8abfe49b84e65f8b128787, type: 3}
 --- !u!4 &267105811 stripped
@@ -2985,6 +2995,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: projectileSpawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 235066025616259180, guid: 215259da7c8abfe49b84e65f8b128787,
+        type: 3}
+      propertyPath: m_TagString
+      value: trap
+      objectReference: {fileID: 0}
+    - target: {fileID: 235066025955810869, guid: 215259da7c8abfe49b84e65f8b128787,
+        type: 3}
+      propertyPath: m_TagString
+      value: trap
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 215259da7c8abfe49b84e65f8b128787, type: 3}
