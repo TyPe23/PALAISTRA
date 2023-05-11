@@ -8,7 +8,6 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
-using static UnityEngine.UI.Image;
 using state = enemyStates;
 
 public enum enemyStates
@@ -28,9 +27,11 @@ public class Enemy : MonoBehaviour
     #region FILEDS & PROPERTIES
     public float radius = 10;
     public int health = 10;
-    public float speed = 2;
+    public float speed = 3;
     public float attackSpeed = 20;
     public float attackDist = 5;
+    public float distToPlayer;
+    public float prevDist;
 
     public bool playerDetected;
     public state state;
@@ -59,7 +60,6 @@ public class Enemy : MonoBehaviour
     private Dictionary<state, Action> statesEnterMeths;
     private Dictionary<state, Action> statesExitMeths;
     #endregion
-
 
     #region LifeCycle
     private void Awake()
@@ -135,9 +135,24 @@ public class Enemy : MonoBehaviour
         {
             grounded = true;
         }
+        if ((collision.gameObject.CompareTag("projectile") || gameObject.CompareTag("trap")) && canGrab)
+        {
+            ChangeState(state.HIT);
+        }
     }
 
-    
+    private void Update()
+    {
+        prevDist = distToPlayer;
+        distToPlayer = (transform.position - player.transform.position).magnitude;
+
+        if (distToPlayer - prevDist > 0.1f && state != state.THROWN)
+        {
+            rb.velocity = new Vector3(0, 0, 0);
+            rb.angularVelocity = new Vector3(0, 0, 0);
+        }
+    }
+
 
     // Update is called once per frame
     void FixedUpdate()
@@ -202,19 +217,18 @@ public class Enemy : MonoBehaviour
 
         if (states.prevState == playerStates.SPIN)
         {
-            rb.AddForce(launch * 40, ForceMode.Impulse);
             health -= 2;
         }
         else if (states.prevState == playerStates.LARIAT)
         {
-            rb.AddForce(launch * 30, ForceMode.Impulse);
             health -= 3;
         }
         else if (states.prevState == playerStates.PILEDRIVER)
         {
-            rb.AddForce(launch * 30, ForceMode.Impulse);
             health -= 5;
         }
+
+        rb.AddForce(launch * states.launchAmount, ForceMode.Impulse);
     }
 
     private void StateEnterGrabbed()
@@ -248,6 +262,9 @@ public class Enemy : MonoBehaviour
 
     private void StateEnterHit()
     {
+        mesh.material.color = new Color(255, 255, 255);
+        agent.SetDestination(transform.position);
+        StartCoroutine(hitStun());
     }
 
     private void StateEnterMove()
@@ -260,11 +277,11 @@ public class Enemy : MonoBehaviour
     #region Stay
     private void StateStayAttack()
     {
-        if ((agent.destination - transform.position).magnitude <= 0.5f)
+        if ((agent.destination - transform.position).magnitude <= 1.1f)
         {
             canGrab = true;
 
-            ChangeState(state.MOVE);
+            StartCoroutine(attackRecoil());
         }
     }
 
@@ -364,6 +381,19 @@ public class Enemy : MonoBehaviour
         capCollider.enabled = false;
         yield return new WaitForSeconds(0.5f);
         capCollider.enabled = true;
+    }
+
+    private IEnumerator hitStun()
+    {
+        yield return new WaitForSeconds(0.5f);
+        ChangeState(state.MOVE);
+    }
+    
+    private IEnumerator attackRecoil()
+    {
+        mesh.material.color = new Color(255, 0, 255);
+        yield return new WaitForSeconds(1f);
+        ChangeState(state.MOVE);
     }
 
     private IEnumerator charge()

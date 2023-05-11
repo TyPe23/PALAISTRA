@@ -37,6 +37,7 @@ public class PlayerStates : MonoBehaviour
     public BoxCollider hitbox;
     public bool canCheck;
     public bool letGo = false;
+    public float launchAmount;
 
     private Dictionary<playerStates, Action> statesStayMeths;
     private Dictionary<playerStates, Action> statesEnterMeths;
@@ -193,6 +194,7 @@ public class PlayerStates : MonoBehaviour
 
     private void StateEnterPileDriver()
     {
+        launchAmount = 30;
         stamina.spendStamina(playerStats.PileDriverCost);
         canAction = false;
         canCheck = false;
@@ -205,6 +207,7 @@ public class PlayerStates : MonoBehaviour
 
     private void StateEnterSpin()
     {
+        launchAmount = 20;
         stamina.spendStamina(playerStats.SpinCost);
         canAction = false;
         letGo = false;
@@ -215,6 +218,7 @@ public class PlayerStates : MonoBehaviour
 
     private void StateEnterLariat()
     {
+        launchAmount = 30;
         stamina.spendStamina(playerStats.LariatCost);
         canAction = false;
         canCheck = false;
@@ -329,6 +333,11 @@ public class PlayerStates : MonoBehaviour
     {
         stamina.spendStamina(playerStats.SpinHoldCost);
         charCon.Spin();
+
+        if (launchAmount <= 80)
+        {
+            launchAmount += Time.fixedDeltaTime * 20;
+        }
 
         if (!inputs.spin || stamina.stamina <= 1)
         {

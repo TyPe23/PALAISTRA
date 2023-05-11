@@ -91,7 +91,6 @@ public class PlayerStats : MonoBehaviour
 
     public void adjustScore(int scoreChange)
     {
-        print(scoreChange);
         score += scoreChange;
         PlayerPrefs.SetInt("score", score);
     }

@@ -60,7 +60,7 @@ public class EndOfGame : MonoBehaviour
         if (canEnter)
         {
             canEnter = false;
-            //HS.SubmitHighScore(this, word, PlayerPrefs.GetInt("Score"));
+            HS.SubmitHighScore(this, word, PlayerPrefs.GetInt("Score"));
             StartCoroutine(waitThenChange());
 
             keyboardUI.SetActive(false);

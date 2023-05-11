@@ -44,7 +44,7 @@ public class projectile : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         print(collision.transform.name);
-        if (!collision.transform.CompareTag("enemy") || !collision.transform.CompareTag("spawner"))
+        if (!collision.transform.CompareTag("spawner"))
         {
             //particle effect
             //sound
