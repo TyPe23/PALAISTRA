@@ -37,6 +37,7 @@ public class PlayerStates : MonoBehaviour
     public state prevState;
     public BoxCollider hitbox;
     public bool canCheck;
+    public bool canDamage = true;
     public bool letGo = false;
     public float launchAmount;
 
@@ -161,13 +162,16 @@ public class PlayerStates : MonoBehaviour
         {
             ChangeState(state.HIT);
 
-            if (collision.transform.CompareTag("enemy") || collision.transform.CompareTag("projectile"))
+            if (canDamage)
             {
-                playerStats.takeDamage(2);
-            }
-            else if (collision.transform.CompareTag("trap"))
-            {
-                playerStats.takeDamage(5);
+                if (collision.transform.CompareTag("enemy") || collision.transform.CompareTag("projectile"))
+                {
+                    playerStats.takeDamage(2);
+                }
+                else if (collision.transform.CompareTag("trap"))
+                {
+                    playerStats.takeDamage(5);
+                }
             }
         }
         else if (collision.transform.CompareTag("enemy") && state == state.DASH)
