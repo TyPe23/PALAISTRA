@@ -27,9 +27,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - Player
+  - Hitbox
+  - pushable
   - 
   - Enemy
   - 

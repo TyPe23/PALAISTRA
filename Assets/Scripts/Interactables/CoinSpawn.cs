@@ -21,6 +21,13 @@ public class CoinSpawn : MonoBehaviour
         
     }
 
+    private void Update()
+    {
+        Vector3 rot = transform.rotation.eulerAngles;
+
+        transform.rotation = Quaternion.Euler(rot.x, rot.y + Time.deltaTime * 1000, rot.z);
+    }
+
     IEnumerator waitAfterSpawn()
     {
         yield return new WaitForSeconds(3);

@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 2672586622340083045}
   - component: {fileID: 2672586622340083043}
   - component: {fileID: 2672586622340083042}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!224 &2672586622340083045
 RectTransform:
@@ -87,12 +87,12 @@ GameObject:
   - component: {fileID: 2672586622687889041}
   - component: {fileID: 2672586622687889135}
   - component: {fileID: 2672586622687889134}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!224 &2672586622687889041
 RectTransform:
@@ -163,12 +163,12 @@ GameObject:
   - component: {fileID: 2672586622848230854}
   - component: {fileID: 2672586622848230852}
   - component: {fileID: 2672586622848230855}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Rig 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2672586622848230854
 Transform:
@@ -263,12 +263,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2672586623046233487}
   - component: {fileID: 2672586623046233484}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: health
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!224 &2672586623046233487
 RectTransform:
@@ -306,7 +306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -355,12 +355,12 @@ GameObject:
   - component: {fileID: 2672586623117968646}
   - component: {fileID: 2672586623117968644}
   - component: {fileID: 2672586623117968647}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!224 &2672586623117968646
 RectTransform:
@@ -434,12 +434,12 @@ GameObject:
   - component: {fileID: 2672586623953031006}
   - component: {fileID: 2672586623953031002}
   - component: {fileID: 2672586623953031003}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: info
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!224 &2672586623953030977
 RectTransform:
@@ -570,12 +570,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2672586623979301893}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!224 &2672586623979301893
 RectTransform:
@@ -607,12 +607,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2672586624072850458}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!224 &2672586624072850458
 RectTransform:
@@ -650,12 +650,12 @@ GameObject:
   - component: {fileID: 6078139314132224800}
   - component: {fileID: 2672586622580289695}
   - component: {fileID: 1780564628262180484}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: enemy
-  m_TagString: enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &6078139314132224807
 Transform:
@@ -688,7 +688,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 112
   m_CollisionDetection: 2
 --- !u!114 &6078139314132224806
 MonoBehaviour:
@@ -796,7 +796,7 @@ NavMeshAgent:
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
-  m_AngularSpeed: 120
+  m_AngularSpeed: 1e+30
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -830,7 +830,7 @@ GameObject:
   - component: {fileID: 594482445628440386}
   - component: {fileID: 4166477194173227431}
   - component: {fileID: 1111199979289974243}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
