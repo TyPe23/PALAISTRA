@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class projectileSpawn : MonoBehaviour
+public class ProjectileSpawn : MonoBehaviour
 {
     public GameObject projectile;
     public bool continuous;

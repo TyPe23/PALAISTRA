@@ -1,11 +1,7 @@
-using Cinemachine;
-using StarterAssets;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
-using static UnityEditor.VersionControl.Asset;
 using state = potStates;
 
 public enum potStates
@@ -43,6 +39,7 @@ public class VasePhysics : MonoBehaviour
     private AudioSource soundSrc;
     private Transform parent;
     private GameObject player;
+    private StarterAssetsInputs inputs;
     private bool grounded = true;
 
     private Dictionary<state, Action> statesStayMeths;
@@ -58,9 +55,11 @@ public class VasePhysics : MonoBehaviour
         player = GameObject.FindWithTag("Player");
         soundSrc = GetComponent<AudioSource>();
         playerState = player.GetComponent<PlayerStates>();
-        parent = transform.parent;
+        inputs = player.GetComponent<StarterAssetsInputs>();
 
         parent = transform.parent;
+        parent = transform.parent;
+        
         throwRef = GameObject.FindWithTag("throwRef").transform;
         attachPoint = GameObject.FindWithTag("lariatAttach").transform;
 
@@ -109,18 +108,24 @@ public class VasePhysics : MonoBehaviour
         {
             ChangeState(state.BREAK);
         }
-        if (collision.gameObject.CompareTag("hitbox") && playerState.state == playerStates.SPIN)
+        print(collision.tag);
+        if (collision.gameObject.CompareTag("hitbox") && inputs.spin)
         {
+            print("should grab");
             collision.gameObject.GetComponent<BoxCollider>().enabled = false;
             playerState.grab = true;
             playerState.letGo = false;
             ChangeState(state.GRABBED);
         }
-        if (collision.transform.CompareTag("floor") && !grounded)
+        if (!collision.transform.CompareTag("Player")  && !grounded)
         {
             grounded = true;
         }
-        if (collision.gameObject.CompareTag("projectile") || gameObject.CompareTag("trap"))
+        if (collision.gameObject.CompareTag("projectile") || collision.transform.CompareTag("trap"))
+        {
+            ChangeState(state.BREAK);
+        }
+        if (collision.gameObject.CompareTag("enemy"))
         {
             ChangeState(state.BREAK);
         }
@@ -141,6 +146,8 @@ public class VasePhysics : MonoBehaviour
     #region Enter
     private void StateEnterThrown()
     {
+        transform.tag = "projectile";
+
         playerState.grab = false;
         grounded = false;
         playerState.letGo = false;
@@ -157,7 +164,14 @@ public class VasePhysics : MonoBehaviour
         Vector3 launch = throwRef.position - player.transform.position;
         launch.y = 0.1f;
 
-        rb.AddForce(launch * playerState.launchAmount, ForceMode.Impulse);
+        float launchAmount = playerState.launchAmount * 2;
+
+        if (launchAmount > 40)
+        {
+            launchAmount = 40;
+        }
+
+        rb.AddForce(launch * launchAmount, ForceMode.Impulse);
     }
 
     private void StateEnterBreak()

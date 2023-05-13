@@ -1945,7 +1945,7 @@ PrefabInstance:
         type: 3}
       propertyPath: attachPoint
       value: 
-      objectReference: {fileID: 1324453535}
+      objectReference: {fileID: 0}
     - target: {fileID: 6078139314132224807, guid: 997992fddcdc3b540b573dd8fec365ae,
         type: 3}
       propertyPath: m_RootOrder
@@ -13374,12 +13374,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 668897568987226593, guid: a48945682b87dae46b8232432c5fe0e1,
     type: 3}
   m_PrefabInstance: {fileID: 1317346608}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1324453535 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 421636297779310239, guid: bf0a8faaa5ae4674db9869ce1fdfbb6a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1068203807}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1325584103 stripped
 Transform:

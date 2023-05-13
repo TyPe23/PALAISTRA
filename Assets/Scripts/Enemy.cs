@@ -135,8 +135,15 @@ public class Enemy : MonoBehaviour
         {
             grounded = true;
         }
-        if ((collision.gameObject.CompareTag("projectile") || gameObject.CompareTag("trap")) && canGrab && state != state.DEATH)
+        if (collision.transform.CompareTag("trap") && canGrab && state != state.DEATH)
         {
+            health -= 10;
+            ChangeState(state.HIT);
+        }
+        if (collision.transform.CompareTag("projectile") && canGrab && state != state.DEATH)
+        {
+            collision.transform.tag = "Untagged";
+            health -= 2;
             ChangeState(state.HIT);
         }
     }
