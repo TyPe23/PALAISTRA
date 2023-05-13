@@ -2041,7 +2041,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6107605110338279558}
   - component: {fileID: 3781981158954960555}
-  - component: {fileID: 4026286342199264734}
+  - component: {fileID: 149504938301538506}
   m_Layer: 9
   m_Name: Hurtbox
   m_TagString: Player
@@ -2078,7 +2078,7 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &4026286342199264734
+--- !u!114 &149504938301538506
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2087,7 +2087,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 563862088344670888}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79977db5e9cda584d9aa828d84e9879c, type: 3}
+  m_Script: {fileID: 11500000, guid: 0b1e2ba769887cc42bda209888e58287, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   states: {fileID: 8394732593264406109}
@@ -2361,7 +2361,7 @@ GameObject:
   - component: {fileID: 576042482192424114}
   m_Layer: 0
   m_Name: Right_LowerArm
-  m_TagString: Untagged
+  m_TagString: lariatAttach
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2780,7 +2780,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8595622413345162435
 Transform:
   m_ObjectHideFlags: 0
@@ -3524,6 +3524,7 @@ GameObject:
   - component: {fileID: 8394732593264406098}
   - component: {fileID: 4416926082416992951}
   - component: {fileID: 3105197953242897890}
+  - component: {fileID: 6507021601325289625}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -4010,6 +4011,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6507021601325289625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5317631918730010848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 909d917d73a63f940ac158d02e936645, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pushLayers:
+    serializedVersion: 2
+    m_Bits: 1024
+  canPush: 1
+  strength: 1.1
 --- !u!1 &5351824035230962876
 GameObject:
   m_ObjectHideFlags: 0
@@ -4864,8 +4882,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 1.244678, y: 1.4315174, z: 1.3530626}
-  m_Center: {x: 0, y: -0.21575868, z: -0.17653131}
+  m_Size: {x: 1.244678, y: 1.676934, z: 1.3530626}
+  m_Center: {x: 0, y: -0.338467, z: -0.17653131}
 --- !u!33 &166355263
 MeshFilter:
   m_ObjectHideFlags: 0

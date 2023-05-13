@@ -64,7 +64,6 @@ public class PlayerStates : MonoBehaviour
     public bool showScore = true;
     private bool canMove;
     private bool canAction = true;
-    private bool canDash = true;
     #endregion
 
     #region LifeCycle
@@ -520,7 +519,6 @@ public class PlayerStates : MonoBehaviour
 
     private void StateExitDash()
     {
-        StartCoroutine(DashTimeout());
     }
 
     private void StateExitLose()
@@ -578,13 +576,6 @@ public class PlayerStates : MonoBehaviour
 
         yield return new WaitForSeconds(0.75f);
         canAction = true;
-    }
-    
-    private IEnumerator DashTimeout()
-    {
-        canDash = false;
-        yield return new WaitForSeconds(0.25f);
-        canDash = true;
     }
 
     private IEnumerator IFrames()

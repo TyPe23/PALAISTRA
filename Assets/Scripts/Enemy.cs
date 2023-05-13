@@ -47,7 +47,6 @@ public class Enemy : MonoBehaviour
     private MeshRenderer mesh;
 
     private PlayerStates states;
-    private ThirdPersonController charCon;
 
     private bool grounded = true;
     private bool checkingDist = false;
@@ -76,7 +75,6 @@ public class Enemy : MonoBehaviour
         attachPoint = GameObject.FindWithTag("lariatAttach").transform;
 
         rb = GetComponent<Rigidbody>();
-        charCon = player.GetComponent<ThirdPersonController>();
         capCollider = player.GetComponent<CapsuleCollider>();
         mesh = GetComponentInChildren<MeshRenderer>();
 
