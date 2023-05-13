@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Windows;
 using state = playerStates;
 
-public class damageWorkaround : MonoBehaviour
+public class DamageWorkaround : MonoBehaviour
 {
     public PlayerStates states;
     public PlayerStats stats;
