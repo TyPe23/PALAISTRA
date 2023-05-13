@@ -126,16 +126,18 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        if (collision.gameObject.CompareTag("hitbox") && gameObject.CompareTag("enemy") && canGrab)
+        if (collision.gameObject.CompareTag("hitbox") && state != state.DEATH && canGrab)
         {
             collision.gameObject.GetComponent<BoxCollider>().enabled = false;
+            states.grab = true;
+            states.letGo = false;
             ChangeState(state.GRABBED);
         }
         if (collision.transform.CompareTag("floor") && !grounded)
         {
             grounded = true;
         }
-        if ((collision.gameObject.CompareTag("projectile") || gameObject.CompareTag("trap")) && canGrab)
+        if ((collision.gameObject.CompareTag("projectile") || gameObject.CompareTag("trap")) && canGrab && state != state.DEATH)
         {
             ChangeState(state.HIT);
         }
@@ -182,19 +184,24 @@ public class Enemy : MonoBehaviour
     #region Enter
     private void StateEnterPrime()
     {
-        agent.speed = 0;
+        agent.speed = 0.25f;
         StartCoroutine(charge());
     }
 
     private void StateEnterAttack()
     {
         canGrab = false;
+
+        gameObject.tag = "enemy";
+
         if (debug)
         {
             mesh.material.color = new Color(255, 0, 0);
         }
+
         agent.speed = attackSpeed;
         agent.acceleration *= 10;
+
         if (agent.enabled)
         {
             agent.SetDestination(player.transform.position);
@@ -205,9 +212,8 @@ public class Enemy : MonoBehaviour
     {
         StartCoroutine(pauseCollision());
 
-        gameObject.tag = "Untagged";
-
-        charCon.grab = false;
+        capCollider.enabled = false;
+        states.grab = false;
         grounded = false;
         states.letGo = false;
         rb.isKinematic = false;
@@ -248,11 +254,12 @@ public class Enemy : MonoBehaviour
         }
         agent.speed = 0;
         agent.enabled = false;
-        charCon.grab = true;
+        states.grab = true;
         transform.parent = attachPoint;
         transform.position = attachPoint.position;
         rb.useGravity = false;
         rb.isKinematic = true;
+        capCollider.isTrigger = true;
         if (debug)
         {
             mesh.material.color = new Color(255, 255, 255);
@@ -271,7 +278,7 @@ public class Enemy : MonoBehaviour
         {
             mesh.material.color = new Color(0, 0, 0);
         }
-        gameObject.tag = "Untagged";
+        
         slider.gameObject.SetActive(false);
         rb.isKinematic = true;
         capCollider.enabled = false;
@@ -375,6 +382,7 @@ public class Enemy : MonoBehaviour
 
     private void StateExitAttack()
     {
+        gameObject.tag = "Untagged";
         canGrab = true;
         agent.speed = speed;
         agent.acceleration /= 10;
@@ -382,7 +390,6 @@ public class Enemy : MonoBehaviour
 
     private void StateExitThrown()
     {
-        gameObject.tag = "enemy";
         rb.velocity = new Vector3(0, 0, 0);
         rb.angularVelocity = new Vector3(0, 0, 0);
         agent.speed = speed;
@@ -391,6 +398,7 @@ public class Enemy : MonoBehaviour
 
     private void StateExitGrabbed()
     {
+        capCollider.isTrigger = false;
     }
 
     private void StateExitDeath()
@@ -417,7 +425,6 @@ public class Enemy : MonoBehaviour
     #region HELPER
     private IEnumerator pauseCollision()
     {
-        capCollider.enabled = false;
         yield return new WaitForSeconds(0.5f);
         capCollider.enabled = true;
     }
@@ -437,10 +444,13 @@ public class Enemy : MonoBehaviour
     
     private IEnumerator attackRecoil()
     {
+        gameObject.tag = "Untagged";
+
         if (debug)
         {
             mesh.material.color = new Color(255, 0, 255);
         }
+
         canGrab = true;
         yield return new WaitForSeconds(1f);
 

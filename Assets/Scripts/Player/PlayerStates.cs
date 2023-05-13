@@ -39,6 +39,7 @@ public class PlayerStates : MonoBehaviour
     public bool canCheck;
     public bool canDamage = true;
     public bool letGo = false;
+    public bool grab = false;
     public float launchAmount;
 
     private Dictionary<playerStates, Action> statesStayMeths;
@@ -54,15 +55,15 @@ public class PlayerStates : MonoBehaviour
     private Animator animator;
     private TMP_Text scoreUI;
     private CinemachineImpulseSource shake;
-    private EndOfGame EOG;
+    public EndOfGame EOG;
 
 
-    private bool canAction;
     private Vector3 startPos;
     private bool exitDash;
     public bool invul;
     public bool showScore = true;
     private bool canMove;
+    private bool canAction = true;
     private bool canDash = true;
     #endregion
 
@@ -79,7 +80,6 @@ public class PlayerStates : MonoBehaviour
         soundSrc = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
         scoreUI = GetComponentInChildren<TMP_Text>();
-        EOG = GetComponentInChildren<EndOfGame>();
 
         statesStayMeths = new Dictionary<playerStates, Action>()
         {
@@ -156,36 +156,12 @@ public class PlayerStates : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay(Collider collision)
-    {
-        if ((collision.transform.CompareTag("enemy") || collision.transform.CompareTag("trap") || collision.transform.CompareTag("projectile")) && !invul && (state == state.MOVE || state == state.EXHAUSTED))
-        {
-            ChangeState(state.HIT);
-
-            if (canDamage)
-            {
-                if (collision.transform.CompareTag("enemy") || collision.transform.CompareTag("projectile"))
-                {
-                    playerStats.takeDamage(2);
-                }
-                else if (collision.transform.CompareTag("trap"))
-                {
-                    playerStats.takeDamage(5);
-                }
-            }
-        }
-        else if (collision.transform.CompareTag("enemy") && state == state.DASH)
-        {
-            ChangeState(state.STOP);
-        }
-    }
-
     #endregion
 
     #region Enter
     private void StateEnterExhausted()
     {
-        
+        letGo = true;
     }
 
     private void StateEnterStop()
@@ -199,6 +175,7 @@ public class PlayerStates : MonoBehaviour
 
     private void StateEnterPileDriver()
     {
+        canAction = false;
         launchAmount = 30;
         stamina.spendStamina(playerStats.PileDriverCost);
         canAction = false;
@@ -212,7 +189,7 @@ public class PlayerStates : MonoBehaviour
 
     private void StateEnterSpin()
     {
-        launchAmount = 20;
+        canAction = false;
         stamina.spendStamina(playerStats.SpinCost);
         canAction = false;
         letGo = false;
@@ -223,7 +200,7 @@ public class PlayerStates : MonoBehaviour
 
     private void StateEnterLariat()
     {
-        launchAmount = 30;
+        canAction = false;
         stamina.spendStamina(playerStats.LariatCost);
         canAction = false;
         canCheck = false;
@@ -262,7 +239,8 @@ public class PlayerStates : MonoBehaviour
 
     private void StateEnterMove()
     {
-        charCon.grab = false;
+        grab = false;
+        letGo = true;
     }
     #endregion
 
@@ -281,43 +259,47 @@ public class PlayerStates : MonoBehaviour
 
     private void StateStayStop()
     {
-        if (inputs.lariat && stamina.stamina >= playerStats.LariatCost)
+        if (canAction)
         {
-            hitbox.enabled = true;
-
-            if (charCon.grab)
+            if (inputs.lariat && stamina.stamina >= playerStats.LariatCost)
             {
-                ChangeState(state.LARIAT);
+                hitbox.enabled = true;
+
+                if (grab)
+                {
+                    ChangeState(state.LARIAT);
+                }
+
+                StartCoroutine(HBTimeout());
+            }
+            else if (inputs.spin && stamina.stamina >= playerStats.SpinCost)
+            {
+                hitbox.enabled = true;
+
+                if (grab)
+                {
+                    ChangeState(state.SPIN);
+                }
+
+                StartCoroutine(HBTimeout());
+            }
+            else if (inputs.pileDriver && stamina.stamina >= playerStats.PileDriverCost)
+            {
+                hitbox.enabled = true;
+
+                if (grab)
+                {
+                    ChangeState(state.PILEDRIVER);
+                }
+
+                StartCoroutine(HBTimeout());
             }
 
-            StartCoroutine(HBTimeout());
-        }
-        else if (inputs.spin && stamina.stamina >= playerStats.SpinCost)
-        {
-            hitbox.enabled = true;
-
-            if (charCon.grab)
+            if (exitDash && state == state.DASH)
             {
-                ChangeState(state.SPIN);
+                letGo = true;
+                ChangeState(state.MOVE);
             }
-
-            StartCoroutine(HBTimeout());
-        }
-        else if (inputs.pileDriver && stamina.stamina >= playerStats.PileDriverCost)
-        {
-            hitbox.enabled = true;
-
-            if (charCon.grab)
-            {
-                ChangeState(state.PILEDRIVER);
-            }
-
-            StartCoroutine(HBTimeout());
-        }
-
-        if (exitDash)
-        {
-            ChangeState(state.MOVE);
         }
     }
 
@@ -365,6 +347,8 @@ public class PlayerStates : MonoBehaviour
 
     private void StateStayDash()
     {
+        bool changed = false;
+
         charCon.Dash();
 
         Vector3 currPos = transform.position;
@@ -372,45 +356,49 @@ public class PlayerStates : MonoBehaviour
         if ((currPos - startPos).magnitude > playerStats.DashDist)
         {
             ChangeState(state.MOVE);
+            changed = true;
         }
 
-        if (inputs.lariat && stamina.stamina >= playerStats.LariatCost)
+        if (canAction && !changed)
         {
-            hitbox.enabled = true;
-
-            if (charCon.grab)
+            if (inputs.lariat && stamina.stamina >= playerStats.LariatCost)
             {
-                ChangeState(state.LARIAT);
+                hitbox.enabled = true;
+
+                if (grab)
+                {
+                    ChangeState(state.LARIAT);
+                }
+
+                StartCoroutine(HBTimeout());
+            }
+            else if (inputs.spin && stamina.stamina >= playerStats.SpinCost)
+            {
+                hitbox.enabled = true;
+
+                if (grab)
+                {
+                    ChangeState(state.SPIN);
+                }
+
+                StartCoroutine(HBTimeout());
+            }
+            else if (inputs.pileDriver && stamina.stamina >= playerStats.PileDriverCost)
+            {
+                hitbox.enabled = true;
+
+                if (grab)
+                {
+                    ChangeState(state.PILEDRIVER);
+                }
+
+                StartCoroutine(HBTimeout());
             }
 
-            StartCoroutine(HBTimeout());
-        }
-        else if (inputs.spin && stamina.stamina >= playerStats.SpinCost)
-        {
-            hitbox.enabled = true;
-
-            if (charCon.grab)
+            if (exitDash)
             {
-                ChangeState(state.SPIN);
+                ChangeState(state.MOVE);
             }
-
-            StartCoroutine(HBTimeout());
-        }
-        else if (inputs.pileDriver && stamina.stamina >= playerStats.PileDriverCost)
-        {
-            hitbox.enabled = true;
-
-            if (charCon.grab)
-            {
-                ChangeState(state.PILEDRIVER);
-            }
-
-            StartCoroutine(HBTimeout());
-        }
-
-        if (exitDash)
-        {
-            ChangeState(state.MOVE);
         }
     }
     private void StateStayLose()
@@ -443,45 +431,47 @@ public class PlayerStates : MonoBehaviour
         //letGo = true;
         charCon.Move();
 
-        if (inputs.sprint && stamina.stamina >= playerStats.DashCost && canDash)
+        if (canAction)
         {
-            canAction = true;
-            ChangeState(state.DASH);
-        }
-        else if (canAction)
-        {
-            if (inputs.lariat && stamina.stamina >= playerStats.LariatCost)
+            if (inputs.sprint && stamina.stamina >= playerStats.DashCost)
             {
-                hitbox.enabled = true;
-
-                if (charCon.grab)
-                {
-                   ChangeState(state.LARIAT);
-                }
-
-                StartCoroutine(HBTimeout());
+                ChangeState(state.DASH);
             }
-            else if (inputs.spin && stamina.stamina >= playerStats.SpinCost)
+            else
             {
-                hitbox.enabled = true;
-
-                if (charCon.grab)
+                if (inputs.lariat && stamina.stamina >= playerStats.LariatCost)
                 {
-                    ChangeState(state.SPIN);
+                    hitbox.enabled = true;
+
+                    if (grab)
+                    {
+                        ChangeState(state.LARIAT);
+                    }
+
+                    StartCoroutine(HBTimeout());
                 }
-
-                StartCoroutine(HBTimeout());
-            }
-            else if (inputs.pileDriver && stamina.stamina >= playerStats.PileDriverCost)
-            {
-                hitbox.enabled = true;
-
-                if (charCon.grab)
+                else if (inputs.spin && stamina.stamina >= playerStats.SpinCost)
                 {
-                    ChangeState(state.PILEDRIVER);
-                }
+                    hitbox.enabled = true;
 
-                StartCoroutine(HBTimeout());
+                    if (grab)
+                    {
+                        ChangeState(state.SPIN);
+                    }
+
+                    StartCoroutine(HBTimeout());
+                }
+                else if (inputs.pileDriver && stamina.stamina >= playerStats.PileDriverCost)
+                {
+                    hitbox.enabled = true;
+
+                    if (grab)
+                    {
+                        ChangeState(state.PILEDRIVER);
+                    }
+
+                    StartCoroutine(HBTimeout());
+                }
             }
         }
     }
@@ -507,6 +497,7 @@ public class PlayerStates : MonoBehaviour
         shake.GenerateImpulseWithForce(0.5f);
         Game.globalInstance.sndPlayer.PlaySound(SoundType.IMPACT, soundSrc);
         StartCoroutine(IFrames());
+        StartCoroutine(ActionTimeout());
     }
 
     private void StateExitSpin()
@@ -515,6 +506,7 @@ public class PlayerStates : MonoBehaviour
         shake.GenerateImpulseWithForce(0.25f);
         Game.globalInstance.sndPlayer.PlaySound(SoundType.IMPACT, soundSrc);
         StartCoroutine(IFrames());
+        StartCoroutine(ActionTimeout());
     }
 
     private void StateExitLariat()
@@ -522,12 +514,12 @@ public class PlayerStates : MonoBehaviour
         letGo = true;
         shake.GenerateImpulseWithForce(0.5f);
         Game.globalInstance.sndPlayer.PlaySound(SoundType.IMPACT, soundSrc);
-        StartCoroutine(IFrames());
+        StartCoroutine(IFrames()); 
+        StartCoroutine(ActionTimeout());
     }
 
     private void StateExitDash()
     {
-        StartCoroutine(canActionWait());
         StartCoroutine(DashTimeout());
     }
 
@@ -545,13 +537,6 @@ public class PlayerStates : MonoBehaviour
     #endregion
 
     #region helper
-
-    private IEnumerator canActionWait()
-    {
-        yield return new WaitForSeconds(0.1f);
-        canAction = false;
-    }
-
     private IEnumerator waitToCheckGround()
     {
         yield return new WaitForSeconds(0.5f);
@@ -586,6 +571,15 @@ public class PlayerStates : MonoBehaviour
         exitDash = true;
     }
 
+    private IEnumerator ActionTimeout()
+    {
+        yield return new WaitForSeconds(0.25f);
+        letGo = false;
+
+        yield return new WaitForSeconds(0.75f);
+        canAction = true;
+    }
+    
     private IEnumerator DashTimeout()
     {
         canDash = false;

@@ -17,7 +17,7 @@ public enum SoundType
     SPIKE,
     PROJECTILE,
     PROJ_BREAK,
-
+    POT_BREAK,
 }
 
 public struct Range
@@ -99,6 +99,7 @@ public class AudioManager : MonoBehaviour
             {SoundType.SPIKE_PRIME, new SoundCollection("spike_prime") },
             {SoundType.PROJECTILE, new SoundCollection("dash") },
             {SoundType.PROJ_BREAK, new SoundCollection("dash") },
+            {SoundType.POT_BREAK, new SoundCollection("pot1", "pot2", "pot3", "pot4") },
         };
     }
 

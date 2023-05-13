@@ -95,7 +95,6 @@ namespace StarterAssets
         private float _terminalVelocity = 53.0f;
         private Vector3 targetDirection;
         private PlayerStats _playerStats;
-        public bool grab = false;
 
         // timeout deltatime
         private float _jumpTimeoutDelta;
@@ -116,6 +115,7 @@ namespace StarterAssets
         private StarterAssetsInputs _input;
         private StaminaManager _stamina;
         private GameObject _mainCamera;
+        private PlayerStates _states;
 
         private const float _threshold = 0.01f;
 
@@ -156,6 +156,7 @@ namespace StarterAssets
             _controller = GetComponent<CharacterController>();
             _input = GetComponent<StarterAssetsInputs>();
             _stamina = GetComponent<StaminaManager>();
+            _states = GetComponent<PlayerStates>();
 #if ENABLE_INPUT_SYSTEM 
             _playerInput = GetComponent<PlayerInput>();
 #else
@@ -529,7 +530,7 @@ namespace StarterAssets
                 }
 
                 // Jump
-                if (_input.lariat && !_input.pileDriver && grab && _jumpTimeoutDelta <= 0.0f)
+                if (_input.lariat && !_input.pileDriver && _states.state == playerStates.LARIAT && _jumpTimeoutDelta <= 0.0f)
                 {
                     // the square root of H * -2 * G = how much velocity needed to reach desired height
                     _verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
