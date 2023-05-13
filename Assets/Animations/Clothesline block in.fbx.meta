@@ -109,7 +109,7 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human:
-    - boneName: Root_joint
+    - boneName: Palaistra_Final_Hips_joint
       humanName: Hips
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -117,7 +117,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: L_Thigh_joint
+    - boneName: Palaistra_Final_LeftUpLeg_joint
       humanName: LeftUpperLeg
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -125,7 +125,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: R_Thigh_joint
+    - boneName: Palaistra_Final_RightUpLeg_joint
       humanName: RightUpperLeg
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -133,7 +133,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: L_Knee_joint
+    - boneName: Palaistra_Final_LeftLeg_joint
       humanName: LeftLowerLeg
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -141,7 +141,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: R_Knee_joint
+    - boneName: Palaistra_Final_RightLeg_joint
       humanName: RightLowerLeg
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -149,7 +149,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: L_Ankle_joint
+    - boneName: Palaistra_Final_LeftFoot_joint
       humanName: LeftFoot
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -157,7 +157,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: R_Ankle_joint
+    - boneName: Palaistra_Final_RightFoot_joint
       humanName: RightFoot
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -165,7 +165,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: Spine_01_joint
+    - boneName: Palaistra_Final_Spine_joint
       humanName: Spine
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -173,7 +173,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: Spine_02_joint
+    - boneName: Palaistra_Final_Spine1_joint
       humanName: Chest
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -181,7 +181,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: Neck_joint
+    - boneName: Palaistra_Final_Neck_joint
       humanName: Neck
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -189,7 +189,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: Head_joint
+    - boneName: Palaistra_Final_Head_joint
       humanName: Head
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -197,7 +197,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: L_Clavicle_joint
+    - boneName: Palaistra_Final_LeftShoulder_joint
       humanName: LeftShoulder
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -205,7 +205,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: R_Clavicle_joint
+    - boneName: Palaistra_Final_RightShoulder_joint
       humanName: RightShoulder
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -213,7 +213,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: L_Shoulder_joint
+    - boneName: Palaistra_Final_LeftArm_joint
       humanName: LeftUpperArm
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -221,7 +221,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: R_Shoulder_joint
+    - boneName: Palaistra_Final_RightArm_joint
       humanName: RightUpperArm
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -229,7 +229,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: L_Elbow_joint
+    - boneName: Palaistra_Final_LeftForeArm_joint
       humanName: LeftLowerArm
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -237,7 +237,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: R_Elbow_joint
+    - boneName: Palaistra_Final_RightForeArm_joint
       humanName: RightLowerArm
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -245,7 +245,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: L_Wrist_joint
+    - boneName: Palaistra_Final_LeftHand_joint
       humanName: LeftHand
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -253,7 +253,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: R_Wrist_joint
+    - boneName: Palaistra_Final_RightHand_joint
       humanName: RightHand
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -261,7 +261,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: L_Ball_joint
+    - boneName: Palaistra_Final_LeftToeBase_joint
       humanName: LeftToes
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -269,7 +269,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: R_Ball_joint
+    - boneName: Palaistra_Final_RightToeBase_joint
       humanName: RightToes
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -277,15 +277,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: Plume_01_joint
-      humanName: RightEye
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: L_Thumb_01_joint
+    - boneName: Palaistra_Final_LeftHandThumb1_joint
       humanName: Left Thumb Proximal
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -293,7 +285,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: L_Thumb_02_joint
+    - boneName: Palaistra_Final_LeftHandThumb2_joint
       humanName: Left Thumb Intermediate
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -301,7 +293,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: L_Thumb_03_joint
+    - boneName: Palaistra_Final_LeftHandThumb3_joint
       humanName: Left Thumb Distal
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -309,7 +301,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: L_Index_01_joint
+    - boneName: Palaistra_Final_LeftHandIndex1_joint
       humanName: Left Index Proximal
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -317,7 +309,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: L_Index_02_joint
+    - boneName: Palaistra_Final_LeftHandIndex2_joint
       humanName: Left Index Intermediate
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -325,7 +317,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: L_Index_03_joint
+    - boneName: Palaistra_Final_LeftHandIndex3_joint
       humanName: Left Index Distal
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -333,7 +325,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: L_Middle_01_joint
+    - boneName: Palaistra_Final_LeftHandMiddle1_joint
       humanName: Left Middle Proximal
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -341,7 +333,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: L_Middle_02_joint
+    - boneName: Palaistra_Final_LeftHandMiddle2_joint
       humanName: Left Middle Intermediate
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -349,7 +341,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: L_Middle_03_joint
+    - boneName: Palaistra_Final_LeftHandMiddle3_joint
       humanName: Left Middle Distal
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -357,7 +349,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: L_Ring_01_joint
+    - boneName: Palaistra_Final_LeftHandRing1_joint
       humanName: Left Ring Proximal
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -365,7 +357,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: L_Ring_02_joint
+    - boneName: Palaistra_Final_LeftHandRing2_joint
       humanName: Left Ring Intermediate
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -373,7 +365,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: L_Ring_03_joint
+    - boneName: Palaistra_Final_LeftHandRing3_joint
       humanName: Left Ring Distal
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -381,7 +373,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: L_Pinky_01_joint
+    - boneName: Palaistra_Final_LeftHandPinky1_joint
       humanName: Left Little Proximal
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -389,7 +381,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: L_Pinky_02_joint
+    - boneName: Palaistra_Final_LeftHandPinky2_joint
       humanName: Left Little Intermediate
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -397,7 +389,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: L_Pinky_03_joint
+    - boneName: Palaistra_Final_LeftHandPinky3_joint
       humanName: Left Little Distal
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -405,7 +397,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: R_Thumb_01_joint
+    - boneName: Palaistra_Final_RightHandThumb1_joint
       humanName: Right Thumb Proximal
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -413,7 +405,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: R_Thumb_02_joint
+    - boneName: Palaistra_Final_RightHandThumb2_joint
       humanName: Right Thumb Intermediate
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -421,7 +413,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: R_Thumb_03_joint
+    - boneName: Palaistra_Final_RightHandThumb3_joint
       humanName: Right Thumb Distal
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -429,7 +421,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: R_Index_01_joint
+    - boneName: Palaistra_Final_RightHandIndex1_joint
       humanName: Right Index Proximal
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -437,7 +429,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: R_Index_02_joint
+    - boneName: Palaistra_Final_RightHandIndex2_joint
       humanName: Right Index Intermediate
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -445,7 +437,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: R_Index_03_joint
+    - boneName: Palaistra_Final_RightHandIndex3_joint
       humanName: Right Index Distal
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -453,7 +445,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: R_Middle_01_joint
+    - boneName: Palaistra_Final_RightHandMiddle1_joint
       humanName: Right Middle Proximal
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -461,7 +453,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: R_Middle_02_joint
+    - boneName: Palaistra_Final_RightHandMiddle2_joint
       humanName: Right Middle Intermediate
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -469,7 +461,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: R_Middle_03_joint
+    - boneName: Palaistra_Final_RightHandMiddle3_joint
       humanName: Right Middle Distal
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -477,7 +469,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: R_Ring_01_joint
+    - boneName: Palaistra_Final_RightHandRing1_joint
       humanName: Right Ring Proximal
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -485,7 +477,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: R_Ring_02_joint
+    - boneName: Palaistra_Final_RightHandRing2_joint
       humanName: Right Ring Intermediate
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -493,7 +485,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: R_Ring_03_joint
+    - boneName: Palaistra_Final_RightHandRing3_joint
       humanName: Right Ring Distal
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -501,7 +493,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: R_joint7_joint
+    - boneName: Palaistra_Final_RightHandPinky1_joint
       humanName: Right Little Proximal
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -509,7 +501,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: R_joint12_joint
+    - boneName: Palaistra_Final_RightHandPinky2_joint
       humanName: Right Little Intermediate
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -517,7 +509,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: R_joint13_joint
+    - boneName: Palaistra_Final_RightHandPinky3_joint
       humanName: Right Little Distal
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -525,7 +517,7 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: Spine_03_joint
+    - boneName: Palaistra_Final_Spine2_joint
       humanName: UpperChest
       limit:
         min: {x: 0, y: 0, z: 0}
@@ -534,1561 +526,909 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: Clothesline block in(Clone)
+    - name: Paiaistra Grapple Anims(Clone)
       parentName: 
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Main_Control
-      parentName: Clothesline block in(Clone)
+    - name: Palaistra_Final_Main_ctrl
+      parentName: Paiaistra Grapple Anims(Clone)
       position: {x: -0, y: -2.4651903e-34, z: -0.00027503}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Root_Control
-      parentName: Main_Control
-      position: {x: -0.004284729, y: 0.73195934, z: 0.012897525}
-      rotation: {x: 0, y: 0.21074814, z: -0, w: 0.97754043}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Hips_Control
-      parentName: Root_Control
-      position: {x: -0, y: 0, z: 0.062900856}
+    - name: Palaistra_Final_Hips_GRP
+      parentName: Palaistra_Final_Main_ctrl
+      position: {x: -0, y: 1.1222817, z: -0.058793884}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Spine_01_GRP
-      parentName: Root_Control
-      position: {x: -0, y: 0.114573285, z: 0.032051068}
-      rotation: {x: -0.48503017, y: 0.51453453, z: -0.48503017, w: 0.51453453}
+    - name: Palaistra_Final_Hips_CTRL
+      parentName: Palaistra_Final_Hips_GRP
+      position: {x: -0, y: -0.35419184, z: 0.088352926}
+      rotation: {x: 0.18793564, y: -0.072897725, z: 0.06177426, w: 0.97752243}
       scale: {x: 1, y: 1, z: 1}
-    - name: Spine_01_CTRL
-      parentName: Spine_01_GRP
+    - name: Palaistra_Final_Spine_GRP
+      parentName: Palaistra_Final_Hips_CTRL
+      position: {x: -0, y: 0.09824242, z: -0.00611783}
+      rotation: {x: -0.031091237, y: 0, z: -0, w: 0.99951655}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_Spine_CTRL
+      parentName: Palaistra_Final_Spine_GRP
+      position: {x: -0, y: 0, z: -2.220446e-18}
+      rotation: {x: -0.056726616, y: -0.1523897, z: 0.051476292, w: 0.9853475}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_Spine1_GRP
+      parentName: Palaistra_Final_Spine_CTRL
+      position: {x: -0, y: 0.11483811, z: -4.8615287e-12}
+      rotation: {x: 0.000000014865595, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_Spine1_CTRL
+      parentName: Palaistra_Final_Spine1_GRP
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.4002582, y: -0.22213222, z: 0.018562473, w: 0.8888791}
+      rotation: {x: -0.10308137, y: 0.0147492075, z: 0.013468989, w: 0.9944724}
       scale: {x: 1, y: 1, z: 1}
-    - name: Spine_02_GRP
-      parentName: Spine_01_CTRL
-      position: {x: -0.11477318, y: 3.5527136e-17, z: -2.5484765e-17}
+    - name: Palaistra_Final_Spine2_GRP
+      parentName: Palaistra_Final_Spine1_CTRL
+      position: {x: -0, y: 0.13124357, z: 1.6674735e-10}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Spine_02_CTRL
-      parentName: Spine_02_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Spine_03_GRP
-      parentName: Spine_02_CTRL
-      position: {x: -0.11477318, y: 5.3290704e-17, z: 4.452069e-17}
-      rotation: {x: 0, y: -0, z: -0.13757166, w: 0.9904918}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Spine_03_CTRL
-      parentName: Spine_03_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Neck_GRP
-      parentName: Spine_03_CTRL
-      position: {x: -0.14171472, y: -1.0658141e-16, z: 5.3775766e-17}
-      rotation: {x: 0, y: 0, z: 0.35417792, w: 0.93517804}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Neck_CTRL
-      parentName: Neck_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.105645165, y: -0.08621739, z: 0.08929634, w: 0.9866265}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Head_GRP
-      parentName: Neck_CTRL
-      position: {x: -0.06917728, y: 0, z: 1.8932661e-31}
-      rotation: {x: 0, y: -0, z: -0.2508267, w: 0.968032}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Head_CTRL
-      parentName: Head_GRP
+    - name: Palaistra_Final_Spine2_CTRL
+      parentName: Palaistra_Final_Spine2_GRP
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Plume_01_GRP
-      parentName: Head_CTRL
-      position: {x: -0.18151811, y: 0.09351142, z: 3.9999543e-17}
-      rotation: {x: 0.9589385, y: -0.28361434, z: -1.7366369e-17, w: 5.871805e-17}
+    - name: Palaistra_Final_Neck_GRP
+      parentName: Palaistra_Final_Spine2_CTRL
+      position: {x: -0, y: 0.14764903, z: -0.000000001006523}
+      rotation: {x: 0.031091223, y: -0, z: -0, w: 0.99951655}
       scale: {x: 1, y: 1, z: 1}
-    - name: Plume_01_CTRL
-      parentName: Plume_01_GRP
+    - name: Palaistra_Final_Neck_CTRL
+      parentName: Palaistra_Final_Neck_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.1714063, y: -0.025869938, z: -0.020828968, w: 0.9846404}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_Head_GRP
+      parentName: Palaistra_Final_Neck_CTRL
+      position: {x: -0, y: 0.058982085, z: 0.024666233}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_Head_CTRL
+      parentName: Palaistra_Final_Head_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.024749495, y: 0.049492963, z: -0.02431643, w: 0.9981716}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftShoulder_GRP
+      parentName: Palaistra_Final_Spine2_CTRL
+      position: {x: -0.060130566, y: 0.12661868, z: -0.0014188358}
+      rotation: {x: 0.5694934, y: -0.41448265, z: 0.58304816, w: 0.40489045}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftShoulder_CTRL
+      parentName: Palaistra_Final_LeftShoulder_GRP
+      position: {x: 2.8865798e-17, y: 0, z: -2.842171e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightShoulder_GRP
+      parentName: Palaistra_Final_Spine2_CTRL
+      position: {x: 0.060130566, y: 0.12660514, z: -0.0012012568}
+      rotation: {x: -0.570588, y: -0.41369203, z: 0.58206767, w: -0.4055681}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightShoulder_CTRL
+      parentName: Palaistra_Final_RightShoulder_GRP
+      position: {x: 8.881784e-18, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftForeArm_GRP
+      parentName: Palaistra_Final_Main_ctrl
+      position: {x: -0.36465347, y: 1.3788682, z: -0.087266244}
+      rotation: {x: 0.6450752, y: -0.22664115, z: 0.59569395, w: 0.42149794}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftForeArm_CTRL
+      parentName: Palaistra_Final_LeftForeArm_GRP
+      position: {x: -0.44302234, y: 0.078453764, z: 0.25664273}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightForeArm_GRP
+      parentName: Palaistra_Final_Main_ctrl
+      position: {x: 0.36465347, y: 1.3788682, z: -0.08780339}
+      rotation: {x: 0.65069544, y: 0.23013856, z: -0.5894746, w: 0.41970384}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightForeArm_CTRL
+      parentName: Palaistra_Final_RightForeArm_GRP
+      position: {x: 0.0147898095, y: 0.21115577, z: 0.018128166}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftLeg_GRP
+      parentName: Palaistra_Final_Main_ctrl
+      position: {x: -0.12926687, y: 0.5541162, z: -0.08366756}
+      rotation: {x: 0.003421067, y: -0.010176205, z: 0.9992614, w: 0.03689789}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftLeg_CTRL
+      parentName: Palaistra_Final_LeftLeg_GRP
+      position: {x: 0.17042084, y: 0.0032282067, z: 0.4534487}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightLeg_GRP
+      parentName: Palaistra_Final_Main_ctrl
+      position: {x: 0.12926687, y: 0.5541162, z: -0.0848077}
+      rotation: {x: -0.0033374864, y: -0.011346954, z: 0.9992492, w: -0.036893446}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightLeg_CTRL
+      parentName: Palaistra_Final_RightLeg_GRP
+      position: {x: 0.04784767, y: -0.013990127, z: 0.45474514}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_R_Foot_grp
+      parentName: Palaistra_Final_Main_ctrl
+      position: {x: -0, y: 2.4651903e-34, z: 0.00027503}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_R_Foot_ctrl
+      parentName: Palaistra_Final_R_Foot_grp
+      position: {x: 0.16384652, y: 0.086999334, z: 0.22638679}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_R_Foot_ik
+      parentName: Palaistra_Final_R_Foot_ctrl
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Plume_02_GRP
-      parentName: Plume_01_CTRL
-      position: {x: -0.12377054, y: 4.2632563e-16, z: -3.4592018e-17}
-      rotation: {x: 0, y: 0, z: 0.58542395, w: 0.8107273}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Plume_02_CTRL
-      parentName: Plume_02_GRP
-      position: {x: -0, y: 0, z: 0}
+    - name: Palaistra_Final_L_Foot_grp
+      parentName: Palaistra_Final_Main_ctrl
+      position: {x: -0, y: 2.4651903e-34, z: 0.00027503}
       rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: -1, y: 1, z: 1}
+    - name: Palaistra_Final_L_Foot_ctrl
+      parentName: Palaistra_Final_L_Foot_grp
+      position: {x: 0.16384651, y: 0.08699936, z: -0.624163}
+      rotation: {x: 0, y: 0.20681728, z: -0, w: 0.9783796}
       scale: {x: 1, y: 1, z: 1}
-    - name: Plume_03_GRP
-      parentName: Plume_02_CTRL
-      position: {x: -0.11458545, y: -8.5265126e-16, z: -1.4987781e-17}
-      rotation: {x: 0, y: 0, z: 0.3426577, w: 0.93946034}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Plume_03_CTRL
-      parentName: Plume_03_GRP
+    - name: Palaistra_Final_L_Foot_ik
+      parentName: Palaistra_Final_L_Foot_ctrl
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Plume_04_GRP
-      parentName: Plume_03_CTRL
-      position: {x: -0.10289703, y: 8.5265126e-16, z: -2.0196343e-17}
-      rotation: {x: 0, y: 0, z: 0.25002965, w: 0.9682382}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Plume_04_CTRL
-      parentName: Plume_04_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Arm_Controls
-      parentName: Spine_03_CTRL
-      position: {x: 1.163425, y: 0.28093377, z: 2.1112451e-16}
-      rotation: {x: 0.5512038, y: -0.4429158, z: -0.5512038, w: -0.4429158}
+      rotation: {x: 6.123234e-17, y: 1, z: -6.123234e-17, w: -6.123234e-17}
       scale: {x: 1, y: 1, z: -1}
-    - name: R_Clavicle_GRP
-      parentName: R_Arm_Controls
-      position: {x: -0.07743587, y: 1.2362275, z: -0.021584496}
-      rotation: {x: -0.020404575, y: -0.273969, z: 0.07141414, w: 0.95886636}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Clavicle_CTRL
-      parentName: R_Clavicle_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.07251517, y: -0.18931277, z: 0.052845813, w: 0.97780854}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Shoulder_GRP
-      parentName: R_Clavicle_CTRL
-      position: {x: -0.07553681, y: -4.2632563e-16, z: -1.3766766e-16}
-      rotation: {x: 0.071446516, y: 0.1659434, z: 0.25083357, w: 0.9510209}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Shoulder_CTRL
-      parentName: R_Shoulder_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.03959821, y: 0.16445355, z: -0.3461001, w: 0.9228227}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Elbow_GRP
-      parentName: R_Shoulder_CTRL
-      position: {x: -0.18336809, y: 0.003829528, z: 0.000621138}
-      rotation: {x: 0.07757456, y: 0.2659569, z: 0.020798713, w: 0.9606334}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Elbow_CTRL
-      parentName: R_Elbow_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.11022168, y: 0.24441636, z: -0.1802577, w: 0.9463715}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Wrist_GRP
-      parentName: R_Elbow_CTRL
-      position: {x: -0.26083055, y: -0.0014827951, z: -0.008944914}
-      rotation: {x: 0.13052619, y: -0, z: -0, w: 0.9914449}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Wrist_CTRL
-      parentName: R_Wrist_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Thumb_01_GRP
-      parentName: R_Wrist_CTRL
-      position: {x: -0.025976025, y: 0.012152065, z: 0.041835733}
-      rotation: {x: 0.48562065, y: 0.41093737, z: -0.18047148, w: 0.7501554}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Thumb_01_CTRL
-      parentName: R_Thumb_01_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Thumb_02_GRP
-      parentName: R_Thumb_01_CTRL
-      position: {x: -0.04783716, y: 0, z: 1.4210854e-16}
-      rotation: {x: 0.024793109, y: 0.06846119, z: 0.03594795, w: 0.9966976}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Thumb_02_CTRL
-      parentName: R_Thumb_02_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Thumb_03_GRP
-      parentName: R_Thumb_02_CTRL
-      position: {x: -0.026294742, y: -3.5527135e-16, z: -5.684342e-16}
-      rotation: {x: -0.057863683, y: -0.034238372, z: 0.08813492, w: 0.99383694}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Thumb_03_CTRL
-      parentName: R_Thumb_03_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Index_01_GRP
-      parentName: R_Wrist_CTRL
-      position: {x: -0.12145177, y: 0.005468126, z: 0.05186115}
-      rotation: {x: -0.28575775, y: 0.14002246, z: 0.26335266, w: 0.9107039}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Index_01_CTRL
-      parentName: R_Index_01_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Index_02_GRP
-      parentName: R_Index_01_CTRL
-      position: {x: -0.03171128, y: 0.0024026814, z: -0.0013871887}
-      rotation: {x: -0.029351348, y: -0.008866309, z: -0.019233348, w: 0.99934477}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Index_02_CTRL
-      parentName: R_Index_02_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Index_03_GRP
-      parentName: R_Index_02_CTRL
-      position: {x: -0.024973325, y: 0.001892164, z: -0.0010924414}
-      rotation: {x: 0.0000015040912, y: 0.000013418623, z: -0.000011143109, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Index_03_CTRL
-      parentName: R_Index_03_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Middle_01_GRP
-      parentName: R_Wrist_CTRL
-      position: {x: -0.12242939, y: -0.006591071, z: 0.024407782}
-      rotation: {x: -0.31742638, y: 0.06931364, z: 0.19025588, w: 0.9264118}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Middle_01_CTRL
-      parentName: R_Middle_01_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Middle_02_GRP
-      parentName: R_Middle_01_CTRL
-      position: {x: -0.036844235, y: 7.105427e-16, z: 6.3948843e-16}
-      rotation: {x: -0.011174677, y: -0.07578521, z: 0.044359446, w: 0.99607426}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Middle_02_CTRL
-      parentName: R_Middle_02_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Middle_03_GRP
-      parentName: R_Middle_02_CTRL
-      position: {x: -0.026449462, y: -9.947598e-16, z: -6.3948843e-16}
-      rotation: {x: 0.0073889256, y: 0.04426717, z: -0.0256941, w: 0.99866194}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Middle_03_CTRL
-      parentName: R_Middle_03_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Ring_01_GRP
-      parentName: R_Wrist_CTRL
-      position: {x: -0.11745778, y: -0.019431587, z: 0.0010141645}
-      rotation: {x: -0.2912202, y: -0.018884532, z: 0.23665373, w: 0.9267304}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Ring_01_CTRL
-      parentName: R_Ring_01_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Ring_02_GRP
-      parentName: R_Ring_01_CTRL
-      position: {x: -0.02671937, y: 2.842171e-16, z: -3.5527135e-16}
-      rotation: {x: -0.30970037, y: -0.29469934, z: 0.00061801996, w: 0.90401196}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Ring_02_CTRL
-      parentName: R_Ring_02_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Ring_03_GRP
-      parentName: R_Ring_02_CTRL
-      position: {x: -0.030148264, y: -8.5265126e-16, z: -1.4210854e-16}
-      rotation: {x: -0.028779421, y: -0.017801285, z: -0.0019038344, w: 0.9994255}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Ring_03_CTRL
-      parentName: R_Ring_03_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Pinky_01_GRP
-      parentName: R_Wrist_CTRL
-      position: {x: -0.10733084, y: -0.03119517, z: -0.017725987}
-      rotation: {x: -0.39273608, y: -0.1854806, z: 0.24317671, w: 0.8673065}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Pinky_01_CTRL
-      parentName: R_Pinky_01_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Pinky_02_GRP
-      parentName: R_Pinky_01_CTRL
-      position: {x: -0.02366238, y: 9.947598e-16, z: 5.684342e-16}
-      rotation: {x: 0.15614322, y: 0.036064714, z: 0.044623073, w: 0.98606664}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Pinky_02_CTRL
-      parentName: R_Pinky_02_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Pinky_03_GRP
-      parentName: R_Pinky_02_CTRL
-      position: {x: -0.016696053, y: -8.5265126e-16, z: 2.1316282e-16}
-      rotation: {x: -0.000030258, y: -0.0000018540725, z: -0.000016137916, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Pinky_03_CTRL
-      parentName: R_Pinky_03_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Arm_Controls
-      parentName: Spine_03_CTRL
-      position: {x: 1.163425, y: 0.28093377, z: 2.1112451e-16}
-      rotation: {x: 0.5512038, y: -0.4429158, z: 0.5512038, w: 0.4429158}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Clavicle_GRP
-      parentName: L_Arm_Controls
-      position: {x: -0.07743587, y: 1.2362275, z: -0.021584496}
-      rotation: {x: -0.020404575, y: -0.273969, z: 0.07141414, w: 0.95886636}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Clavicle_CTRL
-      parentName: L_Clavicle_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.14406127, y: 0.2545274, z: -0.19020063, w: 0.9371691}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Shoulder_GRP
-      parentName: L_Clavicle_CTRL
-      position: {x: -0.07553681, y: -4.2632563e-16, z: -1.3766766e-16}
-      rotation: {x: 0.071446516, y: 0.1659434, z: 0.25083357, w: 0.9510209}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Shoulder_CTRL
-      parentName: L_Shoulder_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.11102889, y: 0.36232266, z: -0.087038614, w: 0.9213139}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Elbow_GRP
-      parentName: L_Shoulder_CTRL
-      position: {x: -0.18336809, y: 0.003829528, z: 0.000621138}
-      rotation: {x: 0.07757456, y: 0.2659569, z: 0.020798713, w: 0.9606334}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Elbow_CTRL
-      parentName: L_Elbow_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: 0.21787864, z: -0, w: 0.9759759}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Wrist_GRP
-      parentName: L_Elbow_CTRL
-      position: {x: -0.26083055, y: -0.0014827951, z: -0.008944914}
-      rotation: {x: 0.13052619, y: -0, z: -0, w: 0.9914449}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Wrist_CTRL
-      parentName: L_Wrist_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Thumb_01_GRP
-      parentName: L_Wrist_CTRL
-      position: {x: -0.025976025, y: 0.012152065, z: 0.041835733}
-      rotation: {x: 0.48562065, y: 0.41093737, z: -0.18047148, w: 0.7501554}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Thumb_01_CTRL
-      parentName: L_Thumb_01_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0.1916758, w: 0.9814583}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Thumb_02_GRP
-      parentName: L_Thumb_01_CTRL
-      position: {x: -0.04783716, y: 0, z: 1.4210854e-16}
-      rotation: {x: 0.024793109, y: 0.06846119, z: 0.03594795, w: 0.9966976}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Thumb_02_CTRL
-      parentName: L_Thumb_02_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0.1916758, w: 0.9814583}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Thumb_03_GRP
-      parentName: L_Thumb_02_CTRL
-      position: {x: -0.026294742, y: -3.5527135e-16, z: -5.684342e-16}
-      rotation: {x: -0.057863683, y: -0.034238372, z: 0.08813492, w: 0.99383694}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Thumb_03_CTRL
-      parentName: L_Thumb_03_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0.1916758, w: 0.9814583}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Index_01_GRP
-      parentName: L_Wrist_CTRL
-      position: {x: -0.12145177, y: 0.005468126, z: 0.05186115}
-      rotation: {x: -0.28575775, y: 0.14002246, z: 0.26335266, w: 0.9107039}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Index_01_CTRL
-      parentName: L_Index_01_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0.1916758, w: 0.9814583}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Index_02_GRP
-      parentName: L_Index_01_CTRL
-      position: {x: -0.03171128, y: 0.0024026814, z: -0.0013871887}
-      rotation: {x: -0.029351348, y: -0.008866309, z: -0.019233348, w: 0.99934477}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Index_02_CTRL
-      parentName: L_Index_02_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0.1916758, w: 0.9814583}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Index_03_GRP
-      parentName: L_Index_02_CTRL
-      position: {x: -0.024973325, y: 0.001892164, z: -0.0010924414}
-      rotation: {x: 0.0000015040912, y: 0.000013418623, z: -0.000011143109, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Index_03_CTRL
-      parentName: L_Index_03_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0.1916758, w: 0.9814583}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Middle_01_GRP
-      parentName: L_Wrist_CTRL
-      position: {x: -0.12242939, y: -0.006591071, z: 0.024407782}
-      rotation: {x: -0.31742638, y: 0.06931364, z: 0.19025588, w: 0.9264118}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Middle_01_CTRL
-      parentName: L_Middle_01_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0.1916758, w: 0.9814583}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Middle_02_GRP
-      parentName: L_Middle_01_CTRL
-      position: {x: -0.036844235, y: 7.105427e-16, z: 6.3948843e-16}
-      rotation: {x: -0.011174677, y: -0.07578521, z: 0.044359446, w: 0.99607426}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Middle_02_CTRL
-      parentName: L_Middle_02_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0.1916758, w: 0.9814583}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Middle_03_GRP
-      parentName: L_Middle_02_CTRL
-      position: {x: -0.026449462, y: -9.947598e-16, z: -6.3948843e-16}
-      rotation: {x: 0.0073889256, y: 0.04426717, z: -0.0256941, w: 0.99866194}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Middle_03_CTRL
-      parentName: L_Middle_03_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0.1916758, w: 0.9814583}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Ring_01_GRP
-      parentName: L_Wrist_CTRL
-      position: {x: -0.11745778, y: -0.019431587, z: 0.0010141645}
-      rotation: {x: -0.2912202, y: -0.018884532, z: 0.23665373, w: 0.9267304}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Ring_01_CTRL
-      parentName: L_Ring_01_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0.1916758, w: 0.9814583}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Ring_02_GRP
-      parentName: L_Ring_01_CTRL
-      position: {x: -0.02671937, y: 2.842171e-16, z: -3.5527135e-16}
-      rotation: {x: 0.0025729255, y: -0.0045562917, z: 0.0064040916, w: 0.99996585}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Ring_02_CTRL
-      parentName: L_Ring_02_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0.1916758, w: 0.9814583}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Ring_03_GRP
-      parentName: L_Ring_02_CTRL
-      position: {x: -0.030148264, y: -8.5265126e-16, z: -1.4210854e-16}
-      rotation: {x: -0.028779421, y: -0.017801285, z: -0.0019038344, w: 0.9994255}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Ring_03_CTRL
-      parentName: L_Ring_03_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0.1916758, w: 0.9814583}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Pinky_01_GRP
-      parentName: L_Wrist_CTRL
-      position: {x: -0.10733084, y: -0.03119517, z: -0.017725987}
-      rotation: {x: -0.39273608, y: -0.1854806, z: 0.24317671, w: 0.8673065}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Pinky_01_CTRL
-      parentName: L_Pinky_01_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0.1916758, w: 0.9814583}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Pinky_02_GRP
-      parentName: L_Pinky_01_CTRL
-      position: {x: -0.02366238, y: 9.947598e-16, z: 5.684342e-16}
-      rotation: {x: 0.15614322, y: 0.036064714, z: 0.044623073, w: 0.98606664}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Pinky_02_CTRL
-      parentName: L_Pinky_02_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0.1916758, w: 0.9814583}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Pinky_03_GRP
-      parentName: L_Pinky_02_CTRL
-      position: {x: -0.016696053, y: -8.5265126e-16, z: 2.1316282e-16}
-      rotation: {x: -0.000030258, y: -0.0000018540725, z: -0.000016137916, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Pinky_03_CTRL
-      parentName: L_Pinky_03_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0.1916758, w: 0.9814583}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Knee_Pointer
-      parentName: Main_Control
-      position: {x: 0.34522408, y: 0.46353617, z: 0.39428702}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Knee_Pointer
-      parentName: Main_Control
-      position: {x: -0.40499413, y: 0.46353617, z: 0.69977164}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Foot_Control
-      parentName: Main_Control
-      position: {x: 0.21653016, y: 2.4651903e-34, z: -0.06536248}
-      rotation: {x: 0, y: 0.23417763, z: -0, w: 0.97219384}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_RF_Heel
-      parentName: R_Foot_Control
-      position: {x: -0.0060402867, y: 0.015343599, z: -0.15859658}
-      rotation: {x: 0.044379573, y: 0.70571274, z: 0.044379573, w: 0.70571274}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_RF_Toe
-      parentName: R_RF_Heel
-      position: {x: -0.33880916, y: 0.053310473, z: 1.5454305e-15}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_RF_Ball
-      parentName: R_RF_Toe
-      position: {x: 0.13552989, y: 8.792966e-16, z: 1.7763568e-17}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_RF_Ankle
-      parentName: R_RF_Ball
-      position: {x: 0.1479582, y: 0.111511886, z: -0.0019779967}
-      rotation: {x: -0.0032273834, y: -0.0067068036, z: 0.31730568, w: 0.9482941}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Foot_ik
-      parentName: R_RF_Ankle
-      position: {x: -0.0000000056345835, y: -0.0000000055457736, z: -0.0000000028358669}
-      rotation: {x: -0.2640316, y: -0.65026504, z: -0.2679915, w: 0.6600176}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Ball_ik
-      parentName: R_RF_Ball
-      position: {x: -0.00000019433409, y: 0.000000043880927, z: 3.3569336e-10}
-      rotation: {x: 0.0067068036, y: -0.0032273834, z: 0.9482941, w: -0.31730568}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Toe_ik
-      parentName: R_RF_Toe
-      position: {x: -0.00000004264111, y: -0.000000009531246, z: 3.3569328e-10}
-      rotation: {x: 0, y: 0, z: 1, w: -6.123234e-17}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Foot_Control
-      parentName: Main_Control
-      position: {x: -0.13736728, y: 2.4651903e-34, z: 0.22516754}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_RF_Heel
-      parentName: L_Foot_Control
-      position: {x: 0.0060406397, y: 0.015343599, z: -0.15859658}
-      rotation: {x: 0.044379573, y: 0.70571274, z: 0.044379573, w: 0.70571274}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_RF_Toe
-      parentName: L_RF_Heel
-      position: {x: -0.33880916, y: 0.053310473, z: 1.5454305e-15}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_RF_Ball
-      parentName: L_RF_Toe
-      position: {x: 0.13552989, y: 8.792966e-16, z: 1.7763568e-17}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_RF_Ankle
-      parentName: L_RF_Ball
-      position: {x: 0.14795825, y: 0.1115122, z: 0.0019773447}
-      rotation: {x: -0.0032273834, y: -0.0067068036, z: 0.31730568, w: 0.9482941}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Foot_ik
-      parentName: L_RF_Ankle
-      position: {x: -5.3290704e-17, y: -1.7763568e-17, z: 1.7763568e-17}
-      rotation: {x: -0.2640316, y: -0.65026504, z: -0.2679915, w: 0.6600176}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Ball_ik
-      parentName: L_RF_Ball
-      position: {x: -1.0658141e-16, y: 8.881784e-18, z: 3.5527136e-17}
-      rotation: {x: -0.0032273834, y: -0.0067068036, z: 0.31730568, w: 0.9482941}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Toe_ik
-      parentName: L_RF_Toe
-      position: {x: -0, y: 2.6645352e-17, z: 3.5527136e-17}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+    - name: Palaistra_Final_LeftHand_GRP
+      parentName: Palaistra_Final_Main_ctrl
+      position: {x: -0.6123965, y: 1.2098917, z: -0.0019033895}
+      rotation: {x: 0.6336406, y: -0.180756, z: 0.6336277, w: 0.40539217}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Mesh
-      parentName: Clothesline block in(Clone)
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Plume
-      parentName: Knight_Mesh
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+    - name: Palaistra_Final_LeftHand_CTRL
+      parentName: Palaistra_Final_LeftHand_GRP
+      position: {x: 0.124899454, y: 0.072470054, z: 0.3379823}
+      rotation: {x: -0.17201729, y: -0.014134563, z: -0.44097444, w: 0.88076776}
       scale: {x: 1, y: 1, z: 1}
-    - name: Skirt
-      parentName: Knight_Mesh
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Root_joint
-      parentName: Clothesline block in(Clone)
-      position: {x: -0.0042847297, y: 0.83373, z: 0.012622493}
-      rotation: {x: -0, y: 0.000000034924597, z: -0, w: 1}
+    - name: Palaistra_Final_L_Hand_ik
+      parentName: Palaistra_Final_LeftHand_CTRL
+      position: {x: -0, y: 7.105427e-17, z: -2.842171e-16}
+      rotation: {x: 0.6336406, y: -0.180756, z: 0.6336277, w: -0.40539217}
       scale: {x: 1, y: 1, z: 1}
-    - name: Attach_joint
-      parentName: Root_joint
-      position: {x: -0.0017673499, y: -0.7733597, z: 0.0071572713}
-      rotation: {x: 0, y: -0.21074814, z: -0, w: 0.97754043}
+    - name: Palaistra_Final_LeftHandThumb1_GRP
+      parentName: Palaistra_Final_LeftHand_CTRL
+      position: {x: 0.020519948, y: 0.036362194, z: 0.017456261}
+      rotation: {x: 0.19714408, y: -0.0324818, z: -0.15929198, w: 0.9668015}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_Main_Control
-      parentName: Attach_joint
-      position: {x: 0.101026535, y: 0.08518246, z: 0.3887603}
-      rotation: {x: 5.9253435e-17, y: 0.9994939, z: -5.9253435e-17, w: -0.031811807}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_Root_Control
-      parentName: Knight_Block_in_wresting_moves_Main_Control
-      position: {x: -0, y: 0.7503493, z: -0.02145837}
-      rotation: {x: 0.058768757, y: -0, z: -0, w: 0.99827164}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_Hips_Control
-      parentName: Knight_Block_in_wresting_moves_Root_Control
-      position: {x: -0, y: 0, z: 0.062900856}
+    - name: Palaistra_Final_LeftHandThumb1_CTRL
+      parentName: Palaistra_Final_LeftHandThumb1_GRP
+      position: {x: -0, y: -7.105427e-17, z: 1.4210854e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_Spine_01_GRP
-      parentName: Knight_Block_in_wresting_moves_Root_Control
-      position: {x: -0, y: 0.114573285, z: 0.032051068}
-      rotation: {x: -0.48503017, y: 0.51453453, z: -0.48503017, w: 0.51453453}
+    - name: Palaistra_Final_LeftHandThumb2_GRP
+      parentName: Palaistra_Final_LeftHandThumb1_CTRL
+      position: {x: 0.0062158033, y: 0.035666298, z: -1.7143847e-10}
+      rotation: {x: 0.048572443, y: -0, z: -0, w: 0.9988197}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_Spine_01_CTRL
-      parentName: Knight_Block_in_wresting_moves_Spine_01_GRP
-      position: {x: -0, y: 0, z: 0}
+    - name: Palaistra_Final_LeftHandThumb2_CTRL
+      parentName: Palaistra_Final_LeftHandThumb2_GRP
+      position: {x: -7.105427e-17, y: -1.4210854e-16, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_Spine_02_GRP
-      parentName: Knight_Block_in_wresting_moves_Spine_01_CTRL
-      position: {x: -0.11477318, y: 3.5527136e-17, z: -2.5484765e-17}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+    - name: Palaistra_Final_LeftHandThumb3_GRP
+      parentName: Palaistra_Final_LeftHandThumb2_CTRL
+      position: {x: 0.00008511488, y: 0.034789827, z: 5.4202046e-11}
+      rotation: {x: -0.10970843, y: 0, z: -0, w: 0.99396384}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_Spine_02_CTRL
-      parentName: Knight_Block_in_wresting_moves_Spine_02_GRP
-      position: {x: -0, y: 0, z: 0}
+    - name: Palaistra_Final_LeftHandThumb3_CTRL
+      parentName: Palaistra_Final_LeftHandThumb3_GRP
+      position: {x: -7.105427e-17, y: -7.105427e-17, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_Spine_03_GRP
-      parentName: Knight_Block_in_wresting_moves_Spine_02_CTRL
-      position: {x: -0.11477318, y: 5.3290704e-17, z: 4.452069e-17}
-      rotation: {x: 0, y: -0, z: -0.13757166, w: 0.9904918}
+    - name: Palaistra_Final_LeftHandIndex1_GRP
+      parentName: Palaistra_Final_LeftHand_CTRL
+      position: {x: 0.032480985, y: 0.116793744, z: 0.0013871512}
+      rotation: {x: 0.07953985, y: 0.008303127, z: 0.10349297, w: 0.99140996}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_Spine_03_CTRL
-      parentName: Knight_Block_in_wresting_moves_Spine_03_GRP
-      position: {x: -0, y: 0, z: 0}
+    - name: Palaistra_Final_LeftHandIndex1_CTRL
+      parentName: Palaistra_Final_LeftHandIndex1_GRP
+      position: {x: 3.5527136e-17, y: -7.105427e-17, z: -1.4210854e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_Neck_GRP
-      parentName: Knight_Block_in_wresting_moves_Spine_03_CTRL
-      position: {x: -0.14171472, y: -1.0658141e-16, z: 5.3775766e-17}
-      rotation: {x: 0, y: 0, z: 0.35417792, w: 0.93517804}
+    - name: Palaistra_Final_LeftHandIndex2_GRP
+      parentName: Palaistra_Final_LeftHandIndex1_CTRL
+      position: {x: -0.0006562514, y: 0.030659236, z: 1.1352682e-10}
+      rotation: {x: 0.12108569, y: -0, z: -0, w: 0.9926421}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_Neck_CTRL
-      parentName: Knight_Block_in_wresting_moves_Neck_GRP
-      position: {x: -0, y: 0, z: 0}
+    - name: Palaistra_Final_LeftHandIndex2_CTRL
+      parentName: Palaistra_Final_LeftHandIndex2_GRP
+      position: {x: 3.5527136e-17, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_Head_GRP
-      parentName: Knight_Block_in_wresting_moves_Neck_CTRL
-      position: {x: -0.06917728, y: 0, z: 1.8932661e-31}
-      rotation: {x: 0, y: -0, z: -0.2508267, w: 0.968032}
+    - name: Palaistra_Final_LeftHandIndex3_GRP
+      parentName: Palaistra_Final_LeftHandIndex2_CTRL
+      position: {x: 0.00039135985, y: 0.029599713, z: -9.119712e-10}
+      rotation: {x: -0.008945774, y: 0, z: -0, w: 0.99996}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_Head_CTRL
-      parentName: Knight_Block_in_wresting_moves_Head_GRP
-      position: {x: -0, y: 0, z: 0}
+    - name: Palaistra_Final_LeftHandIndex3_CTRL
+      parentName: Palaistra_Final_LeftHandIndex3_GRP
+      position: {x: -0, y: -1.4210854e-16, z: -1.4210854e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_Plume_01_GRP
-      parentName: Knight_Block_in_wresting_moves_Head_CTRL
-      position: {x: -0.18151811, y: 0.09351142, z: 3.9999543e-17}
-      rotation: {x: 0.9589385, y: -0.28361434, z: -1.7366369e-17, w: 5.871805e-17}
+    - name: Palaistra_Final_LeftHandMiddle1_GRP
+      parentName: Palaistra_Final_LeftHand_CTRL
+      position: {x: 0.010552841, y: 0.11728704, z: -0.0069131413}
+      rotation: {x: 0.107823096, y: 0.015564781, z: 0.1420235, w: 0.98385024}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_Plume_01_CTRL
-      parentName: Knight_Block_in_wresting_moves_Plume_01_GRP
-      position: {x: -0, y: 0, z: 0}
+    - name: Palaistra_Final_LeftHandMiddle1_CTRL
+      parentName: Palaistra_Final_LeftHandMiddle1_GRP
+      position: {x: -3.5527136e-17, y: -7.105427e-17, z: 1.4210854e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_Plume_02_GRP
-      parentName: Knight_Block_in_wresting_moves_Plume_01_CTRL
-      position: {x: -0.12377054, y: 4.2632563e-16, z: -3.4592018e-17}
-      rotation: {x: 0, y: 0, z: 0.58542395, w: 0.8107273}
+    - name: Palaistra_Final_LeftHandMiddle2_GRP
+      parentName: Palaistra_Final_LeftHandMiddle1_CTRL
+      position: {x: -0.001245563, y: 0.03328954, z: 0.0000000012263239}
+      rotation: {x: 0.21967775, y: -0, z: -0, w: 0.9755725}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_Plume_02_CTRL
-      parentName: Knight_Block_in_wresting_moves_Plume_02_GRP
-      position: {x: -0, y: 0, z: 0}
+    - name: Palaistra_Final_LeftHandMiddle2_CTRL
+      parentName: Palaistra_Final_LeftHandMiddle2_GRP
+      position: {x: 3.5527136e-17, y: 1.4210854e-16, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_Plume_03_GRP
-      parentName: Knight_Block_in_wresting_moves_Plume_02_CTRL
-      position: {x: -0.11458545, y: -8.5265126e-16, z: -1.4987781e-17}
-      rotation: {x: 0, y: 0, z: 0.3426577, w: 0.93946034}
+    - name: Palaistra_Final_LeftHandMiddle3_GRP
+      parentName: Palaistra_Final_LeftHandMiddle2_CTRL
+      position: {x: 0.00053618546, y: 0.030053932, z: -3.6858225e-10}
+      rotation: {x: 0.029576126, y: -0, z: -0, w: 0.99956256}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_Plume_03_CTRL
-      parentName: Knight_Block_in_wresting_moves_Plume_03_GRP
-      position: {x: -0, y: 0, z: 0}
+    - name: Palaistra_Final_LeftHandMiddle3_CTRL
+      parentName: Palaistra_Final_LeftHandMiddle3_GRP
+      position: {x: -0, y: -1.4210854e-16, z: 1.4210854e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_Plume_04_GRP
-      parentName: Knight_Block_in_wresting_moves_Plume_03_CTRL
-      position: {x: -0.10289703, y: 8.5265126e-16, z: -2.0196343e-17}
-      rotation: {x: 0, y: 0, z: 0.25002965, w: 0.9682382}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_Plume_04_CTRL
-      parentName: Knight_Block_in_wresting_moves_Plume_04_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+    - name: Palaistra_Final_LeftHandRing1_GRP
+      parentName: Palaistra_Final_LeftHand_CTRL
+      position: {x: -0.010949668, y: 0.10822805, z: -0.0029141596}
+      rotation: {x: 0.08680008, y: 0.016266847, z: 0.18347967, w: 0.9790487}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Arm_Controls
-      parentName: Knight_Block_in_wresting_moves_Spine_03_CTRL
-      position: {x: 1.163425, y: 0.28093377, z: 2.1112451e-16}
-      rotation: {x: 0.5512038, y: -0.4429158, z: -0.5512038, w: -0.4429158}
-      scale: {x: 1, y: 1, z: -1}
-    - name: Knight_Block_in_wresting_moves_R_Clavicle_GRP
-      parentName: Knight_Block_in_wresting_moves_R_Arm_Controls
-      position: {x: -0.07743587, y: 1.2362275, z: -0.021584496}
-      rotation: {x: -0.020404575, y: -0.273969, z: 0.07141414, w: 0.95886636}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Clavicle_CTRL
-      parentName: Knight_Block_in_wresting_moves_R_Clavicle_GRP
-      position: {x: -0, y: 0, z: 0}
+    - name: Palaistra_Final_LeftHandRing1_CTRL
+      parentName: Palaistra_Final_LeftHandRing1_GRP
+      position: {x: -0, y: 0, z: -1.4210854e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Shoulder_GRP
-      parentName: Knight_Block_in_wresting_moves_R_Clavicle_CTRL
-      position: {x: -0.07553681, y: -4.2632563e-16, z: -1.3766766e-16}
-      rotation: {x: 0.071446516, y: 0.1659434, z: 0.25083357, w: 0.9510209}
+    - name: Palaistra_Final_LeftHandRing2_GRP
+      parentName: Palaistra_Final_LeftHandRing1_CTRL
+      position: {x: -0.0010184046, y: 0.031677525, z: 8.745442e-10}
+      rotation: {x: 0.29146603, y: -0, z: -0, w: 0.95658123}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Shoulder_CTRL
-      parentName: Knight_Block_in_wresting_moves_R_Shoulder_GRP
-      position: {x: -0, y: 0, z: 0}
+    - name: Palaistra_Final_LeftHandRing2_CTRL
+      parentName: Palaistra_Final_LeftHandRing2_GRP
+      position: {x: 3.5527136e-17, y: -2.842171e-16, z: 1.4210854e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Elbow_GRP
-      parentName: Knight_Block_in_wresting_moves_R_Shoulder_CTRL
-      position: {x: -0.18336809, y: 0.003829528, z: 0.000621138}
-      rotation: {x: 0.07757456, y: 0.2659569, z: 0.020798713, w: 0.9606334}
+    - name: Palaistra_Final_LeftHandRing3_GRP
+      parentName: Palaistra_Final_LeftHandRing2_CTRL
+      position: {x: 0.00035373378, y: 0.028484644, z: -8.0770515e-11}
+      rotation: {x: 0.07853506, y: -0, z: -0, w: 0.99691135}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Elbow_CTRL
-      parentName: Knight_Block_in_wresting_moves_R_Elbow_GRP
-      position: {x: -0, y: 0, z: 0}
+    - name: Palaistra_Final_LeftHandRing3_CTRL
+      parentName: Palaistra_Final_LeftHandRing3_GRP
+      position: {x: 3.5527136e-17, y: -1.4210854e-16, z: -7.105427e-17}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Wrist_GRP
-      parentName: Knight_Block_in_wresting_moves_R_Elbow_CTRL
-      position: {x: -0.26083055, y: -0.0014827951, z: -0.008944914}
-      rotation: {x: 0.13052619, y: -0, z: -0, w: 0.9914449}
+    - name: Palaistra_Final_LeftHandPinky1_GRP
+      parentName: Palaistra_Final_LeftHand_CTRL
+      position: {x: -0.032084152, y: 0.09682901, z: -0.0013977664}
+      rotation: {x: 0.19291984, y: 0.030946573, z: 0.1553341, w: 0.96834683}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Wrist_CTRL
-      parentName: Knight_Block_in_wresting_moves_R_Wrist_GRP
-      position: {x: -0, y: 0, z: 0}
+    - name: Palaistra_Final_LeftHandPinky1_CTRL
+      parentName: Palaistra_Final_LeftHandPinky1_GRP
+      position: {x: -3.5527136e-17, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Thumb_01_GRP
-      parentName: Knight_Block_in_wresting_moves_R_Wrist_CTRL
-      position: {x: -0.025976025, y: 0.012152065, z: 0.041835733}
-      rotation: {x: 0.48562065, y: 0.41093737, z: -0.18047148, w: 0.7501554}
+    - name: Palaistra_Final_LeftHandPinky2_GRP
+      parentName: Palaistra_Final_LeftHandPinky1_CTRL
+      position: {x: -0.0008880274, y: 0.02349008, z: 5.784483e-10}
+      rotation: {x: 0.20085146, y: -0, z: -0, w: 0.9796217}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Thumb_01_CTRL
-      parentName: Knight_Block_in_wresting_moves_R_Thumb_01_GRP
-      position: {x: -0, y: 0, z: 0}
+    - name: Palaistra_Final_LeftHandPinky2_CTRL
+      parentName: Palaistra_Final_LeftHandPinky2_GRP
+      position: {x: -0, y: -1.4210854e-16, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Thumb_02_GRP
-      parentName: Knight_Block_in_wresting_moves_R_Thumb_01_CTRL
-      position: {x: -0.04783716, y: 0, z: 1.4210854e-16}
-      rotation: {x: 0.024793109, y: 0.06846119, z: 0.03594795, w: 0.9966976}
+    - name: Palaistra_Final_LeftHandPinky3_GRP
+      parentName: Palaistra_Final_LeftHandPinky2_CTRL
+      position: {x: 0.0003195187, y: 0.018856974, z: -1.2220668e-10}
+      rotation: {x: 0.08091249, y: -0, z: -0, w: 0.9967212}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Thumb_02_CTRL
-      parentName: Knight_Block_in_wresting_moves_R_Thumb_02_GRP
-      position: {x: -0, y: 0, z: 0}
+    - name: Palaistra_Final_LeftHandPinky3_CTRL
+      parentName: Palaistra_Final_LeftHandPinky3_GRP
+      position: {x: 3.5527136e-17, y: -1.4210854e-16, z: 7.105427e-17}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Thumb_03_GRP
-      parentName: Knight_Block_in_wresting_moves_R_Thumb_02_CTRL
-      position: {x: -0.026294742, y: -3.5527135e-16, z: -5.684342e-16}
-      rotation: {x: -0.057863683, y: -0.034238372, z: 0.08813492, w: 0.99383694}
+    - name: Palaistra_Final_RightHand_GRP
+      parentName: Palaistra_Final_Main_ctrl
+      position: {x: 0.61239654, y: 1.2098917, z: -0.0020699734}
+      rotation: {x: 0.63558793, y: 0.18184398, z: -0.6325254, w: 0.4035746}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Thumb_03_CTRL
-      parentName: Knight_Block_in_wresting_moves_R_Thumb_03_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Index_01_GRP
-      parentName: Knight_Block_in_wresting_moves_R_Wrist_CTRL
-      position: {x: -0.12145177, y: 0.005468126, z: 0.05186115}
-      rotation: {x: -0.28575775, y: 0.14002246, z: 0.26335266, w: 0.9107039}
+    - name: Palaistra_Final_RightHand_CTRL
+      parentName: Palaistra_Final_RightHand_GRP
+      position: {x: -0.6021157, y: -0.06549626, z: 0.16446209}
+      rotation: {x: -0.33634463, y: -0.34715998, z: 0.6707919, w: 0.56248605}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Index_01_CTRL
-      parentName: Knight_Block_in_wresting_moves_R_Index_01_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+    - name: Palaistra_Final_R_Hand_ik
+      parentName: Palaistra_Final_RightHand_CTRL
+      position: {x: -8.6243224e-10, y: 1.9013842e-10, z: 0.0000000022700666}
+      rotation: {x: 0.63558793, y: 0.18184398, z: -0.6325254, w: -0.4035746}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Index_02_GRP
-      parentName: Knight_Block_in_wresting_moves_R_Index_01_CTRL
-      position: {x: -0.03171128, y: 0.0024026814, z: -0.0013871887}
-      rotation: {x: -0.029351348, y: -0.008866309, z: -0.019233348, w: 0.99934477}
+    - name: Palaistra_Final_RightHandThumb1_GRP
+      parentName: Palaistra_Final_RightHand_CTRL
+      position: {x: -0.02154375, y: 0.03684529, z: 0.018668706}
+      rotation: {x: 0.20607144, y: 0.03316382, z: 0.15538967, w: 0.965551}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Index_02_CTRL
-      parentName: Knight_Block_in_wresting_moves_R_Index_02_GRP
-      position: {x: -0, y: 0, z: 0}
+    - name: Palaistra_Final_RightHandThumb1_CTRL
+      parentName: Palaistra_Final_RightHandThumb1_GRP
+      position: {x: 7.105427e-17, y: 1.4210854e-16, z: 1.4210854e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Index_03_GRP
-      parentName: Knight_Block_in_wresting_moves_R_Index_02_CTRL
-      position: {x: -0.024973325, y: 0.001892164, z: -0.0010924414}
-      rotation: {x: 0.0000015040912, y: 0.000013418623, z: -0.000011143109, w: 1}
+    - name: Palaistra_Final_RightHandThumb2_GRP
+      parentName: Palaistra_Final_RightHandThumb1_CTRL
+      position: {x: -0.00711687, y: 0.036582734, z: 3.871098e-10}
+      rotation: {x: 0.011179057, y: -0, z: -0, w: 0.99993753}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Index_03_CTRL
-      parentName: Knight_Block_in_wresting_moves_R_Index_03_GRP
-      position: {x: -0, y: 0, z: 0}
+    - name: Palaistra_Final_RightHandThumb2_CTRL
+      parentName: Palaistra_Final_RightHandThumb2_GRP
+      position: {x: -7.105427e-17, y: -2.842171e-16, z: 2.842171e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Middle_01_GRP
-      parentName: Knight_Block_in_wresting_moves_R_Wrist_CTRL
-      position: {x: -0.12242939, y: -0.006591071, z: 0.024407782}
-      rotation: {x: -0.31742638, y: 0.06931364, z: 0.19025588, w: 0.9264118}
+    - name: Palaistra_Final_RightHandThumb3_GRP
+      parentName: Palaistra_Final_RightHandThumb2_CTRL
+      position: {x: 0.0008234132, y: 0.033398535, z: -0.0000000015642926}
+      rotation: {x: -0.033999104, y: 0, z: -0, w: 0.9994219}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Middle_01_CTRL
-      parentName: Knight_Block_in_wresting_moves_R_Middle_01_GRP
-      position: {x: -0, y: 0, z: 0}
+    - name: Palaistra_Final_RightHandThumb3_CTRL
+      parentName: Palaistra_Final_RightHandThumb3_GRP
+      position: {x: -0, y: 1.4210854e-16, z: -1.4210854e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Middle_02_GRP
-      parentName: Knight_Block_in_wresting_moves_R_Middle_01_CTRL
-      position: {x: -0.036844235, y: 7.105427e-16, z: 6.3948843e-16}
-      rotation: {x: -0.011174677, y: -0.07578521, z: 0.044359446, w: 0.99607426}
+    - name: Palaistra_Final_RightHandIndex1_GRP
+      parentName: Palaistra_Final_RightHand_CTRL
+      position: {x: -0.032879893, y: 0.12130183, z: -0.0000022112622}
+      rotation: {x: 0.11352472, y: -0.012532728, z: -0.10901176, w: 0.98745716}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Middle_02_CTRL
-      parentName: Knight_Block_in_wresting_moves_R_Middle_02_GRP
-      position: {x: -0, y: 0, z: 0}
+    - name: Palaistra_Final_RightHandIndex1_CTRL
+      parentName: Palaistra_Final_RightHandIndex1_GRP
+      position: {x: 7.105427e-17, y: 0, z: 2.842171e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Middle_03_GRP
-      parentName: Knight_Block_in_wresting_moves_R_Middle_02_CTRL
-      position: {x: -0.026449462, y: -9.947598e-16, z: -6.3948843e-16}
-      rotation: {x: 0.0073889256, y: 0.04426717, z: -0.0256941, w: 0.99866194}
+    - name: Palaistra_Final_RightHandIndex2_GRP
+      parentName: Palaistra_Final_RightHandIndex1_CTRL
+      position: {x: 0.0006397114, y: 0.030254759, z: 5.150639e-11}
+      rotation: {x: 0.09661507, y: -0, z: -0, w: 0.99532187}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Middle_03_CTRL
-      parentName: Knight_Block_in_wresting_moves_R_Middle_03_GRP
-      position: {x: -0, y: 0, z: 0}
+    - name: Palaistra_Final_RightHandIndex2_CTRL
+      parentName: Palaistra_Final_RightHandIndex2_GRP
+      position: {x: 3.5527136e-17, y: 0, z: 1.4210854e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Ring_01_GRP
-      parentName: Knight_Block_in_wresting_moves_R_Wrist_CTRL
-      position: {x: -0.11745778, y: -0.019431587, z: 0.0010141645}
-      rotation: {x: -0.2912202, y: -0.018884532, z: 0.23665373, w: 0.9267304}
+    - name: Palaistra_Final_RightHandIndex3_GRP
+      parentName: Palaistra_Final_RightHandIndex2_CTRL
+      position: {x: -0.00035889848, y: 0.02750637, z: -0.0000000012322067}
+      rotation: {x: -0.003515285, y: 0, z: -0, w: 0.99999386}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Ring_01_CTRL
-      parentName: Knight_Block_in_wresting_moves_R_Ring_01_GRP
-      position: {x: -0, y: 0, z: 0}
+    - name: Palaistra_Final_RightHandIndex3_CTRL
+      parentName: Palaistra_Final_RightHandIndex3_GRP
+      position: {x: -3.5527136e-17, y: -2.842171e-16, z: -2.842171e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Ring_02_GRP
-      parentName: Knight_Block_in_wresting_moves_R_Ring_01_CTRL
-      position: {x: -0.02671937, y: 2.842171e-16, z: -3.5527135e-16}
-      rotation: {x: -0.30970037, y: -0.29469934, z: 0.00061801996, w: 0.90401196}
+    - name: Palaistra_Final_RightHandMiddle1_GRP
+      parentName: Palaistra_Final_RightHand_CTRL
+      position: {x: -0.011510727, y: 0.113059804, z: -0.005661925}
+      rotation: {x: 0.0732113, y: -0.00996858, z: -0.13454805, w: 0.98814857}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Ring_02_CTRL
-      parentName: Knight_Block_in_wresting_moves_R_Ring_02_GRP
-      position: {x: -0, y: 0, z: 0}
+    - name: Palaistra_Final_RightHandMiddle1_CTRL
+      parentName: Palaistra_Final_RightHandMiddle1_GRP
+      position: {x: 3.5527136e-17, y: -7.105427e-17, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Ring_03_GRP
-      parentName: Knight_Block_in_wresting_moves_R_Ring_02_CTRL
-      position: {x: -0.030148264, y: -8.5265126e-16, z: -1.4210854e-16}
-      rotation: {x: -0.028779421, y: -0.017801285, z: -0.0019038344, w: 0.9994255}
+    - name: Palaistra_Final_RightHandMiddle2_GRP
+      parentName: Palaistra_Final_RightHandMiddle1_CTRL
+      position: {x: 0.0018328648, y: 0.03411884, z: 1.9587332e-10}
+      rotation: {x: 0.23265289, y: -0, z: -0, w: 0.9725598}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Ring_03_CTRL
-      parentName: Knight_Block_in_wresting_moves_R_Ring_03_GRP
-      position: {x: -0, y: 0, z: 0}
+    - name: Palaistra_Final_RightHandMiddle2_CTRL
+      parentName: Palaistra_Final_RightHandMiddle2_GRP
+      position: {x: -3.5527136e-17, y: 0, z: -1.4210854e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Pinky_01_GRP
-      parentName: Knight_Block_in_wresting_moves_R_Wrist_CTRL
-      position: {x: -0.10733084, y: -0.03119517, z: -0.017725987}
-      rotation: {x: -0.39273608, y: -0.1854806, z: 0.24317671, w: 0.8673065}
+    - name: Palaistra_Final_RightHandMiddle3_GRP
+      parentName: Palaistra_Final_RightHandMiddle2_CTRL
+      position: {x: -0.00071530347, y: 0.031531624, z: 1.5155734e-11}
+      rotation: {x: 0.04739718, y: -0, z: -0, w: 0.99887615}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Pinky_01_CTRL
-      parentName: Knight_Block_in_wresting_moves_R_Pinky_01_GRP
-      position: {x: -0, y: 0, z: 0}
+    - name: Palaistra_Final_RightHandMiddle3_CTRL
+      parentName: Palaistra_Final_RightHandMiddle3_GRP
+      position: {x: -3.5527136e-17, y: 0, z: 1.4210854e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Pinky_02_GRP
-      parentName: Knight_Block_in_wresting_moves_R_Pinky_01_CTRL
-      position: {x: -0.02366238, y: 9.947598e-16, z: 5.684342e-16}
-      rotation: {x: 0.15614322, y: 0.036064714, z: 0.044623073, w: 0.98606664}
+    - name: Palaistra_Final_RightHandRing1_GRP
+      parentName: Palaistra_Final_RightHand_CTRL
+      position: {x: 0.01123582, y: 0.11053889, z: -0.004717386}
+      rotation: {x: 0.12420451, y: -0.023149537, z: -0.1817588, w: 0.97519284}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Pinky_02_CTRL
-      parentName: Knight_Block_in_wresting_moves_R_Pinky_02_GRP
-      position: {x: -0, y: 0, z: 0}
+    - name: Palaistra_Final_RightHandRing1_CTRL
+      parentName: Palaistra_Final_RightHandRing1_GRP
+      position: {x: -0, y: -2.842171e-16, z: -1.4210854e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Pinky_03_GRP
-      parentName: Knight_Block_in_wresting_moves_R_Pinky_02_CTRL
-      position: {x: -0.016696053, y: -8.5265126e-16, z: 2.1316282e-16}
-      rotation: {x: -0.000030258, y: -0.0000018540725, z: -0.000016137916, w: 1}
+    - name: Palaistra_Final_RightHandRing2_GRP
+      parentName: Palaistra_Final_RightHandRing1_CTRL
+      position: {x: 0.0012127722, y: 0.031407192, z: -7.697821e-11}
+      rotation: {x: 0.26768348, y: -0, z: -0, w: 0.96350694}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Pinky_03_CTRL
-      parentName: Knight_Block_in_wresting_moves_R_Pinky_03_GRP
-      position: {x: -0, y: 0, z: 0}
+    - name: Palaistra_Final_RightHandRing2_CTRL
+      parentName: Palaistra_Final_RightHandRing2_GRP
+      position: {x: -0, y: 1.4210854e-16, z: -1.4210854e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Arm_Controls
-      parentName: Knight_Block_in_wresting_moves_Spine_03_CTRL
-      position: {x: 1.163425, y: 0.28093377, z: 2.1112451e-16}
-      rotation: {x: 0.5512038, y: -0.4429158, z: 0.5512038, w: 0.4429158}
+    - name: Palaistra_Final_RightHandRing3_GRP
+      parentName: Palaistra_Final_RightHandRing2_CTRL
+      position: {x: -0.0003970735, y: 0.027344711, z: -1.554838e-11}
+      rotation: {x: 0.08531589, y: -0, z: -0, w: 0.996354}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Clavicle_GRP
-      parentName: Knight_Block_in_wresting_moves_L_Arm_Controls
-      position: {x: -0.07743587, y: 1.2362275, z: -0.021584496}
-      rotation: {x: -0.020404575, y: -0.273969, z: 0.07141414, w: 0.95886636}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Clavicle_CTRL
-      parentName: Knight_Block_in_wresting_moves_L_Clavicle_GRP
-      position: {x: -0, y: 0, z: 0}
+    - name: Palaistra_Final_RightHandRing3_CTRL
+      parentName: Palaistra_Final_RightHandRing3_GRP
+      position: {x: -0, y: 1.4210854e-16, z: -7.105427e-17}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Shoulder_GRP
-      parentName: Knight_Block_in_wresting_moves_L_Clavicle_CTRL
-      position: {x: -0.07553681, y: -4.2632563e-16, z: -1.3766766e-16}
-      rotation: {x: 0.071446516, y: 0.1659434, z: 0.25083357, w: 0.9510209}
+    - name: Palaistra_Final_RightHandPinky1_GRP
+      parentName: Palaistra_Final_RightHand_CTRL
+      position: {x: 0.033154808, y: 0.097807586, z: -0.0015372677}
+      rotation: {x: 0.19628026, y: -0.027995694, z: -0.13839905, w: 0.9703278}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Shoulder_CTRL
-      parentName: Knight_Block_in_wresting_moves_L_Shoulder_GRP
-      position: {x: -0, y: 0, z: 0}
+    - name: Palaistra_Final_RightHandPinky1_CTRL
+      parentName: Palaistra_Final_RightHandPinky1_GRP
+      position: {x: -0, y: 0, z: 1.4210854e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Elbow_GRP
-      parentName: Knight_Block_in_wresting_moves_L_Shoulder_CTRL
-      position: {x: -0.18336809, y: 0.003829528, z: 0.000621138}
-      rotation: {x: 0.07757456, y: 0.2659569, z: 0.020798713, w: 0.9606334}
+    - name: Palaistra_Final_RightHandPinky2_GRP
+      parentName: Palaistra_Final_RightHandPinky1_CTRL
+      position: {x: 0.0010802669, y: 0.022721803, z: 5.010514e-10}
+      rotation: {x: 0.21058941, y: -0, z: -0, w: 0.97757465}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Elbow_CTRL
-      parentName: Knight_Block_in_wresting_moves_L_Elbow_GRP
+    - name: Palaistra_Final_RightHandPinky2_CTRL
+      parentName: Palaistra_Final_RightHandPinky2_GRP
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Wrist_GRP
-      parentName: Knight_Block_in_wresting_moves_L_Elbow_CTRL
-      position: {x: -0.26083055, y: -0.0014827951, z: -0.008944914}
-      rotation: {x: 0.13052619, y: -0, z: -0, w: 0.9914449}
+    - name: Palaistra_Final_RightHandPinky3_GRP
+      parentName: Palaistra_Final_RightHandPinky2_CTRL
+      position: {x: -0.0004461622, y: 0.018251855, z: 2.8098128e-11}
+      rotation: {x: 0.051427163, y: -0, z: -0, w: 0.9986768}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Wrist_CTRL
-      parentName: Knight_Block_in_wresting_moves_L_Wrist_GRP
-      position: {x: -0, y: 0, z: 0}
+    - name: Palaistra_Final_RightHandPinky3_CTRL
+      parentName: Palaistra_Final_RightHandPinky3_GRP
+      position: {x: -1.7763568e-17, y: 1.4210854e-16, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Thumb_01_GRP
-      parentName: Knight_Block_in_wresting_moves_L_Wrist_CTRL
-      position: {x: -0.025976025, y: 0.012152065, z: 0.041835733}
-      rotation: {x: 0.48562065, y: 0.41093737, z: -0.18047148, w: 0.7501554}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Thumb_01_CTRL
-      parentName: Knight_Block_in_wresting_moves_L_Thumb_01_GRP
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
+    - name: Attach_grp
+      parentName: Palaistra_Final_Main_ctrl
+      position: {x: 0.1592434, y: -0.28858414, z: -0.31841636}
+      rotation: {x: 0.18793564, y: -0.072897725, z: 0.06177426, w: 0.97752243}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Thumb_02_GRP
-      parentName: Knight_Block_in_wresting_moves_L_Thumb_01_CTRL
-      position: {x: -0.04783716, y: 0, z: 1.4210854e-16}
-      rotation: {x: 0.024793109, y: 0.06846119, z: 0.03594795, w: 0.9966976}
+    - name: Atttach_ctrl
+      parentName: Attach_grp
+      position: {x: -0.004805085, y: 0.7073131, z: 0.96410656}
+      rotation: {x: 4.1633363e-17, y: 2.34223e-40, z: -1.2490008e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Thumb_02_CTRL
-      parentName: Knight_Block_in_wresting_moves_L_Thumb_02_GRP
+    - name: Palaistra_Final_Palaistra_Mesh
+      parentName: Paiaistra Grapple Anims(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Thumb_03_GRP
-      parentName: Knight_Block_in_wresting_moves_L_Thumb_02_CTRL
-      position: {x: -0.026294742, y: -3.5527135e-16, z: -5.684342e-16}
-      rotation: {x: -0.057863683, y: -0.034238372, z: 0.08813492, w: 0.99383694}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Thumb_03_CTRL
-      parentName: Knight_Block_in_wresting_moves_L_Thumb_03_GRP
+    - name: Palaistra_Final_Palaistra_Clothing
+      parentName: Palaistra_Final_Palaistra_Mesh
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Index_01_GRP
-      parentName: Knight_Block_in_wresting_moves_L_Wrist_CTRL
-      position: {x: -0.12145177, y: 0.005468126, z: 0.05186115}
-      rotation: {x: -0.28575775, y: 0.14002246, z: 0.26335266, w: 0.9107039}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Index_01_CTRL
-      parentName: Knight_Block_in_wresting_moves_L_Index_01_GRP
+    - name: Palaistra_Final_Bra_thing
+      parentName: Palaistra_Final_Palaistra_Clothing
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Index_02_GRP
-      parentName: Knight_Block_in_wresting_moves_L_Index_01_CTRL
-      position: {x: -0.03171128, y: 0.0024026814, z: -0.0013871887}
-      rotation: {x: -0.029351348, y: -0.008866309, z: -0.019233348, w: 0.99934477}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Index_02_CTRL
-      parentName: Knight_Block_in_wresting_moves_L_Index_02_GRP
+    - name: Palaistra_Final_Arms_and_Legs
+      parentName: Palaistra_Final_Palaistra_Clothing
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Index_03_GRP
-      parentName: Knight_Block_in_wresting_moves_L_Index_02_CTRL
-      position: {x: -0.024973325, y: 0.001892164, z: -0.0010924414}
-      rotation: {x: 0.0000015040912, y: 0.000013418623, z: -0.000011143109, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Index_03_CTRL
-      parentName: Knight_Block_in_wresting_moves_L_Index_03_GRP
+    - name: Palaistra_Final_Olive_Branch3
+      parentName: Palaistra_Final_Arms_and_Legs
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Middle_01_GRP
-      parentName: Knight_Block_in_wresting_moves_L_Wrist_CTRL
-      position: {x: -0.12242939, y: -0.006591071, z: 0.024407782}
-      rotation: {x: -0.31742638, y: 0.06931364, z: 0.19025588, w: 0.9264118}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Middle_01_CTRL
-      parentName: Knight_Block_in_wresting_moves_L_Middle_01_GRP
+    - name: Palaistra_Final_Olive_Branch2
+      parentName: Palaistra_Final_Arms_and_Legs
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Middle_02_GRP
-      parentName: Knight_Block_in_wresting_moves_L_Middle_01_CTRL
-      position: {x: -0.036844235, y: 7.105427e-16, z: 6.3948843e-16}
-      rotation: {x: -0.011174677, y: -0.07578521, z: 0.044359446, w: 0.99607426}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Middle_02_CTRL
-      parentName: Knight_Block_in_wresting_moves_L_Middle_02_GRP
+    - name: Palaistra_Final_Olive_Branch1
+      parentName: Palaistra_Final_Arms_and_Legs
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Middle_03_GRP
-      parentName: Knight_Block_in_wresting_moves_L_Middle_02_CTRL
-      position: {x: -0.026449462, y: -9.947598e-16, z: -6.3948843e-16}
-      rotation: {x: 0.0073889256, y: 0.04426717, z: -0.0256941, w: 0.99866194}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Middle_03_CTRL
-      parentName: Knight_Block_in_wresting_moves_L_Middle_03_GRP
+    - name: Palaistra_Final_Hair_low
+      parentName: Palaistra_Final_Palaistra_Clothing
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Ring_01_GRP
-      parentName: Knight_Block_in_wresting_moves_L_Wrist_CTRL
-      position: {x: -0.11745778, y: -0.019431587, z: 0.0010141645}
-      rotation: {x: -0.2912202, y: -0.018884532, z: 0.23665373, w: 0.9267304}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Ring_01_CTRL
-      parentName: Knight_Block_in_wresting_moves_L_Ring_01_GRP
+    - name: Palaistra_Final_Olive_crown
+      parentName: Palaistra_Final_Palaistra_Clothing
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Ring_02_GRP
-      parentName: Knight_Block_in_wresting_moves_L_Ring_01_CTRL
-      position: {x: -0.02671937, y: 2.842171e-16, z: -3.5527135e-16}
-      rotation: {x: 0.0025729255, y: -0.0045562917, z: 0.0064040916, w: 0.99996585}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Ring_02_CTRL
-      parentName: Knight_Block_in_wresting_moves_L_Ring_02_GRP
+    - name: Palaistra_Final_Top_Skirt
+      parentName: Palaistra_Final_Palaistra_Clothing
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Ring_03_GRP
-      parentName: Knight_Block_in_wresting_moves_L_Ring_02_CTRL
-      position: {x: -0.030148264, y: -8.5265126e-16, z: -1.4210854e-16}
-      rotation: {x: -0.028779421, y: -0.017801285, z: -0.0019038344, w: 0.9994255}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Ring_03_CTRL
-      parentName: Knight_Block_in_wresting_moves_L_Ring_03_GRP
+    - name: Palaistra_Final_Bottom_Skirt
+      parentName: Palaistra_Final_Palaistra_Clothing
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Pinky_01_GRP
-      parentName: Knight_Block_in_wresting_moves_L_Wrist_CTRL
-      position: {x: -0.10733084, y: -0.03119517, z: -0.017725987}
-      rotation: {x: -0.39273608, y: -0.1854806, z: 0.24317671, w: 0.8673065}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Pinky_01_CTRL
-      parentName: Knight_Block_in_wresting_moves_L_Pinky_01_GRP
+    - name: Palaistra_Final_Mesh
+      parentName: Palaistra_Final_Palaistra_Mesh
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Pinky_02_GRP
-      parentName: Knight_Block_in_wresting_moves_L_Pinky_01_CTRL
-      position: {x: -0.02366238, y: 9.947598e-16, z: 5.684342e-16}
-      rotation: {x: 0.15614322, y: 0.036064714, z: 0.044623073, w: 0.98606664}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Pinky_02_CTRL
-      parentName: Knight_Block_in_wresting_moves_L_Pinky_02_GRP
+    - name: Palaistra_Final_Eyes
+      parentName: Palaistra_Final_Palaistra_Mesh
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Pinky_03_GRP
-      parentName: Knight_Block_in_wresting_moves_L_Pinky_02_CTRL
-      position: {x: -0.016696053, y: -8.5265126e-16, z: 2.1316282e-16}
-      rotation: {x: -0.000030258, y: -0.0000018540725, z: -0.000016137916, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Pinky_03_CTRL
-      parentName: Knight_Block_in_wresting_moves_L_Pinky_03_GRP
+    - name: Palaistra_Final_Lashes
+      parentName: Palaistra_Final_Palaistra_Mesh
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Knee_Pointer
-      parentName: Knight_Block_in_wresting_moves_Main_Control
-      position: {x: 0.13147388, y: 0.46353617, z: 0.14884147}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Knee_Pointer
-      parentName: Knight_Block_in_wresting_moves_Main_Control
-      position: {x: -0.11583383, y: 0.46353617, z: 0.39428702}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Foot_Control
-      parentName: Knight_Block_in_wresting_moves_Main_Control
-      position: {x: 0.13736728, y: 2.4651903e-34, z: 0.06761801}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_RF_Heel
-      parentName: Knight_Block_in_wresting_moves_R_Foot_Control
-      position: {x: -0.0060402867, y: 0.015343599, z: -0.15859658}
-      rotation: {x: 0.044379573, y: 0.70571274, z: 0.044379573, w: 0.70571274}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_RF_Toe
-      parentName: Knight_Block_in_wresting_moves_R_RF_Heel
-      position: {x: -0.33880916, y: 0.053310473, z: 1.5454305e-15}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_RF_Ball
-      parentName: Knight_Block_in_wresting_moves_R_RF_Toe
-      position: {x: 0.13552989, y: 8.792966e-16, z: 1.7763568e-17}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_RF_Ankle
-      parentName: Knight_Block_in_wresting_moves_R_RF_Ball
-      position: {x: 0.1479582, y: 0.111511886, z: -0.0019779967}
-      rotation: {x: -0.0032273834, y: -0.0067068036, z: 0.31730568, w: 0.9482941}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Foot_ik
-      parentName: Knight_Block_in_wresting_moves_R_RF_Ankle
-      position: {x: -0.0000000056345835, y: -0.0000000055457736, z: -0.0000000028358669}
-      rotation: {x: -0.2640316, y: -0.65026504, z: -0.2679915, w: 0.6600176}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Ball_ik
-      parentName: Knight_Block_in_wresting_moves_R_RF_Ball
-      position: {x: -0.00000019433409, y: 0.000000043880927, z: 3.3569336e-10}
-      rotation: {x: 0.0067068036, y: -0.0032273834, z: 0.9482941, w: -0.31730568}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_R_Toe_ik
-      parentName: Knight_Block_in_wresting_moves_R_RF_Toe
-      position: {x: -0.00000004264111, y: -0.000000009531246, z: 3.3569328e-10}
-      rotation: {x: 0, y: 0, z: 1, w: -6.123234e-17}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Foot_Control
-      parentName: Knight_Block_in_wresting_moves_Main_Control
-      position: {x: -0.13736728, y: 2.4651903e-34, z: 0.06761801}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_RF_Heel
-      parentName: Knight_Block_in_wresting_moves_L_Foot_Control
-      position: {x: 0.0060406397, y: 0.015343599, z: -0.15859658}
-      rotation: {x: 0.044379573, y: 0.70571274, z: 0.044379573, w: 0.70571274}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_RF_Toe
-      parentName: Knight_Block_in_wresting_moves_L_RF_Heel
-      position: {x: -0.33880916, y: 0.053310473, z: 1.5454305e-15}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_RF_Ball
-      parentName: Knight_Block_in_wresting_moves_L_RF_Toe
-      position: {x: 0.13552989, y: 8.792966e-16, z: 1.7763568e-17}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_RF_Ankle
-      parentName: Knight_Block_in_wresting_moves_L_RF_Ball
-      position: {x: 0.14795825, y: 0.1115122, z: 0.0019773447}
-      rotation: {x: -0.0032273834, y: -0.0067068036, z: 0.31730568, w: 0.9482941}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Foot_ik
-      parentName: Knight_Block_in_wresting_moves_L_RF_Ankle
-      position: {x: -5.3290704e-17, y: -1.7763568e-17, z: 1.7763568e-17}
-      rotation: {x: -0.2640316, y: -0.65026504, z: -0.2679915, w: 0.6600176}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Ball_ik
-      parentName: Knight_Block_in_wresting_moves_L_RF_Ball
-      position: {x: -1.0658141e-16, y: 8.881784e-18, z: 3.5527136e-17}
-      rotation: {x: -0.0032273834, y: -0.0067068036, z: 0.31730568, w: 0.9482941}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Knight_Block_in_wresting_moves_L_Toe_ik
-      parentName: Knight_Block_in_wresting_moves_L_RF_Toe
-      position: {x: -0, y: 2.6645352e-17, z: 3.5527136e-17}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Spine_01_joint
-      parentName: Root_joint
-      position: {x: -1.110223e-18, y: 0.11457335, z: 0.032051068}
-      rotation: {x: -0.48503017, y: 0.51453453, z: -0.4850302, w: 0.51453453}
-      scale: {x: 1.0000004, y: 1.0000005, z: 1.0000004}
-    - name: Spine_02_joint
-      parentName: Spine_01_joint
-      position: {x: -0.11477318, y: 3.5527136e-17, z: -3.5527136e-17}
-      rotation: {x: -0, y: -0, z: -0, w: 1}
-      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
-    - name: Spine_03_joint
-      parentName: Spine_02_joint
-      position: {x: -0.11477318, y: 0, z: 7.105427e-17}
-      rotation: {x: -0.000000029802319, y: 0.000000014901159, z: 0.13757169, w: -0.99049187}
-      scale: {x: 0.99999994, y: 1, z: 1}
-    - name: Neck_joint
-      parentName: Spine_03_joint
-      position: {x: -0.14171472, y: -3.5527136e-17, z: 3.5527136e-17}
-      rotation: {x: 0.000000055266156, y: -0.000000017049612, z: -0.35417792, w: -0.93517804}
-      scale: {x: 0.99999994, y: 1, z: 1}
-    - name: Head_joint
-      parentName: Neck_joint
-      position: {x: -0.06917728, y: 0, z: 3.5527136e-17}
-      rotation: {x: -0.000000052226167, y: 0.000000034799072, z: 0.25082663, w: -0.968032}
-      scale: {x: 1.0000002, y: 1, z: 1.0000001}
-    - name: Head_end_joint
-      parentName: Head_joint
-      position: {x: -0.22362038, y: -1.0658141e-16, z: 6.2067127e-17}
-      rotation: {x: -0, y: -0, z: 1.817422e-15, w: 1}
-      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000002}
-    - name: Plume_01_joint
-      parentName: Head_joint
-      position: {x: -0.18151811, y: 0.09351142, z: -3.5527136e-17}
-      rotation: {x: -0.9589384, y: 0.28361428, z: -0.00000004143308, w: -0.0000000656394}
-      scale: {x: 1.0000002, y: 1.0000007, z: 1.0000011}
-    - name: Plume_02_joint
-      parentName: Plume_01_joint
-      position: {x: -0.12377054, y: 4.973799e-16, z: -2.1316282e-16}
-      rotation: {x: -0.000000011678585, y: -0.00000009675412, z: 0.58542395, w: 0.8107274}
-      scale: {x: 1.0000005, y: 0.9999998, z: 1.0000006}
-    - name: Plume_03_joint
-      parentName: Plume_02_joint
-      position: {x: -0.11458545, y: -8.5265126e-16, z: 7.105427e-17}
-      rotation: {x: 0.00000003797551, y: 0.0000000127382105, z: 0.34265786, w: 0.9394603}
-      scale: {x: 1.0000001, y: 1.0000004, z: 1.0000002}
-    - name: Plume_04_joint
-      parentName: Plume_03_joint
-      position: {x: -0.10289703, y: 8.5265126e-16, z: 1.7763567e-16}
-      rotation: {x: -0.00000003761955, y: 0.000000050250375, z: 0.25002947, w: 0.9682383}
-      scale: {x: 1.0000006, y: 0.9999997, z: 1.0000001}
-    - name: Plume_end_joint
-      parentName: Plume_04_joint
-      position: {x: -0.14750664, y: -7.81597e-16, z: -3.2552376e-17}
-      rotation: {x: 0.47155914, y: 0.526908, z: -0.47155902, w: 0.52690804}
-      scale: {x: 0.99999994, y: 0.9999998, z: 0.9999997}
-    - name: L_Clavicle_joint
-      parentName: Spine_03_joint
-      position: {x: -0.048457034, y: 0.03584934, z: -0.07743587}
-      rotation: {x: -0.60201293, y: 0.5393136, z: -0.4674114, w: -0.3581172}
-      scale: {x: 0.9999999, y: 0.9999999, z: 0.9999997}
-    - name: L_Shoulder_joint
-      parentName: L_Clavicle_joint
-      position: {x: -0.07553681, y: -2.842171e-16, z: -1.4210854e-16}
-      rotation: {x: 0.031643886, y: 0.15427701, z: -0.0022280805, w: 0.98751825}
-      scale: {x: 0.9999999, y: 1, z: 1}
-    - name: L_Elbow_joint
-      parentName: L_Shoulder_joint
-      position: {x: -0.18336809, y: 0.003829528, z: 0.000621138}
-      rotation: {x: 0.07285131, y: 0.042728666, z: -0.033631805, w: 0.9958594}
-      scale: {x: 1.0000005, y: 1.0000004, z: 1.0000002}
-    - name: L_Wrist_joint
-      parentName: L_Elbow_joint
-      position: {x: -0.26083055, y: -0.0014827951, z: -0.008944914}
-      rotation: {x: 0.13052621, y: -0.000000029802315, z: 0.00000013038513, w: 0.9914449}
-      scale: {x: 0.99999994, y: 0.9999996, z: 1.0000001}
-    - name: L_Pinky_01_joint
-      parentName: L_Wrist_joint
-      position: {x: -0.10733084, y: -0.03119517, z: -0.017725987}
-      rotation: {x: -0.43316725, y: 0.018019946, z: 0.10740777, w: 0.89470947}
-      scale: {x: 1, y: 1.0000004, z: 1.0000001}
-    - name: L_Pinky_02_joint
-      parentName: L_Pinky_01_joint
-      position: {x: -0.02366238, y: 1.065814e-15, z: 7.105427e-16}
-      rotation: {x: 0.15627092, y: 0.025617726, z: 0.03169588, w: 0.9868731}
-      scale: {x: 1, y: 1, z: 1.0000002}
-    - name: L_Pinky_03_joint
-      parentName: L_Pinky_02_joint
-      position: {x: -0.016696053, y: -7.638334e-16, z: 2.842171e-16}
-      rotation: {x: -0.000030234445, y: -0.0000018067651, z: -0.000016300934, w: 1}
-      scale: {x: 1, y: 1, z: 0.9999998}
-    - name: L_Pinky_end_joint
-      parentName: L_Pinky_03_joint
-      position: {x: -0.018802177, y: 4.092726e-14, z: -5.1159075e-15}
-      rotation: {x: -0, y: -0, z: -5.687809e-14, w: 1}
-      scale: {x: 1.0000002, y: 1.0000001, z: 0.99999994}
-    - name: L_Ring_01_joint
-      parentName: L_Wrist_joint
-      position: {x: -0.11745778, y: -0.019431587, z: 0.0010141645}
-      rotation: {x: -0.31036177, y: 0.04701397, z: 0.12286127, w: 0.94147253}
-      scale: {x: 1.0000002, y: 1.0000007, z: 1.0000001}
-    - name: L_Ring_02_joint
-      parentName: L_Ring_01_joint
-      position: {x: -0.02671937, y: 2.842171e-16, z: -3.5527135e-16}
-      rotation: {x: 0.0025728336, y: -0.0045562205, z: 0.006404053, w: 0.9999658}
-      scale: {x: 1.0000006, y: 1.0000002, z: 1.0000001}
-    - name: L_Ring_03_joint
-      parentName: L_Ring_02_joint
-      position: {x: -0.030148264, y: -8.4598993e-16, z: 0}
-      rotation: {x: -0.028779486, y: -0.017801449, z: -0.0019037832, w: 0.9994255}
-      scale: {x: 0.9999998, y: 0.9999997, z: 0.99999994}
-    - name: L_Ring_end_joint
-      parentName: L_Ring_03_joint
-      position: {x: -0.0297966, y: 7.105427e-16, z: 7.105427e-16}
-      rotation: {x: -0, y: 0.0000000018626443, z: -0, w: 1}
+    - name: Palaistra_Final_Hips_joint
+      parentName: Paiaistra Grapple Anims(Clone)
+      position: {x: 0, y: 1.1513855, z: 0.029284013}
+      rotation: {x: 0.000000023283068, y: -0.000000005820765, z: -0.000000008731148,
+        w: 1}
       scale: {x: 0.99999994, y: 0.99999994, z: 1}
-    - name: L_Middle_01_joint
-      parentName: L_Wrist_joint
-      position: {x: -0.12242939, y: -0.006591071, z: 0.024407782}
-      rotation: {x: -0.32476208, y: 0.0751967, z: 0.13735293, w: 0.9327429}
-      scale: {x: 1.0000001, y: 1.0000004, z: 1.0000001}
-    - name: L_Middle_02_joint
-      parentName: L_Middle_01_joint
-      position: {x: -0.036844235, y: 7.81597e-16, z: 8.5265126e-16}
-      rotation: {x: -0.011209425, y: -0.03385157, z: 0.01981413, w: 0.9991676}
-      scale: {x: 1.0000002, y: 1.0000005, z: 1}
-    - name: L_Middle_03_joint
-      parentName: L_Middle_02_joint
-      position: {x: -0.026449462, y: -1.0280665e-15, z: -7.105427e-16}
-      rotation: {x: 0.0073924004, y: 0.035515152, z: -0.02061448, w: 0.9991291}
-      scale: {x: 1, y: 1.0000002, z: 1.0000002}
-    - name: L_Middle_end_joint
-      parentName: L_Middle_03_joint
-      position: {x: -0.032511976, y: 4.2632563e-16, z: -2.1316282e-16}
-      rotation: {x: -0, y: -0, z: -3.2014214e-10, w: 1}
-      scale: {x: 1.0000004, y: 1, z: 0.9999998}
-    - name: L_Index_01_joint
-      parentName: L_Wrist_joint
-      position: {x: -0.12145177, y: 0.005468126, z: 0.05186115}
-      rotation: {x: -0.29809856, y: 0.12746426, z: 0.16098917, w: 0.932187}
+    - name: Attach_Joint
+      parentName: Palaistra_Final_Hips_joint
+      position: {x: -0.0051462525, y: -0.41439986, z: 1.0231755}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_Spine_joint
+      parentName: Palaistra_Final_Hips_joint
+      position: {x: -0, y: 0.09824242, z: -0.00611783}
+      rotation: {x: -0.031091267, y: 0.0000000280944, z: 0.000000032903607, w: 0.99951655}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_Spine1_joint
+      parentName: Palaistra_Final_Spine_joint
+      position: {x: -0, y: 0.11483811, z: -4.8615157e-12}
+      rotation: {x: 0.000000018626451, y: -0.00000002118046, z: -0.0000000344887,
+        w: 1}
       scale: {x: 1.0000001, y: 1.0000004, z: 1}
-    - name: L_Index_02_joint
-      parentName: L_Index_01_joint
-      position: {x: -0.03171128, y: 0.0024026814, z: -0.0013871887}
-      rotation: {x: -0.029351342, y: -0.008866389, z: -0.019233271, w: 0.99934477}
-      scale: {x: 1.0000004, y: 1, z: 1.0000001}
-    - name: L_Index_03_joint
-      parentName: L_Index_02_joint
-      position: {x: -0.024973325, y: 0.001892164, z: -0.0010924414}
-      rotation: {x: 0.0000014528629, y: 0.000013582405, z: -0.000011198744, w: 1}
-      scale: {x: 1.0000001, y: 1.0000005, z: 1.0000001}
-    - name: L_Index_end_joint
-      parentName: L_Index_03_joint
-      position: {x: -0.027832674, y: 0.0021088095, z: -0.0012175217}
-      rotation: {x: -0, y: -0, z: 2.75507e-13, w: 1}
-      scale: {x: 1.0000005, y: 1.0000005, z: 1}
-    - name: L_Thumb_01_joint
-      parentName: L_Wrist_joint
-      position: {x: -0.025976025, y: 0.012152065, z: 0.041835733}
-      rotation: {x: 0.44216964, y: 0.35871398, z: -0.26854998, w: 0.7769757}
-      scale: {x: 1.0000007, y: 1.0000001, z: 1.0000006}
-    - name: L_Thumb_02_joint
-      parentName: L_Thumb_01_joint
-      position: {x: -0.04783716, y: 7.105427e-17, z: 0}
-      rotation: {x: 0.024847765, y: 0.035196763, z: 0.018480932, w: 0.99890053}
-      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000005}
-    - name: L_Thumb_03_joint
-      parentName: L_Thumb_02_joint
-      position: {x: -0.026294742, y: -3.907985e-16, z: -5.684342e-16}
-      rotation: {x: -0.05808015, y: -0.014077851, z: 0.036238916, w: 0.9975547}
-      scale: {x: 1, y: 1.0000006, z: 1.0000006}
-    - name: L_Thumb_end_joint
-      parentName: L_Thumb_03_joint
-      position: {x: -0.030482924, y: -1.4210854e-16, z: 8.5265126e-16}
-      rotation: {x: -0, y: -0, z: -0.000000008614732, w: 1}
-      scale: {x: 1, y: 0.9999998, z: 0.99999994}
-    - name: R_Clavicle_joint
-      parentName: Spine_03_joint
-      position: {x: -0.048459347, y: 0.035848647, z: 0.07743642}
-      rotation: {x: -0.5393094, y: -0.60201144, z: -0.3581232, w: 0.46741363}
-      scale: {x: 0.99999994, y: 1.0000004, z: 1.0000001}
-    - name: R_Shoulder_joint
-      parentName: R_Clavicle_joint
-      position: {x: 0.07553608, y: 0.0000009734501, z: 0.00000090596285}
-      rotation: {x: 0.031642064, y: 0.15426455, z: -0.00223866, w: 0.9875202}
-      scale: {x: 1, y: 0.9999996, z: 0.9999998}
-    - name: R_Elbow_joint
-      parentName: R_Shoulder_joint
-      position: {x: 0.18337156, y: -0.0038246242, z: -0.00062377384}
-      rotation: {x: 0.07285195, y: 0.04273494, z: -0.03361199, w: 0.99585974}
-      scale: {x: 0.99999994, y: 1.0000001, z: 1.0000005}
-    - name: R_Wrist_joint
-      parentName: R_Elbow_joint
-      position: {x: 0.26082835, y: 0.0014787079, z: 0.008944174}
-      rotation: {x: 0.1305263, y: 0.00000005960463, z: 0.000000068917856, w: 0.9914449}
-      scale: {x: 1, y: 1, z: 1.0000001}
-    - name: Sword_Offset
-      parentName: R_Wrist_joint
-      position: {x: 0.08697378, y: 0.032390572, z: -0.017684463}
-      rotation: {x: -0.8600013, y: 0, z: -0, w: 0.5102918}
+    - name: Palaistra_Final_Spine2_joint
+      parentName: Palaistra_Final_Spine1_joint
+      position: {x: 3.5527136e-17, y: 0.13124357, z: 1.6674734e-10}
+      rotation: {x: -0, y: -0, z: 3.9451682e-16, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Palaistra_Final_Neck_joint
+      parentName: Palaistra_Final_Spine2_joint
+      position: {x: 3.5527136e-17, y: 0.14764903, z: -0.000000001006523}
+      rotation: {x: 0.03109126, y: -0.00000005830394, z: 0.0000000021900999, w: 0.99951655}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: Palaistra_Final_Head_joint
+      parentName: Palaistra_Final_Neck_joint
+      position: {x: -3.5527136e-17, y: 0.058982085, z: 0.024666233}
+      rotation: {x: -0.000000022351742, y: 0.00000006984919, z: 0.000000011641525,
+        w: 1}
+      scale: {x: 1, y: 1.0000002, z: 1}
+    - name: Palaistra_Final_HeadTop_End_joint
+      parentName: Palaistra_Final_Head_joint
+      position: {x: -0, y: 0.26714233, z: 0.111718535}
+      rotation: {x: -0, y: -0, z: -2.1510571e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: R_joint7_joint
-      parentName: R_Wrist_joint
-      position: {x: 0.1073304, y: 0.031194841, z: 0.017725931}
-      rotation: {x: -0.433173, y: 0.018020421, z: 0.10739512, w: 0.8947082}
-      scale: {x: 1.0000001, y: 1.0000006, z: 1.0000001}
-    - name: R_joint12_joint
-      parentName: R_joint7_joint
-      position: {x: 0.023662526, y: 0.0000006885458, z: 0.0000002881072}
-      rotation: {x: 0.15627122, y: 0.025619509, z: 0.031705767, w: 0.98687273}
-      scale: {x: 1, y: 1.000001, z: 1.0000002}
-    - name: R_joint13_joint
-      parentName: R_joint12_joint
-      position: {x: 0.016696053, y: 0, z: -1.5099033e-16}
-      rotation: {x: -0.000030308955, y: -0.0000018328424, z: -0.000016209666, w: 1}
-      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000002}
-    - name: R_joint8_joint
-      parentName: R_joint13_joint
-      position: {x: 0.018802414, y: -0.0000005907189, z: -0.000000026943436}
-      rotation: {x: -0, y: -0, z: 8.371218e-13, w: 1}
-      scale: {x: 1.0000001, y: 1.0000006, z: 1.0000006}
-    - name: R_Ring_01_joint
-      parentName: R_Wrist_joint
-      position: {x: 0.11745777, y: 0.019431679, z: -0.001014244}
-      rotation: {x: -0.31036338, y: 0.04701326, z: 0.12285717, w: 0.94147253}
-      scale: {x: 1.0000001, y: 1.0000008, z: 1}
-    - name: R_Ring_02_joint
-      parentName: R_Ring_01_joint
-      position: {x: 0.026719129, y: 0.00000041981997, z: -0.000000008747845}
-      rotation: {x: 0.002572804, y: -0.004556262, z: 0.0064040744, w: 0.99996585}
-      scale: {x: 1.0000001, y: 1.0000006, z: 1.0000008}
-    - name: R_Ring_03_joint
-      parentName: R_Ring_02_joint
-      position: {x: 0.030148678, y: -0.0000005221014, z: 0.0000000764483}
-      rotation: {x: -0.028779373, y: -0.017801274, z: -0.0019038734, w: 0.9994254}
-      scale: {x: 1, y: 0.9999998, z: 0.9999997}
-    - name: R_Ring_end_joint
-      parentName: R_Ring_03_joint
-      position: {x: 0.029796476, y: 0.00000023526187, z: -0.00000007389487}
-      rotation: {x: -0, y: -0, z: -0, w: 1}
-      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000001}
-    - name: R_Middle_01_joint
-      parentName: R_Wrist_joint
-      position: {x: 0.12242892, y: 0.0065914714, z: -0.024408096}
-      rotation: {x: -0.32476076, y: 0.07519689, z: 0.13736337, w: 0.9327419}
-      scale: {x: 1, y: 1.0000005, z: 0.99999994}
-    - name: R_Middle_02_joint
-      parentName: R_Middle_01_joint
-      position: {x: 0.036844198, y: -0.000000558539, z: -0.00000015605559}
-      rotation: {x: -0.011209062, y: -0.03384484, z: 0.019808063, w: 0.9991679}
-      scale: {x: 1, y: 1, z: 0.99999994}
-    - name: R_Middle_03_joint
-      parentName: R_Middle_02_joint
-      position: {x: 0.026449488, y: 0.00000019059672, z: 0.00000006482746}
-      rotation: {x: 0.0073926304, y: 0.035513654, z: -0.020614114, w: 0.99912924}
-      scale: {x: 0.99999994, y: 1.0000001, z: 1.0000001}
-    - name: R_Middle_end_joint
-      parentName: R_Middle_03_joint
-      position: {x: 0.032512177, y: 0.00000020783371, z: 0.000000022628685}
-      rotation: {x: 4.6566118e-10, y: -0, z: -2.9103824e-11, w: 1}
-      scale: {x: 1, y: 1.0000001, z: 0.99999994}
-    - name: R_Index_01_joint
-      parentName: R_Wrist_joint
-      position: {x: 0.12145087, y: -0.005468129, z: -0.051861513}
-      rotation: {x: -0.2980966, y: 0.12747197, z: 0.16099697, w: 0.9321852}
-      scale: {x: 1.0000004, y: 1.0000007, z: 1.0000001}
-    - name: R_Index_02_joint
-      parentName: R_Index_01_joint
-      position: {x: 0.031711534, y: -0.002403328, z: 0.0013877688}
-      rotation: {x: -0.02935132, y: -0.008866294, z: -0.01923337, w: 0.9993448}
-      scale: {x: 0.99999994, y: 1.0000004, z: 1.0000002}
-    - name: R_Index_03_joint
-      parentName: R_Index_02_joint
-      position: {x: 0.024973325, y: -0.001892164, z: 0.0010924414}
-      rotation: {x: 0.0000014919784, y: 0.000013480891, z: -0.000011236026, w: 1}
-      scale: {x: 1.0000002, y: 0.99999994, z: 1.0000001}
-    - name: R_Index_end_joint
-      parentName: R_Index_03_joint
-      position: {x: 0.02783261, y: -0.002108033, z: 0.0012173183}
-      rotation: {x: 0.00000006147, y: -0.000000083819, z: -0.00000014976642, w: 1}
-      scale: {x: 0.99999994, y: 0.9999998, z: 0.9999996}
-    - name: R_Thumb_01_joint
-      parentName: R_Wrist_joint
-      position: {x: 0.025975652, y: -0.012151586, z: -0.041836027}
-      rotation: {x: 0.44217107, y: 0.35871926, z: -0.2685493, w: 0.77697265}
-      scale: {x: 1.0000006, y: 1, z: 1.0000007}
-    - name: R_Thumb_02_joint
-      parentName: R_Thumb_01_joint
-      position: {x: 0.047837164, y: 0.00000029994828, z: 0.00000056312956}
-      rotation: {x: 0.024847522, y: 0.035185345, z: 0.01848704, w: 0.9989009}
-      scale: {x: 1, y: 1, z: 0.9999998}
-    - name: R_Thumb_03_joint
-      parentName: R_Thumb_02_joint
-      position: {x: 0.026294328, y: -0.0000006849619, z: -0.0000004023044}
-      rotation: {x: -0.05808026, y: -0.0140735125, z: 0.03623718, w: 0.9975548}
-      scale: {x: 1.0000001, y: 0.99999994, z: 1}
-    - name: R_Thumb_end_joint
-      parentName: R_Thumb_03_joint
-      position: {x: 0.030483255, y: -0.00000030914399, z: -4.5072893e-10}
-      rotation: {x: -0, y: -0, z: -0.0000000023283055, w: 1}
-      scale: {x: 1.0000002, y: 1.0000002, z: 1}
-    - name: Hips_jnt_joint
-      parentName: Root_joint
-      position: {x: -0, y: 0, z: 0.062900856}
-      rotation: {x: -0, y: -0, z: -0, w: 1}
+    - name: Palaistra_Final_LeftShoulder_joint
+      parentName: Palaistra_Final_Spine2_joint
+      position: {x: -0.060130566, y: 0.12661868, z: -0.0014188358}
+      rotation: {x: 0.5694934, y: -0.41448268, z: 0.5830481, w: 0.40489045}
+      scale: {x: 1.0000005, y: 1.000001, z: 1.0000002}
+    - name: Palaistra_Final_LeftArm_joint
+      parentName: Palaistra_Final_LeftShoulder_joint
+      position: {x: -1.292447e-10, y: 0.12825423, z: 0.0000000018256716}
+      rotation: {x: -0.1421403, y: -0.017652124, z: -0.00949195, w: 0.98964363}
+      scale: {x: 1.0000008, y: 1.000001, z: 1.0000008}
+    - name: Palaistra_Final_LeftForeArm_joint
+      parentName: Palaistra_Final_LeftArm_joint
+      position: {x: 1.8359905e-10, y: 0.25099513, z: -0.00000000761311}
+      rotation: {x: -0.03619048, y: 0.012165186, z: -0.03540545, w: 0.99864346}
+      scale: {x: 1.0000012, y: 1.0000012, z: 1.0000006}
+    - name: Palaistra_Final_LeftHand_joint
+      parentName: Palaistra_Final_LeftForeArm_joint
+      position: {x: -6.0754324e-10, y: 0.31179562, z: -0.000000002851042}
+      rotation: {x: 0.041500587, y: 0.0469721, z: -0.0014245844, w: 0.9980328}
+      scale: {x: 1, y: 1.0000007, z: 1.0000006}
+    - name: Palaistra_Final_LeftHandIndex1_joint
+      parentName: Palaistra_Final_LeftHand_joint
+      position: {x: 0.03248099, y: 0.116793744, z: 0.0013871499}
+      rotation: {x: 0.014638026, y: 0.007847831, z: 0.008306299, w: 0.99982756}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000001}
+    - name: Palaistra_Final_LeftHandIndex2_joint
+      parentName: Palaistra_Final_LeftHandIndex1_joint
+      position: {x: -0.0006562514, y: 0.030659236, z: 1.13526535e-10}
+      rotation: {x: 0.037096813, y: -0.00034720765, z: 0.012034547, w: 0.9992392}
+      scale: {x: 1, y: 1.0000005, z: 1.0000004}
+    - name: Palaistra_Final_LeftHandIndex3_joint
+      parentName: Palaistra_Final_LeftHandIndex2_joint
+      position: {x: 0.00039135985, y: 0.029599713, z: -9.1197133e-10}
+      rotation: {x: -0.008947626, y: 0.00000008754432, z: -0.0000004917383, w: 0.99996}
+      scale: {x: 1, y: 0.9999996, z: 0.9999997}
+    - name: Palaistra_Final_LeftHandIndex4_joint
+      parentName: Palaistra_Final_LeftHandIndex3_joint
+      position: {x: 0.0002648905, y: 0.028080724, z: 2.011582e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: L_Thigh_joint
-      parentName: Hips_jnt_joint
-      position: {x: -0.06838382, y: -0.023725, z: -0.041167453}
-      rotation: {x: 0.08499707, y: 0.12448383, z: 0.66095793, w: 0.7351285}
-      scale: {x: 1.0000002, y: 0.9999998, z: 1.0000001}
-    - name: L_Knee_joint
-      parentName: L_Thigh_joint
-      position: {x: -0.36945316, y: 1.4210854e-16, z: 1.3322676e-16}
-      rotation: {x: 0.029137202, y: -0.09974328, z: 0.037239112, w: 0.99388915}
-      scale: {x: 1.0000004, y: 1.0000006, z: 1.0000002}
-    - name: L_Ankle_joint
-      parentName: L_Knee_joint
-      position: {x: -0.29452428, y: -7.283063e-16, z: -5.906386e-16}
-      rotation: {x: 0.4918526, y: 0.29148972, z: -0.34897402, w: 0.74251735}
-      scale: {x: 0.9999998, y: 0.9999998, z: 1}
-    - name: L_Ball_joint
-      parentName: L_Ankle_joint
-      position: {x: -0.18528499, y: 1.7763568e-17, z: -1.7763567e-16}
-      rotation: {x: 0.0032273824, y: 0.006706758, z: -0.3173057, w: 0.94829404}
-      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000002}
-    - name: L_Toe_End_joint
-      parentName: L_Ball_joint
-      position: {x: -0.13552989, y: -8.881784e-16, z: -3.5527136e-17}
-      rotation: {x: -4.6566123e-10, y: -0, z: 0.000000050813462, w: 1}
-      scale: {x: 1.0000001, y: 0.9999998, z: 1.0000002}
-    - name: R_Thigh_joint
-      parentName: Hips_jnt_joint
-      position: {x: 0.0683838, y: -0.023725322, z: -0.041167453}
-      rotation: {x: 0.73512787, y: -0.66095775, z: 0.12448673, w: -0.08499993}
+    - name: Palaistra_Final_LeftHandMiddle1_joint
+      parentName: Palaistra_Final_LeftHand_joint
+      position: {x: 0.010552845, y: 0.11728704, z: -0.0069131427}
+      rotation: {x: 0.012369291, y: 0.014238328, z: -0.0017809625, w: 0.99982053}
+      scale: {x: 1.0000001, y: 1.0000001, z: 0.99999994}
+    - name: Palaistra_Final_LeftHandMiddle2_joint
+      parentName: Palaistra_Final_LeftHandMiddle1_joint
+      position: {x: -0.001245563, y: 0.03328954, z: 0.0000000012263236}
+      rotation: {x: 0.032086987, y: -0.0018881175, z: 0.023669332, w: 0.999203}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000004}
+    - name: Palaistra_Final_LeftHandMiddle3_joint
+      parentName: Palaistra_Final_LeftHandMiddle2_joint
+      position: {x: 0.00053618546, y: 0.030053932, z: -3.685818e-10}
+      rotation: {x: 0.029576376, y: 0.000000061917945, z: -0.0000000066559456, w: 0.99956256}
       scale: {x: 1, y: 1.0000002, z: 1.0000002}
-    - name: R_Knee_joint
-      parentName: R_Thigh_joint
-      position: {x: 0.36945307, y: -0.00000020912911, z: -0.00000007012375}
-      rotation: {x: 0.029137306, y: -0.09974341, z: 0.037239075, w: 0.99388903}
-      scale: {x: 1, y: 1.0000001, z: 0.9999999}
-    - name: R_Ankle_joint
-      parentName: R_Knee_joint
-      position: {x: 0.29452437, y: 0.0000004804325, z: 0.000000031171474}
-      rotation: {x: 0.49184924, y: 0.2914885, z: -0.34897497, w: 0.7425195}
-      scale: {x: 0.9999999, y: 1.0000002, z: 1.0000002}
-    - name: R_Ball_joint
-      parentName: R_Ankle_joint
-      position: {x: 0.1852849, y: -0.00000038080404, z: 0.00000065229614}
-      rotation: {x: 0.0032274127, y: 0.006706804, z: -0.31730568, w: 0.9482941}
-      scale: {x: 1.0000002, y: 1.0000005, z: 1.0000002}
-    - name: R_Toe_End_joint
-      parentName: R_Ball_joint
-      position: {x: 0.13552974, y: 0.000000053412172, z: 1.4210854e-16}
-      rotation: {x: -0, y: -0, z: -0.000000009138603, w: 1}
-      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000004}
+    - name: Palaistra_Final_LeftHandMiddle4_joint
+      parentName: Palaistra_Final_LeftHandMiddle3_joint
+      position: {x: 0.0007093768, y: 0.028399436, z: -1.3054162e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftHandRing1_joint
+      parentName: Palaistra_Final_LeftHand_joint
+      position: {x: -0.010949664, y: 0.10822805, z: -0.0029141607}
+      rotation: {x: 0.0023887078, y: 0.013922545, z: 0.005033386, w: 0.9998875}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000001}
+    - name: Palaistra_Final_LeftHandRing2_joint
+      parentName: Palaistra_Final_LeftHandRing1_joint
+      position: {x: -0.0010184046, y: 0.031677525, z: 8.7454394e-10}
+      rotation: {x: 0.028447406, y: -0.0027237171, z: 0.020189775, w: 0.99938774}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: Palaistra_Final_LeftHandRing3_joint
+      parentName: Palaistra_Final_LeftHandRing2_joint
+      position: {x: 0.00035373378, y: 0.028484644, z: -8.0770515e-11}
+      rotation: {x: 0.039585795, y: 0.0007233644, z: 0.003012423, w: 0.99921143}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: Palaistra_Final_LeftHandRing4_joint
+      parentName: Palaistra_Final_LeftHandRing3_joint
+      position: {x: 0.00066467066, y: 0.027076943, z: 5.493959e-11}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftHandPinky1_joint
+      parentName: Palaistra_Final_LeftHand_joint
+      position: {x: -0.03208415, y: 0.09682901, z: -0.0013977677}
+      rotation: {x: 0.0220398, y: 0.031914815, z: -0.0147048645, w: 0.9991394}
+      scale: {x: 1.0000002, y: 1.0000001, z: 0.9999998}
+    - name: Palaistra_Final_LeftHandPinky2_joint
+      parentName: Palaistra_Final_LeftHandPinky1_joint
+      position: {x: -0.0008880274, y: 0.02349008, z: 5.784481e-10}
+      rotation: {x: 0.033022225, y: -0.0017921544, z: 0.022942437, w: 0.9991897}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: Palaistra_Final_LeftHandPinky3_joint
+      parentName: Palaistra_Final_LeftHandPinky2_joint
+      position: {x: 0.0003195187, y: 0.018856974, z: -1.2220681e-10}
+      rotation: {x: 0.039426226, y: 0.0010131156, z: 0.0037763275, w: 0.9992148}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000005}
+    - name: Palaistra_Final_LeftHandPinky4_joint
+      parentName: Palaistra_Final_LeftHandPinky3_joint
+      position: {x: 0.00056850904, y: 0.017959926, z: 6.140204e-11}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftHandThumb1_joint
+      parentName: Palaistra_Final_LeftHand_joint
+      position: {x: 0.02051995, y: 0.036362194, z: 0.01745626}
+      rotation: {x: 0.11003707, y: 0.024200447, z: -0.2810869, w: 0.9530459}
+      scale: {x: 1.0000006, y: 1.0000015, z: 1.0000005}
+    - name: Palaistra_Final_LeftHandThumb2_joint
+      parentName: Palaistra_Final_LeftHandThumb1_joint
+      position: {x: 0.0062158033, y: 0.035666298, z: -1.7143861e-10}
+      rotation: {x: 0.019481238, y: 0.0025691765, z: -0.05136527, w: 0.99848664}
+      scale: {x: 1.0000002, y: 1.0000006, z: 1.0000004}
+    - name: Palaistra_Final_LeftHandThumb3_joint
+      parentName: Palaistra_Final_LeftHandThumb2_joint
+      position: {x: 0.00008511488, y: 0.034789827, z: 5.4202046e-11}
+      rotation: {x: -0.026686655, y: 0.008933922, z: -0.08278574, w: 0.99617}
+      scale: {x: 0.99999994, y: 1.0000001, z: 1}
+    - name: Palaistra_Final_LeftHandThumb4_joint
+      parentName: Palaistra_Final_LeftHandThumb3_joint
+      position: {x: -0.0063009225, y: 0.029031927, z: -6.4481726e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightShoulder_joint
+      parentName: Palaistra_Final_Spine2_joint
+      position: {x: 0.060130566, y: 0.12660514, z: -0.0012012568}
+      rotation: {x: -0.570588, y: -0.41369206, z: 0.58206767, w: -0.40556806}
+      scale: {x: 1.0000002, y: 1.0000014, z: 1.0000011}
+    - name: Palaistra_Final_RightArm_joint
+      parentName: Palaistra_Final_RightShoulder_joint
+      position: {x: 1.1582038e-10, y: 0.12825423, z: 0.0000000018265598}
+      rotation: {x: -0.14241296, y: 0.028283834, z: 0.003206879, w: 0.989398}
+      scale: {x: 1.0000008, y: 1.000001, z: 1.0000002}
+    - name: Palaistra_Final_RightForeArm_joint
+      parentName: Palaistra_Final_RightArm_joint
+      position: {x: -7.1021286e-11, y: 0.25098634, z: -9.290474e-11}
+      rotation: {x: 0.036558863, y: 0.0127177555, z: -0.034586217, w: -0.99865186}
+      scale: {x: 1.0000005, y: 1.0000012, z: 1.0000012}
+    - name: Palaistra_Final_RightHand_joint
+      parentName: Palaistra_Final_RightForeArm_joint
+      position: {x: 5.5710986e-10, y: 0.31189728, z: 0.0000000038096184}
+      rotation: {x: 0.04253074, y: -0.053475853, z: 0.00037184815, w: 0.99766296}
+      scale: {x: 1.0000006, y: 1.0000002, z: 0.9999997}
+    - name: Palaistra_Final_RightHandIndex1_joint
+      parentName: Palaistra_Final_RightHand_joint
+      position: {x: -0.032879848, y: 0.121301875, z: -0.0000021872718}
+      rotation: {x: -0.023581728, y: 0.01367371, z: -0.0024492994, w: -0.99962544}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: Palaistra_Final_RightHandIndex2_joint
+      parentName: Palaistra_Final_RightHandIndex1_joint
+      position: {x: 0.0006397114, y: 0.030254759, z: 5.1506566e-11}
+      rotation: {x: 0.038119305, y: 0.0002385955, z: -0.010369227, w: 0.99921936}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Palaistra_Final_RightHandIndex3_joint
+      parentName: Palaistra_Final_RightHandIndex2_joint
+      position: {x: -0.00035889848, y: 0.02750637, z: -0.000000001232207}
+      rotation: {x: -0.0035155267, y: 0.0000000088874685, z: 0.00000014040143, w: 0.99999386}
+      scale: {x: 1.0000001, y: 0.9999999, z: 1.0000001}
+    - name: Palaistra_Final_RightHandIndex4_joint
+      parentName: Palaistra_Final_RightHandIndex3_joint
+      position: {x: -0.0002808125, y: 0.02634287, z: -1.7425521e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightHandMiddle1_joint
+      parentName: Palaistra_Final_RightHand_joint
+      position: {x: -0.01151068, y: 0.11305985, z: -0.005661901}
+      rotation: {x: -0.0068853702, y: 0.008167753, z: -0.009295218, w: -0.99989974}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1}
+    - name: Palaistra_Final_RightHandMiddle2_joint
+      parentName: Palaistra_Final_RightHandMiddle1_joint
+      position: {x: 0.0018328648, y: 0.03411884, z: 1.9587339e-10}
+      rotation: {x: 0.031204414, y: 0.0032236362, z: -0.03317894, w: 0.998957}
+      scale: {x: 1, y: 0.99999976, z: 1}
+    - name: Palaistra_Final_RightHandMiddle3_joint
+      parentName: Palaistra_Final_RightHandMiddle2_joint
+      position: {x: -0.00071530347, y: 0.031531624, z: 1.5155592e-11}
+      rotation: {x: 0.04071943, y: -0.00020322263, z: -0.0010831384, w: 0.99917}
+      scale: {x: 1, y: 1.0000002, z: 1}
+    - name: Palaistra_Final_RightHandMiddle4_joint
+      parentName: Palaistra_Final_RightHandMiddle3_joint
+      position: {x: -0.0011175616, y: 0.02937301, z: 2.7802016e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightHandRing1_joint
+      parentName: Palaistra_Final_RightHand_joint
+      position: {x: 0.011235867, y: 0.11053894, z: -0.0047173616}
+      rotation: {x: -0.012463964, y: 0.022861829, z: -0.008414011, w: -0.9996256}
+      scale: {x: 0.9999999, y: 0.9999999, z: 1}
+    - name: Palaistra_Final_RightHandRing2_joint
+      parentName: Palaistra_Final_RightHandRing1_joint
+      position: {x: 0.0012127722, y: 0.031407192, z: -7.697821e-11}
+      rotation: {x: 0.029660739, y: 0.0029871569, z: -0.023711156, w: 0.9992743}
+      scale: {x: 1.0000001, y: 1.0000001, z: 0.9999999}
+    - name: Palaistra_Final_RightHandRing3_joint
+      parentName: Palaistra_Final_RightHandRing2_joint
+      position: {x: -0.0003970735, y: 0.027344711, z: -1.5548238e-11}
+      rotation: {x: 0.03918316, y: -0.0010584857, z: -0.004494456, w: 0.99922144}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000004}
+    - name: Palaistra_Final_RightHandRing4_joint
+      parentName: Palaistra_Final_RightHandRing3_joint
+      position: {x: -0.00081569864, y: 0.026213579, z: 4.453753e-12}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightHandPinky1_joint
+      parentName: Palaistra_Final_RightHand_joint
+      position: {x: 0.033154853, y: 0.09780763, z: -0.0015372437}
+      rotation: {x: -0.027340876, y: 0.029852916, z: -0.025721269, w: -0.9988493}
+      scale: {x: 0.9999999, y: 0.99999964, z: 1}
+    - name: Palaistra_Final_RightHandPinky2_joint
+      parentName: Palaistra_Final_RightHandPinky1_joint
+      position: {x: 0.0010802669, y: 0.022721803, z: 5.0105176e-10}
+      rotation: {x: 0.03230355, y: 0.0021126955, z: -0.030560482, w: 0.99900866}
+      scale: {x: 1.0000001, y: 1.0000005, z: 1.0000002}
+    - name: Palaistra_Final_RightHandPinky3_joint
+      parentName: Palaistra_Final_RightHandPinky2_joint
+      position: {x: -0.0004461622, y: 0.018251855, z: 2.8098128e-11}
+      rotation: {x: 0.040756896, y: -0.00032811487, z: -0.0012956873, w: 0.99916816}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: Palaistra_Final_RightHandPinky4_joint
+      parentName: Palaistra_Final_RightHandPinky3_joint
+      position: {x: -0.00063410454, y: 0.017172044, z: 1.5745051e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_RightHandThumb1_joint
+      parentName: Palaistra_Final_RightHand_joint
+      position: {x: -0.021543706, y: 0.036845334, z: 0.018668728}
+      rotation: {x: 0.11502206, y: -0.028192367, z: 0.27878216, w: 0.9530245}
+      scale: {x: 0.9999996, y: 0.9999996, z: 0.9999997}
+    - name: Palaistra_Final_RightHandThumb2_joint
+      parentName: Palaistra_Final_RightHandThumb1_joint
+      position: {x: -0.00711687, y: 0.036582734, z: 3.871103e-10}
+      rotation: {x: 0.0039728046, y: -0.0006095858, z: 0.07036896, w: 0.99751294}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: Palaistra_Final_RightHandThumb3_joint
+      parentName: Palaistra_Final_RightHandThumb2_joint
+      position: {x: 0.0008234132, y: 0.033398535, z: -0.0000000015642928}
+      rotation: {x: -0.0129073905, y: -0.0026277038, z: 0.061979968, w: 0.9979905}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: Palaistra_Final_RightHandThumb4_joint
+      parentName: Palaistra_Final_RightHandThumb3_joint
+      position: {x: 0.006293454, y: 0.027962752, z: -9.461398e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Palaistra_Final_LeftUpLeg_joint
+      parentName: Palaistra_Final_Hips_joint
+      position: {x: -0.111305594, y: -0.05461899, z: -0.02507673}
+      rotation: {x: 0.0008919185, y: -0.05128779, z: 0.99853253, w: 0.017364694}
+      scale: {x: 0.99999887, y: 0.9999995, z: 1.0000001}
+    - name: Palaistra_Final_LeftLeg_joint
+      parentName: Palaistra_Final_LeftUpLeg_joint
+      position: {x: 0.00018915371, y: 0.5111388, z: 0.052817944}
+      rotation: {x: 0.041115142, y: -0.0008091152, z: -0.01965826, w: 0.99896073}
+      scale: {x: 1.0000017, y: 1.0000014, z: 1.0000007}
+    - name: Palaistra_Final_LeftFoot_joint
+      parentName: Palaistra_Final_LeftLeg_joint
+      position: {x: -0.00023750478, y: 0.46911815, z: -0.031292725}
+      rotation: {x: 0.49162018, y: 0.04187825, z: -0.023678754, w: 0.8694799}
+      scale: {x: 1.0000027, y: 1.0000013, z: 1.000001}
+    - name: Palaistra_Final_LeftToeBase_joint
+      parentName: Palaistra_Final_LeftFoot_joint
+      position: {x: 5.643507e-11, y: 0.16015424, z: 0.0000000029024487}
+      rotation: {x: 0.2600732, y: -0.018894969, z: 0.005090253, w: 0.9653906}
+      scale: {x: 1.0000006, y: 1.0000004, z: 1.0000006}
+    - name: Palaistra_Final_LeftToe_End_joint
+      parentName: Palaistra_Final_LeftToeBase_joint
+      position: {x: -1.1727162e-10, y: 0.062207203, z: 5.6863845e-13}
+      rotation: {x: -0.000000029802315, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000005, y: 1.0000002, z: 1.0000001}
+    - name: Palaistra_Final_RightUpLeg_joint
+      parentName: Palaistra_Final_Hips_joint
+      position: {x: 0.111305594, y: -0.05461899, z: -0.026768977}
+      rotation: {x: -0.0008827587, y: -0.050756585, z: 0.99855965, w: -0.017367063}
+      scale: {x: 1.0000007, y: 1.0000007, z: 1}
+    - name: Palaistra_Final_RightLeg_joint
+      parentName: Palaistra_Final_RightUpLeg_joint
+      position: {x: -0.00018722058, y: 0.51113874, z: 0.0528237}
+      rotation: {x: 0.03941329, y: 0.0007750717, z: 0.019645656, w: 0.9990296}
+      scale: {x: 0.9999998, y: 1.0000001, z: 1.0000001}
+    - name: Palaistra_Final_RightFoot_joint
+      parentName: Palaistra_Final_RightLeg_joint
+      position: {x: 0.00023497385, y: 0.46921498, z: -0.031291183}
+      rotation: {x: 0.49360943, y: -0.04154774, z: 0.02361711, w: 0.86836964}
+      scale: {x: 1.0000004, y: 1.0000006, z: 0.99999994}
+    - name: Palaistra_Final_RightToeBase_joint
+      parentName: Palaistra_Final_RightFoot_joint
+      position: {x: 4.680057e-10, y: 0.1607231, z: 0.000000006155457}
+      rotation: {x: 0.2588072, y: 0.017759295, z: -0.0047592125, w: 0.96575403}
+      scale: {x: 1.0000011, y: 1.0000008, z: 1}
+    - name: Palaistra_Final_RightToe_End_joint
+      parentName: Palaistra_Final_RightToeBase_joint
+      position: {x: -1.7788988e-10, y: 0.06156741, z: -6.287803e-11}
+      rotation: {x: -0.000000014901163, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000004}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -2101,11 +1441,12 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 600639040040a734fb2920bd904018bd,
+    type: 3}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1
-  avatarSetup: 1
+  avatarSetup: 2
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
