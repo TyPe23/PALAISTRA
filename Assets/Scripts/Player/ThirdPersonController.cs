@@ -7,8 +7,6 @@ using UnityEngine.InputSystem;
 /* Note: animations are called via the controller for both the character and capsule using animator null checks
  */
 
-namespace StarterAssets
-{
     [RequireComponent(typeof(CharacterController))]
     [RequireComponent(typeof(PlayerStats))]
     [RequireComponent(typeof(StaminaManager))]
@@ -616,4 +614,3 @@ namespace StarterAssets
             }
         }
     }
-}

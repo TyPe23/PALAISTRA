@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class projectile : MonoBehaviour
+public class Projectile : MonoBehaviour
 {
     private Transform player;
     private MeshRenderer mesh;
