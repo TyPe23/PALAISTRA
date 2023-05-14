@@ -60,6 +60,9 @@ public class PlayerStates : MonoBehaviour
     private bool exitDash;
     private bool canMove;
     private bool canAction = true;
+    public float PDTime = 2;
+
+    public bool exitPD { get; private set; }
     #endregion
 
     #region LifeCycle
@@ -183,6 +186,8 @@ public class PlayerStates : MonoBehaviour
         shake.GenerateImpulseWithForce(0.1f);
         momentum.addMomentum(50);
         Game.globalInstance.sndPlayer.PlaySound(SoundType.GRAB, soundSrc);
+
+        StartCoroutine(pileDriverAnim());
     }
 
     private void StateEnterSpin()
@@ -322,8 +327,7 @@ public class PlayerStates : MonoBehaviour
 
     private void StateStayPileDriver()
     {
-        charCon.PileDriver();
-        if (canCheck && charCon.Grounded)
+        if (exitPD)
         {
             ChangeState(state.MOVE);
         }
@@ -519,6 +523,7 @@ public class PlayerStates : MonoBehaviour
 
     private void StateExitPileDriver()
     {
+        enemyAnim.SetTrigger("GetUp");
         letGo = true;
         shake.GenerateImpulseWithForce(0.5f);
         Game.globalInstance.sndPlayer.PlaySound(SoundType.IMPACT, soundSrc);
@@ -612,6 +617,13 @@ public class PlayerStates : MonoBehaviour
         invul = true;
         yield return new WaitForSeconds(1f);
         invul = false;
+    }
+
+    private IEnumerator pileDriverAnim()
+    {
+        exitPD = false;
+        yield return new WaitForSeconds(PDTime);
+        exitPD = true;
     }
     #endregion
 }

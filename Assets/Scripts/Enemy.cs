@@ -180,6 +180,11 @@ public class Enemy : MonoBehaviour
         anim.SetBool("Grounded", grounded);
         anim.SetBool("FreeFall", !grounded);
 
+        if (transform.parent == attachPoint)
+        {
+            transform.localPosition = new Vector3(0, 0.5f, 0);
+            transform.localRotation = Quaternion.Euler(0, 0, 0);
+        }
     }
 
     public void ChangeState(state newState)
@@ -261,6 +266,7 @@ public class Enemy : MonoBehaviour
 
     private void StateEnterGrabbed()
     {
+
         if (agent.enabled)
         {
             agent.SetDestination(transform.position);
@@ -270,6 +276,9 @@ public class Enemy : MonoBehaviour
         states.grab = true;
         transform.parent = attachPoint;
         transform.position = attachPoint.position;
+
+        transform.localRotation = Quaternion.Euler(0, 0, 0);
+
         rb.useGravity = false;
         rb.isKinematic = true;
         capCollider.isTrigger = true;
@@ -346,7 +355,7 @@ public class Enemy : MonoBehaviour
 
     private void StateStayThrown()
     {
-        if (grounded)
+        if (states.exitPD)
         {
             if (health <= 0)
             {
@@ -354,7 +363,7 @@ public class Enemy : MonoBehaviour
             }
             else
             {
-                ChangeState(state.MOVE);
+                StartCoroutine(getUp());
             }
         }
     }
@@ -407,13 +416,13 @@ public class Enemy : MonoBehaviour
         rb.angularVelocity = new Vector3(0, 0, 0);
         agent.speed = speed;
         agent.enabled = true;
-
-        anim.SetTrigger("GetUp");
     }
 
     private void StateExitGrabbed()
     {
         capCollider.isTrigger = false;
+        transform.localPosition = new Vector3(0, 0.5f, 0);
+        transform.localRotation = Quaternion.Euler(0, 0, 0);
     }
 
     private void StateExitDeath()
@@ -494,6 +503,11 @@ public class Enemy : MonoBehaviour
         checkingDist = false;
     }
     private IEnumerator spawn()
+    {
+        yield return new WaitForSeconds(3f);
+        ChangeState(state.MOVE);
+    }
+    private IEnumerator getUp()
     {
         yield return new WaitForSeconds(3f);
         ChangeState(state.MOVE);
