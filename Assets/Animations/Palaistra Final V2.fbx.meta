@@ -72,8 +72,368 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events: []
-      transformMask: []
-      maskType: 3
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Palaistra_Final_Hips_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Attach_Joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_LeftUpLeg_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_LeftUpLeg_joint/Palaistra_Final_LeftLeg_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_LeftUpLeg_joint/Palaistra_Final_LeftLeg_joint/Palaistra_Final_LeftFoot_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_LeftUpLeg_joint/Palaistra_Final_LeftLeg_joint/Palaistra_Final_LeftFoot_joint/Palaistra_Final_LeftToeBase_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_LeftUpLeg_joint/Palaistra_Final_LeftLeg_joint/Palaistra_Final_LeftFoot_joint/Palaistra_Final_LeftToeBase_joint/Palaistra_Final_LeftToe_End_joint
+        weight: 0
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_RightUpLeg_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_RightUpLeg_joint/Palaistra_Final_RightLeg_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_RightUpLeg_joint/Palaistra_Final_RightLeg_joint/Palaistra_Final_RightFoot_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_RightUpLeg_joint/Palaistra_Final_RightLeg_joint/Palaistra_Final_RightFoot_joint/Palaistra_Final_RightToeBase_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_RightUpLeg_joint/Palaistra_Final_RightLeg_joint/Palaistra_Final_RightFoot_joint/Palaistra_Final_RightToeBase_joint/Palaistra_Final_RightToe_End_joint
+        weight: 0
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandIndex1_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandIndex1_joint/Palaistra_Final_LeftHandIndex2_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandIndex1_joint/Palaistra_Final_LeftHandIndex2_joint/Palaistra_Final_LeftHandIndex3_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandIndex1_joint/Palaistra_Final_LeftHandIndex2_joint/Palaistra_Final_LeftHandIndex3_joint/Palaistra_Final_LeftHandIndex4_joint
+        weight: 0
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandMiddle1_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandMiddle1_joint/Palaistra_Final_LeftHandMiddle2_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandMiddle1_joint/Palaistra_Final_LeftHandMiddle2_joint/Palaistra_Final_LeftHandMiddle3_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandMiddle1_joint/Palaistra_Final_LeftHandMiddle2_joint/Palaistra_Final_LeftHandMiddle3_joint/Palaistra_Final_LeftHandMiddle4_joint
+        weight: 0
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandPinky1_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandPinky1_joint/Palaistra_Final_LeftHandPinky2_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandPinky1_joint/Palaistra_Final_LeftHandPinky2_joint/Palaistra_Final_LeftHandPinky3_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandPinky1_joint/Palaistra_Final_LeftHandPinky2_joint/Palaistra_Final_LeftHandPinky3_joint/Palaistra_Final_LeftHandPinky4_joint
+        weight: 0
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandRing1_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandRing1_joint/Palaistra_Final_LeftHandRing2_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandRing1_joint/Palaistra_Final_LeftHandRing2_joint/Palaistra_Final_LeftHandRing3_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandRing1_joint/Palaistra_Final_LeftHandRing2_joint/Palaistra_Final_LeftHandRing3_joint/Palaistra_Final_LeftHandRing4_joint
+        weight: 0
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandThumb1_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandThumb1_joint/Palaistra_Final_LeftHandThumb2_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandThumb1_joint/Palaistra_Final_LeftHandThumb2_joint/Palaistra_Final_LeftHandThumb3_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandThumb1_joint/Palaistra_Final_LeftHandThumb2_joint/Palaistra_Final_LeftHandThumb3_joint/Palaistra_Final_LeftHandThumb4_joint
+        weight: 0
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_Neck_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_Neck_joint/Palaistra_Final_Head_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_Neck_joint/Palaistra_Final_Head_joint/Palaistra_Final_HeadTop_End_joint
+        weight: 0
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandIndex1_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandIndex1_joint/Palaistra_Final_RightHandIndex2_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandIndex1_joint/Palaistra_Final_RightHandIndex2_joint/Palaistra_Final_RightHandIndex3_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandIndex1_joint/Palaistra_Final_RightHandIndex2_joint/Palaistra_Final_RightHandIndex3_joint/Palaistra_Final_RightHandIndex4_joint
+        weight: 0
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandMiddle1_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandMiddle1_joint/Palaistra_Final_RightHandMiddle2_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandMiddle1_joint/Palaistra_Final_RightHandMiddle2_joint/Palaistra_Final_RightHandMiddle3_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandMiddle1_joint/Palaistra_Final_RightHandMiddle2_joint/Palaistra_Final_RightHandMiddle3_joint/Palaistra_Final_RightHandMiddle4_joint
+        weight: 0
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandPinky1_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandPinky1_joint/Palaistra_Final_RightHandPinky2_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandPinky1_joint/Palaistra_Final_RightHandPinky2_joint/Palaistra_Final_RightHandPinky3_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandPinky1_joint/Palaistra_Final_RightHandPinky2_joint/Palaistra_Final_RightHandPinky3_joint/Palaistra_Final_RightHandPinky4_joint
+        weight: 0
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandRing1_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandRing1_joint/Palaistra_Final_RightHandRing2_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandRing1_joint/Palaistra_Final_RightHandRing2_joint/Palaistra_Final_RightHandRing3_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandRing1_joint/Palaistra_Final_RightHandRing2_joint/Palaistra_Final_RightHandRing3_joint/Palaistra_Final_RightHandRing4_joint
+        weight: 0
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandThumb1_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandThumb1_joint/Palaistra_Final_RightHandThumb2_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandThumb1_joint/Palaistra_Final_RightHandThumb2_joint/Palaistra_Final_RightHandThumb3_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandThumb1_joint/Palaistra_Final_RightHandThumb2_joint/Palaistra_Final_RightHandThumb3_joint/Palaistra_Final_RightHandThumb4_joint
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Attach_grp
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Attach_grp/Atttach_ctrl
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP/Palaistra_Final_Spine_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP/Palaistra_Final_Spine_CTRL/Palaistra_Final_Spine1_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP/Palaistra_Final_Spine_CTRL/Palaistra_Final_Spine1_GRP/Palaistra_Final_Spine1_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP/Palaistra_Final_Spine_CTRL/Palaistra_Final_Spine1_GRP/Palaistra_Final_Spine1_CTRL/Palaistra_Final_Spine2_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP/Palaistra_Final_Spine_CTRL/Palaistra_Final_Spine1_GRP/Palaistra_Final_Spine1_CTRL/Palaistra_Final_Spine2_GRP/Palaistra_Final_Spine2_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP/Palaistra_Final_Spine_CTRL/Palaistra_Final_Spine1_GRP/Palaistra_Final_Spine1_CTRL/Palaistra_Final_Spine2_GRP/Palaistra_Final_Spine2_CTRL/Palaistra_Final_LeftShoulder_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP/Palaistra_Final_Spine_CTRL/Palaistra_Final_Spine1_GRP/Palaistra_Final_Spine1_CTRL/Palaistra_Final_Spine2_GRP/Palaistra_Final_Spine2_CTRL/Palaistra_Final_LeftShoulder_GRP/Palaistra_Final_LeftShoulder_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP/Palaistra_Final_Spine_CTRL/Palaistra_Final_Spine1_GRP/Palaistra_Final_Spine1_CTRL/Palaistra_Final_Spine2_GRP/Palaistra_Final_Spine2_CTRL/Palaistra_Final_Neck_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP/Palaistra_Final_Spine_CTRL/Palaistra_Final_Spine1_GRP/Palaistra_Final_Spine1_CTRL/Palaistra_Final_Spine2_GRP/Palaistra_Final_Spine2_CTRL/Palaistra_Final_Neck_GRP/Palaistra_Final_Neck_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP/Palaistra_Final_Spine_CTRL/Palaistra_Final_Spine1_GRP/Palaistra_Final_Spine1_CTRL/Palaistra_Final_Spine2_GRP/Palaistra_Final_Spine2_CTRL/Palaistra_Final_Neck_GRP/Palaistra_Final_Neck_CTRL/Palaistra_Final_Head_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP/Palaistra_Final_Spine_CTRL/Palaistra_Final_Spine1_GRP/Palaistra_Final_Spine1_CTRL/Palaistra_Final_Spine2_GRP/Palaistra_Final_Spine2_CTRL/Palaistra_Final_Neck_GRP/Palaistra_Final_Neck_CTRL/Palaistra_Final_Head_GRP/Palaistra_Final_Head_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP/Palaistra_Final_Spine_CTRL/Palaistra_Final_Spine1_GRP/Palaistra_Final_Spine1_CTRL/Palaistra_Final_Spine2_GRP/Palaistra_Final_Spine2_CTRL/Palaistra_Final_RightShoulder_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP/Palaistra_Final_Spine_CTRL/Palaistra_Final_Spine1_GRP/Palaistra_Final_Spine1_CTRL/Palaistra_Final_Spine2_GRP/Palaistra_Final_Spine2_CTRL/Palaistra_Final_RightShoulder_GRP/Palaistra_Final_RightShoulder_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_L_Foot_grp
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_L_Foot_grp/Palaistra_Final_L_Foot_ctrl
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_L_Foot_grp/Palaistra_Final_L_Foot_ctrl/Palaistra_Final_L_Foot_ik
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftForeArm_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftForeArm_GRP/Palaistra_Final_LeftForeArm_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_L_Hand_ik
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandIndex1_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandIndex1_GRP/Palaistra_Final_LeftHandIndex1_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandIndex1_GRP/Palaistra_Final_LeftHandIndex1_CTRL/Palaistra_Final_LeftHandIndex2_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandIndex1_GRP/Palaistra_Final_LeftHandIndex1_CTRL/Palaistra_Final_LeftHandIndex2_GRP/Palaistra_Final_LeftHandIndex2_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandIndex1_GRP/Palaistra_Final_LeftHandIndex1_CTRL/Palaistra_Final_LeftHandIndex2_GRP/Palaistra_Final_LeftHandIndex2_CTRL/Palaistra_Final_LeftHandIndex3_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandIndex1_GRP/Palaistra_Final_LeftHandIndex1_CTRL/Palaistra_Final_LeftHandIndex2_GRP/Palaistra_Final_LeftHandIndex2_CTRL/Palaistra_Final_LeftHandIndex3_GRP/Palaistra_Final_LeftHandIndex3_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandMiddle1_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandMiddle1_GRP/Palaistra_Final_LeftHandMiddle1_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandMiddle1_GRP/Palaistra_Final_LeftHandMiddle1_CTRL/Palaistra_Final_LeftHandMiddle2_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandMiddle1_GRP/Palaistra_Final_LeftHandMiddle1_CTRL/Palaistra_Final_LeftHandMiddle2_GRP/Palaistra_Final_LeftHandMiddle2_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandMiddle1_GRP/Palaistra_Final_LeftHandMiddle1_CTRL/Palaistra_Final_LeftHandMiddle2_GRP/Palaistra_Final_LeftHandMiddle2_CTRL/Palaistra_Final_LeftHandMiddle3_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandMiddle1_GRP/Palaistra_Final_LeftHandMiddle1_CTRL/Palaistra_Final_LeftHandMiddle2_GRP/Palaistra_Final_LeftHandMiddle2_CTRL/Palaistra_Final_LeftHandMiddle3_GRP/Palaistra_Final_LeftHandMiddle3_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandPinky1_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandPinky1_GRP/Palaistra_Final_LeftHandPinky1_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandPinky1_GRP/Palaistra_Final_LeftHandPinky1_CTRL/Palaistra_Final_LeftHandPinky2_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandPinky1_GRP/Palaistra_Final_LeftHandPinky1_CTRL/Palaistra_Final_LeftHandPinky2_GRP/Palaistra_Final_LeftHandPinky2_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandPinky1_GRP/Palaistra_Final_LeftHandPinky1_CTRL/Palaistra_Final_LeftHandPinky2_GRP/Palaistra_Final_LeftHandPinky2_CTRL/Palaistra_Final_LeftHandPinky3_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandPinky1_GRP/Palaistra_Final_LeftHandPinky1_CTRL/Palaistra_Final_LeftHandPinky2_GRP/Palaistra_Final_LeftHandPinky2_CTRL/Palaistra_Final_LeftHandPinky3_GRP/Palaistra_Final_LeftHandPinky3_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandRing1_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandRing1_GRP/Palaistra_Final_LeftHandRing1_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandRing1_GRP/Palaistra_Final_LeftHandRing1_CTRL/Palaistra_Final_LeftHandRing2_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandRing1_GRP/Palaistra_Final_LeftHandRing1_CTRL/Palaistra_Final_LeftHandRing2_GRP/Palaistra_Final_LeftHandRing2_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandRing1_GRP/Palaistra_Final_LeftHandRing1_CTRL/Palaistra_Final_LeftHandRing2_GRP/Palaistra_Final_LeftHandRing2_CTRL/Palaistra_Final_LeftHandRing3_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandRing1_GRP/Palaistra_Final_LeftHandRing1_CTRL/Palaistra_Final_LeftHandRing2_GRP/Palaistra_Final_LeftHandRing2_CTRL/Palaistra_Final_LeftHandRing3_GRP/Palaistra_Final_LeftHandRing3_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandThumb1_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandThumb1_GRP/Palaistra_Final_LeftHandThumb1_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandThumb1_GRP/Palaistra_Final_LeftHandThumb1_CTRL/Palaistra_Final_LeftHandThumb2_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandThumb1_GRP/Palaistra_Final_LeftHandThumb1_CTRL/Palaistra_Final_LeftHandThumb2_GRP/Palaistra_Final_LeftHandThumb2_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandThumb1_GRP/Palaistra_Final_LeftHandThumb1_CTRL/Palaistra_Final_LeftHandThumb2_GRP/Palaistra_Final_LeftHandThumb2_CTRL/Palaistra_Final_LeftHandThumb3_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandThumb1_GRP/Palaistra_Final_LeftHandThumb1_CTRL/Palaistra_Final_LeftHandThumb2_GRP/Palaistra_Final_LeftHandThumb2_CTRL/Palaistra_Final_LeftHandThumb3_GRP/Palaistra_Final_LeftHandThumb3_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftLeg_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftLeg_GRP/Palaistra_Final_LeftLeg_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_R_Foot_grp
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_R_Foot_grp/Palaistra_Final_R_Foot_ctrl
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_R_Foot_grp/Palaistra_Final_R_Foot_ctrl/Palaistra_Final_R_Foot_ik
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightForeArm_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightForeArm_GRP/Palaistra_Final_RightForeArm_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_R_Hand_ik
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandIndex1_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandIndex1_GRP/Palaistra_Final_RightHandIndex1_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandIndex1_GRP/Palaistra_Final_RightHandIndex1_CTRL/Palaistra_Final_RightHandIndex2_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandIndex1_GRP/Palaistra_Final_RightHandIndex1_CTRL/Palaistra_Final_RightHandIndex2_GRP/Palaistra_Final_RightHandIndex2_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandIndex1_GRP/Palaistra_Final_RightHandIndex1_CTRL/Palaistra_Final_RightHandIndex2_GRP/Palaistra_Final_RightHandIndex2_CTRL/Palaistra_Final_RightHandIndex3_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandIndex1_GRP/Palaistra_Final_RightHandIndex1_CTRL/Palaistra_Final_RightHandIndex2_GRP/Palaistra_Final_RightHandIndex2_CTRL/Palaistra_Final_RightHandIndex3_GRP/Palaistra_Final_RightHandIndex3_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandMiddle1_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandMiddle1_GRP/Palaistra_Final_RightHandMiddle1_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandMiddle1_GRP/Palaistra_Final_RightHandMiddle1_CTRL/Palaistra_Final_RightHandMiddle2_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandMiddle1_GRP/Palaistra_Final_RightHandMiddle1_CTRL/Palaistra_Final_RightHandMiddle2_GRP/Palaistra_Final_RightHandMiddle2_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandMiddle1_GRP/Palaistra_Final_RightHandMiddle1_CTRL/Palaistra_Final_RightHandMiddle2_GRP/Palaistra_Final_RightHandMiddle2_CTRL/Palaistra_Final_RightHandMiddle3_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandMiddle1_GRP/Palaistra_Final_RightHandMiddle1_CTRL/Palaistra_Final_RightHandMiddle2_GRP/Palaistra_Final_RightHandMiddle2_CTRL/Palaistra_Final_RightHandMiddle3_GRP/Palaistra_Final_RightHandMiddle3_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandPinky1_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandPinky1_GRP/Palaistra_Final_RightHandPinky1_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandPinky1_GRP/Palaistra_Final_RightHandPinky1_CTRL/Palaistra_Final_RightHandPinky2_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandPinky1_GRP/Palaistra_Final_RightHandPinky1_CTRL/Palaistra_Final_RightHandPinky2_GRP/Palaistra_Final_RightHandPinky2_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandPinky1_GRP/Palaistra_Final_RightHandPinky1_CTRL/Palaistra_Final_RightHandPinky2_GRP/Palaistra_Final_RightHandPinky2_CTRL/Palaistra_Final_RightHandPinky3_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandPinky1_GRP/Palaistra_Final_RightHandPinky1_CTRL/Palaistra_Final_RightHandPinky2_GRP/Palaistra_Final_RightHandPinky2_CTRL/Palaistra_Final_RightHandPinky3_GRP/Palaistra_Final_RightHandPinky3_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandRing1_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandRing1_GRP/Palaistra_Final_RightHandRing1_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandRing1_GRP/Palaistra_Final_RightHandRing1_CTRL/Palaistra_Final_RightHandRing2_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandRing1_GRP/Palaistra_Final_RightHandRing1_CTRL/Palaistra_Final_RightHandRing2_GRP/Palaistra_Final_RightHandRing2_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandRing1_GRP/Palaistra_Final_RightHandRing1_CTRL/Palaistra_Final_RightHandRing2_GRP/Palaistra_Final_RightHandRing2_CTRL/Palaistra_Final_RightHandRing3_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandRing1_GRP/Palaistra_Final_RightHandRing1_CTRL/Palaistra_Final_RightHandRing2_GRP/Palaistra_Final_RightHandRing2_CTRL/Palaistra_Final_RightHandRing3_GRP/Palaistra_Final_RightHandRing3_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandThumb1_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandThumb1_GRP/Palaistra_Final_RightHandThumb1_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandThumb1_GRP/Palaistra_Final_RightHandThumb1_CTRL/Palaistra_Final_RightHandThumb2_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandThumb1_GRP/Palaistra_Final_RightHandThumb1_CTRL/Palaistra_Final_RightHandThumb2_GRP/Palaistra_Final_RightHandThumb2_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandThumb1_GRP/Palaistra_Final_RightHandThumb1_CTRL/Palaistra_Final_RightHandThumb2_GRP/Palaistra_Final_RightHandThumb2_CTRL/Palaistra_Final_RightHandThumb3_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandThumb1_GRP/Palaistra_Final_RightHandThumb1_CTRL/Palaistra_Final_RightHandThumb2_GRP/Palaistra_Final_RightHandThumb2_CTRL/Palaistra_Final_RightHandThumb3_GRP/Palaistra_Final_RightHandThumb3_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightLeg_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightLeg_GRP/Palaistra_Final_RightLeg_CTRL
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh/Palaistra_Final_Eyes
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh/Palaistra_Final_Lashes
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh/Palaistra_Final_Mesh
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh/Palaistra_Final_Palaistra_Clothing
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh/Palaistra_Final_Palaistra_Clothing/Palaistra_Final_Arms_and_Legs
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh/Palaistra_Final_Palaistra_Clothing/Palaistra_Final_Arms_and_Legs/Palaistra_Final_Olive_Branch1
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh/Palaistra_Final_Palaistra_Clothing/Palaistra_Final_Arms_and_Legs/Palaistra_Final_Olive_Branch2
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh/Palaistra_Final_Palaistra_Clothing/Palaistra_Final_Arms_and_Legs/Palaistra_Final_Olive_Branch3
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh/Palaistra_Final_Palaistra_Clothing/Palaistra_Final_Bottom_Skirt
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh/Palaistra_Final_Palaistra_Clothing/Palaistra_Final_Bra_thing
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh/Palaistra_Final_Palaistra_Clothing/Palaistra_Final_Hair_low
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh/Palaistra_Final_Palaistra_Clothing/Palaistra_Final_Olive_crown
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh/Palaistra_Final_Palaistra_Clothing/Palaistra_Final_Top_Skirt
+        weight: 0
+      maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0.96
     - serializedVersion: 16
@@ -159,8 +519,368 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events: []
-      transformMask: []
-      maskType: 3
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Palaistra_Final_Hips_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Attach_Joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_LeftUpLeg_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_LeftUpLeg_joint/Palaistra_Final_LeftLeg_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_LeftUpLeg_joint/Palaistra_Final_LeftLeg_joint/Palaistra_Final_LeftFoot_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_LeftUpLeg_joint/Palaistra_Final_LeftLeg_joint/Palaistra_Final_LeftFoot_joint/Palaistra_Final_LeftToeBase_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_LeftUpLeg_joint/Palaistra_Final_LeftLeg_joint/Palaistra_Final_LeftFoot_joint/Palaistra_Final_LeftToeBase_joint/Palaistra_Final_LeftToe_End_joint
+        weight: 0
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_RightUpLeg_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_RightUpLeg_joint/Palaistra_Final_RightLeg_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_RightUpLeg_joint/Palaistra_Final_RightLeg_joint/Palaistra_Final_RightFoot_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_RightUpLeg_joint/Palaistra_Final_RightLeg_joint/Palaistra_Final_RightFoot_joint/Palaistra_Final_RightToeBase_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_RightUpLeg_joint/Palaistra_Final_RightLeg_joint/Palaistra_Final_RightFoot_joint/Palaistra_Final_RightToeBase_joint/Palaistra_Final_RightToe_End_joint
+        weight: 0
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandIndex1_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandIndex1_joint/Palaistra_Final_LeftHandIndex2_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandIndex1_joint/Palaistra_Final_LeftHandIndex2_joint/Palaistra_Final_LeftHandIndex3_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandIndex1_joint/Palaistra_Final_LeftHandIndex2_joint/Palaistra_Final_LeftHandIndex3_joint/Palaistra_Final_LeftHandIndex4_joint
+        weight: 0
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandMiddle1_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandMiddle1_joint/Palaistra_Final_LeftHandMiddle2_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandMiddle1_joint/Palaistra_Final_LeftHandMiddle2_joint/Palaistra_Final_LeftHandMiddle3_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandMiddle1_joint/Palaistra_Final_LeftHandMiddle2_joint/Palaistra_Final_LeftHandMiddle3_joint/Palaistra_Final_LeftHandMiddle4_joint
+        weight: 0
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandPinky1_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandPinky1_joint/Palaistra_Final_LeftHandPinky2_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandPinky1_joint/Palaistra_Final_LeftHandPinky2_joint/Palaistra_Final_LeftHandPinky3_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandPinky1_joint/Palaistra_Final_LeftHandPinky2_joint/Palaistra_Final_LeftHandPinky3_joint/Palaistra_Final_LeftHandPinky4_joint
+        weight: 0
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandRing1_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandRing1_joint/Palaistra_Final_LeftHandRing2_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandRing1_joint/Palaistra_Final_LeftHandRing2_joint/Palaistra_Final_LeftHandRing3_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandRing1_joint/Palaistra_Final_LeftHandRing2_joint/Palaistra_Final_LeftHandRing3_joint/Palaistra_Final_LeftHandRing4_joint
+        weight: 0
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandThumb1_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandThumb1_joint/Palaistra_Final_LeftHandThumb2_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandThumb1_joint/Palaistra_Final_LeftHandThumb2_joint/Palaistra_Final_LeftHandThumb3_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandThumb1_joint/Palaistra_Final_LeftHandThumb2_joint/Palaistra_Final_LeftHandThumb3_joint/Palaistra_Final_LeftHandThumb4_joint
+        weight: 0
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_Neck_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_Neck_joint/Palaistra_Final_Head_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_Neck_joint/Palaistra_Final_Head_joint/Palaistra_Final_HeadTop_End_joint
+        weight: 0
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandIndex1_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandIndex1_joint/Palaistra_Final_RightHandIndex2_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandIndex1_joint/Palaistra_Final_RightHandIndex2_joint/Palaistra_Final_RightHandIndex3_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandIndex1_joint/Palaistra_Final_RightHandIndex2_joint/Palaistra_Final_RightHandIndex3_joint/Palaistra_Final_RightHandIndex4_joint
+        weight: 0
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandMiddle1_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandMiddle1_joint/Palaistra_Final_RightHandMiddle2_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandMiddle1_joint/Palaistra_Final_RightHandMiddle2_joint/Palaistra_Final_RightHandMiddle3_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandMiddle1_joint/Palaistra_Final_RightHandMiddle2_joint/Palaistra_Final_RightHandMiddle3_joint/Palaistra_Final_RightHandMiddle4_joint
+        weight: 0
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandPinky1_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandPinky1_joint/Palaistra_Final_RightHandPinky2_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandPinky1_joint/Palaistra_Final_RightHandPinky2_joint/Palaistra_Final_RightHandPinky3_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandPinky1_joint/Palaistra_Final_RightHandPinky2_joint/Palaistra_Final_RightHandPinky3_joint/Palaistra_Final_RightHandPinky4_joint
+        weight: 0
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandRing1_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandRing1_joint/Palaistra_Final_RightHandRing2_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandRing1_joint/Palaistra_Final_RightHandRing2_joint/Palaistra_Final_RightHandRing3_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandRing1_joint/Palaistra_Final_RightHandRing2_joint/Palaistra_Final_RightHandRing3_joint/Palaistra_Final_RightHandRing4_joint
+        weight: 0
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandThumb1_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandThumb1_joint/Palaistra_Final_RightHandThumb2_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandThumb1_joint/Palaistra_Final_RightHandThumb2_joint/Palaistra_Final_RightHandThumb3_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandThumb1_joint/Palaistra_Final_RightHandThumb2_joint/Palaistra_Final_RightHandThumb3_joint/Palaistra_Final_RightHandThumb4_joint
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Attach_grp
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Attach_grp/Atttach_ctrl
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP/Palaistra_Final_Spine_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP/Palaistra_Final_Spine_CTRL/Palaistra_Final_Spine1_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP/Palaistra_Final_Spine_CTRL/Palaistra_Final_Spine1_GRP/Palaistra_Final_Spine1_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP/Palaistra_Final_Spine_CTRL/Palaistra_Final_Spine1_GRP/Palaistra_Final_Spine1_CTRL/Palaistra_Final_Spine2_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP/Palaistra_Final_Spine_CTRL/Palaistra_Final_Spine1_GRP/Palaistra_Final_Spine1_CTRL/Palaistra_Final_Spine2_GRP/Palaistra_Final_Spine2_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP/Palaistra_Final_Spine_CTRL/Palaistra_Final_Spine1_GRP/Palaistra_Final_Spine1_CTRL/Palaistra_Final_Spine2_GRP/Palaistra_Final_Spine2_CTRL/Palaistra_Final_LeftShoulder_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP/Palaistra_Final_Spine_CTRL/Palaistra_Final_Spine1_GRP/Palaistra_Final_Spine1_CTRL/Palaistra_Final_Spine2_GRP/Palaistra_Final_Spine2_CTRL/Palaistra_Final_LeftShoulder_GRP/Palaistra_Final_LeftShoulder_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP/Palaistra_Final_Spine_CTRL/Palaistra_Final_Spine1_GRP/Palaistra_Final_Spine1_CTRL/Palaistra_Final_Spine2_GRP/Palaistra_Final_Spine2_CTRL/Palaistra_Final_Neck_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP/Palaistra_Final_Spine_CTRL/Palaistra_Final_Spine1_GRP/Palaistra_Final_Spine1_CTRL/Palaistra_Final_Spine2_GRP/Palaistra_Final_Spine2_CTRL/Palaistra_Final_Neck_GRP/Palaistra_Final_Neck_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP/Palaistra_Final_Spine_CTRL/Palaistra_Final_Spine1_GRP/Palaistra_Final_Spine1_CTRL/Palaistra_Final_Spine2_GRP/Palaistra_Final_Spine2_CTRL/Palaistra_Final_Neck_GRP/Palaistra_Final_Neck_CTRL/Palaistra_Final_Head_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP/Palaistra_Final_Spine_CTRL/Palaistra_Final_Spine1_GRP/Palaistra_Final_Spine1_CTRL/Palaistra_Final_Spine2_GRP/Palaistra_Final_Spine2_CTRL/Palaistra_Final_Neck_GRP/Palaistra_Final_Neck_CTRL/Palaistra_Final_Head_GRP/Palaistra_Final_Head_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP/Palaistra_Final_Spine_CTRL/Palaistra_Final_Spine1_GRP/Palaistra_Final_Spine1_CTRL/Palaistra_Final_Spine2_GRP/Palaistra_Final_Spine2_CTRL/Palaistra_Final_RightShoulder_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP/Palaistra_Final_Spine_CTRL/Palaistra_Final_Spine1_GRP/Palaistra_Final_Spine1_CTRL/Palaistra_Final_Spine2_GRP/Palaistra_Final_Spine2_CTRL/Palaistra_Final_RightShoulder_GRP/Palaistra_Final_RightShoulder_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_L_Foot_grp
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_L_Foot_grp/Palaistra_Final_L_Foot_ctrl
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_L_Foot_grp/Palaistra_Final_L_Foot_ctrl/Palaistra_Final_L_Foot_ik
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftForeArm_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftForeArm_GRP/Palaistra_Final_LeftForeArm_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_L_Hand_ik
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandIndex1_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandIndex1_GRP/Palaistra_Final_LeftHandIndex1_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandIndex1_GRP/Palaistra_Final_LeftHandIndex1_CTRL/Palaistra_Final_LeftHandIndex2_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandIndex1_GRP/Palaistra_Final_LeftHandIndex1_CTRL/Palaistra_Final_LeftHandIndex2_GRP/Palaistra_Final_LeftHandIndex2_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandIndex1_GRP/Palaistra_Final_LeftHandIndex1_CTRL/Palaistra_Final_LeftHandIndex2_GRP/Palaistra_Final_LeftHandIndex2_CTRL/Palaistra_Final_LeftHandIndex3_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandIndex1_GRP/Palaistra_Final_LeftHandIndex1_CTRL/Palaistra_Final_LeftHandIndex2_GRP/Palaistra_Final_LeftHandIndex2_CTRL/Palaistra_Final_LeftHandIndex3_GRP/Palaistra_Final_LeftHandIndex3_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandMiddle1_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandMiddle1_GRP/Palaistra_Final_LeftHandMiddle1_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandMiddle1_GRP/Palaistra_Final_LeftHandMiddle1_CTRL/Palaistra_Final_LeftHandMiddle2_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandMiddle1_GRP/Palaistra_Final_LeftHandMiddle1_CTRL/Palaistra_Final_LeftHandMiddle2_GRP/Palaistra_Final_LeftHandMiddle2_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandMiddle1_GRP/Palaistra_Final_LeftHandMiddle1_CTRL/Palaistra_Final_LeftHandMiddle2_GRP/Palaistra_Final_LeftHandMiddle2_CTRL/Palaistra_Final_LeftHandMiddle3_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandMiddle1_GRP/Palaistra_Final_LeftHandMiddle1_CTRL/Palaistra_Final_LeftHandMiddle2_GRP/Palaistra_Final_LeftHandMiddle2_CTRL/Palaistra_Final_LeftHandMiddle3_GRP/Palaistra_Final_LeftHandMiddle3_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandPinky1_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandPinky1_GRP/Palaistra_Final_LeftHandPinky1_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandPinky1_GRP/Palaistra_Final_LeftHandPinky1_CTRL/Palaistra_Final_LeftHandPinky2_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandPinky1_GRP/Palaistra_Final_LeftHandPinky1_CTRL/Palaistra_Final_LeftHandPinky2_GRP/Palaistra_Final_LeftHandPinky2_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandPinky1_GRP/Palaistra_Final_LeftHandPinky1_CTRL/Palaistra_Final_LeftHandPinky2_GRP/Palaistra_Final_LeftHandPinky2_CTRL/Palaistra_Final_LeftHandPinky3_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandPinky1_GRP/Palaistra_Final_LeftHandPinky1_CTRL/Palaistra_Final_LeftHandPinky2_GRP/Palaistra_Final_LeftHandPinky2_CTRL/Palaistra_Final_LeftHandPinky3_GRP/Palaistra_Final_LeftHandPinky3_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandRing1_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandRing1_GRP/Palaistra_Final_LeftHandRing1_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandRing1_GRP/Palaistra_Final_LeftHandRing1_CTRL/Palaistra_Final_LeftHandRing2_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandRing1_GRP/Palaistra_Final_LeftHandRing1_CTRL/Palaistra_Final_LeftHandRing2_GRP/Palaistra_Final_LeftHandRing2_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandRing1_GRP/Palaistra_Final_LeftHandRing1_CTRL/Palaistra_Final_LeftHandRing2_GRP/Palaistra_Final_LeftHandRing2_CTRL/Palaistra_Final_LeftHandRing3_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandRing1_GRP/Palaistra_Final_LeftHandRing1_CTRL/Palaistra_Final_LeftHandRing2_GRP/Palaistra_Final_LeftHandRing2_CTRL/Palaistra_Final_LeftHandRing3_GRP/Palaistra_Final_LeftHandRing3_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandThumb1_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandThumb1_GRP/Palaistra_Final_LeftHandThumb1_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandThumb1_GRP/Palaistra_Final_LeftHandThumb1_CTRL/Palaistra_Final_LeftHandThumb2_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandThumb1_GRP/Palaistra_Final_LeftHandThumb1_CTRL/Palaistra_Final_LeftHandThumb2_GRP/Palaistra_Final_LeftHandThumb2_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandThumb1_GRP/Palaistra_Final_LeftHandThumb1_CTRL/Palaistra_Final_LeftHandThumb2_GRP/Palaistra_Final_LeftHandThumb2_CTRL/Palaistra_Final_LeftHandThumb3_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandThumb1_GRP/Palaistra_Final_LeftHandThumb1_CTRL/Palaistra_Final_LeftHandThumb2_GRP/Palaistra_Final_LeftHandThumb2_CTRL/Palaistra_Final_LeftHandThumb3_GRP/Palaistra_Final_LeftHandThumb3_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftLeg_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftLeg_GRP/Palaistra_Final_LeftLeg_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_R_Foot_grp
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_R_Foot_grp/Palaistra_Final_R_Foot_ctrl
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_R_Foot_grp/Palaistra_Final_R_Foot_ctrl/Palaistra_Final_R_Foot_ik
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightForeArm_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightForeArm_GRP/Palaistra_Final_RightForeArm_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_R_Hand_ik
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandIndex1_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandIndex1_GRP/Palaistra_Final_RightHandIndex1_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandIndex1_GRP/Palaistra_Final_RightHandIndex1_CTRL/Palaistra_Final_RightHandIndex2_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandIndex1_GRP/Palaistra_Final_RightHandIndex1_CTRL/Palaistra_Final_RightHandIndex2_GRP/Palaistra_Final_RightHandIndex2_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandIndex1_GRP/Palaistra_Final_RightHandIndex1_CTRL/Palaistra_Final_RightHandIndex2_GRP/Palaistra_Final_RightHandIndex2_CTRL/Palaistra_Final_RightHandIndex3_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandIndex1_GRP/Palaistra_Final_RightHandIndex1_CTRL/Palaistra_Final_RightHandIndex2_GRP/Palaistra_Final_RightHandIndex2_CTRL/Palaistra_Final_RightHandIndex3_GRP/Palaistra_Final_RightHandIndex3_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandMiddle1_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandMiddle1_GRP/Palaistra_Final_RightHandMiddle1_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandMiddle1_GRP/Palaistra_Final_RightHandMiddle1_CTRL/Palaistra_Final_RightHandMiddle2_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandMiddle1_GRP/Palaistra_Final_RightHandMiddle1_CTRL/Palaistra_Final_RightHandMiddle2_GRP/Palaistra_Final_RightHandMiddle2_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandMiddle1_GRP/Palaistra_Final_RightHandMiddle1_CTRL/Palaistra_Final_RightHandMiddle2_GRP/Palaistra_Final_RightHandMiddle2_CTRL/Palaistra_Final_RightHandMiddle3_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandMiddle1_GRP/Palaistra_Final_RightHandMiddle1_CTRL/Palaistra_Final_RightHandMiddle2_GRP/Palaistra_Final_RightHandMiddle2_CTRL/Palaistra_Final_RightHandMiddle3_GRP/Palaistra_Final_RightHandMiddle3_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandPinky1_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandPinky1_GRP/Palaistra_Final_RightHandPinky1_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandPinky1_GRP/Palaistra_Final_RightHandPinky1_CTRL/Palaistra_Final_RightHandPinky2_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandPinky1_GRP/Palaistra_Final_RightHandPinky1_CTRL/Palaistra_Final_RightHandPinky2_GRP/Palaistra_Final_RightHandPinky2_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandPinky1_GRP/Palaistra_Final_RightHandPinky1_CTRL/Palaistra_Final_RightHandPinky2_GRP/Palaistra_Final_RightHandPinky2_CTRL/Palaistra_Final_RightHandPinky3_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandPinky1_GRP/Palaistra_Final_RightHandPinky1_CTRL/Palaistra_Final_RightHandPinky2_GRP/Palaistra_Final_RightHandPinky2_CTRL/Palaistra_Final_RightHandPinky3_GRP/Palaistra_Final_RightHandPinky3_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandRing1_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandRing1_GRP/Palaistra_Final_RightHandRing1_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandRing1_GRP/Palaistra_Final_RightHandRing1_CTRL/Palaistra_Final_RightHandRing2_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandRing1_GRP/Palaistra_Final_RightHandRing1_CTRL/Palaistra_Final_RightHandRing2_GRP/Palaistra_Final_RightHandRing2_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandRing1_GRP/Palaistra_Final_RightHandRing1_CTRL/Palaistra_Final_RightHandRing2_GRP/Palaistra_Final_RightHandRing2_CTRL/Palaistra_Final_RightHandRing3_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandRing1_GRP/Palaistra_Final_RightHandRing1_CTRL/Palaistra_Final_RightHandRing2_GRP/Palaistra_Final_RightHandRing2_CTRL/Palaistra_Final_RightHandRing3_GRP/Palaistra_Final_RightHandRing3_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandThumb1_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandThumb1_GRP/Palaistra_Final_RightHandThumb1_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandThumb1_GRP/Palaistra_Final_RightHandThumb1_CTRL/Palaistra_Final_RightHandThumb2_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandThumb1_GRP/Palaistra_Final_RightHandThumb1_CTRL/Palaistra_Final_RightHandThumb2_GRP/Palaistra_Final_RightHandThumb2_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandThumb1_GRP/Palaistra_Final_RightHandThumb1_CTRL/Palaistra_Final_RightHandThumb2_GRP/Palaistra_Final_RightHandThumb2_CTRL/Palaistra_Final_RightHandThumb3_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandThumb1_GRP/Palaistra_Final_RightHandThumb1_CTRL/Palaistra_Final_RightHandThumb2_GRP/Palaistra_Final_RightHandThumb2_CTRL/Palaistra_Final_RightHandThumb3_GRP/Palaistra_Final_RightHandThumb3_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightLeg_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightLeg_GRP/Palaistra_Final_RightLeg_CTRL
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh/Palaistra_Final_Eyes
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh/Palaistra_Final_Lashes
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh/Palaistra_Final_Mesh
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh/Palaistra_Final_Palaistra_Clothing
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh/Palaistra_Final_Palaistra_Clothing/Palaistra_Final_Arms_and_Legs
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh/Palaistra_Final_Palaistra_Clothing/Palaistra_Final_Arms_and_Legs/Palaistra_Final_Olive_Branch1
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh/Palaistra_Final_Palaistra_Clothing/Palaistra_Final_Arms_and_Legs/Palaistra_Final_Olive_Branch2
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh/Palaistra_Final_Palaistra_Clothing/Palaistra_Final_Arms_and_Legs/Palaistra_Final_Olive_Branch3
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh/Palaistra_Final_Palaistra_Clothing/Palaistra_Final_Bottom_Skirt
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh/Palaistra_Final_Palaistra_Clothing/Palaistra_Final_Bra_thing
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh/Palaistra_Final_Palaistra_Clothing/Palaistra_Final_Hair_low
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh/Palaistra_Final_Palaistra_Clothing/Palaistra_Final_Olive_crown
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh/Palaistra_Final_Palaistra_Clothing/Palaistra_Final_Top_Skirt
+        weight: 0
+      maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0.96
     - serializedVersion: 16
@@ -188,8 +908,368 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events: []
-      transformMask: []
-      maskType: 3
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Palaistra_Final_Hips_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Attach_Joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_LeftUpLeg_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_LeftUpLeg_joint/Palaistra_Final_LeftLeg_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_LeftUpLeg_joint/Palaistra_Final_LeftLeg_joint/Palaistra_Final_LeftFoot_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_LeftUpLeg_joint/Palaistra_Final_LeftLeg_joint/Palaistra_Final_LeftFoot_joint/Palaistra_Final_LeftToeBase_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_LeftUpLeg_joint/Palaistra_Final_LeftLeg_joint/Palaistra_Final_LeftFoot_joint/Palaistra_Final_LeftToeBase_joint/Palaistra_Final_LeftToe_End_joint
+        weight: 0
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_RightUpLeg_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_RightUpLeg_joint/Palaistra_Final_RightLeg_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_RightUpLeg_joint/Palaistra_Final_RightLeg_joint/Palaistra_Final_RightFoot_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_RightUpLeg_joint/Palaistra_Final_RightLeg_joint/Palaistra_Final_RightFoot_joint/Palaistra_Final_RightToeBase_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_RightUpLeg_joint/Palaistra_Final_RightLeg_joint/Palaistra_Final_RightFoot_joint/Palaistra_Final_RightToeBase_joint/Palaistra_Final_RightToe_End_joint
+        weight: 0
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandIndex1_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandIndex1_joint/Palaistra_Final_LeftHandIndex2_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandIndex1_joint/Palaistra_Final_LeftHandIndex2_joint/Palaistra_Final_LeftHandIndex3_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandIndex1_joint/Palaistra_Final_LeftHandIndex2_joint/Palaistra_Final_LeftHandIndex3_joint/Palaistra_Final_LeftHandIndex4_joint
+        weight: 0
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandMiddle1_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandMiddle1_joint/Palaistra_Final_LeftHandMiddle2_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandMiddle1_joint/Palaistra_Final_LeftHandMiddle2_joint/Palaistra_Final_LeftHandMiddle3_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandMiddle1_joint/Palaistra_Final_LeftHandMiddle2_joint/Palaistra_Final_LeftHandMiddle3_joint/Palaistra_Final_LeftHandMiddle4_joint
+        weight: 0
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandPinky1_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandPinky1_joint/Palaistra_Final_LeftHandPinky2_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandPinky1_joint/Palaistra_Final_LeftHandPinky2_joint/Palaistra_Final_LeftHandPinky3_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandPinky1_joint/Palaistra_Final_LeftHandPinky2_joint/Palaistra_Final_LeftHandPinky3_joint/Palaistra_Final_LeftHandPinky4_joint
+        weight: 0
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandRing1_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandRing1_joint/Palaistra_Final_LeftHandRing2_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandRing1_joint/Palaistra_Final_LeftHandRing2_joint/Palaistra_Final_LeftHandRing3_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandRing1_joint/Palaistra_Final_LeftHandRing2_joint/Palaistra_Final_LeftHandRing3_joint/Palaistra_Final_LeftHandRing4_joint
+        weight: 0
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandThumb1_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandThumb1_joint/Palaistra_Final_LeftHandThumb2_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandThumb1_joint/Palaistra_Final_LeftHandThumb2_joint/Palaistra_Final_LeftHandThumb3_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_LeftShoulder_joint/Palaistra_Final_LeftArm_joint/Palaistra_Final_LeftForeArm_joint/Palaistra_Final_LeftHand_joint/Palaistra_Final_LeftHandThumb1_joint/Palaistra_Final_LeftHandThumb2_joint/Palaistra_Final_LeftHandThumb3_joint/Palaistra_Final_LeftHandThumb4_joint
+        weight: 0
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_Neck_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_Neck_joint/Palaistra_Final_Head_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_Neck_joint/Palaistra_Final_Head_joint/Palaistra_Final_HeadTop_End_joint
+        weight: 0
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandIndex1_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandIndex1_joint/Palaistra_Final_RightHandIndex2_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandIndex1_joint/Palaistra_Final_RightHandIndex2_joint/Palaistra_Final_RightHandIndex3_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandIndex1_joint/Palaistra_Final_RightHandIndex2_joint/Palaistra_Final_RightHandIndex3_joint/Palaistra_Final_RightHandIndex4_joint
+        weight: 0
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandMiddle1_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandMiddle1_joint/Palaistra_Final_RightHandMiddle2_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandMiddle1_joint/Palaistra_Final_RightHandMiddle2_joint/Palaistra_Final_RightHandMiddle3_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandMiddle1_joint/Palaistra_Final_RightHandMiddle2_joint/Palaistra_Final_RightHandMiddle3_joint/Palaistra_Final_RightHandMiddle4_joint
+        weight: 0
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandPinky1_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandPinky1_joint/Palaistra_Final_RightHandPinky2_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandPinky1_joint/Palaistra_Final_RightHandPinky2_joint/Palaistra_Final_RightHandPinky3_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandPinky1_joint/Palaistra_Final_RightHandPinky2_joint/Palaistra_Final_RightHandPinky3_joint/Palaistra_Final_RightHandPinky4_joint
+        weight: 0
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandRing1_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandRing1_joint/Palaistra_Final_RightHandRing2_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandRing1_joint/Palaistra_Final_RightHandRing2_joint/Palaistra_Final_RightHandRing3_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandRing1_joint/Palaistra_Final_RightHandRing2_joint/Palaistra_Final_RightHandRing3_joint/Palaistra_Final_RightHandRing4_joint
+        weight: 0
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandThumb1_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandThumb1_joint/Palaistra_Final_RightHandThumb2_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandThumb1_joint/Palaistra_Final_RightHandThumb2_joint/Palaistra_Final_RightHandThumb3_joint
+        weight: 1
+      - path: Palaistra_Final_Hips_joint/Palaistra_Final_Spine_joint/Palaistra_Final_Spine1_joint/Palaistra_Final_Spine2_joint/Palaistra_Final_RightShoulder_joint/Palaistra_Final_RightArm_joint/Palaistra_Final_RightForeArm_joint/Palaistra_Final_RightHand_joint/Palaistra_Final_RightHandThumb1_joint/Palaistra_Final_RightHandThumb2_joint/Palaistra_Final_RightHandThumb3_joint/Palaistra_Final_RightHandThumb4_joint
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Attach_grp
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Attach_grp/Atttach_ctrl
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP/Palaistra_Final_Spine_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP/Palaistra_Final_Spine_CTRL/Palaistra_Final_Spine1_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP/Palaistra_Final_Spine_CTRL/Palaistra_Final_Spine1_GRP/Palaistra_Final_Spine1_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP/Palaistra_Final_Spine_CTRL/Palaistra_Final_Spine1_GRP/Palaistra_Final_Spine1_CTRL/Palaistra_Final_Spine2_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP/Palaistra_Final_Spine_CTRL/Palaistra_Final_Spine1_GRP/Palaistra_Final_Spine1_CTRL/Palaistra_Final_Spine2_GRP/Palaistra_Final_Spine2_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP/Palaistra_Final_Spine_CTRL/Palaistra_Final_Spine1_GRP/Palaistra_Final_Spine1_CTRL/Palaistra_Final_Spine2_GRP/Palaistra_Final_Spine2_CTRL/Palaistra_Final_LeftShoulder_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP/Palaistra_Final_Spine_CTRL/Palaistra_Final_Spine1_GRP/Palaistra_Final_Spine1_CTRL/Palaistra_Final_Spine2_GRP/Palaistra_Final_Spine2_CTRL/Palaistra_Final_LeftShoulder_GRP/Palaistra_Final_LeftShoulder_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP/Palaistra_Final_Spine_CTRL/Palaistra_Final_Spine1_GRP/Palaistra_Final_Spine1_CTRL/Palaistra_Final_Spine2_GRP/Palaistra_Final_Spine2_CTRL/Palaistra_Final_Neck_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP/Palaistra_Final_Spine_CTRL/Palaistra_Final_Spine1_GRP/Palaistra_Final_Spine1_CTRL/Palaistra_Final_Spine2_GRP/Palaistra_Final_Spine2_CTRL/Palaistra_Final_Neck_GRP/Palaistra_Final_Neck_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP/Palaistra_Final_Spine_CTRL/Palaistra_Final_Spine1_GRP/Palaistra_Final_Spine1_CTRL/Palaistra_Final_Spine2_GRP/Palaistra_Final_Spine2_CTRL/Palaistra_Final_Neck_GRP/Palaistra_Final_Neck_CTRL/Palaistra_Final_Head_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP/Palaistra_Final_Spine_CTRL/Palaistra_Final_Spine1_GRP/Palaistra_Final_Spine1_CTRL/Palaistra_Final_Spine2_GRP/Palaistra_Final_Spine2_CTRL/Palaistra_Final_Neck_GRP/Palaistra_Final_Neck_CTRL/Palaistra_Final_Head_GRP/Palaistra_Final_Head_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP/Palaistra_Final_Spine_CTRL/Palaistra_Final_Spine1_GRP/Palaistra_Final_Spine1_CTRL/Palaistra_Final_Spine2_GRP/Palaistra_Final_Spine2_CTRL/Palaistra_Final_RightShoulder_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_Hips_GRP/Palaistra_Final_Hips_CTRL/Palaistra_Final_Spine_GRP/Palaistra_Final_Spine_CTRL/Palaistra_Final_Spine1_GRP/Palaistra_Final_Spine1_CTRL/Palaistra_Final_Spine2_GRP/Palaistra_Final_Spine2_CTRL/Palaistra_Final_RightShoulder_GRP/Palaistra_Final_RightShoulder_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_L_Foot_grp
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_L_Foot_grp/Palaistra_Final_L_Foot_ctrl
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_L_Foot_grp/Palaistra_Final_L_Foot_ctrl/Palaistra_Final_L_Foot_ik
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftForeArm_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftForeArm_GRP/Palaistra_Final_LeftForeArm_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_L_Hand_ik
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandIndex1_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandIndex1_GRP/Palaistra_Final_LeftHandIndex1_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandIndex1_GRP/Palaistra_Final_LeftHandIndex1_CTRL/Palaistra_Final_LeftHandIndex2_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandIndex1_GRP/Palaistra_Final_LeftHandIndex1_CTRL/Palaistra_Final_LeftHandIndex2_GRP/Palaistra_Final_LeftHandIndex2_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandIndex1_GRP/Palaistra_Final_LeftHandIndex1_CTRL/Palaistra_Final_LeftHandIndex2_GRP/Palaistra_Final_LeftHandIndex2_CTRL/Palaistra_Final_LeftHandIndex3_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandIndex1_GRP/Palaistra_Final_LeftHandIndex1_CTRL/Palaistra_Final_LeftHandIndex2_GRP/Palaistra_Final_LeftHandIndex2_CTRL/Palaistra_Final_LeftHandIndex3_GRP/Palaistra_Final_LeftHandIndex3_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandMiddle1_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandMiddle1_GRP/Palaistra_Final_LeftHandMiddle1_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandMiddle1_GRP/Palaistra_Final_LeftHandMiddle1_CTRL/Palaistra_Final_LeftHandMiddle2_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandMiddle1_GRP/Palaistra_Final_LeftHandMiddle1_CTRL/Palaistra_Final_LeftHandMiddle2_GRP/Palaistra_Final_LeftHandMiddle2_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandMiddle1_GRP/Palaistra_Final_LeftHandMiddle1_CTRL/Palaistra_Final_LeftHandMiddle2_GRP/Palaistra_Final_LeftHandMiddle2_CTRL/Palaistra_Final_LeftHandMiddle3_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandMiddle1_GRP/Palaistra_Final_LeftHandMiddle1_CTRL/Palaistra_Final_LeftHandMiddle2_GRP/Palaistra_Final_LeftHandMiddle2_CTRL/Palaistra_Final_LeftHandMiddle3_GRP/Palaistra_Final_LeftHandMiddle3_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandPinky1_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandPinky1_GRP/Palaistra_Final_LeftHandPinky1_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandPinky1_GRP/Palaistra_Final_LeftHandPinky1_CTRL/Palaistra_Final_LeftHandPinky2_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandPinky1_GRP/Palaistra_Final_LeftHandPinky1_CTRL/Palaistra_Final_LeftHandPinky2_GRP/Palaistra_Final_LeftHandPinky2_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandPinky1_GRP/Palaistra_Final_LeftHandPinky1_CTRL/Palaistra_Final_LeftHandPinky2_GRP/Palaistra_Final_LeftHandPinky2_CTRL/Palaistra_Final_LeftHandPinky3_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandPinky1_GRP/Palaistra_Final_LeftHandPinky1_CTRL/Palaistra_Final_LeftHandPinky2_GRP/Palaistra_Final_LeftHandPinky2_CTRL/Palaistra_Final_LeftHandPinky3_GRP/Palaistra_Final_LeftHandPinky3_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandRing1_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandRing1_GRP/Palaistra_Final_LeftHandRing1_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandRing1_GRP/Palaistra_Final_LeftHandRing1_CTRL/Palaistra_Final_LeftHandRing2_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandRing1_GRP/Palaistra_Final_LeftHandRing1_CTRL/Palaistra_Final_LeftHandRing2_GRP/Palaistra_Final_LeftHandRing2_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandRing1_GRP/Palaistra_Final_LeftHandRing1_CTRL/Palaistra_Final_LeftHandRing2_GRP/Palaistra_Final_LeftHandRing2_CTRL/Palaistra_Final_LeftHandRing3_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandRing1_GRP/Palaistra_Final_LeftHandRing1_CTRL/Palaistra_Final_LeftHandRing2_GRP/Palaistra_Final_LeftHandRing2_CTRL/Palaistra_Final_LeftHandRing3_GRP/Palaistra_Final_LeftHandRing3_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandThumb1_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandThumb1_GRP/Palaistra_Final_LeftHandThumb1_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandThumb1_GRP/Palaistra_Final_LeftHandThumb1_CTRL/Palaistra_Final_LeftHandThumb2_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandThumb1_GRP/Palaistra_Final_LeftHandThumb1_CTRL/Palaistra_Final_LeftHandThumb2_GRP/Palaistra_Final_LeftHandThumb2_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandThumb1_GRP/Palaistra_Final_LeftHandThumb1_CTRL/Palaistra_Final_LeftHandThumb2_GRP/Palaistra_Final_LeftHandThumb2_CTRL/Palaistra_Final_LeftHandThumb3_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftHand_GRP/Palaistra_Final_LeftHand_CTRL/Palaistra_Final_LeftHandThumb1_GRP/Palaistra_Final_LeftHandThumb1_CTRL/Palaistra_Final_LeftHandThumb2_GRP/Palaistra_Final_LeftHandThumb2_CTRL/Palaistra_Final_LeftHandThumb3_GRP/Palaistra_Final_LeftHandThumb3_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftLeg_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_LeftLeg_GRP/Palaistra_Final_LeftLeg_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_R_Foot_grp
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_R_Foot_grp/Palaistra_Final_R_Foot_ctrl
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_R_Foot_grp/Palaistra_Final_R_Foot_ctrl/Palaistra_Final_R_Foot_ik
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightForeArm_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightForeArm_GRP/Palaistra_Final_RightForeArm_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_R_Hand_ik
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandIndex1_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandIndex1_GRP/Palaistra_Final_RightHandIndex1_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandIndex1_GRP/Palaistra_Final_RightHandIndex1_CTRL/Palaistra_Final_RightHandIndex2_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandIndex1_GRP/Palaistra_Final_RightHandIndex1_CTRL/Palaistra_Final_RightHandIndex2_GRP/Palaistra_Final_RightHandIndex2_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandIndex1_GRP/Palaistra_Final_RightHandIndex1_CTRL/Palaistra_Final_RightHandIndex2_GRP/Palaistra_Final_RightHandIndex2_CTRL/Palaistra_Final_RightHandIndex3_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandIndex1_GRP/Palaistra_Final_RightHandIndex1_CTRL/Palaistra_Final_RightHandIndex2_GRP/Palaistra_Final_RightHandIndex2_CTRL/Palaistra_Final_RightHandIndex3_GRP/Palaistra_Final_RightHandIndex3_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandMiddle1_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandMiddle1_GRP/Palaistra_Final_RightHandMiddle1_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandMiddle1_GRP/Palaistra_Final_RightHandMiddle1_CTRL/Palaistra_Final_RightHandMiddle2_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandMiddle1_GRP/Palaistra_Final_RightHandMiddle1_CTRL/Palaistra_Final_RightHandMiddle2_GRP/Palaistra_Final_RightHandMiddle2_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandMiddle1_GRP/Palaistra_Final_RightHandMiddle1_CTRL/Palaistra_Final_RightHandMiddle2_GRP/Palaistra_Final_RightHandMiddle2_CTRL/Palaistra_Final_RightHandMiddle3_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandMiddle1_GRP/Palaistra_Final_RightHandMiddle1_CTRL/Palaistra_Final_RightHandMiddle2_GRP/Palaistra_Final_RightHandMiddle2_CTRL/Palaistra_Final_RightHandMiddle3_GRP/Palaistra_Final_RightHandMiddle3_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandPinky1_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandPinky1_GRP/Palaistra_Final_RightHandPinky1_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandPinky1_GRP/Palaistra_Final_RightHandPinky1_CTRL/Palaistra_Final_RightHandPinky2_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandPinky1_GRP/Palaistra_Final_RightHandPinky1_CTRL/Palaistra_Final_RightHandPinky2_GRP/Palaistra_Final_RightHandPinky2_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandPinky1_GRP/Palaistra_Final_RightHandPinky1_CTRL/Palaistra_Final_RightHandPinky2_GRP/Palaistra_Final_RightHandPinky2_CTRL/Palaistra_Final_RightHandPinky3_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandPinky1_GRP/Palaistra_Final_RightHandPinky1_CTRL/Palaistra_Final_RightHandPinky2_GRP/Palaistra_Final_RightHandPinky2_CTRL/Palaistra_Final_RightHandPinky3_GRP/Palaistra_Final_RightHandPinky3_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandRing1_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandRing1_GRP/Palaistra_Final_RightHandRing1_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandRing1_GRP/Palaistra_Final_RightHandRing1_CTRL/Palaistra_Final_RightHandRing2_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandRing1_GRP/Palaistra_Final_RightHandRing1_CTRL/Palaistra_Final_RightHandRing2_GRP/Palaistra_Final_RightHandRing2_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandRing1_GRP/Palaistra_Final_RightHandRing1_CTRL/Palaistra_Final_RightHandRing2_GRP/Palaistra_Final_RightHandRing2_CTRL/Palaistra_Final_RightHandRing3_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandRing1_GRP/Palaistra_Final_RightHandRing1_CTRL/Palaistra_Final_RightHandRing2_GRP/Palaistra_Final_RightHandRing2_CTRL/Palaistra_Final_RightHandRing3_GRP/Palaistra_Final_RightHandRing3_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandThumb1_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandThumb1_GRP/Palaistra_Final_RightHandThumb1_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandThumb1_GRP/Palaistra_Final_RightHandThumb1_CTRL/Palaistra_Final_RightHandThumb2_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandThumb1_GRP/Palaistra_Final_RightHandThumb1_CTRL/Palaistra_Final_RightHandThumb2_GRP/Palaistra_Final_RightHandThumb2_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandThumb1_GRP/Palaistra_Final_RightHandThumb1_CTRL/Palaistra_Final_RightHandThumb2_GRP/Palaistra_Final_RightHandThumb2_CTRL/Palaistra_Final_RightHandThumb3_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightHand_GRP/Palaistra_Final_RightHand_CTRL/Palaistra_Final_RightHandThumb1_GRP/Palaistra_Final_RightHandThumb1_CTRL/Palaistra_Final_RightHandThumb2_GRP/Palaistra_Final_RightHandThumb2_CTRL/Palaistra_Final_RightHandThumb3_GRP/Palaistra_Final_RightHandThumb3_CTRL
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightLeg_GRP
+        weight: 0
+      - path: Palaistra_Final_Main_ctrl/Palaistra_Final_RightLeg_GRP/Palaistra_Final_RightLeg_CTRL
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh/Palaistra_Final_Eyes
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh/Palaistra_Final_Lashes
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh/Palaistra_Final_Mesh
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh/Palaistra_Final_Palaistra_Clothing
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh/Palaistra_Final_Palaistra_Clothing/Palaistra_Final_Arms_and_Legs
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh/Palaistra_Final_Palaistra_Clothing/Palaistra_Final_Arms_and_Legs/Palaistra_Final_Olive_Branch1
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh/Palaistra_Final_Palaistra_Clothing/Palaistra_Final_Arms_and_Legs/Palaistra_Final_Olive_Branch2
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh/Palaistra_Final_Palaistra_Clothing/Palaistra_Final_Arms_and_Legs/Palaistra_Final_Olive_Branch3
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh/Palaistra_Final_Palaistra_Clothing/Palaistra_Final_Bottom_Skirt
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh/Palaistra_Final_Palaistra_Clothing/Palaistra_Final_Bra_thing
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh/Palaistra_Final_Palaistra_Clothing/Palaistra_Final_Hair_low
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh/Palaistra_Final_Palaistra_Clothing/Palaistra_Final_Olive_crown
+        weight: 0
+      - path: Palaistra_Final_Palaistra_Mesh/Palaistra_Final_Palaistra_Clothing/Palaistra_Final_Top_Skirt
+        weight: 0
+      maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0.96
     - serializedVersion: 16
