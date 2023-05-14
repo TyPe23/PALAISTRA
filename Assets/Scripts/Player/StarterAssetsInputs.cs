@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 #endif
 
-public class StarterAssetsInputs : MonoBehaviour
+public class StarterAssetsInputs : MonoBehaviour, PlayerInputs.INewActions
 {
     #region FIELDS AND PROPERTIES
     public PlayerStates states;
@@ -28,48 +28,46 @@ public class StarterAssetsInputs : MonoBehaviour
     #endregion
 
     #region INPUT
-	#if ENABLE_INPUT_SYSTEM
-    public void OnMove(InputValue value)
+    public void OnMove(InputAction.CallbackContext value)
 	{
-		MoveInput(value.Get<Vector2>());
+		MoveInput(value.ReadValue<Vector2>());
 	}
 
-	public void OnLook(InputValue value)
+	public void OnLook(InputAction.CallbackContext value)
 	{
 		if(cursorInputForLook)
 		{
-			LookInput(value.Get<Vector2>());
+			LookInput(value.ReadValue<Vector2>());
 		}
 	}
 
-	public void OnPileDriver(InputValue value)
+	public void OnPileDriver(InputAction.CallbackContext value)
 	{
-		PileDriverInput(value.isPressed);
+		PileDriverInput(value.ReadValueAsButton());
 		StartCoroutine(pileDriverTimeout());
 	}
 
-	public void OnSprint(InputValue value)
+	public void OnSprint(InputAction.CallbackContext value)
 	{
-		SprintInput(value.isPressed);
+		SprintInput(value.ReadValueAsButton());
 	}
 
-    public void OnSpin(InputValue value)
+    public void OnSpin(InputAction.CallbackContext value)
     {
-		SpinInput(value.isPressed);
+		SpinInput(value.ReadValueAsButton());
         StartCoroutine(spinTimeout());
     }
 
-    public void OnLariat(InputValue value)
+    public void OnLariat(InputAction.CallbackContext value)
     {
-		LariatInput(value.isPressed);
+		LariatInput(value.ReadValueAsButton());
         StartCoroutine(lariatTimeout());
     }
 
-    public void OnInteract(InputValue value)
+    public void OnInteract(InputAction.CallbackContext value)
     {
-		InteractInput(value.isPressed);
+		InteractInput(value.ReadValueAsButton());
     }
-	#endif
     #endregion
 
     #region VAR MODS

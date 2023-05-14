@@ -39,11 +39,14 @@ public class PlayerStates : MonoBehaviour
     public bool letGo = false;
     public bool grab = false;
     public float launchAmount;
+    public bool invul;
+    public bool showScore = true;
+    public Animator enemyAnim;
+    public EndOfGame EOG;
 
     private Dictionary<playerStates, Action> statesStayMeths;
     private Dictionary<playerStates, Action> statesEnterMeths;
     private Dictionary<playerStates, Action> statesExitMeths;
-
     private ThirdPersonController charCon;
     private PlayerStats playerStats;
     private StarterAssetsInputs inputs;
@@ -53,13 +56,8 @@ public class PlayerStates : MonoBehaviour
     private Animator animator;
     private TMP_Text scoreUI;
     private CinemachineImpulseSource shake;
-    public EndOfGame EOG;
-
-
     private Vector3 startPos;
     private bool exitDash;
-    public bool invul;
-    public bool showScore = true;
     private bool canMove;
     private bool canAction = true;
     #endregion
@@ -159,6 +157,7 @@ public class PlayerStates : MonoBehaviour
     private void StateEnterExhausted()
     {
         letGo = true;
+        //animator.SetBool();
     }
 
     private void StateEnterStop()
@@ -172,6 +171,8 @@ public class PlayerStates : MonoBehaviour
 
     private void StateEnterPileDriver()
     {
+        animator.SetTrigger("Piledriver");
+        enemyAnim.SetTrigger("Piledriver");
         canAction = false;
         launchAmount = 30;
         stamina.spendStamina(playerStats.PileDriverCost);
@@ -186,6 +187,11 @@ public class PlayerStates : MonoBehaviour
 
     private void StateEnterSpin()
     {
+        animator.SetTrigger("Spin");
+        enemyAnim.SetTrigger("Spin");
+        animator.SetBool("IsSpinning", true);
+        enemyAnim.SetBool("IsSpinning", true);
+        launchAmount = 0;
         canAction = false;
         stamina.spendStamina(playerStats.SpinCost);
         canAction = false;
@@ -197,6 +203,9 @@ public class PlayerStates : MonoBehaviour
 
     private void StateEnterLariat()
     {
+        animator.SetTrigger("Lariat");
+        enemyAnim.SetTrigger("Lariat");
+        launchAmount = 0;
         canAction = false;
         stamina.spendStamina(playerStats.LariatCost);
         canAction = false;
@@ -210,6 +219,7 @@ public class PlayerStates : MonoBehaviour
 
     private void StateEnterDash()
     {
+        //animator.SetTrigger();
         startPos = transform.position;
         stamina.spendStamina(playerStats.DashCost);
         canAction = true;
@@ -264,6 +274,8 @@ public class PlayerStates : MonoBehaviour
 
                 if (grab)
                 {
+                    animator.SetTrigger("Grapple");
+                    enemyAnim.SetTrigger("Grapple");
                     ChangeState(state.LARIAT);
                 }
 
@@ -275,6 +287,8 @@ public class PlayerStates : MonoBehaviour
 
                 if (grab)
                 {
+                    animator.SetTrigger("Grapple");
+                    enemyAnim.SetTrigger("Grapple");
                     ChangeState(state.SPIN);
                 }
 
@@ -286,6 +300,8 @@ public class PlayerStates : MonoBehaviour
 
                 if (grab)
                 {
+                    animator.SetTrigger("Grapple");
+                    enemyAnim.SetTrigger("Grapple");
                     ChangeState(state.PILEDRIVER);
                 }
 
@@ -364,6 +380,8 @@ public class PlayerStates : MonoBehaviour
 
                 if (grab)
                 {
+                    animator.SetTrigger("Grapple");
+                    enemyAnim.SetTrigger("Grapple");
                     ChangeState(state.LARIAT);
                 }
 
@@ -375,6 +393,8 @@ public class PlayerStates : MonoBehaviour
 
                 if (grab)
                 {
+                    animator.SetTrigger("Grapple");
+                    enemyAnim.SetTrigger("Grapple");
                     ChangeState(state.SPIN);
                 }
 
@@ -386,6 +406,8 @@ public class PlayerStates : MonoBehaviour
 
                 if (grab)
                 {
+                    animator.SetTrigger("Grapple");
+                    enemyAnim.SetTrigger("Grapple");
                     ChangeState(state.PILEDRIVER);
                 }
 
@@ -442,6 +464,8 @@ public class PlayerStates : MonoBehaviour
 
                     if (grab)
                     {
+                        animator.SetTrigger("Grapple");
+                        enemyAnim.SetTrigger("Grapple");
                         ChangeState(state.LARIAT);
                     }
 
@@ -453,6 +477,8 @@ public class PlayerStates : MonoBehaviour
 
                     if (grab)
                     {
+                        animator.SetTrigger("Grapple");
+                        enemyAnim.SetTrigger("Grapple");
                         ChangeState(state.SPIN);
                     }
 
@@ -464,6 +490,8 @@ public class PlayerStates : MonoBehaviour
 
                     if (grab)
                     {
+                        animator.SetTrigger("Grapple");
+                        enemyAnim.SetTrigger("Grapple");
                         ChangeState(state.PILEDRIVER);
                     }
 
@@ -478,6 +506,7 @@ public class PlayerStates : MonoBehaviour
     private void StateExitExhausted()
     {
         momentum.recovery = playerStats.staminaRecovery;
+        //animator.SetBool();
     }
 
     private void StateExitStop()
@@ -499,6 +528,8 @@ public class PlayerStates : MonoBehaviour
 
     private void StateExitSpin()
     {
+        animator.SetBool("IsSpinning", false);
+        enemyAnim.SetBool("IsSpinning", false);
         letGo = true;
         shake.GenerateImpulseWithForce(0.25f);
         Game.globalInstance.sndPlayer.PlaySound(SoundType.IMPACT, soundSrc);

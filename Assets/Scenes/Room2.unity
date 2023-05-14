@@ -3026,6 +3026,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 362799023}
     m_Modifications:
+    - target: {fileID: 2580745128062349797, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2580745128062349797, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2580745128436136998, guid: ecada373097b91743994d88f5db13ee3,
         type: 3}
       propertyPath: m_RootOrder
@@ -3106,10 +3116,40 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spike Trap (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2580745128436137016, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2580745128436137016, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289423013836824726, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289423013836824726, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3888694907231228860, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3888694907231228860, guid: ecada373097b91743994d88f5db13ee3,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3929536125827602267, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3929536125827602267, guid: ecada373097b91743994d88f5db13ee3,
         type: 3}
@@ -3118,8 +3158,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5924156551644683408, guid: ecada373097b91743994d88f5db13ee3,
         type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5924156551644683408, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6357518343332841087, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6357518343332841087, guid: ecada373097b91743994d88f5db13ee3,
         type: 3}
@@ -3128,8 +3178,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7132871800598992045, guid: ecada373097b91743994d88f5db13ee3,
         type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7132871800598992045, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7431836044618094583, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7431836044618094583, guid: ecada373097b91743994d88f5db13ee3,
         type: 3}
@@ -4923,6 +4983,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2580745128062349797, guid: ecada373097b91743994d88f5db13ee3,
         type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2580745128062349797, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -5008,8 +5073,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2580745128436137016, guid: ecada373097b91743994d88f5db13ee3,
         type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2580745128436137016, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289423013836824726, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3289423013836824726, guid: ecada373097b91743994d88f5db13ee3,
         type: 3}
@@ -5018,8 +5093,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3888694907231228860, guid: ecada373097b91743994d88f5db13ee3,
         type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3888694907231228860, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3929536125827602267, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3929536125827602267, guid: ecada373097b91743994d88f5db13ee3,
         type: 3}
@@ -5028,8 +5113,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5924156551644683408, guid: ecada373097b91743994d88f5db13ee3,
         type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5924156551644683408, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6357518343332841087, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6357518343332841087, guid: ecada373097b91743994d88f5db13ee3,
         type: 3}
@@ -5038,8 +5133,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7132871800598992045, guid: ecada373097b91743994d88f5db13ee3,
         type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7132871800598992045, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7431836044618094583, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7431836044618094583, guid: ecada373097b91743994d88f5db13ee3,
         type: 3}
@@ -8601,6 +8706,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2580745128062349797, guid: ecada373097b91743994d88f5db13ee3,
         type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2580745128062349797, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -8686,8 +8796,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2580745128436137016, guid: ecada373097b91743994d88f5db13ee3,
         type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2580745128436137016, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3289423013836824726, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3289423013836824726, guid: ecada373097b91743994d88f5db13ee3,
         type: 3}
@@ -8696,8 +8816,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3888694907231228860, guid: ecada373097b91743994d88f5db13ee3,
         type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3888694907231228860, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3929536125827602267, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3929536125827602267, guid: ecada373097b91743994d88f5db13ee3,
         type: 3}
@@ -8706,8 +8836,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5924156551644683408, guid: ecada373097b91743994d88f5db13ee3,
         type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5924156551644683408, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6357518343332841087, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6357518343332841087, guid: ecada373097b91743994d88f5db13ee3,
         type: 3}
@@ -8716,8 +8856,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7132871800598992045, guid: ecada373097b91743994d88f5db13ee3,
         type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7132871800598992045, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7431836044618094583, guid: ecada373097b91743994d88f5db13ee3,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7431836044618094583, guid: ecada373097b91743994d88f5db13ee3,
         type: 3}

@@ -45,6 +45,7 @@ public class Enemy : MonoBehaviour
     private Rigidbody rb;
     private NavMeshAgent agent;
     private MeshRenderer mesh;
+    private Animator anim;
 
     private PlayerStates states;
 
@@ -77,6 +78,7 @@ public class Enemy : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         capCollider = player.GetComponent<CapsuleCollider>();
         mesh = GetComponentInChildren<MeshRenderer>();
+        anim = GetComponentInChildren<Animator>();
 
         states = player.GetComponent<PlayerStates>();
         shake = player.GetComponent<CinemachineImpulseSource>();
@@ -129,6 +131,7 @@ public class Enemy : MonoBehaviour
             collision.gameObject.GetComponent<BoxCollider>().enabled = false;
             states.grab = true;
             states.letGo = false;
+            states.enemyAnim = anim;
             ChangeState(state.GRABBED);
         }
         if (collision.transform.CompareTag("floor") && !grounded)
@@ -172,6 +175,11 @@ public class Enemy : MonoBehaviour
         }
 
         slider.value = health;
+
+        anim.SetFloat("Speed", agent.speed * 2);
+        anim.SetBool("Grounded", grounded);
+        anim.SetBool("FreeFall", !grounded);
+
     }
 
     public void ChangeState(state newState)
@@ -399,6 +407,8 @@ public class Enemy : MonoBehaviour
         rb.angularVelocity = new Vector3(0, 0, 0);
         agent.speed = speed;
         agent.enabled = true;
+
+        anim.SetTrigger("GetUp");
     }
 
     private void StateExitGrabbed()
