@@ -1,8 +1,5 @@
 using HighScore;
-using StarterAssets;
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -54,7 +51,7 @@ public class EndOfGame : MonoBehaviour
 
         if (state.state != playerStates.LOSE)
         {
-            state.ChangeState(playerStates.IDLE);
+            state.ChangeState(playerStates.LOSE);
         }
 
         keyboardUI.SetActive(true);

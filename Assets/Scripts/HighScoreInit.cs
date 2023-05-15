@@ -1,6 +1,4 @@
 using HighScore;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class HighScoreInit : MonoBehaviour

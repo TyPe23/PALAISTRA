@@ -1,10 +1,10 @@
 using System.Collections;
 using UnityEngine;
-#if ENABLE_INPUT_SYSTEM
+//#if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
-#endif
+//#endif
 
-public class StarterAssetsInputs : MonoBehaviour, PlayerInputs.INewActions
+public class StarterAssetsInputs : MonoBehaviour, PlayerInputs.IPlayerActions
 {
     #region FIELDS AND PROPERTIES
     public PlayerStates states;
@@ -57,6 +57,9 @@ public class StarterAssetsInputs : MonoBehaviour, PlayerInputs.INewActions
 		SpinInput(value.ReadValueAsButton());
         StartCoroutine(spinTimeout());
     }
+    //NullReferenceException: Object reference not set to an instance of an object
+	//Enemy.OnTriggerEnter(UnityEngine.Collider collision) (at<c4976fd985e54984bcf8766e0430b863>:0)
+
 
     public void OnLariat(InputAction.CallbackContext value)
     {

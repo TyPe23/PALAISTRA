@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4795,7 +4795,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018,
+  m_Actions: {fileID: -944628639613478452, guid: bb824ef5ca15e4a46b48298468a899c8,
     type: 3}
   m_NotificationBehavior: 0
   m_UIInputModule: {fileID: 1609305641}
@@ -4811,7 +4811,7 @@ MonoBehaviour:
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: Player
+  m_DefaultActionMap: UI
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!1001 &600053875
@@ -8018,22 +8018,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 658972890, guid: bf0a8faaa5ae4674db9869ce1fdfbb6a, type: 3}
-      propertyPath: m_Navigation.m_Mode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 694891437, guid: bf0a8faaa5ae4674db9869ce1fdfbb6a, type: 3}
-      propertyPath: m_Navigation.m_Mode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 799121949, guid: bf0a8faaa5ae4674db9869ce1fdfbb6a, type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 1673193522}
-    - target: {fileID: 799121949, guid: bf0a8faaa5ae4674db9869ce1fdfbb6a, type: 3}
-      propertyPath: m_RenderMode
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1254873565, guid: bf0a8faaa5ae4674db9869ce1fdfbb6a, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -8042,21 +8026,12 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1408880386, guid: bf0a8faaa5ae4674db9869ce1fdfbb6a, type: 3}
-      propertyPath: m_Navigation.m_Mode
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2091329968, guid: bf0a8faaa5ae4674db9869ce1fdfbb6a, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2091329968, guid: bf0a8faaa5ae4674db9869ce1fdfbb6a, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4751595418921074241, guid: bf0a8faaa5ae4674db9869ce1fdfbb6a,
-        type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4794036322863823450, guid: bf0a8faaa5ae4674db9869ce1fdfbb6a,
@@ -8119,36 +8094,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 5317631918730010848, guid: bf0a8faaa5ae4674db9869ce1fdfbb6a,
-        type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 5317631918730010860, guid: bf0a8faaa5ae4674db9869ce1fdfbb6a,
-        type: 3}
-      propertyPath: m_Actions
-      value: 
-      objectReference: {fileID: -944628639613478452, guid: 4419d82f33d36e848b3ed5af4c8da37e,
-        type: 3}
-    - target: {fileID: 5317631918730010860, guid: bf0a8faaa5ae4674db9869ce1fdfbb6a,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5317631918730010860, guid: bf0a8faaa5ae4674db9869ce1fdfbb6a,
-        type: 3}
-      propertyPath: m_DefaultActionMap
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 8394732593264406109, guid: bf0a8faaa5ae4674db9869ce1fdfbb6a,
         type: 3}
       propertyPath: showScore
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8458421055142804636, guid: bf0a8faaa5ae4674db9869ce1fdfbb6a,
-        type: 3}
-      propertyPath: cursorLocked
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf0a8faaa5ae4674db9869ce1fdfbb6a, type: 3}
@@ -17758,6 +17707,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2116780513395369897, guid: bcf6b5017301b2942a49c69d33e0547a,
         type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2116780513395369897, guid: bcf6b5017301b2942a49c69d33e0547a,
+        type: 3}
       propertyPath: m_TagString
       value: EOG
       objectReference: {fileID: 0}
@@ -17776,6 +17730,12 @@ PrefabInstance:
       propertyPath: keyboardFirstButton
       value: 
       objectReference: {fileID: 2327639182688296762}
+    - target: {fileID: 2116780513395369911, guid: bcf6b5017301b2942a49c69d33e0547a,
+        type: 3}
+      propertyPath: m_Actions
+      value: 
+      objectReference: {fileID: -944628639613478452, guid: bb824ef5ca15e4a46b48298468a899c8,
+        type: 3}
     - target: {fileID: 2116780513395369911, guid: bcf6b5017301b2942a49c69d33e0547a,
         type: 3}
       propertyPath: m_UIInputModule

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.32190126, g: 0.34904456, b: 0.34406418, a: 1}
+  m_IndirectSpecularColor: {r: 0.32189995, g: 0.34904334, b: 0.34406257, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -640,6 +640,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoomManager
       objectReference: {fileID: 0}
+    - target: {fileID: 4616065035986149453, guid: 50edf722675feb84aa69b9b58992a4e7,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 919756692}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50edf722675feb84aa69b9b58992a4e7, type: 3}
 --- !u!1 &201661676
@@ -2476,7 +2481,7 @@ PrefabInstance:
         type: 3}
       propertyPath: attachPoint
       value: 
-      objectReference: {fileID: 1792292939}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b81d3c6a38afe774faa768517e0bf780, type: 3}
 --- !u!1001 &1386800555
@@ -3211,15 +3216,9 @@ PrefabInstance:
         type: 3}
       propertyPath: attachPoint
       value: 
-      objectReference: {fileID: 1792292939}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b81d3c6a38afe774faa768517e0bf780, type: 3}
---- !u!4 &1792292939 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 9063774577994466918, guid: bf0a8faaa5ae4674db9869ce1fdfbb6a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1951319177}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1819498629 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8982013617635776924, guid: b1a8a3c176fd6714ca389cfa5b7dfb6e,

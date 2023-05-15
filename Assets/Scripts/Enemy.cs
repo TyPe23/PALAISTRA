@@ -1,6 +1,4 @@
 using Cinemachine;
-using HutongGames.PlayMaker.Actions;
-using StarterAssets;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -175,7 +173,6 @@ public class Enemy : MonoBehaviour
     }
 
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         statesStayMeths[state].Invoke();
