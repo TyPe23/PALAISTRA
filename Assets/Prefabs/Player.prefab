@@ -1906,6 +1906,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   states: {fileID: 8394732593264406109}
   stats: {fileID: 4231954558820930535}
+--- !u!1 &1604171274503873967
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7180727609665079948}
+  - component: {fileID: 5578643333555342225}
+  m_Layer: 0
+  m_Name: spinAttach
+  m_TagString: spinAttach
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7180727609665079948
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604171274503873967}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6390550388588435377}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5578643333555342225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604171274503873967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c9f00e419005fe478ab87762cc8f0e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5317631918730010848
 GameObject:
   m_ObjectHideFlags: 0
@@ -3676,6 +3720,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 4dbf34b06360b3949a53de64a91095f3, type: 2}
+    - target: {fileID: 1730956901758751664, guid: 73ba83ed6b0d1d74c8497c70a1c2e975,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 2788102270578647849, guid: 73ba83ed6b0d1d74c8497c70a1c2e975,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3804,6 +3853,12 @@ MonoBehaviour:
 --- !u!4 &1455247121830303934 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7634866845742024052, guid: 73ba83ed6b0d1d74c8497c70a1c2e975,
+    type: 3}
+  m_PrefabInstance: {fileID: 9063051687706926538}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6390550388588435377 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2695869219912469115, guid: 73ba83ed6b0d1d74c8497c70a1c2e975,
     type: 3}
   m_PrefabInstance: {fileID: 9063051687706926538}
   m_PrefabAsset: {fileID: 0}

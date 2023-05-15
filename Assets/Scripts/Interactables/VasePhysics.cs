@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEditor.VersionControl.Asset;
 using state = potStates;
 
 public enum potStates
@@ -13,6 +14,7 @@ public enum potStates
 }
 
 [RequireComponent(typeof(AudioSource))]
+[RequireComponent(typeof(Animator))]
 public class VasePhysics : MonoBehaviour
 {
     #region FILEDS & PROPERTIES
@@ -34,7 +36,9 @@ public class VasePhysics : MonoBehaviour
     public GameObject vasePieces;
 
     private MeshRenderer mesh;
+    private Animator anim;
     private Rigidbody rb;
+    private BoxCollider potCollider;
     private PlayerStates playerState;
     private AudioSource soundSrc;
     private Transform parent;
@@ -46,7 +50,6 @@ public class VasePhysics : MonoBehaviour
     private Dictionary<state, Action> statesEnterMeths;
     private Dictionary<state, Action> statesExitMeths;
     #endregion
-
     
     #region LifeCycle
     private void Start()
@@ -56,12 +59,14 @@ public class VasePhysics : MonoBehaviour
         soundSrc = GetComponent<AudioSource>();
         playerState = player.GetComponent<PlayerStates>();
         inputs = player.GetComponent<StarterAssetsInputs>();
+        anim = GetComponent<Animator>();
+        potCollider = GetComponent<BoxCollider>();
 
         parent = transform.parent;
         parent = transform.parent;
         
         throwRef = GameObject.FindWithTag("throwRef").transform;
-        attachPoint = GameObject.FindWithTag("lariatAttach").transform;
+        attachPoint = GameObject.FindWithTag("spinAttach").transform;
 
         statesStayMeths = new Dictionary<state, Action>()
         {
@@ -104,29 +109,32 @@ public class VasePhysics : MonoBehaviour
     
     private void OnTriggerEnter(Collider collision)
     {
+        if (collision.gameObject.CompareTag("hitbox") && inputs.spin)
+        {
+            collision.gameObject.GetComponent<BoxCollider>().enabled = false;
+            playerState.grab = true;
+            playerState.letGo = false;
+            playerState.enemyAnim = anim;
+            ChangeState(state.GRABBED);
+        }
+
         if (collision.CompareTag("Player") && playerState.state == playerStates.DASH)
         {
+            print(collision.name);
             ChangeState(state.BREAK);
         }
-        //if (collision.gameObject.CompareTag("hitbox") && inputs.spin)
-        //{
-        //    print("should grab");
-        //    collision.gameObject.GetComponent<BoxCollider>().enabled = false;
-        //    playerState.grab = true;
-        //    playerState.letGo = false;
-        //    ChangeState(state.GRABBED);
-        //}
-        if (!collision.transform.CompareTag("Player")  && !grounded)
+        if (state != state.GRABBED)
         {
-            grounded = true;
-        }
-        if (collision.gameObject.CompareTag("projectile") || collision.transform.CompareTag("trap"))
-        {
-            ChangeState(state.BREAK);
-        }
-        if (collision.gameObject.CompareTag("enemy"))
-        {
-            ChangeState(state.BREAK);
+            if (!(collision.transform.CompareTag("Player") || collision.transform.CompareTag("Untagged")) && !grounded)
+            {
+                print(collision.name);
+                grounded = true;
+            }
+            if (collision.gameObject.CompareTag("enemy") || collision.gameObject.CompareTag("enemyNoHit") || collision.transform.CompareTag("trap"))
+            {
+                print(collision.name);
+                ChangeState(state.BREAK);
+            }
         }
     }
 
@@ -145,8 +153,6 @@ public class VasePhysics : MonoBehaviour
     #region Enter
     private void StateEnterThrown()
     {
-        transform.tag = "projectile";
-
         playerState.grab = false;
         grounded = false;
         playerState.letGo = false;
@@ -201,6 +207,10 @@ public class VasePhysics : MonoBehaviour
         transform.position = attachPoint.position;
         rb.useGravity = false;
         rb.isKinematic = true;
+        vaseCollider.enabled = false;
+
+        tag = "spunObj";
+
         if (debug)
         {
             mesh.material.color = new Color(255, 255, 255);
@@ -247,6 +257,8 @@ public class VasePhysics : MonoBehaviour
 
     private void StateExitGrabbed()
     {
+        tag = "projectile";
+        StartCoroutine(pauseCollision());
     }
     private void StateExitIdle()
     {
@@ -261,6 +273,17 @@ public class VasePhysics : MonoBehaviour
         vase.SetActive(false);
         yield return new WaitForSeconds(1);
         Destroy(gameObject);
+    }
+
+    IEnumerator pauseCollision()
+    {
+        vaseCollider.enabled = false;
+
+        yield return new WaitForSeconds(0.05f);
+
+        transform.tag = "projectile";
+
+        vaseCollider.enabled = true;
     }
     #endregion
 }
