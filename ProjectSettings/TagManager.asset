@@ -18,6 +18,8 @@ TagManager:
   - trap
   - UI
   - EOG
+  - enemyNoHit
+  - spunObj
   layers:
   - Default
   - TransparentFX
