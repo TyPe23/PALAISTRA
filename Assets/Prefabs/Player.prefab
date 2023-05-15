@@ -2279,6 +2279,7 @@ MonoBehaviour:
   showScore: 1
   enemyAnim: {fileID: 0}
   EOG: {fileID: 4751595418921074243}
+  PDTime: 1
 --- !u!114 &7879785133890839069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3730,6 +3731,24 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 1f33d1b840804d64b95955e06bbd25bf, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73ba83ed6b0d1d74c8497c70a1c2e975, type: 3}
+--- !u!1 &664359060547891999 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8430222239944830677, guid: 73ba83ed6b0d1d74c8497c70a1c2e975,
+    type: 3}
+  m_PrefabInstance: {fileID: 9063051687706926538}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7235035020271637616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664359060547891999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aff7164bb5c1d6e46b3b369935b0f1c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1455247121830303934 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7634866845742024052, guid: 73ba83ed6b0d1d74c8497c70a1c2e975,

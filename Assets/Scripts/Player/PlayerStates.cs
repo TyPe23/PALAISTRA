@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 using state = playerStates;
 
@@ -78,6 +79,7 @@ public class PlayerStates : MonoBehaviour
         soundSrc = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
         scoreUI = GetComponentInChildren<TMP_Text>();
+
 
         statesStayMeths = new Dictionary<playerStates, Action>()
         {
@@ -174,6 +176,7 @@ public class PlayerStates : MonoBehaviour
 
     private void StateEnterPileDriver()
     {
+        enemyAnim.SetBool("GetUp", false);
         animator.SetTrigger("Piledriver");
         enemyAnim.SetTrigger("Piledriver");
         canAction = false;
@@ -192,10 +195,11 @@ public class PlayerStates : MonoBehaviour
 
     private void StateEnterSpin()
     {
-        animator.SetTrigger("Spin");
-        enemyAnim.SetTrigger("Spin");
-        animator.SetBool("IsSpinning", true);
-        enemyAnim.SetBool("IsSpinning", true);
+        enemyAnim.SetBool("GetUp", false);
+        animator.SetBool("Spin", true);
+        enemyAnim.SetBool("Spin", true);
+        //animator.SetBool("IsSpinning", true);
+        //enemyAnim.SetBool("IsSpinning", true);
         launchAmount = 0;
         canAction = false;
         stamina.spendStamina(playerStats.SpinCost);
@@ -208,8 +212,9 @@ public class PlayerStates : MonoBehaviour
 
     private void StateEnterLariat()
     {
-        animator.SetTrigger("Lariat");
-        enemyAnim.SetTrigger("Lariat");
+        enemyAnim.SetBool("GetUp", false);
+        animator.SetBool("Lariat", true);
+        enemyAnim.SetBool("Lariat", true);
         launchAmount = 0;
         canAction = false;
         stamina.spendStamina(playerStats.LariatCost);
@@ -345,20 +350,32 @@ public class PlayerStates : MonoBehaviour
 
         if (!inputs.spin || stamina.stamina <= 1)
         {
-            ChangeState(state.MOVE);
+            animator.SetBool("IsSpinning", false);
+            animator.SetBool("Spin", false);
+            enemyAnim.SetBool("IsSpinning", false);
+            enemyAnim.SetBool("Spin", false);
         }
-
+        else
+        {
+            animator.SetBool("IsSpinning", true);
+            animator.SetBool("Spin", true);
+            enemyAnim.SetBool("IsSpinning", true);
+            enemyAnim.SetBool("Spin", true);
+        }
 
         momentum.addMomentum(0.25f);
     }
 
     private void StateStayLariat()
     {
-        charCon.Lariat();
 
         if (canCheck && charCon.Grounded)
         {
-            ChangeState(state.MOVE);
+            StartCoroutine(lariatExit());
+        }
+        else
+        {
+            charCon.Lariat();
         }
     }
 
@@ -523,30 +540,41 @@ public class PlayerStates : MonoBehaviour
 
     private void StateExitPileDriver()
     {
-        enemyAnim.SetTrigger("GetUp");
+        animator.SetBool("Grapple", false);
+        enemyAnim.SetBool("Grapple", false);
+        animator.SetBool("Piledriver", false);
+        enemyAnim.SetBool("Piledriver", false);
+        enemyAnim.SetBool("GetUp", true);
         letGo = true;
         shake.GenerateImpulseWithForce(0.5f);
-        Game.globalInstance.sndPlayer.PlaySound(SoundType.IMPACT, soundSrc);
+        Game.globalInstance.sndPlayer.PlaySound(SoundType.IMPACT1, soundSrc);
         StartCoroutine(IFrames());
         StartCoroutine(ActionTimeout());
     }
 
     private void StateExitSpin()
     {
-        animator.SetBool("IsSpinning", false);
-        enemyAnim.SetBool("IsSpinning", false);
+
+        animator.SetBool("Grapple", false);
+        enemyAnim.SetBool("Grapple", false);
+        //enemyAnim.SetBool("GetUp", true);
         letGo = true;
         shake.GenerateImpulseWithForce(0.25f);
-        Game.globalInstance.sndPlayer.PlaySound(SoundType.IMPACT, soundSrc);
+        Game.globalInstance.sndPlayer.PlaySound(SoundType.THROW, soundSrc);
         StartCoroutine(IFrames());
         StartCoroutine(ActionTimeout());
     }
 
     private void StateExitLariat()
     {
+        animator.SetBool("Grapple", false);
+        enemyAnim.SetBool("Grapple", false);
+        animator.SetBool("Lariat", false);
+        enemyAnim.SetBool("Lariat", false);
+        enemyAnim.SetBool("GetUp", true);
         letGo = true;
         shake.GenerateImpulseWithForce(0.5f);
-        Game.globalInstance.sndPlayer.PlaySound(SoundType.IMPACT, soundSrc);
+        Game.globalInstance.sndPlayer.PlaySound(SoundType.IMPACT1, soundSrc);
         StartCoroutine(IFrames()); 
         StartCoroutine(ActionTimeout());
     }
@@ -594,6 +622,12 @@ public class PlayerStates : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
         hitbox.enabled = false;
+    }
+    
+    private IEnumerator lariatExit()
+    {
+        yield return new WaitForSeconds(0.25f);
+        ChangeState(state.MOVE);
     }
     
     private IEnumerator DashExit()

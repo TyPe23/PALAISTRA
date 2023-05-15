@@ -108,15 +108,14 @@ public class VasePhysics : MonoBehaviour
         {
             ChangeState(state.BREAK);
         }
-        print(collision.tag);
-        if (collision.gameObject.CompareTag("hitbox") && inputs.spin)
-        {
-            print("should grab");
-            collision.gameObject.GetComponent<BoxCollider>().enabled = false;
-            playerState.grab = true;
-            playerState.letGo = false;
-            ChangeState(state.GRABBED);
-        }
+        //if (collision.gameObject.CompareTag("hitbox") && inputs.spin)
+        //{
+        //    print("should grab");
+        //    collision.gameObject.GetComponent<BoxCollider>().enabled = false;
+        //    playerState.grab = true;
+        //    playerState.letGo = false;
+        //    ChangeState(state.GRABBED);
+        //}
         if (!collision.transform.CompareTag("Player")  && !grounded)
         {
             grounded = true;

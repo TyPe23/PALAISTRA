@@ -10,7 +10,8 @@ public enum SoundType
     UI,
     UNLOCK,
     THROW,
-    IMPACT,
+    IMPACT1,
+    IMPACT2,
     DASH,
     DOOR,
     SPIKE_PRIME,
@@ -87,12 +88,13 @@ public class AudioManager : MonoBehaviour
     {
         audioSrc = GetComponent<AudioSource>();
         sounds = new Dictionary<SoundType, SoundCollection>() {
-            {SoundType.IMPACT, new SoundCollection("dash") },
-            {SoundType.GRAB, new SoundCollection("dash") },
+            {SoundType.IMPACT1, new SoundCollection("impact1") },
+            {SoundType.IMPACT2, new SoundCollection("impact2") },
+            {SoundType.GRAB, new SoundCollection("grab") },
             {SoundType.UI, new SoundCollection("dash") },
             {SoundType.UNLOCK, new SoundCollection("dash") },
-            {SoundType.COIN, new SoundCollection("dash") },
-            {SoundType.THROW, new SoundCollection("dash") },
+            {SoundType.COIN, new SoundCollection("coin1", "coin2", "coin4") },
+            {SoundType.THROW, new SoundCollection("throw") },
             {SoundType.DASH, new SoundCollection("dash") },
             {SoundType.DOOR, new SoundCollection("dash") },
             {SoundType.SPIKE, new SoundCollection("spike") },

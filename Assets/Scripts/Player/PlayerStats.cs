@@ -63,6 +63,11 @@ public class PlayerStats : MonoBehaviour
     private void Start()
     {
         currentHealth = PlayerPrefs.GetFloat("currentHealth");
+
+        if (currentHealth <= 0)
+        {
+            currentHealth = maxHealth;
+        }
     }
 
     void FixedUpdate()

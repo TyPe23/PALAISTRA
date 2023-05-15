@@ -8,10 +8,12 @@ public class CoinSpawn : MonoBehaviour
     [SerializeField] private int worth;
     private Collider collision;
     private AudioSource soundSrc;
+    private MeshRenderer mesh;
     private void Awake()
     {
         collision = GetComponent<Collider>();
         soundSrc = GetComponent<AudioSource>();
+        mesh = GetComponentInChildren<MeshRenderer>();
         collision.enabled = false;
     }
     void Start()
@@ -30,7 +32,7 @@ public class CoinSpawn : MonoBehaviour
 
     IEnumerator waitAfterSpawn()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(0.5f);
         collision.enabled = true;
     }
 
@@ -42,7 +44,15 @@ public class CoinSpawn : MonoBehaviour
             GameObject.Find("Player").GetComponent<PlayerStats>().currency += worth;
             //TODO add money to character inventory
             Game.globalInstance.sndPlayer.PlaySound(SoundType.COIN, soundSrc);
-            Destroy(gameObject);
+            StartCoroutine(waitToDestroy());
         }
+    }
+
+    IEnumerator waitToDestroy()
+    {
+        collision.enabled = false;
+        mesh.enabled = false;
+        yield return new WaitForSeconds(1);
+        Destroy(gameObject);
     }
 }

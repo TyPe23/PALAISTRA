@@ -22,6 +22,7 @@ public enum enemyStates
     ATTACK,
 }
 
+[RequireComponent(typeof(AudioSource))]
 public class Enemy : MonoBehaviour
 {
     #region FILEDS & PROPERTIES
@@ -40,14 +41,17 @@ public class Enemy : MonoBehaviour
     public GameObject player;
     public Transform throwRef;
     public Transform attachPoint;
+    private Transform spinPoint;
 
     private CapsuleCollider capCollider;
     private Rigidbody rb;
     private NavMeshAgent agent;
     private MeshRenderer mesh;
     private Animator anim;
+    private AudioSource soundSrc;
 
     private PlayerStates states;
+    private StarterAssetsInputs inputs;
 
     private bool grounded = true;
     private bool checkingDist = false;
@@ -59,6 +63,8 @@ public class Enemy : MonoBehaviour
     private Dictionary<state, Action> statesStayMeths;
     private Dictionary<state, Action> statesEnterMeths;
     private Dictionary<state, Action> statesExitMeths;
+    public maintainOrientation reset;
+    public bool resetPos;
     #endregion
 
     #region LifeCycle
@@ -74,13 +80,16 @@ public class Enemy : MonoBehaviour
         parent = transform.parent;
         throwRef = GameObject.FindWithTag("throwRef").transform;
         attachPoint = GameObject.FindWithTag("lariatAttach").transform;
+        spinPoint = GameObject.FindWithTag("spinAttach").transform;
 
         rb = GetComponent<Rigidbody>();
         capCollider = player.GetComponent<CapsuleCollider>();
         mesh = GetComponentInChildren<MeshRenderer>();
         anim = GetComponentInChildren<Animator>();
+        soundSrc = GetComponent<AudioSource>();
 
         states = player.GetComponent<PlayerStates>();
+        inputs = player.GetComponent<StarterAssetsInputs>();
         shake = player.GetComponent<CinemachineImpulseSource>();
         slider = gameObject.GetComponentInChildren<Slider>();
 
@@ -126,7 +135,7 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        if (collision.gameObject.CompareTag("hitbox") && state != state.DEATH && canGrab)
+        if (collision.gameObject.CompareTag("hitbox") && state != state.DEATH && (state != state.ATTACK || canGrab))
         {
             collision.gameObject.GetComponent<BoxCollider>().enabled = false;
             states.grab = true;
@@ -137,6 +146,8 @@ public class Enemy : MonoBehaviour
         if (collision.transform.CompareTag("floor") && !grounded)
         {
             grounded = true;
+            StartCoroutine(getUp());
+            Game.globalInstance.sndPlayer.PlaySound(SoundType.IMPACT1, soundSrc);
         }
         if (collision.transform.CompareTag("trap") && canGrab && state != state.DEATH)
         {
@@ -171,26 +182,20 @@ public class Enemy : MonoBehaviour
 
         if (states.letGo && state == state.GRABBED)
         {
+            states.letGo = false;
             ChangeState(state.THROWN);
         }
 
         slider.value = health;
 
         anim.SetFloat("Speed", agent.speed * 2);
-        anim.SetBool("Grounded", grounded);
-        anim.SetBool("FreeFall", !grounded);
-
-        if (transform.parent == attachPoint)
-        {
-            transform.localPosition = new Vector3(0, 0.5f, 0);
-            transform.localRotation = Quaternion.Euler(0, 0, 0);
-        }
     }
 
     public void ChangeState(state newState)
     {
         if (state != newState)
         {
+            reset.resetPos();
             statesExitMeths[state].Invoke();
             prevState = state;
             state = newState;
@@ -202,12 +207,15 @@ public class Enemy : MonoBehaviour
     #region Enter
     private void StateEnterPrime()
     {
+        anim.SetBool("Prime", true);
         agent.speed = 0.25f;
         StartCoroutine(charge());
     }
 
     private void StateEnterAttack()
     {
+        anim.SetBool("IsCharging", true);
+
         canGrab = false;
 
         gameObject.tag = "enemy";
@@ -266,6 +274,7 @@ public class Enemy : MonoBehaviour
 
     private void StateEnterGrabbed()
     {
+        canGrab = false;
 
         if (agent.enabled)
         {
@@ -274,8 +283,17 @@ public class Enemy : MonoBehaviour
         agent.speed = 0;
         agent.enabled = false;
         states.grab = true;
-        transform.parent = attachPoint;
-        transform.position = attachPoint.position;
+
+        if (inputs.spin)
+        {
+            transform.parent = spinPoint;
+            transform.position = spinPoint.position;
+        }
+        else
+        {
+            transform.parent = attachPoint;
+            transform.position = attachPoint.position;
+        }
 
         transform.localRotation = Quaternion.Euler(0, 0, 0);
 
@@ -355,6 +373,8 @@ public class Enemy : MonoBehaviour
 
     private void StateStayThrown()
     {
+        reset.resetPos();
+
         if (states.exitPD)
         {
             if (health <= 0)
@@ -399,11 +419,16 @@ public class Enemy : MonoBehaviour
     #region Exit
     private void StateExitPrime()
     {
+        reset.resetPos();
         agent.speed = speed;
+
+        anim.SetBool("Prime", false);
     }
 
     private void StateExitAttack()
     {
+        reset.resetPos();
+        anim.SetBool("IsCharging", false);
         gameObject.tag = "Untagged";
         canGrab = true;
         agent.speed = speed;
@@ -412,6 +437,7 @@ public class Enemy : MonoBehaviour
 
     private void StateExitThrown()
     {
+        reset.resetPos();
         rb.velocity = new Vector3(0, 0, 0);
         rb.angularVelocity = new Vector3(0, 0, 0);
         agent.speed = speed;
@@ -420,6 +446,7 @@ public class Enemy : MonoBehaviour
 
     private void StateExitGrabbed()
     {
+        reset.resetPos();
         capCollider.isTrigger = false;
         transform.localPosition = new Vector3(0, 0.5f, 0);
         transform.localRotation = Quaternion.Euler(0, 0, 0);
@@ -427,18 +454,22 @@ public class Enemy : MonoBehaviour
 
     private void StateExitDeath()
     {
+        reset.resetPos();
     }
     
     private void StateExitSpawn()
     {
+        reset.resetPos();
     }
 
     private void StateExitHit()
     {
+        reset.resetPos();
     }
 
     private void StateExitMove()
     {
+        reset.resetPos();
         if (agent.enabled)
         {
             agent.SetDestination(transform.position);
@@ -469,6 +500,9 @@ public class Enemy : MonoBehaviour
     private IEnumerator attackRecoil()
     {
         gameObject.tag = "Untagged";
+
+        anim.SetBool("IsCharging", false);
+        agent.speed = 0;
 
         if (debug)
         {
@@ -509,7 +543,12 @@ public class Enemy : MonoBehaviour
     }
     private IEnumerator getUp()
     {
-        yield return new WaitForSeconds(3f);
+        reset.resetPos();
+        yield return new WaitForSeconds(1f);
+        anim.SetBool("GetUp", true);
+
+        yield return new WaitForSeconds(1.5f);
+        canGrab = true;
         ChangeState(state.MOVE);
     }
     #endregion
