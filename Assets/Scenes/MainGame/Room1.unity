@@ -766,6 +766,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2492228563954587789, guid: 2b9cf1ac439bf2e47845d5b00bb4b816,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b9cf1ac439bf2e47845d5b00bb4b816, type: 3}
 --- !u!1 &110223723
@@ -1167,6 +1172,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ground (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2492228563954587789, guid: 2b9cf1ac439bf2e47845d5b00bb4b816,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b9cf1ac439bf2e47845d5b00bb4b816, type: 3}
@@ -5327,6 +5337,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2492228563954587789, guid: 2b9cf1ac439bf2e47845d5b00bb4b816,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b9cf1ac439bf2e47845d5b00bb4b816, type: 3}
 --- !u!4 &636350828 stripped
@@ -8929,6 +8944,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2492228563954587789, guid: 2b9cf1ac439bf2e47845d5b00bb4b816,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b9cf1ac439bf2e47845d5b00bb4b816, type: 3}
 --- !u!1001 &1188457100
@@ -11701,7 +11721,7 @@ GameObject:
   - component: {fileID: 1519943176}
   - component: {fileID: 1519943175}
   - component: {fileID: 1519943174}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Cube
   m_TagString: floor
   m_Icon: {fileID: 0}
@@ -13895,6 +13915,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 2492228563954587789, guid: 2b9cf1ac439bf2e47845d5b00bb4b816,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b9cf1ac439bf2e47845d5b00bb4b816, type: 3}
