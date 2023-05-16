@@ -585,6 +585,8 @@ public class Enemy : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         canGrab = true;
         ChangeState(state.MOVE);
+
+        anim.SetBool("GetUp", false);
     }
     #endregion
 }

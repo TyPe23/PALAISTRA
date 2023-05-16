@@ -196,7 +196,7 @@ public class PlayerStates : MonoBehaviour
         }
 
         canAction = false;
-        launchAmount = 30;
+        launchAmount = 15;
         stamina.spendStamina(playerStats.PileDriverCost);
         canAction = false;
         canCheck = false;
@@ -211,21 +211,23 @@ public class PlayerStates : MonoBehaviour
 
     private void StateEnterSpin()
     {
+        animator.SetBool("IsSpinning", true);
+        animator.SetBool("Spin", true);
+
         if (enemyAnim != null)
         {
-            enemyAnim.SetBool("GetUp", false);
+            enemyAnim.SetBool("IsSpinning", true);
             enemyAnim.SetBool("Spin", true);
         }
-        animator.SetBool("Spin", true);
-        //animator.SetBool("IsSpinning", true);
-        //enemyAnim.SetBool("IsSpinning", true);
-        launchAmount = 0;
+
+        launchAmount = 15;
         canAction = false;
         stamina.spendStamina(playerStats.SpinCost);
         canAction = false;
         letGo = false;
         shake.GenerateImpulseWithForce(0.1f);
         momentum.addMomentum(30);
+        StartCoroutine(waitToCheckGround());
         Game.globalInstance.sndPlayer.PlaySound(SoundType.GRAB, soundSrc);
     }
 
@@ -301,7 +303,7 @@ public class PlayerStates : MonoBehaviour
     {
         if (canAction)
         {
-            if (inputs.lariat && stamina.stamina >= playerStats.LariatCost)
+            if (inputs.lariat && stamina.stamina >= playerStats.LariatCost + 5)
             {
                 hitbox.enabled = true;
 
@@ -318,7 +320,7 @@ public class PlayerStates : MonoBehaviour
 
                 StartCoroutine(HBTimeout());
             }
-            else if (inputs.spin && stamina.stamina >= playerStats.SpinCost)
+            else if (inputs.spin && stamina.stamina >= playerStats.SpinCost + 5)
             {
                 hitbox.enabled = true;
 
@@ -336,7 +338,7 @@ public class PlayerStates : MonoBehaviour
 
                 StartCoroutine(HBTimeout());
             }
-            else if (inputs.pileDriver && stamina.stamina >= playerStats.PileDriverCost)
+            else if (inputs.pileDriver && stamina.stamina >= playerStats.PileDriverCost + 5)
             {
                 hitbox.enabled = true;
 
@@ -385,26 +387,22 @@ public class PlayerStates : MonoBehaviour
             launchAmount += Time.fixedDeltaTime * 20;
         }
 
-        if (!inputs.spin || stamina.stamina <= 1)
+        if (!inputs.spin || stamina.stamina <= 1 && canCheck)
         {
             animator.SetBool("IsSpinning", false);
-            animator.SetBool("Spin", false);
 
             if (enemyAnim != null)
             {
                 enemyAnim.SetBool("IsSpinning", false);
-                enemyAnim.SetBool("Spin", false);
             }
         }
         else
         {
             animator.SetBool("IsSpinning", true);
-            animator.SetBool("Spin", true);
 
             if (enemyAnim != null)
             {
                 enemyAnim.SetBool("IsSpinning", true);
-                enemyAnim.SetBool("Spin", true);
             }
         }
 
@@ -440,7 +438,7 @@ public class PlayerStates : MonoBehaviour
 
         if (canAction && !changed)
         {
-            if (inputs.lariat && stamina.stamina >= playerStats.LariatCost)
+            if (inputs.lariat && stamina.stamina >= playerStats.LariatCost + 5)
             {
                 hitbox.enabled = true;
 
@@ -458,7 +456,7 @@ public class PlayerStates : MonoBehaviour
 
                 StartCoroutine(HBTimeout());
             }
-            else if (inputs.spin && stamina.stamina >= playerStats.SpinCost)
+            else if (inputs.spin && stamina.stamina >= playerStats.SpinCost + 5)
             {
                 hitbox.enabled = true;
 
@@ -475,7 +473,7 @@ public class PlayerStates : MonoBehaviour
 
                 StartCoroutine(HBTimeout());
             }
-            else if (inputs.pileDriver && stamina.stamina >= playerStats.PileDriverCost)
+            else if (inputs.pileDriver && stamina.stamina >= playerStats.PileDriverCost + 5)
             {
                 hitbox.enabled = true;
 
@@ -537,7 +535,7 @@ public class PlayerStates : MonoBehaviour
             }
             else
             {
-                if (inputs.lariat && stamina.stamina >= playerStats.LariatCost)
+                if (inputs.lariat && stamina.stamina >= playerStats.LariatCost + 5)
                 {
                     hitbox.enabled = true;
 
@@ -555,7 +553,7 @@ public class PlayerStates : MonoBehaviour
 
                     StartCoroutine(HBTimeout());
                 }
-                else if (inputs.spin && stamina.stamina >= playerStats.SpinCost)
+                else if (inputs.spin && stamina.stamina >= playerStats.SpinCost + 5)
                 {
                     hitbox.enabled = true;
 
@@ -573,7 +571,7 @@ public class PlayerStates : MonoBehaviour
 
                     StartCoroutine(HBTimeout());
                 }
-                else if (inputs.pileDriver && stamina.stamina >= playerStats.PileDriverCost)
+                else if (inputs.pileDriver && stamina.stamina >= playerStats.PileDriverCost + 5)
                 {
                     hitbox.enabled = true;
 
@@ -640,6 +638,16 @@ public class PlayerStates : MonoBehaviour
         {
             enemyAnim.SetBool("Grapple", false);
         }
+
+        animator.SetBool("IsSpinning", false);
+        animator.SetBool("Spin", false);
+
+        if (enemyAnim != null)
+        {
+            enemyAnim.SetBool("IsSpinning", false);
+            enemyAnim.SetBool("Spin", false);
+        }
+
         //enemyAnim.SetBool("GetUp", true);
         letGo = true;
         shake.GenerateImpulseWithForce(0.25f);
@@ -691,7 +699,8 @@ public class PlayerStates : MonoBehaviour
     #region helper
     private IEnumerator waitToCheckGround()
     {
-        yield return new WaitForSeconds(0.5f);
+        canCheck = false;
+        yield return new WaitForSeconds(0.75f);
         canCheck = true;
     }
 
