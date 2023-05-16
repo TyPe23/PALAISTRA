@@ -65,6 +65,8 @@ public class Enemy : MonoBehaviour
     public maintainOrientation reset;
     public bool resetPos;
     private bool canHit = true;
+    private bool getUpBool;
+    private bool canCheck;
     #endregion
 
     #region LifeCycle
@@ -144,8 +146,10 @@ public class Enemy : MonoBehaviour
             states.enemyHealth = health;
             ChangeState(state.GRABBED);
         }
-        if (collision.transform.CompareTag("floor") && !grounded)
+        if (collision.transform.CompareTag("floor") && !grounded && !getUpBool && canCheck)
         {
+            tag = "enemyNoHit";
+            getUpBool = true;
             grounded = true;
             StartCoroutine(getUp());
             Game.globalInstance.sndPlayer.PlaySound(SoundType.IMPACT1, soundSrc);
@@ -167,8 +171,15 @@ public class Enemy : MonoBehaviour
     {
         if (other.transform.CompareTag("spunObj") && canHit && canGrab && state != state.DEATH)
         {
+            agent.enabled = false;
+
+            Vector3 dir = other.transform.position - transform.position;
+
+
             health -= 2;
             ChangeState(state.HIT);
+
+            rb.AddForce(dir * 150, ForceMode.Impulse);
         }
     }
 
@@ -177,7 +188,7 @@ public class Enemy : MonoBehaviour
         prevDist = distToPlayer;
         distToPlayer = (transform.position - player.transform.position).magnitude;
 
-        if (distToPlayer - prevDist > 0.1f && state != state.THROWN)
+        if (distToPlayer - prevDist > 0.1f && state != state.THROWN && state != state.HIT)
         {
             rb.velocity = new Vector3(0, 0, 0);
             rb.angularVelocity = new Vector3(0, 0, 0);
@@ -251,6 +262,7 @@ public class Enemy : MonoBehaviour
     {
         tag = "projectile";
 
+        StartCoroutine(groundCheckDelay());
 
         states.grab = false;
         grounded = false;
@@ -291,12 +303,15 @@ public class Enemy : MonoBehaviour
 
         canGrab = false;
 
+        canCheck = false;
+
         spinCollider.enabled = true;
 
         if (agent.enabled)
         {
             agent.SetDestination(transform.position);
         }
+
         agent.speed = 0;
         agent.enabled = false;
         states.grab = true;
@@ -399,8 +414,9 @@ public class Enemy : MonoBehaviour
             {
                 ChangeState(state.DEATH);
             }
-            else
+            else if (!getUpBool)
             {
+                getUpBool = true;
                 StartCoroutine(getUp());
             }
         }
@@ -483,6 +499,11 @@ public class Enemy : MonoBehaviour
     
     private void StateExitSpawn()
     {
+
+        agent.enabled = true;
+        rb.isKinematic = true;
+        rb.useGravity = false;
+
         reset.resetPos();
     }
 
@@ -504,10 +525,6 @@ public class Enemy : MonoBehaviour
     #region HELPER
     private IEnumerator hitStun()
     {
-        Vector3 dir = throwRef.position - player.transform.position;
-
-        rb.AddForce(dir, ForceMode.Impulse);
-
         canHit = false;
 
         anim.SetBool("GetHit", true);
@@ -587,6 +604,14 @@ public class Enemy : MonoBehaviour
         ChangeState(state.MOVE);
 
         anim.SetBool("GetUp", false);
+        getUpBool = false;
+    }
+
+    IEnumerator groundCheckDelay()
+    {
+        canCheck = false;
+        yield return new WaitForSeconds(1);
+        canCheck = true;
     }
     #endregion
 }
