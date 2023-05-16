@@ -63,6 +63,8 @@ public class PlayerStates : MonoBehaviour
     public float PDTime = 2;
     public int enemyHealth;
 
+    public GameObject cracks;
+
     public bool exitPD { get; private set; }
     #endregion
 
@@ -614,6 +616,8 @@ public class PlayerStates : MonoBehaviour
         animator.SetBool("Grapple", false);
         animator.SetBool("Piledriver", false);
 
+        Instantiate(cracks, transform.position, Quaternion.Euler(0, UnityEngine.Random.Range(0, 360), 0));
+
         if (enemyAnim != null)
         {
             enemyAnim.SetBool("Grapple", false);
@@ -648,6 +652,8 @@ public class PlayerStates : MonoBehaviour
     {
         animator.SetBool("Grapple", false);
         animator.SetBool("Lariat", false);
+
+        Instantiate(cracks, transform.position, Quaternion.Euler(0, UnityEngine.Random.Range(0, 360), 0));
 
         if (enemyAnim != null)
         {

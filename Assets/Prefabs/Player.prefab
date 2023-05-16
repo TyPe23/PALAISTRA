@@ -2074,10 +2074,10 @@ MonoBehaviour:
   FallTimeout: 0.15
   Grounded: 1
   GroundedOffset: -0.14
-  GroundedRadius: 0.3
+  GroundedRadius: 0.4
   GroundLayers:
     serializedVersion: 2
-    m_Bits: 513
+    m_Bits: 16897
   CinemachineCameraTarget: {fileID: 520760848455276987}
   TopClamp: 70
   BottomClamp: -30
@@ -2364,6 +2364,8 @@ MonoBehaviour:
   enemyAnim: {fileID: 0}
   EOG: {fileID: 4751595418921074243}
   PDTime: 1
+  enemyHealth: 0
+  cracks: {fileID: 4297400524780121986, guid: 039d5757a47f6764c9bd54aec48f21b1, type: 3}
 --- !u!114 &7879785133890839069
 MonoBehaviour:
   m_ObjectHideFlags: 0
