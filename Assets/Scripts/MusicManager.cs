@@ -22,16 +22,19 @@ public class MusicManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (enemies[0].state == enemyStates.MOVE && !inCombat)
+        if (enemies != null)
         {
-            inCombat = true;
+            if (enemies[0].state == enemyStates.MOVE && !inCombat)
+            {
+                inCombat = true;
+            }
         }
 
         if (!audioBase.isPlaying && inCombat && !startedLoop)
         {
             audioCombat.Play();
         }
-        else if (!inCombat && !audioBase.isPlaying)
+        else if (!inCombat && !audioBase.isPlaying && !audioLoop.isPlaying)
         {
             audioBase.Play();
         }
@@ -54,6 +57,10 @@ public class MusicManager : MonoBehaviour
                 {
                     inCombat = true;
                 }
+            }
+            if (!inCombat)
+            {
+                audioLoop.loop = false;
             }
         }
     }

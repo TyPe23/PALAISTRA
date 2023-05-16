@@ -16,10 +16,10 @@ public class HighScoreInit : MonoBehaviour
         PlayerPrefs.SetFloat("LariatSpeed", PlayerPrefs.GetFloat("MoveSpeed") * 2);
         PlayerPrefs.SetFloat("PileDriverSpeed", PlayerPrefs.GetFloat("MoveSpeed"));
         PlayerPrefs.SetFloat("DashDist", 3);
-        PlayerPrefs.SetInt("SpinCost", 5);
-        PlayerPrefs.SetInt("DashCost", 5);
-        PlayerPrefs.SetInt("LariatCost", 10);
-        PlayerPrefs.SetInt("PileDriverCost", 10);
+        PlayerPrefs.SetInt("SpinCost", 10);
+        PlayerPrefs.SetInt("DashCost", 10);
+        PlayerPrefs.SetInt("LariatCost", 20);
+        PlayerPrefs.SetInt("PileDriverCost", 30);
         PlayerPrefs.SetInt("currency", 10);
         PlayerPrefs.SetFloat("maxStamina", 100);
         PlayerPrefs.SetFloat("maxHealth", 20);

@@ -141,6 +141,7 @@ public class Enemy : MonoBehaviour
             states.grab = true;
             states.letGo = false;
             states.enemyAnim = anim;
+            states.enemyHealth = health;
             ChangeState(state.GRABBED);
         }
         if (collision.transform.CompareTag("floor") && !grounded)
@@ -181,6 +182,11 @@ public class Enemy : MonoBehaviour
             rb.velocity = new Vector3(0, 0, 0);
             rb.angularVelocity = new Vector3(0, 0, 0);
         }
+
+        if (states.letGo && transform.parent != parent)
+        {
+            ChangeState(state.THROWN);
+        }
     }
 
 
@@ -188,15 +194,14 @@ public class Enemy : MonoBehaviour
     {
         statesStayMeths[state].Invoke();
 
-        if (states.letGo && state == state.GRABBED)
-        {
-            states.letGo = false;
-            ChangeState(state.THROWN);
-        }
-
         slider.value = health;
 
         anim.SetFloat("Speed", agent.speed * 2);
+
+        if (health <= 0 && state != state.DEATH)
+        {
+            ChangeState(state.DEATH);
+        }
     }
 
     public void ChangeState(state newState)
@@ -246,9 +251,7 @@ public class Enemy : MonoBehaviour
     {
         tag = "projectile";
 
-        StartCoroutine(pauseCollision());
 
-        capCollider.enabled = false;
         states.grab = false;
         grounded = false;
         states.letGo = false;
@@ -327,7 +330,8 @@ public class Enemy : MonoBehaviour
 
     private void StateEnterDeath()
     {
-        //trigger death anim
+        agent.speed = 0;
+
         if (debug)
         {
             mesh.material.color = new Color(0, 0, 0);
@@ -498,12 +502,6 @@ public class Enemy : MonoBehaviour
     #endregion
 
     #region HELPER
-    private IEnumerator pauseCollision()
-    {
-        yield return new WaitForSeconds(0.5f);
-        capCollider.enabled = true;
-    }
-    
     private IEnumerator hitStun()
     {
         Vector3 dir = throwRef.position - player.transform.position;
@@ -563,7 +561,7 @@ public class Enemy : MonoBehaviour
     {
         checkingDist = true;
         yield return new WaitForSeconds(2f);
-        if (state == state.MOVE && (transform.position - player.transform.position).magnitude <= attackDist)
+        if (state == state.MOVE && (transform.position - player.transform.position).magnitude <= attackDist && state == state.MOVE)
         {
             ChangeState(state.PRIME);
         }
@@ -578,7 +576,11 @@ public class Enemy : MonoBehaviour
     {
         reset.resetPos();
         yield return new WaitForSeconds(1f);
-        anim.SetBool("GetUp", true);
+
+        if (health > 0)
+        {
+            anim.SetBool("GetUp", true);
+        }
 
         yield return new WaitForSeconds(1.5f);
         canGrab = true;

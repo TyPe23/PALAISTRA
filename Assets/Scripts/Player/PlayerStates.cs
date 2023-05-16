@@ -61,6 +61,7 @@ public class PlayerStates : MonoBehaviour
     private bool canMove;
     private bool canAction = true;
     public float PDTime = 2;
+    public int enemyHealth;
 
     public bool exitPD { get; private set; }
     #endregion
@@ -523,7 +524,7 @@ public class PlayerStates : MonoBehaviour
 
     private void StateStayMove()
     {
-        //letGo = true;
+        letGo = true;
         charCon.Move();
 
         if (canAction)
@@ -652,7 +653,10 @@ public class PlayerStates : MonoBehaviour
         {
             enemyAnim.SetBool("Grapple", false);
             enemyAnim.SetBool("Lariat", false);
-            enemyAnim.SetBool("GetUp", true);
+            if (enemyHealth > 0)
+            {
+                enemyAnim.SetBool("GetUp", true);
+            }
         }
         letGo = true;
         shake.GenerateImpulseWithForce(0.5f);
