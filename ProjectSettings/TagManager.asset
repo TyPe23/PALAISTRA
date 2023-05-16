@@ -32,8 +32,8 @@ TagManager:
   - pushable
   - 
   - Enemy
-  - 
-  - 
+  - LayerMask
+  - SeeThrough
   - 
   - 
   - 
