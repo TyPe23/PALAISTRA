@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -16,6 +17,7 @@ public class RoomManager : MonoBehaviour
     [SerializeField]private direction goDir;
     public int roomtoShop;
     [SerializeField] private GameObject player;
+    [SerializeField] private List<Enemy> enemies;
 
     private PlayerStats stats;
     private MomentumManager momentum;
@@ -26,6 +28,12 @@ public class RoomManager : MonoBehaviour
         stats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
         momentum = GameObject.FindGameObjectWithTag("Player").GetComponent<MomentumManager>();
         roomCount = PlayerPrefs.GetInt("roomCount");
+        var enemy = GameObject.FindGameObjectsWithTag("enemyNoHit");
+        foreach(GameObject e in enemy)
+        {
+            enemies.Add(e.GetComponent<Enemy>());
+        }
+
         //print("Room Count: " + roomCount);
         StartCoroutine(enter());
     }
@@ -34,9 +42,8 @@ public class RoomManager : MonoBehaviour
     void Update()
     {
         int enemiesLeft = 0;
-        var enemies = GameObject.FindGameObjectsWithTag("enemy");
         foreach(var enemy in enemies){
-            if(enemy.GetComponent<Enemy>().health > 0)
+            if(enemy.health > 0)
             {
                 enemiesLeft++;
             }
