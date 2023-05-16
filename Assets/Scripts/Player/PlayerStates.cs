@@ -43,6 +43,7 @@ public class PlayerStates : MonoBehaviour
     public bool showScore = true;
     public Animator enemyAnim;
     public EndOfGame EOG;
+    public Transform launchArrow;
 
     private Dictionary<playerStates, Action> statesStayMeths;
     private Dictionary<playerStates, Action> statesEnterMeths;
@@ -382,10 +383,14 @@ public class PlayerStates : MonoBehaviour
         stamina.spendStamina(playerStats.SpinHoldCost);
         charCon.Spin();
 
+
+
         if (launchAmount <= 80)
         {
             launchAmount += Time.fixedDeltaTime * 20;
         }
+
+        launchArrow.localScale = new Vector3(1, 1, launchAmount / 80);
 
         if (!inputs.spin || stamina.stamina <= 1 && canCheck)
         {
@@ -631,6 +636,8 @@ public class PlayerStates : MonoBehaviour
 
     private void StateExitSpin()
     {
+
+        launchArrow.localScale = new Vector3(1, 1, 0);
 
         animator.SetBool("Grapple", false);
 
