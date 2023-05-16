@@ -524,7 +524,8 @@ MonoBehaviour:
   - Player
   spawns:
   - {fileID: 4884112143039147224, guid: f8323482fe241d1489c114e6c076cc81, type: 3}
-  max: 11
+  - {fileID: 76669888077979742, guid: 89ef213c85404c8438ac995a53cd676a, type: 3}
+  max: 6
   debug: 0
   state: 0
   prevState: 0
