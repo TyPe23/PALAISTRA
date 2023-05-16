@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8032,6 +8032,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2091329968, guid: bf0a8faaa5ae4674db9869ce1fdfbb6a, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4751595418921074241, guid: bf0a8faaa5ae4674db9869ce1fdfbb6a,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4794036322863823450, guid: bf0a8faaa5ae4674db9869ce1fdfbb6a,
@@ -17715,6 +17720,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: EOG
       objectReference: {fileID: 0}
+    - target: {fileID: 2116780513395369899, guid: bcf6b5017301b2942a49c69d33e0547a,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1203122315}
     - target: {fileID: 2116780513395369899, guid: bcf6b5017301b2942a49c69d33e0547a,
         type: 3}
       propertyPath: playerUI

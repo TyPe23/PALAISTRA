@@ -46,6 +46,7 @@ public class Enemy : MonoBehaviour
     private NavMeshAgent agent;
     private MeshRenderer mesh;
     private Animator anim;
+    public SphereCollider spinCollider;
     private AudioSource soundSrc;
 
     private PlayerStates states;
@@ -63,6 +64,7 @@ public class Enemy : MonoBehaviour
     private Dictionary<state, Action> statesExitMeths;
     public maintainOrientation reset;
     public bool resetPos;
+    private bool canHit = true;
     #endregion
 
     #region LifeCycle
@@ -81,11 +83,11 @@ public class Enemy : MonoBehaviour
         spinPoint = GameObject.FindWithTag("spinAttach").transform;
 
         rb = GetComponent<Rigidbody>();
-        capCollider = player.GetComponent<CapsuleCollider>();
         mesh = GetComponentInChildren<MeshRenderer>();
         anim = GetComponentInChildren<Animator>();
         soundSrc = GetComponent<AudioSource>();
 
+        capCollider = player.GetComponent<CapsuleCollider>();
         states = player.GetComponent<PlayerStates>();
         inputs = player.GetComponent<StarterAssetsInputs>();
         shake = player.GetComponent<CinemachineImpulseSource>();
@@ -133,7 +135,7 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        if (collision.gameObject.CompareTag("hitbox") && state != state.DEATH && (state != state.ATTACK || canGrab))
+        if (collision.gameObject.CompareTag("hitbox") && state != state.DEATH && states.state != playerStates.EXHAUSTED && (state != state.ATTACK || canGrab))
         {
             collision.gameObject.GetComponent<BoxCollider>().enabled = false;
             states.grab = true;
@@ -154,7 +156,16 @@ public class Enemy : MonoBehaviour
         }
         if (collision.transform.CompareTag("projectile") && canGrab && state != state.DEATH)
         {
-            collision.transform.tag = "Untagged";
+            collision.transform.tag = "enemyNoHit";
+            health -= 2;
+            ChangeState(state.HIT);
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.transform.CompareTag("spunObj") && canHit && canGrab && state != state.DEATH)
+        {
             health -= 2;
             ChangeState(state.HIT);
         }
@@ -233,6 +244,8 @@ public class Enemy : MonoBehaviour
 
     private void StateEnterThrown()
     {
+        tag = "projectile";
+
         StartCoroutine(pauseCollision());
 
         capCollider.enabled = false;
@@ -271,7 +284,11 @@ public class Enemy : MonoBehaviour
 
     private void StateEnterGrabbed()
     {
+        tag = "spunObj";
+
         canGrab = false;
+
+        spinCollider.enabled = true;
 
         if (agent.enabled)
         {
@@ -426,7 +443,7 @@ public class Enemy : MonoBehaviour
     {
         reset.resetPos();
         anim.SetBool("IsCharging", false);
-        gameObject.tag = "Untagged";
+        gameObject.tag = "enemyNoHit";
         canGrab = true;
         agent.speed = speed;
         agent.acceleration /= 10;
@@ -434,6 +451,8 @@ public class Enemy : MonoBehaviour
 
     private void StateExitThrown()
     {
+        tag = "enemyNoHit";
+
         reset.resetPos();
         rb.velocity = new Vector3(0, 0, 0);
         rb.angularVelocity = new Vector3(0, 0, 0);
@@ -443,6 +462,10 @@ public class Enemy : MonoBehaviour
 
     private void StateExitGrabbed()
     {
+        anim.SetBool("Spin", false);
+        anim.SetBool("IsSpinning", false);
+        tag = "projectile";
+        spinCollider.enabled = false;
         reset.resetPos();
         capCollider.isTrigger = false;
         transform.localPosition = new Vector3(0, 0.5f, 0);
@@ -483,7 +506,17 @@ public class Enemy : MonoBehaviour
     
     private IEnumerator hitStun()
     {
+        Vector3 dir = throwRef.position - player.transform.position;
+
+        rb.AddForce(dir, ForceMode.Impulse);
+
+        canHit = false;
+
+        anim.SetBool("GetHit", true);
+
         yield return new WaitForSeconds(0.5f);
+
+        anim.SetBool("GetHit", false);
         if (health <= 0)
         {
             ChangeState(state.DEATH);
@@ -492,11 +525,14 @@ public class Enemy : MonoBehaviour
         {
             ChangeState(state.MOVE);
         }
+        yield return new WaitForSeconds(0.5f);
+        canHit = true;
+
     }
     
     private IEnumerator attackRecoil()
     {
-        gameObject.tag = "Untagged";
+        gameObject.tag = "enemyNoHit";
 
         anim.SetBool("IsCharging", false);
         agent.speed = 0;

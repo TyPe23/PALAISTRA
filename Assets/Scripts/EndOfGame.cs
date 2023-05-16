@@ -10,7 +10,7 @@ public class EndOfGame : MonoBehaviour
     public GameObject playerUI;
     public GameObject keyboardFirstButton;
 
-    private GameObject player;
+    public GameObject player;
     private PlayerInput playerInput;
     private PlayerInput UIinput;
     private PlayerStates state;
@@ -25,7 +25,6 @@ public class EndOfGame : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindWithTag("Player");
         stats = player.GetComponent<PlayerStats>();
         momentum = player.GetComponent<MomentumManager>();
         playerInput = player.GetComponent<PlayerInput>();
@@ -49,14 +48,8 @@ public class EndOfGame : MonoBehaviour
     {
         gameEnded = true;
 
-        if (state.state != playerStates.LOSE)
-        {
-            state.ChangeState(playerStates.LOSE);
-        }
-
         keyboardUI.SetActive(true);
         playerUI.SetActive(false);
-        inputs.cursorLocked = false;
         playerInput.enabled = false;
         UIinput.enabled = true;
 

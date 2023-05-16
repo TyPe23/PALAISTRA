@@ -470,9 +470,10 @@ GameObject:
   - component: {fileID: -3808224243469073448}
   - component: {fileID: 7743654464552533094}
   - component: {fileID: 5708307739738678241}
+  - component: {fileID: 8610622054223747493}
   m_Layer: 0
   m_Name: Vase
-  m_TagString: terrain
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -523,7 +524,8 @@ MonoBehaviour:
   - Player
   spawns:
   - {fileID: 4884112143039147224, guid: f8323482fe241d1489c114e6c076cc81, type: 3}
-  max: 11
+  - {fileID: 76669888077979742, guid: 89ef213c85404c8438ac995a53cd676a, type: 3}
+  max: 6
   debug: 0
   state: 0
   prevState: 0
@@ -658,6 +660,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &8610622054223747493
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8982013617635776901}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &9066724277442480382
 GameObject:
   m_ObjectHideFlags: 0

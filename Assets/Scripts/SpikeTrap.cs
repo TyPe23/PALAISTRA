@@ -52,7 +52,7 @@ public class SpikeTrap : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if ((other.transform.CompareTag("Player") || other.transform.CompareTag("Untagged")) && !isActive)
+        if ((other.transform.CompareTag("Player") || other.transform.CompareTag("enemyNoHit")) && !isActive)
         {
             //start trap
             StartCoroutine(primeTrap());

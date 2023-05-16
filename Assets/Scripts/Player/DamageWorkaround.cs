@@ -24,9 +24,5 @@ public class DamageWorkaround : MonoBehaviour
                 }
             }
         }
-        else if (collision.transform.CompareTag("enemy") && states.state == state.DASH)
-        {
-            states.ChangeState(state.STOP);
-        }
     }
 }
