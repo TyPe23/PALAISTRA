@@ -60,7 +60,6 @@ public class VasePhysics : MonoBehaviour
         anim = GetComponent<Animator>();
 
         parent = transform.parent;
-        parent = transform.parent;
         
         throwRef = GameObject.FindWithTag("throwRef").transform;
         attachPoint = GameObject.FindWithTag("vaseAttach").transform;
@@ -127,7 +126,9 @@ public class VasePhysics : MonoBehaviour
                 print(collision.name);
                 grounded = true;
             }
-            if (collision.gameObject.CompareTag("enemy") || collision.gameObject.CompareTag("enemyNoHit") || collision.transform.CompareTag("trap") || collision.transform.CompareTag("terrain"))
+            if (collision.transform.CompareTag("enemy") || collision.transform.CompareTag("enemyNoHit") 
+                || collision.transform.CompareTag("trap") || collision.transform.CompareTag("terrain") 
+                || collision.transform.CompareTag("spunObj"))
             {
                 print(collision.name);
                 ChangeState(state.BREAK);
