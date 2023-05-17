@@ -52,7 +52,7 @@ public class RoomManager : MonoBehaviour
         {
             levelComplete = true;
         }
-        if (entering)
+        /*if (entering)
         {
             
             if (goDir == direction.left)
@@ -65,7 +65,7 @@ public class RoomManager : MonoBehaviour
                 player.GetComponent<StarterAssetsInputs>().move = new Vector2(0.7f, 0.7f);
                 player.GetComponent<StarterAssetsInputs>().moveDir = new Vector2(0.7f, 0.7f);
             }
-        }
+        }*/
     }
 
     public void changeRoom(direction dir)
@@ -145,7 +145,7 @@ public class RoomManager : MonoBehaviour
     private IEnumerator enter()
     {
         entering = true;
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         entering = false;
     }
 }

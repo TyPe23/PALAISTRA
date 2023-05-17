@@ -5,20 +5,17 @@ public class HermesInteraction : MonoBehaviour
 {
     [SerializeField] private StarterAssetsInputs player;
     public bool repeat;
+    private bool interactable;
     public DialogueTrigger trigger;
     public DialogueManager man;
     [SerializeField]private GameObject text;
     // Start is called before the first frame update
     void Start()
     {
+        interactable = true;
         text.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -43,16 +40,18 @@ public class HermesInteraction : MonoBehaviour
 
     IEnumerator startDialogue()
     {
-        if (repeat)
+        if (repeat && interactable)
         {
+            StartCoroutine(PauseInteract());
             GameObject.FindWithTag("Player").GetComponent<PlayerStats>().MoveSpeed = 0;
             yield return new WaitForSeconds(0.3f);
             gameObject.GetComponent<Collider>().enabled = true;
 
             man.DisplayNextSentence();
         }
-        else
+        else if(interactable)
         {
+            StartCoroutine(PauseInteract());
             GameObject.FindWithTag("Player").GetComponent<PlayerStats>().MoveSpeed = 0;
             yield return new WaitForSeconds(0.3f);
             repeat = true;
@@ -70,5 +69,12 @@ public class HermesInteraction : MonoBehaviour
     {
         yield return new WaitForSeconds(10);
         repeat = false;
+    }
+
+    public IEnumerator PauseInteract()
+    {
+        interactable = false;
+        yield return new WaitForSeconds(2);
+        interactable = true;
     }
 }

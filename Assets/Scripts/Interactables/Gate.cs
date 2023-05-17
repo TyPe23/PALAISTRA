@@ -11,8 +11,9 @@ public enum direction
 }
 public class Gate : MonoBehaviour
 {
-    private GameObject roomMan;
+    private RoomManager roomMan;
     private GameObject player;
+    private StarterAssetsInputs sai;
 
     [Tooltip("Put at -1 to randomly choose room, otherwise, input buildIndex of next room")]
     [SerializeField] int nextRoom;
@@ -27,8 +28,10 @@ public class Gate : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        roomMan = GameObject.Find("RoomManager");
+        roomMan = GameObject.Find("RoomManager").GetComponent<RoomManager>();
         player = GameObject.FindWithTag("Player");
+        sai = player.GetComponent<StarterAssetsInputs>();
+
         text.enabled = false;
     }
 
@@ -38,22 +41,22 @@ public class Gate : MonoBehaviour
         if (leaving) {
             if (goDir == direction.left)
             {
-                player.GetComponent<StarterAssetsInputs>().move = new Vector2(-0.7f, 0.7f);
-                player.GetComponent<StarterAssetsInputs>().moveDir = new Vector2(-0.7f, 0.7f);
+                sai.move = new Vector2(-0.7f, 0.7f);
+                sai.moveDir = new Vector2(-0.7f, 0.7f);
             }
             else if(goDir == direction.downleft){
-                player.GetComponent<StarterAssetsInputs>().move = new Vector2(-0.7f, -0.7f);
-                player.GetComponent<StarterAssetsInputs>().moveDir = new Vector2(-0.7f, -0.7f);
+                sai.move = new Vector2(-0.7f, -0.7f);
+                sai.moveDir = new Vector2(-0.7f, -0.7f);
             }
             else if(goDir == direction.downright)
             {
-                player.GetComponent<StarterAssetsInputs>().move = new Vector2(0.7f, -0.7f);
-                player.GetComponent<StarterAssetsInputs>().moveDir = new Vector2(0.7f, -0.7f);
+                sai.move = new Vector2(0.7f, -0.7f);
+                sai.moveDir = new Vector2(0.7f, -0.7f);
             }
             else
             {
-                player.GetComponent<StarterAssetsInputs>().move = new Vector2(0.7f, 0.7f);
-                player.GetComponent<StarterAssetsInputs>().moveDir = new Vector2(0.7f, 0.7f);
+                sai.move = new Vector2(0.7f, 0.7f);
+                sai.moveDir = new Vector2(0.7f, 0.7f);
             }
         }
         
@@ -66,17 +69,17 @@ public class Gate : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         
-        if (other.transform.CompareTag("Player")&& roomMan.GetComponent<RoomManager>().levelComplete && player.GetComponent<StarterAssetsInputs>().interact)
+        if (other.transform.CompareTag("Player")&& roomMan.levelComplete && sai.interact)
         {
+            topCollider.enabled = false;
             bottomCollider.enabled = false;
             StartCoroutine(BeforeSceneChange());
-            topCollider.enabled = false;
         }
-        else if(other.transform.CompareTag("Player") && enemiesOption && player.GetComponent<StarterAssetsInputs>().interact)
+        else if(other.transform.CompareTag("Player") && enemiesOption && sai.interact)
         {
+            topCollider.enabled = false;
             bottomCollider.enabled = false;
             StartCoroutine(BeforeSceneChange());
-            topCollider.enabled = false;
         }
     }
 
@@ -98,12 +101,12 @@ public class Gate : MonoBehaviour
         if (nextRoom <= -1)
         {
             print("random room");
-            roomMan.GetComponent<RoomManager>().changeRoom(goDir);
+            roomMan.changeRoom(goDir);
         }
         else
         {
             print("going to room" + nextRoom);
-            roomMan.GetComponent<RoomManager>().changeRoomSpecific(nextRoom,goDir);
+            roomMan.changeRoomSpecific(nextRoom,goDir);
         }
     }
 }
