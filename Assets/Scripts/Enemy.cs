@@ -173,13 +173,13 @@ public class Enemy : MonoBehaviour
         {
             agent.enabled = false;
 
-            Vector3 dir = other.transform.position - transform.position;
+            Vector3 dir = transform.position - other.transform.position;
 
 
             health -= 2;
             ChangeState(state.HIT);
 
-            rb.AddForce(dir * 150, ForceMode.Impulse);
+            rb.AddForce(dir * 15, ForceMode.Impulse);
         }
     }
 
@@ -188,11 +188,6 @@ public class Enemy : MonoBehaviour
         prevDist = distToPlayer;
         distToPlayer = (transform.position - player.transform.position).magnitude;
 
-        if (distToPlayer - prevDist > 0.1f && state != state.THROWN && state != state.HIT)
-        {
-            rb.velocity = new Vector3(0, 0, 0);
-            rb.angularVelocity = new Vector3(0, 0, 0);
-        }
 
         if (states.letGo && transform.parent != parent)
         {
@@ -267,10 +262,8 @@ public class Enemy : MonoBehaviour
         states.grab = false;
         grounded = false;
         states.letGo = false;
-        rb.isKinematic = false;
         transform.parent = parent;
         transform.rotation = Quaternion.Euler(0, 0, 0);
-        rb.useGravity = true;
 
         if (debug)
         {
@@ -329,8 +322,6 @@ public class Enemy : MonoBehaviour
 
         transform.localRotation = Quaternion.Euler(0, 0, 0);
 
-        rb.useGravity = false;
-        rb.isKinematic = true;
         capCollider.isTrigger = true;
         if (debug)
         {
@@ -353,9 +344,7 @@ public class Enemy : MonoBehaviour
         }
         
         slider.gameObject.SetActive(false);
-        rb.isKinematic = true;
         capCollider.enabled = false;
-        rb.detectCollisions = false;
     }
 
     private void StateEnterHit()
@@ -478,8 +467,6 @@ public class Enemy : MonoBehaviour
         tag = "enemyNoHit";
 
         reset.resetPos();
-        rb.velocity = new Vector3(0, 0, 0);
-        rb.angularVelocity = new Vector3(0, 0, 0);
         agent.speed = speed;
         agent.enabled = true;
     }
@@ -505,8 +492,6 @@ public class Enemy : MonoBehaviour
     {
 
         agent.enabled = true;
-        rb.isKinematic = true;
-        rb.useGravity = false;
 
         reset.resetPos();
     }
