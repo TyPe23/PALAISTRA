@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 120973769878050987}
   - component: {fileID: 1757910713660392512}
   - component: {fileID: 7482707245273946799}
+  - component: {fileID: 5693381974801768229}
+  - component: {fileID: 6838076451893919920}
   m_Layer: 0
   m_Name: Pressure_Plate_Switch
   m_TagString: Untagged
@@ -85,6 +87,35 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &5693381974801768229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799593465207798311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 670af3b5bdb64a64f91dc1a84e88983a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doors: []
+  active: 0
+  PressurePlate: {fileID: 3006792449440955348}
+  activated: 0
+--- !u!65 &6838076451893919920
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799593465207798311}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.8830004, y: 0.34900263, z: 2.8830001}
+  m_Center: {x: -0.00000017881393, y: -0.07365811, z: -0.0000023841858}
 --- !u!1 &3006792449440955348
 GameObject:
   m_ObjectHideFlags: 0
@@ -111,8 +142,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3006792449440955348}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.041007653, y: 0.023834826, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.041007653, y: -0.031, z: 0}
+  m_LocalScale: {x: 1, y: 0.5341089, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 120973769878050987}

@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 7291277149530590277}
   m_Layer: 0
   m_Name: projectile (fast)
-  m_TagString: projectile
+  m_TagString: trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128,7 +128,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
+  m_Radius: 0.75
   m_Height: 2
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0}

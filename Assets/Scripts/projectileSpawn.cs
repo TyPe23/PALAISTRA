@@ -4,7 +4,7 @@ using UnityEngine;
 public class ProjectileSpawn : MonoBehaviour
 {
     public GameObject projectile;
-    public bool continuous;
+    public bool continuous = true;
     public float spawnTime = 1;
     private bool canSpawn = true;
     private Transform spawnPos;
