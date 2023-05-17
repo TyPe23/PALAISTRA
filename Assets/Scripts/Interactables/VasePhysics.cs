@@ -63,7 +63,7 @@ public class VasePhysics : MonoBehaviour
         parent = transform.parent;
         
         throwRef = GameObject.FindWithTag("throwRef").transform;
-        attachPoint = GameObject.FindWithTag("spinAttach").transform;
+        attachPoint = GameObject.FindWithTag("vaseAttach").transform;
 
         statesStayMeths = new Dictionary<state, Action>()
         {

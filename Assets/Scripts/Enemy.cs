@@ -82,7 +82,7 @@ public class Enemy : MonoBehaviour
         parent = transform.parent;
         throwRef = GameObject.FindWithTag("throwRef").transform;
         attachPoint = GameObject.FindWithTag("lariatAttach").transform;
-        spinPoint = GameObject.FindWithTag("spinAttach").transform;
+        spinPoint = GameObject.FindWithTag("lariatAttach").transform;
 
         rb = GetComponent<Rigidbody>();
         mesh = GetComponentInChildren<MeshRenderer>();
