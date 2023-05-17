@@ -37,7 +37,6 @@ public class VasePhysics : MonoBehaviour
     private MeshRenderer mesh;
     private Animator anim;
     private Rigidbody rb;
-    private BoxCollider potCollider;
     private PlayerStates playerState;
     private AudioSource soundSrc;
     private Transform parent;
@@ -59,7 +58,6 @@ public class VasePhysics : MonoBehaviour
         playerState = player.GetComponent<PlayerStates>();
         inputs = player.GetComponent<StarterAssetsInputs>();
         anim = GetComponent<Animator>();
-        potCollider = GetComponent<BoxCollider>();
 
         parent = transform.parent;
         parent = transform.parent;
@@ -129,7 +127,7 @@ public class VasePhysics : MonoBehaviour
                 print(collision.name);
                 grounded = true;
             }
-            if (collision.gameObject.CompareTag("enemy") || collision.gameObject.CompareTag("enemyNoHit") || collision.transform.CompareTag("trap"))
+            if (collision.gameObject.CompareTag("enemy") || collision.gameObject.CompareTag("enemyNoHit") || collision.transform.CompareTag("trap") || collision.transform.CompareTag("terrain"))
             {
                 print(collision.name);
                 ChangeState(state.BREAK);
@@ -207,6 +205,9 @@ public class VasePhysics : MonoBehaviour
         rb.useGravity = false;
         rb.isKinematic = true;
         vaseCollider.enabled = false;
+
+        transform.localPosition = Vector3.zero;
+        transform.localRotation = Quaternion.Euler(0, 0, 0);
 
         tag = "spunObj";
 

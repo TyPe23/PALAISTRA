@@ -2448,7 +2448,7 @@ MonoBehaviour:
   enemyAnim: {fileID: 0}
   EOG: {fileID: 4751595418921074243}
   launchArrow: {fileID: 5696470755189157467}
-  PDTime: 1
+  PDTime: 2
   enemyHealth: 0
   cracks: {fileID: 4297400524780121986, guid: 039d5757a47f6764c9bd54aec48f21b1, type: 3}
 --- !u!114 &7879785133890839069

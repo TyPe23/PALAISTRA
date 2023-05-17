@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7400639790887832409}
   m_Layer: 0
   m_Name: Bid_Pillar
-  m_TagString: Untagged
+  m_TagString: terrain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647

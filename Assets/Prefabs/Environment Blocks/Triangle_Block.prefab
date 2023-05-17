@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1121557824807808712}
   m_Layer: 0
   m_Name: Triangle_Block
-  m_TagString: Untagged
+  m_TagString: terrain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647

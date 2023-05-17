@@ -674,10 +674,10 @@ public class PlayerStates : MonoBehaviour
         {
             enemyAnim.SetBool("Grapple", false);
             enemyAnim.SetBool("Lariat", false);
-            if (enemyHealth > 0)
-            {
-                enemyAnim.SetBool("GetUp", true);
-            }
+            //if (enemyHealth > 0)
+            //{
+            //    enemyAnim.SetBool("GetUp", true);
+            //}
         }
         letGo = true;
         shake.GenerateImpulseWithForce(0.5f);

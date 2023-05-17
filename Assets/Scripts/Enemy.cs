@@ -373,6 +373,8 @@ public class Enemy : MonoBehaviour
 
     private void StateEnterMove()
     {
+        reset.resetPos();
+
         if (debug)
         {
             mesh.material.color = new Color(255, 0, 255);
@@ -438,6 +440,8 @@ public class Enemy : MonoBehaviour
 
     private void StateStayMove()
     {
+        reset.resetPos();
+
         if (agent.enabled)
         {
             agent.SetDestination(player.transform.position);
@@ -510,6 +514,7 @@ public class Enemy : MonoBehaviour
     private void StateExitHit()
     {
         reset.resetPos();
+        agent.enabled = true;
     }
 
     private void StateExitMove()
@@ -591,20 +596,24 @@ public class Enemy : MonoBehaviour
     }
     private IEnumerator getUp()
     {
-        reset.resetPos();
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
 
         if (health > 0)
         {
             anim.SetBool("GetUp", true);
         }
 
-        yield return new WaitForSeconds(1.5f);
+        reset.resetPos();
+
+        yield return new WaitForSeconds(2.5f);
         canGrab = true;
         ChangeState(state.MOVE);
 
-        anim.SetBool("GetUp", false);
+        yield return new WaitForSeconds(1.5f);
+
+        reset.resetPos();
         getUpBool = false;
+        anim.SetBool("GetUp", false);
     }
 
     IEnumerator groundCheckDelay()
