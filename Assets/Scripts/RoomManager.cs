@@ -86,8 +86,6 @@ public class RoomManager : MonoBehaviour
             PlayerPrefs.SetInt("roomCount", roomCount + 1);
             SceneManager.LoadScene(chance);
             print(PlayerPrefs.GetInt("roomCount"));
-            goDir = dir;
-            StartCoroutine(movementClock(chance));
         }
         else
         {
@@ -126,22 +124,6 @@ public class RoomManager : MonoBehaviour
         roomCount = 0;
     }
 
-    private IEnumerator movementClock(int nextRoom)
-    {
-        while(SceneManager.GetActiveScene().buildIndex != nextRoom)
-        {
-            yield return null;
-        }
-        if(SceneManager.GetActiveScene().buildIndex == nextRoom)
-        {
-            var rm = GameObject.Find("RoomManager");
-            rm.GetComponent<RoomManager>().entering = true;
-            entering = true;
-            yield return new WaitForSeconds(1.5f);
-            entering = false;
-            rm.GetComponent<RoomManager>().entering = false;
-        }
-    }
     private IEnumerator enter()
     {
         entering = true;

@@ -3,17 +3,23 @@ using UnityEngine;
 
 public class HermesInteraction : MonoBehaviour
 {
-    [SerializeField] private StarterAssetsInputs player;
     public bool repeat;
-    private bool interactable;
     public DialogueTrigger trigger;
     public DialogueManager man;
+
     [SerializeField]private GameObject text;
-    // Start is called before the first frame update
+    [SerializeField] private StarterAssetsInputs player;
+
+    private bool interactable;
+    private PlayerStats ps;
+    private Collider coll;
+
     void Start()
     {
         interactable = true;
         text.SetActive(false);
+        ps = GameObject.FindWithTag("Player").GetComponent<PlayerStats>();
+        coll = GetComponent<Collider>();
     }
 
 
@@ -27,7 +33,7 @@ public class HermesInteraction : MonoBehaviour
     {
         if (player.interact&&other.transform.CompareTag("Player"))
         {
-            gameObject.GetComponent<Collider>().enabled = false;
+            coll.enabled = false;
             StartCoroutine(startDialogue()); 
         }
     }
@@ -43,19 +49,19 @@ public class HermesInteraction : MonoBehaviour
         if (repeat && interactable)
         {
             StartCoroutine(PauseInteract());
-            GameObject.FindWithTag("Player").GetComponent<PlayerStats>().MoveSpeed = 0;
+            ps.MoveSpeed = 0;
             yield return new WaitForSeconds(0.3f);
-            gameObject.GetComponent<Collider>().enabled = true;
+            coll.enabled = true;
 
             man.DisplayNextSentence();
         }
         else if(interactable)
         {
             StartCoroutine(PauseInteract());
-            GameObject.FindWithTag("Player").GetComponent<PlayerStats>().MoveSpeed = 0;
+            ps.MoveSpeed = 0;
             yield return new WaitForSeconds(0.3f);
             repeat = true;
-            gameObject.GetComponent<Collider>().enabled = true;
+            coll.enabled = true;
 
             trigger.TriggerDialogue();
         }
