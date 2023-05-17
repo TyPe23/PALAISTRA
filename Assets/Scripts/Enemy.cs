@@ -584,6 +584,8 @@ public class Enemy : MonoBehaviour
     }
     private IEnumerator getUp()
     {
+        tag = "enemyNoHit";
+
         yield return new WaitForSeconds(0.5f);
 
         if (health > 0)
@@ -607,7 +609,7 @@ public class Enemy : MonoBehaviour
     IEnumerator groundCheckDelay()
     {
         canCheck = false;
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.5f);
         canCheck = true;
     }
     #endregion
