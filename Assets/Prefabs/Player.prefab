@@ -1917,7 +1917,7 @@ GameObject:
   - component: {fileID: 7180727609665079948}
   - component: {fileID: 5578643333555342225}
   m_Layer: 0
-  m_Name: spinAttach
+  m_Name: vaseAttach
   m_TagString: vaseAttach
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

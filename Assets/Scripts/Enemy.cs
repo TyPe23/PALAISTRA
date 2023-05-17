@@ -52,7 +52,7 @@ public class Enemy : MonoBehaviour
     private PlayerStates states;
     private StarterAssetsInputs inputs;
 
-    private bool grounded = true;
+    public bool grounded = true;
     private bool checkingDist = false;
     private bool canGrab = true;
 
@@ -65,8 +65,8 @@ public class Enemy : MonoBehaviour
     public maintainOrientation reset;
     public bool resetPos;
     private bool canHit = true;
-    private bool getUpBool;
-    private bool canCheck;
+    public bool getUpBool;
+    public bool canCheck;
     #endregion
 
     #region LifeCycle
@@ -82,7 +82,7 @@ public class Enemy : MonoBehaviour
         parent = transform.parent;
         throwRef = GameObject.FindWithTag("throwRef").transform;
         attachPoint = GameObject.FindWithTag("lariatAttach").transform;
-        spinPoint = GameObject.FindWithTag("lariatAttach").transform;
+        spinPoint = GameObject.FindWithTag("spinAttach").transform;
 
         rb = GetComponent<Rigidbody>();
         mesh = GetComponentInChildren<MeshRenderer>();
@@ -146,14 +146,6 @@ public class Enemy : MonoBehaviour
             states.enemyHealth = health;
             ChangeState(state.GRABBED);
         }
-        if (collision.transform.CompareTag("floor") && !grounded && !getUpBool && canCheck)
-        {
-            tag = "enemyNoHit";
-            getUpBool = true;
-            grounded = true;
-            StartCoroutine(getUp());
-            Game.globalInstance.sndPlayer.PlaySound(SoundType.IMPACT1, soundSrc);
-        }
         if (collision.transform.CompareTag("trap") && canGrab && state != state.DEATH)
         {
             health -= 10;
@@ -180,6 +172,14 @@ public class Enemy : MonoBehaviour
             ChangeState(state.HIT);
 
             rb.AddForce(dir * 15, ForceMode.Impulse);
+        }
+        if (other.transform.CompareTag("floor") && !grounded && !getUpBool && canCheck)
+        {
+            tag = "enemyNoHit";
+            getUpBool = true;
+            grounded = true;
+            StartCoroutine(getUp());
+            Game.globalInstance.sndPlayer.PlaySound(SoundType.IMPACT1, soundSrc);
         }
     }
 
@@ -259,6 +259,7 @@ public class Enemy : MonoBehaviour
 
         StartCoroutine(groundCheckDelay());
 
+        rb.isKinematic = false;
         states.grab = false;
         grounded = false;
         states.letGo = false;
@@ -293,6 +294,8 @@ public class Enemy : MonoBehaviour
     private void StateEnterGrabbed()
     {
         tag = "spunObj";
+
+        rb.isKinematic = true;
 
         canGrab = false;
 
