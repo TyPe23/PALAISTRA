@@ -26,6 +26,7 @@ public class EndOfGame : MonoBehaviour
     void Start()
     {
         stats = player.GetComponent<PlayerStats>();
+        state = player.GetComponent<PlayerStates>();
         momentum = player.GetComponent<MomentumManager>();
         playerInput = player.GetComponent<PlayerInput>();
         UIinput = GetComponent<PlayerInput>();
@@ -58,9 +59,9 @@ public class EndOfGame : MonoBehaviour
 
     public void enterFunct(string word)
     {
+        stats.adjustScore(state.extraScore);
         stats.adjustScore(momentum.momentumScore);
-
-        stats.adjustScore(-(int)Time.time);
+        stats.adjustScore(6000 - (int)Time.time - PlayerPrefs.GetInt("StartTime"));
 
         if (canEnter)
         {

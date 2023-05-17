@@ -5875,6 +5875,8 @@ MonoBehaviour:
   - {fileID: 452406080}
   - {fileID: 293296046}
   - {fileID: 1469229884}
+  state: 0
+  prevState: 0
 --- !u!1001 &551332192
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11885,6 +11887,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 934053166}
     m_Modifications:
+    - target: {fileID: 5045177510615873506, guid: 4d71e076bf167ae4d865cc5107caaafb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6436503520700602147, guid: 4d71e076bf167ae4d865cc5107caaafb,
         type: 3}
       propertyPath: m_RootOrder
@@ -21540,6 +21547,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 934053166}
     m_Modifications:
+    - target: {fileID: 5045177510615873506, guid: 4d71e076bf167ae4d865cc5107caaafb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6436503520700602147, guid: 4d71e076bf167ae4d865cc5107caaafb,
         type: 3}
       propertyPath: m_RootOrder
@@ -22250,36 +22262,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Center.y
       value: 1.13
-      objectReference: {fileID: 0}
-    - target: {fileID: 8394732591712486792, guid: bf0a8faaa5ae4674db9869ce1fdfbb6a,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8394732591712486792, guid: bf0a8faaa5ae4674db9869ce1fdfbb6a,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8394732591712486792, guid: bf0a8faaa5ae4674db9869ce1fdfbb6a,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8394732592489485727, guid: bf0a8faaa5ae4674db9869ce1fdfbb6a,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 1.676934
-      objectReference: {fileID: 0}
-    - target: {fileID: 8394732592489485727, guid: bf0a8faaa5ae4674db9869ce1fdfbb6a,
-        type: 3}
-      propertyPath: m_Center.y
-      value: -0.338467
-      objectReference: {fileID: 0}
-    - target: {fileID: 8394732592489485727, guid: bf0a8faaa5ae4674db9869ce1fdfbb6a,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf0a8faaa5ae4674db9869ce1fdfbb6a, type: 3}

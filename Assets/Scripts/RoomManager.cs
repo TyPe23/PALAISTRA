@@ -20,13 +20,15 @@ public class RoomManager : MonoBehaviour
     [SerializeField] private List<Enemy> enemies;
 
     private PlayerStats stats;
+    private PlayerStates states;
     private MomentumManager momentum;
 
     // Start is called before the first frame update
     void Start()
     {
-        stats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
-        momentum = GameObject.FindGameObjectWithTag("Player").GetComponent<MomentumManager>();
+        stats = player.GetComponent<PlayerStats>();
+        momentum = player.GetComponent<MomentumManager>();
+        states = player.GetComponent<PlayerStates>();
         roomCount = PlayerPrefs.GetInt("roomCount");
         var enemy = GameObject.FindGameObjectsWithTag("enemyNoHit");
         foreach(GameObject e in enemy)
@@ -70,14 +72,14 @@ public class RoomManager : MonoBehaviour
 
     public void changeRoom(direction dir)
     {
-        stats.adjustScore(momentum.momentumScore);
-
-        stats.adjustScore(-(int)Time.time);
-
         if (resetCounter)
         {
+            PlayerPrefs.SetInt("StartTime", (int)Time.time);
             resetRoomCounter();
         }
+
+        stats.adjustScore(momentum.momentumScore);
+        stats.adjustScore(states.extraScore);
 
         if (roomCount < roomtoShop)
         {

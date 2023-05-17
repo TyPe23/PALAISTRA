@@ -44,6 +44,7 @@ public class PlayerStates : MonoBehaviour
     public Animator enemyAnim;
     public EndOfGame EOG;
     public Transform launchArrow;
+    public int extraScore;
 
     private Dictionary<playerStates, Action> statesStayMeths;
     private Dictionary<playerStates, Action> statesEnterMeths;
@@ -138,8 +139,8 @@ public class PlayerStates : MonoBehaviour
 
         if (showScore)
         {
-            scoreUI.text = $"{playerStats.score - (int)Time.time} \n" +
-                           $"+ {momentum.momentumScore}";
+            scoreUI.text = $"{playerStats.score} \n" +
+                           $"+ {momentum.momentumScore + extraScore}";
         }
 
         if (stamina.stamina <= 5)

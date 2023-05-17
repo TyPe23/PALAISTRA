@@ -17,16 +17,17 @@ public class HighScoreInit : MonoBehaviour
         PlayerPrefs.SetFloat("PileDriverSpeed", PlayerPrefs.GetFloat("MoveSpeed"));
         PlayerPrefs.SetFloat("DashDist", 3);
         PlayerPrefs.SetInt("SpinCost", 10);
-        PlayerPrefs.SetInt("DashCost", 10);
+        PlayerPrefs.SetInt("DashCost", 0);
         PlayerPrefs.SetInt("LariatCost", 20);
         PlayerPrefs.SetInt("PileDriverCost", 30);
         PlayerPrefs.SetInt("currency", 10);
         PlayerPrefs.SetFloat("maxStamina", 100);
         PlayerPrefs.SetFloat("maxHealth", 20);
         PlayerPrefs.SetFloat("currentHealth", 20);
-        PlayerPrefs.SetFloat("staminaRecovery", Time.fixedDeltaTime * 4);
+        PlayerPrefs.SetFloat("staminaRecovery", Time.fixedDeltaTime * 5);
         PlayerPrefs.SetFloat("exhaustedRecovery", PlayerPrefs.GetFloat("staminaRecovery") * 4);
         PlayerPrefs.SetFloat("SpinHoldCost", PlayerPrefs.GetFloat("staminaRecovery") * 2);
-        PlayerPrefs.SetInt("Score", 999);
+        PlayerPrefs.SetInt("Score", 0);
+        PlayerPrefs.SetInt("StartTime", 0);
     }
 }

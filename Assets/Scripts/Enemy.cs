@@ -212,7 +212,7 @@ public class Enemy : MonoBehaviour
 
     public void ChangeState(state newState)
     {
-        if (state != newState)
+        if (state != newState && state != state.DEATH)
         {
             reset.resetPos();
             statesExitMeths[state].Invoke();
@@ -340,6 +340,8 @@ public class Enemy : MonoBehaviour
     private void StateEnterDeath()
     {
         agent.speed = 0;
+
+        states.extraScore += 25;
 
         if (debug)
         {
@@ -579,7 +581,7 @@ public class Enemy : MonoBehaviour
     }
     private IEnumerator spawn()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1.5f);
         ChangeState(state.MOVE);
     }
     private IEnumerator getUp()
