@@ -31,7 +31,7 @@ public class Boon : MonoBehaviour
     [SerializeField] int cost;
     [SerializeField] TextMesh description;
 
-
+    #region LifeSpan
     private void Awake()
     {
         player = GameObject.FindWithTag("Player");
@@ -52,6 +52,7 @@ public class Boon : MonoBehaviour
         decrease = (float)System.Math.Round(Random.Range(0.8f, 0.9f),2);
         if (type == TypeofBoon.purchase) { 
             cost = 5 * Random.Range(5, 8);
+            #region Text
             string advStr = "";
             switch (boonAdvantage)
             {
@@ -112,13 +113,13 @@ public class Boon : MonoBehaviour
                 default:
                     break;
             }
-        
+            #endregion Text
             string s = ("{0} is increased by {1}%\n{2} is decreased by {3}%\nCost: '{4}'");
             string des = string.Format(s, advStr,increase*100,disStr,decrease*100,cost);
             description.text = des;
         }
     }
-    //TODO convert PlayerStats.cs costs to floats to be able to manipulate them for boons
+    #endregion LifeSpan
     private void OnTriggerStay(Collider other)
     {
         if (sai.interact && other.transform.CompareTag("Player"))
@@ -127,7 +128,7 @@ public class Boon : MonoBehaviour
             {
                 if (ps.currency >= cost)
                 {
-
+                    #region AdvDisPurchase
                     switch (boonAdvantage)
                     {
                         case Boons.speed:
@@ -185,15 +186,15 @@ public class Boon : MonoBehaviour
                             break;
                         default:
                             break;
-
-
                     }
+                    #endregion AdvDisPurchase
                     ps.currency -= cost;
                     Destroy(gameObject);
                 }
             }
             else if (type == TypeofBoon.ending)
             {
+                #region AdvDisEnding
                 switch (boonAdvantage)
                 {
                     case Boons.speed:
@@ -251,9 +252,8 @@ public class Boon : MonoBehaviour
                         break;
                     default:
                         break;
-
-
                 }
+                #endregion AdvDisEnding
                 Destroy(gameObject);
                 endofLevelBoons();
 
