@@ -39,7 +39,7 @@ public class HermesInteraction : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (player.interact && other.transform.CompareTag("Player"))
+        if (player.interact && other.transform.CompareTag("Player") && interactable)
         {
             coll.enabled = false;
             StartCoroutine(startDialogue());
