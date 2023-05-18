@@ -3704,7 +3704,7 @@ GameObject:
   - component: {fileID: 373867606}
   - component: {fileID: 373867605}
   - component: {fileID: 373867604}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Cube (1)
   m_TagString: floor
   m_Icon: {fileID: 0}
@@ -24393,7 +24393,7 @@ PrefabInstance:
     - target: {fileID: 76669888077979743, guid: 89ef213c85404c8438ac995a53cd676a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.83
+      value: 7.05
       objectReference: {fileID: 0}
     - target: {fileID: 76669888077979743, guid: 89ef213c85404c8438ac995a53cd676a,
         type: 3}

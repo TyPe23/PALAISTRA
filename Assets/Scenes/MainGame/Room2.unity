@@ -1733,6 +1733,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2492228563954587789, guid: 2b9cf1ac439bf2e47845d5b00bb4b816,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b9cf1ac439bf2e47845d5b00bb4b816, type: 3}
 --- !u!1001 &236323631
@@ -7326,6 +7331,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2492228563954587789, guid: 2b9cf1ac439bf2e47845d5b00bb4b816,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b9cf1ac439bf2e47845d5b00bb4b816, type: 3}
 --- !u!1001 &788021397
@@ -7404,6 +7414,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ground (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2492228563954587789, guid: 2b9cf1ac439bf2e47845d5b00bb4b816,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b9cf1ac439bf2e47845d5b00bb4b816, type: 3}
@@ -14151,6 +14166,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5311857805616178129, guid: f6d148d888ffbf54b9afe9936dfaec1f,
+        type: 3}
+      propertyPath: m_RenderPostProcessing
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409498, guid: f6d148d888ffbf54b9afe9936dfaec1f,
         type: 3}
       propertyPath: m_Name
@@ -14974,7 +14994,7 @@ GameObject:
   - component: {fileID: 1519943176}
   - component: {fileID: 1519943175}
   - component: {fileID: 1519943174}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Cube
   m_TagString: floor
   m_Icon: {fileID: 0}
