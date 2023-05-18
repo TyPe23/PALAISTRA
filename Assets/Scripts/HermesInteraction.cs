@@ -11,6 +11,7 @@ public class HermesInteraction : MonoBehaviour
     [SerializeField] private GameObject extra;
     [SerializeField] private StarterAssetsInputs player;
 
+    private GameObject buttons;
     private bool interactable;
     private PlayerStats ps;
     private Collider coll;
@@ -22,6 +23,8 @@ public class HermesInteraction : MonoBehaviour
         text.SetActive(false);
         ps = GameObject.FindWithTag("Player").GetComponent<PlayerStats>();
         coll = GetComponent<Collider>();
+        extra = GameObject.Find("Currency");
+        buttons = GameObject.Find("Buttons");
     }
 
 
@@ -41,6 +44,7 @@ public class HermesInteraction : MonoBehaviour
             coll.enabled = false;
             StartCoroutine(startDialogue());
             extra.SetActive(false);
+            buttons.SetActive(false);
         }
     }
 
@@ -49,6 +53,7 @@ public class HermesInteraction : MonoBehaviour
         //TODO disable ui
         text.SetActive(false);
         extra.SetActive(true);
+        buttons.SetActive(true);
     }
 
     IEnumerator startDialogue()

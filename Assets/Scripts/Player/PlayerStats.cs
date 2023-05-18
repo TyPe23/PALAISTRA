@@ -58,6 +58,9 @@ public class PlayerStats : MonoBehaviour
         exhaustedRecovery = PlayerPrefs.GetFloat("exhaustedRecovery");
         SpinHoldCost = PlayerPrefs.GetFloat("SpinHoldCost");
         roomCount = PlayerPrefs.GetInt("roomCount");
+
+        currencyText = GameObject.Find("Amount").GetComponent<TMP_Text>();
+
     }
 
     private void Start()

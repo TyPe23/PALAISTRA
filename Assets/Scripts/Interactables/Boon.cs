@@ -29,7 +29,9 @@ public class Boon : MonoBehaviour
     [SerializeField] float decrease =1;
     [SerializeField] TypeofBoon type;
     [SerializeField] int cost;
+    [SerializeField] MeshRenderer desc;
     [SerializeField] TextMesh description;
+    [SerializeField] MeshRenderer second;
 
     #region LifeSpan
     private void Awake()
@@ -41,6 +43,7 @@ public class Boon : MonoBehaviour
 
     private void Start()
     {
+        
         int count = Boons.GetValues(typeof(Boons)).Length - 1;
         boonAdvantage = (Boons)Random.Range(0, count);
         increase = (float)System.Math.Round(Random.Range(1.1f, 1.3f), 2);
@@ -118,8 +121,17 @@ public class Boon : MonoBehaviour
             string des = string.Format(s, advStr,increase*100,disStr,decrease*100,cost);
             description.text = des;
         }
+        second.enabled = false;
     }
     #endregion LifeSpan
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.transform.CompareTag("Player"))
+        {
+            desc.enabled = false;
+            second.enabled = true;
+        }
+    }
     private void OnTriggerStay(Collider other)
     {
         if (sai.interact && other.transform.CompareTag("Player"))
@@ -260,6 +272,15 @@ public class Boon : MonoBehaviour
             }
         }
         
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.transform.CompareTag("Player"))
+        {
+            second.enabled = false;
+            desc.enabled = true;
+        }
     }
     public void endofLevelBoons()
     {
