@@ -3364,13 +3364,18 @@ MonoBehaviour:
   dialogue:
     dialogueName: Random Sign
     sentences:
-    - Ahead is a captive minotaur, try out some of your moves on it. Off to the side
-      is a starting shop.
+    - Be careful out there, those minotaurs are know for their nasty horns, you can
+      try wrangling them up and into those traps! Use those moves of yours to best
+      them!
     - 'For your moves you have:'
-    - A dash can be activated with shift or Left Trigger
-    - A lariat can be activated with right mouse or X
-    - A piledriver can be activated with space or B
-    - A spin can be activated with left mouse or Y
+    - 'A dash with Left Trigger
+
+      A lariat with X
+
+      A piledriver wtih B
+
+      A
+      spin with Y'
 --- !u!114 &366585618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12861,6 +12866,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6345088185364412298, guid: 8c1f5f1559d931740ba7cb45a65f37f5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.48953536
       objectReference: {fileID: 0}
     - target: {fileID: 7790184572249827357, guid: 8c1f5f1559d931740ba7cb45a65f37f5,
         type: 3}
@@ -25162,7 +25172,7 @@ PrefabInstance:
     - target: {fileID: 8997960696600684605, guid: 998de05346dc6a04b804b63a28846e49,
         type: 3}
       propertyPath: health
-      value: 100000
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8997960696600684605, guid: 998de05346dc6a04b804b63a28846e49,
         type: 3}
