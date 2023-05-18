@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1004,7 +1004,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 3b7000f92bb6c454092299f1235b4749, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1610,6 +1610,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5696470755189157467, guid: bf0a8faaa5ae4674db9869ce1fdfbb6a,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.88
+      objectReference: {fileID: 0}
     - target: {fileID: 8394732593264406109, guid: bf0a8faaa5ae4674db9869ce1fdfbb6a,
         type: 3}
       propertyPath: canDamage
@@ -1734,6 +1739,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 579332744}
     m_Modifications:
+    - target: {fileID: 2471838663029586150, guid: b1a8a3c176fd6714ca389cfa5b7dfb6e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3b7000f92bb6c454092299f1235b4749, type: 2}
     - target: {fileID: 8982013617635776901, guid: b1a8a3c176fd6714ca389cfa5b7dfb6e,
         type: 3}
       propertyPath: m_Name
