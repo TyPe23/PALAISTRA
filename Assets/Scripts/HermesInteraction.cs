@@ -65,8 +65,10 @@ public class HermesInteraction : MonoBehaviour
 
             trigger.TriggerDialogue();
         }
+        //print(man.sentences.Count);
         if (man.sentences.Count == 0)
         {
+            //print("Reseting trigger");
             StartCoroutine(ResetTrigger());
         }
     }
@@ -74,13 +76,18 @@ public class HermesInteraction : MonoBehaviour
     IEnumerator ResetTrigger()
     {
         yield return new WaitForSeconds(10);
-        repeat = false;
+        if(man.sentences.Count == 0)
+        {
+            print("Turning repeat off");
+            Destroy(gameObject.GetComponent<DialogueTrigger>());
+        }
     }
 
     public IEnumerator PauseInteract()
     {
         interactable = false;
         yield return new WaitForSeconds(2);
+        print("Should be able to continue");
         interactable = true;
     }
 }
