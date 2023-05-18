@@ -76,8 +76,7 @@ public class RoomManager : MonoBehaviour
             resetRoomCounter();
         }
 
-        stats.adjustScore(momentum.momentumScore);
-        stats.adjustScore(states.extraScore);
+        
 
         if (roomCount < roomtoShop)
         {

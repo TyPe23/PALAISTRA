@@ -61,7 +61,7 @@ public class EndOfGame : MonoBehaviour
     {
         stats.adjustScore(state.extraScore);
         stats.adjustScore(momentum.momentumScore);
-        stats.adjustScore(6000 - (int)Time.time - PlayerPrefs.GetInt("StartTime"));
+        stats.adjustScore(1000 - (int)Time.time - PlayerPrefs.GetInt("StartTime"));
 
         if (canEnter)
         {

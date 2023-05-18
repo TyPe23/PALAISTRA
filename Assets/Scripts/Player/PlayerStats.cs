@@ -33,6 +33,7 @@ public class PlayerStats : MonoBehaviour
     public int score;
     public Slider healthSlider;
     public TMP_Text currencyText;
+    public bool changeScore;
 
     // Start is called before the first frame update
     void Awake()
@@ -74,12 +75,18 @@ public class PlayerStats : MonoBehaviour
         healthSlider.value = currentHealth;
         currencyText.text = $"{currency}";
         score = PlayerPrefs.GetInt("Score");
+
+        if (changeScore)
+        {
+            changeScore = false;
+            adjustScore(5);
+        }
     }
 
     public void adjustScore(int scoreChange)
     {
         score += scoreChange;
-        PlayerPrefs.SetInt("score", score);
+        PlayerPrefs.SetInt("Score", score);
     }
 
     public void takeDamage(float damage)

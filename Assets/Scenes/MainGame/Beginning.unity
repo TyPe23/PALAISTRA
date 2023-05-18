@@ -3213,6 +3213,7 @@ MonoBehaviour:
   trigger: {fileID: 366585617}
   man: {fileID: 1260202637}
   text: {fileID: 1521476546}
+  extra: {fileID: 1068203808}
   player: {fileID: 2021661764}
 --- !u!65 &366585619
 BoxCollider:
@@ -9817,6 +9818,7 @@ MonoBehaviour:
   trigger: {fileID: 971783605}
   man: {fileID: 1260202637}
   text: {fileID: 1156517951}
+  extra: {fileID: 1068203808}
   player: {fileID: 2021661764}
 --- !u!136 &971783604
 CapsuleCollider:
@@ -11063,6 +11065,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf0a8faaa5ae4674db9869ce1fdfbb6a, type: 3}
+--- !u!1 &1068203808 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3554056700482568549, guid: bf0a8faaa5ae4674db9869ce1fdfbb6a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1068203807}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1071427934
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12291,6 +12299,7 @@ MonoBehaviour:
   trigger: {fileID: 1140726765}
   man: {fileID: 1260202637}
   text: {fileID: 2104623475}
+  extra: {fileID: 1068203808}
   player: {fileID: 2021661764}
 --- !u!65 &1140726767
 BoxCollider:
@@ -23081,7 +23090,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2104623475}
-  m_Text: Press 'E' or bottom button
+  m_Text: Press bottom button
   m_OffsetZ: 0
   m_CharacterSize: 0.1
   m_LineSpacing: 1

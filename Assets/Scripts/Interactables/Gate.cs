@@ -1,5 +1,7 @@
 using System.Collections;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
+using static UnityEditor.VersionControl.Asset;
 
 
 public enum direction
@@ -14,6 +16,9 @@ public class Gate : MonoBehaviour
     private RoomManager roomMan;
     private GameObject player;
     private StarterAssetsInputs sai;
+    private PlayerStats stats;
+    private MomentumManager momentum;
+    private PlayerStates states;
 
     [Tooltip("Put at -1 to randomly choose room, otherwise, input buildIndex of next room")]
     [SerializeField] int nextRoom;
@@ -30,7 +35,11 @@ public class Gate : MonoBehaviour
     void Start()
     {
         roomMan = GameObject.Find("RoomManager").GetComponent<RoomManager>();
+        print(roomMan);
         player = GameObject.FindWithTag("Player");
+        stats = player.GetComponent<PlayerStats>();
+        states = player.GetComponent<PlayerStates>();
+        momentum = player.GetComponent<MomentumManager>();
         sai = player.GetComponent<StarterAssetsInputs>();
         fade = GameObject.FindWithTag("LevelChanger").GetComponent<Animator>();
 
@@ -102,6 +111,10 @@ public class Gate : MonoBehaviour
         yield return new WaitForSeconds(1);
         fade.SetTrigger("FadeOut");
         yield return new WaitForSeconds(1);
+
+        stats.adjustScore(momentum.momentumScore);
+        stats.adjustScore(states.extraScore);
+        
         if (nextRoom <= -1)
         {
             print("random room");

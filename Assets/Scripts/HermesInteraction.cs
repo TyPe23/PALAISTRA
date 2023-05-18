@@ -17,6 +17,7 @@ public class HermesInteraction : MonoBehaviour
 
     void Start()
     {
+        PlayerPrefs.SetInt("Score", 0);
         interactable = true;
         text.SetActive(false);
         ps = GameObject.FindWithTag("Player").GetComponent<PlayerStats>();

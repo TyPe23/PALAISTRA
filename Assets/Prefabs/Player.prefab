@@ -3206,7 +3206,7 @@ MonoBehaviour:
   roomCount: 0
   score: 0
   healthSlider: {fileID: 694891437}
-  currencyText: {fileID: 0}
+  currencyText: {fileID: 373750124421048218}
 --- !u!114 &6271811701758307935
 MonoBehaviour:
   m_ObjectHideFlags: 0

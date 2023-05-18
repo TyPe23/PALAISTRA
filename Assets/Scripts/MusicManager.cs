@@ -24,6 +24,7 @@ public class MusicManager : MonoBehaviour
 
     public Enemy[] enemies;
     public bool inCombat = false; 
+    public bool stopCombatTrigger = false; 
     public musicStates state;
     public musicStates prevState;
 
@@ -90,6 +91,7 @@ public class MusicManager : MonoBehaviour
     private void StateEnterStart()
     {
         inCombat = true;
+        stopCombatTrigger = true;
         startBell.Play();
         audioCombat.Play();
     }
@@ -127,7 +129,7 @@ public class MusicManager : MonoBehaviour
         {
             if (enemies != null)
             {
-                if (enemies[0].state != enemyStates.SPAWN || enemies[0].state != enemyStates.DEATH)
+                if ((enemies[0].state != enemyStates.SPAWN || enemies[0].state != enemyStates.DEATH) && !stopCombatTrigger)
                 {
                     ChangeState(state.START_COMBAT);
                 }

@@ -6,7 +6,6 @@ public class HighScoreInit : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        HS.Clear(this);
         HS.Init(this, "PALAISTRA");
 
         PlayerPrefs.SetFloat("MoveSpeed", 5.25f);
@@ -29,5 +28,10 @@ public class HighScoreInit : MonoBehaviour
         PlayerPrefs.SetFloat("SpinHoldCost", PlayerPrefs.GetFloat("staminaRecovery") * 2);
         PlayerPrefs.SetInt("Score", 0);
         PlayerPrefs.SetInt("StartTime", 0);
+    }
+
+    public void clear()
+    {
+        HS.Clear(this);
     }
 }
