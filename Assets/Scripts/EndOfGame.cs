@@ -21,6 +21,7 @@ public class EndOfGame : MonoBehaviour
 
     private bool canEnter = true;
     private bool gameEnded = false;
+    [SerializeField] private GameObject text;
 
     // Start is called before the first frame update
     void Start()
@@ -33,15 +34,30 @@ public class EndOfGame : MonoBehaviour
         inputs = player.GetComponent<StarterAssetsInputs>();
         state = player.GetComponent<PlayerStates>();
         playerUI = GameObject.FindGameObjectWithTag("UI");
+        text.SetActive(false);
     }
 
-
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.transform.CompareTag("Player"))
+        {
+            text.SetActive(true);
+        }
+    }
 
     private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Player") && inputs.interact && !gameEnded)
         {
             endGame();
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.transform.CompareTag("Player"))
+        {
+            text.SetActive(false);
         }
     }
 

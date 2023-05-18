@@ -30,7 +30,7 @@ public class HermesInteraction : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (player.interact && other.transform.CompareTag("Player"))
+        if (other.transform.CompareTag("Player"))
         {
             //TODO enable ui above head
             text.SetActive(true);
@@ -83,6 +83,7 @@ public class HermesInteraction : MonoBehaviour
             //print("Reseting trigger");
             StartCoroutine(ResetTrigger());
         }
+        yield return null;
     }
 
     IEnumerator ResetTrigger()
@@ -92,6 +93,7 @@ public class HermesInteraction : MonoBehaviour
         {
             print("Turning repeat off");
             Destroy(gameObject.GetComponent<DialogueTrigger>());
+            Destroy(text);
         }
     }
 

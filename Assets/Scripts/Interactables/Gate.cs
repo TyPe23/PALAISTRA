@@ -1,7 +1,5 @@
 using System.Collections;
-using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
-using static UnityEditor.VersionControl.Asset;
 
 
 public enum direction
