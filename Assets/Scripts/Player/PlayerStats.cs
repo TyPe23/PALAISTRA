@@ -1,4 +1,5 @@
 using HighScore;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -31,6 +32,7 @@ public class PlayerStats : MonoBehaviour
     public int roomCount;
     public int score;
     public Slider healthSlider;
+    public TMP_Text currencyText;
 
     // Start is called before the first frame update
     void Awake()
@@ -69,7 +71,8 @@ public class PlayerStats : MonoBehaviour
 
     void FixedUpdate()
     {
-        healthSlider.value = currentHealth; 
+        healthSlider.value = currentHealth;
+        currencyText.text = $"{currency}";
         score = PlayerPrefs.GetInt("Score");
     }
 

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.32189995, g: 0.34904334, b: 0.34406257, a: 1}
+  m_IndirectSpecularColor: {r: 0.32190126, g: 0.34904456, b: 0.34406418, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3209,11 +3209,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ed4ea4ee909da14daa177594e1f6660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 2021661764}
   repeat: 0
   trigger: {fileID: 366585617}
   man: {fileID: 1260202637}
   text: {fileID: 1521476546}
+  extra: {fileID: 1825559718}
+  player: {fileID: 2021661764}
 --- !u!65 &366585619
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9813,11 +9814,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ed4ea4ee909da14daa177594e1f6660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 2021661764}
   repeat: 0
   trigger: {fileID: 971783605}
   man: {fileID: 1260202637}
   text: {fileID: 1156517951}
+  extra: {fileID: 1825559718}
+  player: {fileID: 2021661764}
 --- !u!136 &971783604
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -10990,6 +10992,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4231954558820930535, guid: bf0a8faaa5ae4674db9869ce1fdfbb6a,
+        type: 3}
+      propertyPath: currencyText
+      value: 
+      objectReference: {fileID: 2019084650}
     - target: {fileID: 4794036322863823450, guid: bf0a8faaa5ae4674db9869ce1fdfbb6a,
         type: 3}
       propertyPath: m_RootOrder
@@ -12287,11 +12294,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ed4ea4ee909da14daa177594e1f6660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 2021661764}
   repeat: 0
   trigger: {fileID: 1140726765}
   man: {fileID: 1260202637}
   text: {fileID: 2104623475}
+  extra: {fileID: 1825559718}
+  player: {fileID: 2021661764}
 --- !u!65 &1140726767
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12575,7 +12583,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1156517951}
-  m_Text: Press 'E' or bottom button
+  m_Text: Press bottom button
   m_OffsetZ: 0
   m_CharacterSize: 0.1
   m_LineSpacing: 1
@@ -17680,7 +17688,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1521476546}
-  m_Text: Press 'E' or bottom button
+  m_Text: Press bottom button
   m_OffsetZ: 0
   m_CharacterSize: 0.1
   m_LineSpacing: 1
@@ -20148,6 +20156,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 36140573}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1825559718 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3554056700482568549, guid: bf0a8faaa5ae4674db9869ce1fdfbb6a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1068203807}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1829380384
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22580,6 +22594,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b206aee59adcbac44864d2a6b07f8f5c, type: 3}
+--- !u!114 &2019084650 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 373750124421048218, guid: bf0a8faaa5ae4674db9869ce1fdfbb6a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1068203807}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2021661754 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4794036322863823450, guid: bf0a8faaa5ae4674db9869ce1fdfbb6a,
@@ -23081,7 +23107,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2104623475}
-  m_Text: Press 'E' or bottom button
+  m_Text: Press bottom button
   m_OffsetZ: 0
   m_CharacterSize: 0.1
   m_LineSpacing: 1
@@ -24257,6 +24283,18 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 751421232}
+    - target: {fileID: 2920247995659157785, guid: 998de05346dc6a04b804b63a28846e49,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: aca2718519dfba24786fd1c0a96df49f,
+        type: 2}
+    - target: {fileID: 2920247995659157785, guid: 998de05346dc6a04b804b63a28846e49,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 3512617494083927834, guid: aca2718519dfba24786fd1c0a96df49f,
+        type: 2}
     - target: {fileID: 2920247995659157787, guid: 998de05346dc6a04b804b63a28846e49,
         type: 3}
       propertyPath: m_IsActive

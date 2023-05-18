@@ -7,7 +7,8 @@ public class HermesInteraction : MonoBehaviour
     public DialogueTrigger trigger;
     public DialogueManager man;
 
-    [SerializeField]private GameObject text;
+    [SerializeField] private GameObject text;
+    [SerializeField] private GameObject extra;
     [SerializeField] private StarterAssetsInputs player;
 
     private bool interactable;
@@ -25,16 +26,20 @@ public class HermesInteraction : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        //TODO enable ui above head
-        text.SetActive(true);
+        if (player.interact && other.transform.CompareTag("Player"))
+        {
+            //TODO enable ui above head
+            text.SetActive(true);
+        }
     }
 
     private void OnTriggerStay(Collider other)
     {
-        if (player.interact&&other.transform.CompareTag("Player"))
+        if (player.interact && other.transform.CompareTag("Player"))
         {
             coll.enabled = false;
-            StartCoroutine(startDialogue()); 
+            StartCoroutine(startDialogue());
+            extra.SetActive(false);
         }
     }
 
@@ -42,6 +47,7 @@ public class HermesInteraction : MonoBehaviour
     {
         //TODO disable ui
         text.SetActive(false);
+        extra.SetActive(true);
     }
 
     IEnumerator startDialogue()
@@ -86,7 +92,7 @@ public class HermesInteraction : MonoBehaviour
     public IEnumerator PauseInteract()
     {
         interactable = false;
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         print("Should be able to continue");
         interactable = true;
     }
