@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class RoomManager : MonoBehaviour
 {
-    public float timeStart;
-    public float timeEnd;
     public bool levelComplete;
     [SerializeField] private int bottomIndex;
     [SerializeField] private int topIndex;

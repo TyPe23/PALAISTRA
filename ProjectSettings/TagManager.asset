@@ -20,6 +20,7 @@ TagManager:
   - enemyNoHit
   - spunObj
   - vaseAttach
+  - LevelChanger
   layers:
   - Default
   - TransparentFX

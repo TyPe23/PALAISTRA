@@ -24,6 +24,7 @@ public class Gate : MonoBehaviour
     [SerializeField] private MeshRenderer text;
     private bool leaving;
     [SerializeField] private bool enemiesOption;
+    private Animator fade;
     
     // Start is called before the first frame update
     void Start()
@@ -31,6 +32,7 @@ public class Gate : MonoBehaviour
         roomMan = GameObject.Find("RoomManager").GetComponent<RoomManager>();
         player = GameObject.FindWithTag("Player");
         sai = player.GetComponent<StarterAssetsInputs>();
+        fade = GameObject.FindWithTag("LevelChanger").GetComponent<Animator>();
 
         text.enabled = false;
     }
@@ -97,7 +99,9 @@ public class Gate : MonoBehaviour
         //player.GetComponent<CharacterController>().enabled = false;
         leaving = true;
         
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
+        fade.SetTrigger("FadeOut");
+        yield return new WaitForSeconds(1);
         if (nextRoom <= -1)
         {
             print("random room");
