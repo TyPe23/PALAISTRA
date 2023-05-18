@@ -24,7 +24,6 @@ public enum enemyStates
 public class Enemy : MonoBehaviour
 {
     #region FILEDS & PROPERTIES
-    public float radius = 10;
     public int health = 10;
     public float speed = 3;
     public float attackSpeed = 20;
