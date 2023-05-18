@@ -95,6 +95,6 @@ public class EndOfGame : MonoBehaviour
         yield return new WaitForSeconds(2);
 
         roomMan = GameObject.Find("RoomManager");
-        roomMan.GetComponent<RoomManager>().changeRoomSpecific(1, direction.right);
+        roomMan.GetComponent<RoomManager>().changeRoomSpecific(0, direction.right);
     }
 }
