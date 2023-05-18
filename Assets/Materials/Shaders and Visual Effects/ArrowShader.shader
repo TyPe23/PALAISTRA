@@ -1,14 +1,14 @@
-Shader "ShaderLab/ArrowShader"
+Shader "Unlit/Arrow"
 {
     Properties
     {
-        _MainTex ("Texture", 2D) = "white" {}
+        _MainTex('Main Texture', 2D) = 'white' {}
+        _OffestAmout('Offset Amount', Range(0, 10)) = 0;
+        _AnimationSpeed('Animation Speed', Range(0, 3)) = 0;
+        _Color('Color', Color) = (1, 1, 1, 1);
     }
     SubShader
     {
-        // No culling or depth
-        Cull Off ZWrite Off ZTest Always
-
         Pass
         {
             CGPROGRAM
@@ -25,26 +25,30 @@ Shader "ShaderLab/ArrowShader"
 
             struct v2f
             {
-                float2 uv : TEXCOORD0;
                 float4 vertex : SV_POSITION;
+                float2 uv : TEXCOORD0;
             };
 
-            v2f vert (appdata v)
+            fixed4 _Color;
+            sampler2D _MainTex;
+            float _AnimationSpeed;
+            float _OffsetAmount;
+
+            v2f vert(appdata v)
             {
                 v2f o;
+                v.vertex.y += cos(_Time.y * _AnimationSpeed + v.vertex.y * _OffsetAmount);
                 o.vertex = UnityObjectToClipPos(v.vertex);
                 o.uv = v.uv;
+
                 return o;
             }
 
-            sampler2D _MainTex;
-
-            fixed4 frag (v2f i) : SV_Target
+            fixed4 frag(v2f i) : SV_Target
             {
-                fixed4 col = tex2D(_MainTex, i.uv);
-                // just invert the colors
-                col.rgb = 1 - col.rgb;
-                return col;
+                fixed4 pixelColor = tex2D(_MainTexture, i,uv)
+
+                return pixel * _Color
             }
             ENDCG
         }
